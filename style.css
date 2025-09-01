@@ -1,0 +1,69 @@
+:root{
+  --accent:#0b78d1;
+  --bg:#f5f7fb;
+  --card:#ffffff;
+  --muted:#6b7280;
+  --radius:10px;
+}
+
+*{box-sizing:border-box}
+body{
+  font-family:Inter,ui-sans-serif,system-ui,Segoe UI,Roboto,Helvetica,Arial;
+  margin:0;background:var(--bg);color:#111;
+  -webkit-font-smoothing:antialiased;
+}
+
+.header{
+  background:linear-gradient(90deg,var(--accent),#0a5fb0);
+  color:white;padding:28px 16px;text-align:center;
+}
+.header h1{margin:0;font-size:1.6rem}
+.header p{margin:6px 0 0;color:rgba(255,255,255,0.9)}
+
+.container{max-width:1100px;margin:26px auto;padding:0 16px}
+
+/* grid for semester / subject cards */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px}
+
+/* card */
+.card{
+  background:var(--card);padding:14px;border-radius:var(--radius);
+  box-shadow:0 6px 18px rgba(12,20,40,0.06);
+  cursor:pointer;display:flex;flex-direction:column;justify-content:space-between;
+  transition:transform .15s ease,box-shadow .15s ease;
+  text-decoration:none;color:inherit;
+}
+.card:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(12,20,40,0.12);}
+
+/* small meta text */
+.meta{color:var(--muted);font-size:0.9rem;margin-top:8px}
+
+/* paper list */
+.paper-card{display:flex;align-items:center;justify-content:space-between;gap:12px;
+  padding:12px;border-radius:8px;background:var(--card);box-shadow:0 6px 18px rgba(12,20,40,0.05);
+  margin:12px 0;
+}
+.paper-info{display:flex;flex-direction:column}
+.paper-title{font-weight:600}
+.paper-sub{color:var(--muted);font-size:0.9rem}
+
+/* action buttons */
+.actions a{display:inline-block;padding:8px 12px;border-radius:8px;text-decoration:none;font-weight:600;margin-left:8px}
+.view-btn{background:#eef6ff;color:var(--accent);border:1px solid rgba(11,120,209,0.12)}
+.view-btn:hover{background:var(--accent);color:white}
+.dl-btn{background:#0b78d1;color:white}
+
+/* viewer area */
+.viewer{margin-top:18px;background:#fff;padding:8px;border-radius:8px;border:1px solid #e6eef9;min-height:420px}
+.viewer iframe{width:100%;height:520px;border:0;border-radius:6px}
+
+/* small helpers */
+.back{display:inline-block;margin:8px 0;color:var(--muted);text-decoration:none}
+.empty{color:var(--muted);padding:18px;text-align:center}
+.searchbar{display:flex;gap:8px;margin:12px 0}
+input.search{flex:1;padding:10px 12px;border-radius:10px;border:1px solid #e6eef9}
+.btn{background:var(--accent);color:white;padding:10px 14px;border-radius:10px;border:0}
+@media (max-width:480px){
+  .header h1{font-size:1.2rem}
+  .viewer iframe{height:360px}
+}

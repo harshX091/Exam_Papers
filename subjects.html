@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Subjects</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <h1 id="title">Subjects</h1>
+    <p id="subtitle">Choose a subject</p>
+  </header>
+
+  <main class="container">
+    <a class="back" href="index.html">⬅ Back to semesters</a>
+    <div class="searchbar">
+      <input id="search" class="search" placeholder="Search subjects..." />
+      <button id="allBtn" class="btn">All</button>
+    </div>
+    <div class="grid" id="subjectGrid"></div>
+  </main>
+
+  <script>
+    // COMMON SUBJECTS used across semesters
+    const subjects = [
+      "Physics","Chemistry","Mathematics","Electronics",
+      "Zoology","Botany","Computer_Science","English"
+    ];
+
+    // read sem param
+    const params = new URLSearchParams(location.search);
+    const sem = params.get('sem') || 'Sem_1';
+    document.getElementById('title').innerText = sem.replace('_',' ');
+    document.getElementById('subtitle').innerText = "Choose a subject for " + sem.replace('_',' ');
+
+    const grid = document.getElementById('subjectGrid');
+    function render(filter=''){
+      grid.innerHTML = '';
+      subjects.filter(s=>s.toLowerCase().includes(filter.toLowerCase())).forEach(s=>{
+        const a = document.createElement('a');
+        a.className = 'card';
+        // link to pdfs page with semester & subject
+        a.href = `pdfs.html?sem=${encodeURIComponent(sem)}&subject=${encodeURIComponent(s)}`;
+        a.innerHTML = `<strong>${s.replace(/_/g,' ')}</strong><div class="meta">Open ${s.replace(/_/g,' ')} papers</div>`;
+        grid.appendChild(a);
+      });
+    }
+
+    document.getElementById('search').addEventListener('input', e=>render(e.target.value));
+    document.getElementById('allBtn').addEventListener('click', ()=>{document.getElementById('search').value=''; render();});
+    render();
+  </script>
+</body>
+</html>

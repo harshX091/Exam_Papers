@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Papers</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <h1 id="pageTitle">Papers</h1>
+    <p id="pageSub">View or download</p>
+  </header>
+
+  <main class="container">
+    <a id="backLink" class="back" href="index.html">⬅ Back</a>
+
+    <div id="controls" style="display:flex;gap:12px;align-items:center;margin:12px 0">
+      <input id="filterYear" class="search" placeholder="Filter by year (e.g. 2024)" />
+      <button id="clearFilter" class="btn">Clear</button>
+    </div>
+
+    <div id="listArea"></div>
+
+    <div id="viewer" class="viewer" style="display:none">
+      <div style="display:flex;justify-content:space-between;align-items:center">
+        <div id="viewerTitle"></div>
+        <div>
+          <a id="viewerDownload" class="dl-btn" href="#" download>Download</a>
+          <a class="view-btn" id="openNew" target="_blank">Open in new tab</a>
+        </div>
+      </div>
+      <iframe id="pdfFrame" src=""></iframe>
+    </div>
+
+  </main>
+
+  <script>
+    // get params
+    const params = new URLSearchParams(location.search);
+    const sem = params.get('sem') || 'Sem_1';
+    const subject = params.get('subject') || 'Physics';
+
+    document.getElementById('pageTitle').innerText = `${sem.replace('_',' ')} — ${subject.replace(/_/g,' ')}`;
+    document.getElementById('pageSub').innerText = "Click View to open within page or Download to save";
+
+    // load JSON for the semester
+    // JSON path: data/sem_x.json  (you'll add these files)
+    const semFile = `data/${sem.toLowerCase()}.json`; // e.g. data/sem_1.json
+
+    let papers = [];
+
+    async function loadData(){
+      try{
+        const res = await fetch(semFile);
+        if(!res.ok) throw new Error('No data');
+        const data = await res.json();
+        // keep only those for selected subject (case-insensitive)
+        papers = data.filter(p => p.subject.toLowerCase() === subject.toLowerCase());
+        renderList(papers);
+      }catch(err){
+        document.getElementById('listArea').innerHTML = `<p class="empty">No papers data for ${sem} yet. Make sure data/${sem.toLowerCase()}.json exists.</p>`;
+      }
+    }
+
+    function renderList(items){
+      const area = document.getElementById('listArea');
+      area.innerHTML = '';
+      if(items.length === 0){
+        area.innerHTML = `<p class="empty">No papers available for ${subject} in ${sem}.</p>`;
+        return;
+      }
+
+      items.forEach(p=>{
+        const d = document.createElement('div');
+        d.className = 'paper-card';
+        d.innerHTML = `
+          <div class="paper-info">
+            <div class="paper-title">${p.title}</div>
+            <div class="paper-sub">${p.subject} • ${p.year} • ${p.description || ''}</div>
+          </div>
+          <div class="actions">
+            <a class="view-btn" href="#" data-file="${p.file}">View</a>
+            <a class="dl-btn" href="${p.file}" download>Download</a>
+          </div>
+        `;
+        area.appendChild(d);
+      });
+
+      // add view click handlers
+      document.querySelectorAll('.view-btn').forEach(btn=>{
+        btn.addEventListener('click', e=>{
+          e.preventDefault();
+          const file = btn.getAttribute('data-file');
+          openInViewer(file);
+        });
+      });
+    }
+
+    function openInViewer(file){
+      const viewer = document.getElementById('viewer');
+      const frame = document.getElementById('pdfFrame');
+      const vTitle = document.getElementById('viewerTitle');
+      const dl = document.getElementById('viewerDownload');
+      const openNew = document.getElementById('openNew');
+
+      frame.src = file;
+      dl.href = file;
+      openNew.href = file;
+      vTitle.innerText = file.split('/').pop();
+      viewer.style.display = 'block';
+      // scroll viewer into view
+      viewer.scrollIntoView({behavior:'smooth',block:'start'});
+    }
+
+    // filter by year
+    document.getElementById('filterYear').addEventListener('input', e=>{
+      const val = e.target.value.trim();
+      if(!val) renderList(papers);
+      else renderList(papers.filter(p => String(p.year).includes(val)));
+    });
+    document.getElementById('clearFilter').addEventListener('click', ()=>{
+      document.getElementById('filterYear').value='';
+      renderList(papers);
+    });
+
+    // run loader
+    loadData();
+  </script>
+</body>
+</html>
