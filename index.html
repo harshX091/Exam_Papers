@@ -1,45 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Select a semester to view subjects and papers" />
   <title>Semester Notes</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header class="header">
+  <a class="skip-link" href="#semesters">Skip to semesters</a>
+
+  <header class="header" role="banner">
     <h1>Semester Notes</h1>
     <p>Select your semester to view subjects and papers</p>
   </header>
 
-  <main class="container">
-    <h1>Select Semester</h1>
-        <div class="grid">
-      <a href="subjects.html?sem=1" class="card">
-        <strong>Semester 1</strong>
-        <div class="meta">View subjects for first semester</div>
-      </a>
-      <a href="subjects.html?sem=2" class="card">
-        <strong>Semester 2</strong>
-        <div class="meta">View subjects for second semester</div>
-      </a>
-      <a href="subjects.html?sem=3" class="card">
-        <strong>Semester 3</strong>
-        <div class="meta">View subjects for third semester</div>
-      </a>
-               <a href="subjects.html?sem=1" class="card">
-        <strong>Semester 4</strong>
-        <div class="meta">View subjects for first semester</div>
-      </a>
-      <a href="subjects.html?sem=2" class="card">
-        <strong>Semester 5</strong>
-        <div class="meta">View subjects for second semester</div>
-      </a>
-      <a href="subjects.html?sem=3" class="card">
-        <strong>Semester 6</strong>
-        <div class="meta">View subjects for third semester</div>
-      </a>
-          </div>
+  <main class="container" id="semesters" role="main">
+    <h2 class="visually-hidden">Select Semester</h2>
+
+    <ul class="grid" aria-label="Semesters list">
+      <li>
+        <a href="subjects.html?sem=1" class="card" aria-label="Semester 1 — view subjects and papers">
+          <strong>Semester 1</strong>
+          <div class="meta">View subjects for first semester</div>
+        </a>
+      </li>
+      <li>
+        <a href="subjects.html?sem=2" class="card" aria-label="Semester 2 — view subjects and papers">
+          <strong>Semester 2</strong>
+          <div class="meta">View subjects for second semester</div>
+        </a>
+      </li>
+      <li>
+        <a href="subjects.html?sem=3" class="card" aria-label="Semester 3 — view subjects and papers">
+          <strong>Semester 3</strong>
+          <div class="meta">View subjects for third semester</div>
+        </a>
+      </li>
+      <li>
+        <a href="subjects.html?sem=4" class="card" aria-label="Semester 4 — view subjects and papers">
+          <strong>Semester 4</strong>
+          <div class="meta">View subjects for fourth semester</div>
+        </a>
+      </li>
+      <li>
+        <a href="subjects.html?sem=5" class="card" aria-label="Semester 5 — view subjects and papers">
+          <strong>Semester 5</strong>
+          <div class="meta">View subjects for fifth semester</div>
+        </a>
+      </li>
+      <li>
+        <a href="subjects.html?sem=6" class="card" aria-label="Semester 6 — view subjects and papers">
+          <strong>Semester 6</strong>
+          <div class="meta">View subjects for sixth semester</div>
+        </a>
+      </li>
+    </ul>
   </main>
+
+  <footer class="footer" role="contentinfo">
+    <small>&copy; <span id="year"></span> Semester Notes</small>
+  </footer>
+
+  <script>
+    // small UX tweaks
+    document.getElementById('year').textContent = new Date().getFullYear();
+    // accessible focus styles helper (optional)
+    (function(){ try{ document.querySelector('.skip-link').style.position='absolute'; }catch(e){} })();
+  </script>
 </body>
 </html>
