@@ -36,16 +36,19 @@
   </main>
 
   <script>
-    // get params
+    // get params and normalize semester value
     const params = new URLSearchParams(location.search);
-    const sem = params.get('sem') || 'Sem_1';
+    // accept sem as '1' or 'Sem_1' (or 'Sem 1') and normalize to 'Sem_1'
+    const semRaw = params.get('sem') || 'Sem_1';
+    let sem = semRaw;
+    if (/^\d+$/.test(semRaw)) sem = `Sem_${semRaw}`;           // '1' -> 'Sem_1'
+    sem = sem.replace(/\s+/g, '_');                            // 'Sem 1' -> 'Sem_1'
     const subject = params.get('subject') || 'Physics';
 
-    document.getElementById('pageTitle').innerText = `${sem.replace('_',' ')} — ${subject.replace(/_/g,' ')}`;
+    document.getElementById('pageTitle').innerText = `${sem.replace(/_/g,' ')} — ${subject.replace(/_/g,' ')}`;
     document.getElementById('pageSub').innerText = "Click View to open within page or Download to save";
 
-    // load JSON for the semester
-    // JSON path: data/sem_x.json  (you'll add these files)
+    // load JSON for the semester (data files named like data/sem_1.json)
     const semFile = `data/${sem.toLowerCase()}.json`; // e.g. data/sem_1.json
 
     let papers = [];
@@ -74,14 +77,16 @@
       items.forEach(p=>{
         const d = document.createElement('div');
         d.className = 'paper-card';
+        // normalize file path: remove leading slashes and encode URI
+        const filePath = encodeURI(String(p.file || '').replace(/^\/+/, ''));
         d.innerHTML = `
           <div class="paper-info">
             <div class="paper-title">${p.title}</div>
             <div class="paper-sub">${p.subject} • ${p.year} • ${p.description || ''}</div>
           </div>
           <div class="actions">
-            <a class="view-btn" href="#" data-file="${p.file}">View</a>
-            <a class="dl-btn" href="${p.file}" download>Download</a>
+            <a class="view-btn" href="#" data-file="${filePath}">View</a>
+            <a class="dl-btn" href="${filePath}" download>Download</a>
           </div>
         `;
         area.appendChild(d);
