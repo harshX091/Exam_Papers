@@ -1,23 +1,93 @@
 [
   {
     "subject": "Physics",
-    "title": "Physics Paper 2024 - M1 U1",
-    "year": 2024,
-    "file": "/pdfs/Sem2/Physics/PHYSICS-MAJOR-SEM-2-INTERNAL.pdf",
-    "description": "Unit 1 - Mechanics"
-  },
-  {
-    "subject": "Physics",
     "title": "Physics Paper 2025 - M1 U2",
     "year": 2025,
     "file": "pdfs/Sem2/Physics/PHYSICS-MAJOR-SEM-2-INTERNAL.pdf",
     "description": "Unit 2 - Waves"
   },
   {
+    "subject": "English",
+    "title": "AEC ENGLISH SEM 2",
+    "year": null,
+    "file": "pdfs/Sem2/English/AEC-ENGLISH-SEM-2.pdf",
+    "description": ""
+  },
+  {
     "subject": "Chemistry",
-    "title": "Chemistry Paper 2024",
-    "year": 2024,
-    "file": "pdfs/sem1/chemistry/Chemistry_Paper_2024.pdf",
+    "title": "CHEMISTRY SEM 2 MINOR",
+    "year": null,
+    "file": "pdfs/Sem2/Chemistry/CHEMISTRY-SEM-2-MINOR.pdf",
+    "description": ""
+  },
+  {
+    "subject": "Chemistry",
+    "title": "CHEMISTRY SEM 2 MINOR INTERNAL",
+    "year": null,
+    "file": "pdfs/Sem2/Chemistry/CHEMISTRY-SEM-2-MINOR-INTERNAL.pdf",
+    "description": ""
+  },
+  {
+    "subject": "English",
+    "title": "ENGLISH SEM 2",
+    "year": null,
+    "file": "pdfs/Sem2/English/ENGLISH-SEM-2.pdf",
+    "description": ""
+  },
+  {
+    "subject": "Physics",
+    "title": "PHYSICS MAJOR SEM 2",
+    "year": null,
+    "file": "pdfs/Sem2/Physics/PHYSICS-MAJOR-SEM-2.pdf",
+    "description": ""
+  },
+  {
+    "subject": "Physics",
+    "title": "PHYSICS SEM 2 PRACTICAL",
+    "year": null,
+    "file": "pdfs/Sem2/Physics/PHYSICS-SEM-2-PRACTICAL.pdf",
+    "description": ""
+  },
+  {
+    "subject": "Physics",
+    "title": "PHYSICS SEM 2 PRACTICAL INTERNAL",
+    "year": null,
+    "file": "pdfs/Sem2/Physics/PHYSICS-SEM-2-PRACTICAL-INTERNAL.pdf",
+    "description": ""
+  },
+  {
+    "subject": "Gita",
+    "title": "VAC BHAGAVAD GITA SEM 2",
+    "year": null,
+    "file": "pdfs/Sem2/Gita/VAC-BHAGAVAD-GITA-SEM-2.pdf",
+    "description": ""
+  },
+  {
+    "subject": "Gita",
+    "title": "VAC BHAGAVAD GITA SEM 2 INTERNAL",
+    "year": null,
+    "file": "pdfs/Sem2/Gita/VAC-BHAGAVAD-GITA-SEM-2-INTERNAL.pdf",
+    "description": ""
+  },
+  {
+    "subject": "Zoology",
+    "title": "ZOOLOGY MULTI SEM 2",
+    "year": null,
+    "file": "pdfs/Sem2/Zoology/ZOOLOGY-MULTI-SEM-2.pdf",
+    "description": ""
+  },
+  {
+    "subject": "Zoology",
+    "title": "ZOOLOGY SEM 2 MULTI INTERNAL",
+    "year": null,
+    "file": "pdfs/Sem2/Zoology/ZOOLOGY-SEM-2-MULTI-INTERNAL.pdf",
+    "description": ""
+  },
+  {
+    "subject": "Zoology",
+    "title": "ZOOLOGY SEM 2 PRACTICAL",
+    "year": null,
+    "file": "pdfs/Sem2/Zoology/ZOOLOGY-SEM-2-PRACTICAL.pdf",
     "description": ""
   }
 ]

@@ -1,23 +1,9 @@
 [
   {
     "subject": "Physics",
-    "title": "Physics Paper 2024 - M1 U1",
-    "year": 2024,
-    "file": "pdfs/sem1/physics/Physics_Paper_2024.pdf",
-    "description": "Unit 1 - Mechanics"
-  },
-  {
-    "subject": "Physics",
-    "title": "Physics Paper 2025 - M1 U2",
+    "title": "B Sc Sem 3 Assignment",
     "year": 2025,
-    "file": "pdfs/sem1/physics/Physics_Paper_2025.pdf",
-    "description": "Unit 2 - Waves"
-  },
-  {
-    "subject": "Chemistry",
-    "title": "Chemistry Paper 2024",
-    "year": 2024,
-    "file": "pdfs/sem1/chemistry/Chemistry_Paper_2024.pdf",
+    "file": "pdfs/Sem3/Physics/B.Sc. Sem 3 Assignment 2025.pdf",
     "description": ""
   }
 ]

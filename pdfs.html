@@ -13,7 +13,8 @@
   </header>
 
   <main class="container">
-    <a id="backLink" class="back" href="index.html">⬅ Back</a>
+    <!-- keep anchor for non-JS fallback; add data-fallback for script -->
+    <a id="backLink" class="back" data-fallback="index.html" href="index.html">⬅ Back</a>
 
     <div id="controls" style="display:flex;gap:12px;align-items:center;margin:12px 0">
       <input id="filterYear" class="search" placeholder="Filter by year (e.g. 2024)" />
@@ -128,6 +129,30 @@
       document.getElementById('filterYear').value='';
       renderList(papers);
     });
+
+    // Intercept Back link: go one step back if possible, otherwise fall back to index.html
+    (function(){
+      const backLink = document.getElementById('backLink');
+      if(!backLink) return;
+      const fallback = backLink.dataset.fallback || 'index.html';
+
+      function goBack(e){
+        if (e) e.preventDefault();
+        if (window.history.length > 1) {
+          window.history.back();
+        } else {
+          window.location.href = fallback;
+        }
+      }
+
+      // pointerdown prevents default navigation earlier on touch devices
+      backLink.addEventListener('pointerdown', e=>{ e.preventDefault(); goBack(); });
+      backLink.addEventListener('click', e=>{ goBack(e); });
+      // keyboard support (Enter / Space)
+      backLink.addEventListener('keydown', e=>{
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); goBack(); }
+      });
+    })();
 
     // run loader
     loadData();
