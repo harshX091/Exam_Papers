@@ -1,0 +1,8 @@
+[
+  {
+    "subject": "Physics",
+    "units": [
+      {"unit":1, "title":"Solid State","materials":[{"title":"Solid State Notes","file":"pdfs/Sem5/Physics/Solid_State.pdf","description":"Crystal structure basics"}]}
+    ]
+  }
+]

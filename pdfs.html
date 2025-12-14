@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Papers</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <header class="header">
     <h1 id="pageTitle">Papers</h1>
@@ -16,7 +18,13 @@
     <!-- keep anchor for non-JS fallback; add data-fallback for script -->
     <a id="backLink" class="back" data-fallback="index.html" href="index.html">⬅ Back</a>
 
-    <div id="controls" style="display:flex;gap:12px;align-items:center;margin:12px 0">
+    <div id="controls" style="display:flex;gap:12px;align-items:center;margin:12px 0;flex-wrap:wrap">
+      <div class="toggle-group" style="display:flex;gap:0;">
+        <button id="viewPapers" class="toggle-btn active"
+          style="padding:6px 12px;cursor:pointer;background:#007bff;color:white;border:1px solid #007bff;border-radius:4px 0 0 4px">Papers</button>
+        <button id="viewSyllabus" class="toggle-btn"
+          style="padding:6px 12px;cursor:pointer;background:#f0f0f0;color:black;border:1px solid #ccc;border-left:none;border-radius:0 4px 4px 0">Syllabus</button>
+      </div>
       <input id="filterYear" class="search" placeholder="Filter by year (e.g. 2024)" />
       <button id="clearFilter" class="btn">Clear</button>
     </div>
@@ -24,11 +32,13 @@
     <div id="listArea"></div>
 
     <div id="viewer" class="viewer" style="display:none">
-      <div style="display:flex;justify-content:space-between;align-items:center">
-        <div id="viewerTitle"></div>
-        <div>
+      <div class="viewer-header">
+        <div id="viewerTitle" class="viewer-title"></div>
+        <div class="viewer-actions">
           <a id="viewerDownload" class="dl-btn" href="#" download>Download</a>
           <a class="view-btn" id="openNew" target="_blank">Open in new tab</a>
+          <button id="closeViewer" class="btn" style="background:#dc3545;color:white;border:none;margin-left:8px">Close
+            ✖</button>
         </div>
       </div>
       <iframe id="pdfFrame" src=""></iframe>
@@ -39,46 +49,101 @@
   <script>
     // get params and normalize semester value
     const params = new URLSearchParams(location.search);
-    // accept sem as '1' or 'Sem_1' (or 'Sem 1') and normalize to 'Sem_1'
     const semRaw = params.get('sem') || 'Sem_1';
     let sem = semRaw;
-    if (/^\d+$/.test(semRaw)) sem = `Sem_${semRaw}`;           // '1' -> 'Sem_1'
-    sem = sem.replace(/\s+/g, '_');                            // 'Sem 1' -> 'Sem_1'
+    if (/^\d+$/.test(semRaw)) sem = `Sem_${semRaw}`;
+    sem = sem.replace(/\s+/g, '_');
     const subject = params.get('subject') || 'Physics';
 
-    document.getElementById('pageTitle').innerText = `${sem.replace(/_/g,' ')} — ${subject.replace(/_/g,' ')}`;
+    // View mode: 'papers' or 'syllabus'
+    let currentView = params.get('view') || 'papers';
+
+    document.getElementById('pageTitle').innerText = `${sem.replace(/_/g, ' ')} — ${subject.replace(/_/g, ' ')}`;
     document.getElementById('pageSub').innerText = "Click View to open within page or Download to save";
 
-    // load JSON for the semester (data files named like data/sem_1.json)
-    const semFile = `data/${sem.toLowerCase()}.json`; // e.g. data/sem_1.json
+    const btnPapers = document.getElementById('viewPapers');
+    const btnSyllabus = document.getElementById('viewSyllabus');
+    const filterInput = document.getElementById('filterYear');
+    const closeViewerBtn = document.getElementById('closeViewer');
 
-    let papers = [];
+    closeViewerBtn.addEventListener('click', () => {
+      document.getElementById('viewer').style.display = 'none';
+      document.getElementById('pdfFrame').src = ''; // Stop loading
+    });
 
-    async function loadData(){
-      try{
-        const res = await fetch(semFile);
-        if(!res.ok) throw new Error('No data');
-        const data = await res.json();
-        // keep only those for selected subject (case-insensitive)
-        papers = data.filter(p => p.subject.toLowerCase() === subject.toLowerCase());
-        renderList(papers);
-      }catch(err){
-        document.getElementById('listArea').innerHTML = `<p class="empty">No papers data for ${sem} yet. Make sure data/${sem.toLowerCase()}.json exists.</p>`;
+    function updateViewUI() {
+      if (currentView === 'syllabus') {
+        btnSyllabus.style.background = '#007bff';
+        btnSyllabus.style.color = 'white';
+        btnSyllabus.style.borderColor = '#007bff';
+
+        btnPapers.style.background = '#f0f0f0';
+        btnPapers.style.color = 'black';
+        btnPapers.style.borderColor = '#ccc';
+
+        filterInput.style.display = 'none'; // No year filter for syllabus usually
+      } else {
+        btnPapers.style.background = '#007bff';
+        btnPapers.style.color = 'white';
+        btnPapers.style.borderColor = '#007bff';
+
+        btnSyllabus.style.background = '#f0f0f0';
+        btnSyllabus.style.color = 'black';
+        btnSyllabus.style.borderColor = '#ccc';
+
+        filterInput.style.display = 'block';
       }
     }
 
-    function renderList(items){
+    btnPapers.addEventListener('click', () => { currentView = 'papers'; updateViewUI(); loadData(); });
+    btnSyllabus.addEventListener('click', () => { currentView = 'syllabus'; updateViewUI(); loadData(); });
+
+    // Initial UI set
+    updateViewUI();
+
+    let papersData = [];
+    let syllabusData = [];
+
+    async function loadData() {
+      const area = document.getElementById('listArea');
+      area.innerHTML = '<p>Loading...</p>';
+
+      try {
+        if (currentView === 'syllabus') {
+          const file = `data/syllabus_${sem.toLowerCase()}.json`;
+          const res = await fetch(file);
+          if (!res.ok) throw new Error('No syllabus data');
+          const data = await res.json();
+          // Filter by subject
+          // Structure: [ { subject: "Physics", units: [ ... ] }, ... ]
+          const subjData = data.find(s => s.subject.toLowerCase() === subject.toLowerCase());
+          syllabusData = subjData ? subjData.units : [];
+          renderSyllabus(syllabusData);
+        } else {
+          const file = `data/${sem.toLowerCase()}.json`;
+          const res = await fetch(file);
+          if (!res.ok) throw new Error('No papers data');
+          const data = await res.json();
+          papersData = data.filter(p => p.subject.toLowerCase() === subject.toLowerCase());
+          renderPapers(papersData);
+        }
+      } catch (err) {
+        area.innerHTML = `<p class="empty">No content found for ${subject} (${currentView}) in ${sem}.</p>`;
+        console.error(err);
+      }
+    }
+
+    function renderPapers(items) {
       const area = document.getElementById('listArea');
       area.innerHTML = '';
-      if(items.length === 0){
-        area.innerHTML = `<p class="empty">No papers available for ${subject} in ${sem}.</p>`;
+      if (items.length === 0) {
+        area.innerHTML = `<p class="empty">No papers available.</p>`;
         return;
       }
 
-      items.forEach(p=>{
+      items.forEach(p => {
         const d = document.createElement('div');
         d.className = 'paper-card';
-        // normalize file path: remove leading slashes and encode URI
         const filePath = encodeURI(String(p.file || '').replace(/^\/+/, ''));
         d.innerHTML = `
           <div class="paper-info">
@@ -86,24 +151,80 @@
             <div class="paper-sub">${p.subject} • ${p.year} • ${p.description || ''}</div>
           </div>
           <div class="actions">
-            <a class="view-btn" href="#" data-file="${filePath}">View</a>
+            <a class="view-btn" href="#" data-file="${filePath}" data-title="${p.title}">View</a>
             <a class="dl-btn" href="${filePath}" download>Download</a>
           </div>
         `;
         area.appendChild(d);
       });
+      attachViewHandlers();
+    }
 
-      // add view click handlers
-      document.querySelectorAll('.view-btn').forEach(btn=>{
-        btn.addEventListener('click', e=>{
+    function renderSyllabus(units) {
+      const area = document.getElementById('listArea');
+      area.innerHTML = '';
+      if (!units || units.length === 0) {
+        area.innerHTML = `<p class="empty">No syllabus details available.</p>`;
+        return;
+      }
+
+      units.forEach(u => {
+        const uDiv = document.createElement('div');
+        uDiv.className = 'unit-block';
+        uDiv.style.marginBottom = '20px';
+
+        const h3 = document.createElement('h3');
+        if (u.category) {
+          h3.innerText = `${u.category} — Unit ${u.unit}`;
+        } else {
+          h3.innerText = `Unit ${u.unit}`;
+        }
+        h3.style.margin = '0 0 10px 0';
+        h3.style.fontSize = '1.1em';
+        h3.style.color = '#333';
+        uDiv.appendChild(h3);
+
+        if (u.materials && u.materials.length > 0) {
+          u.materials.forEach(m => {
+            const d = document.createElement('div');
+            d.className = 'paper-card'; // Reuse card style
+            const filePath = encodeURI(String(m.file || '').replace(/^\/+/, ''));
+            d.innerHTML = `
+               <div class="paper-info">
+                 <div class="paper-title">${m.title}</div>
+                 <div class="paper-sub">${m.description || 'Syllabus/Notes'}</div>
+               </div>
+               <div class="actions">
+                 <a class="view-btn" href="#" data-file="${filePath}" data-title="${m.title}">View</a>
+                 <a class="dl-btn" href="${filePath}" download>Download</a>
+               </div>
+             `;
+            uDiv.appendChild(d);
+          });
+        } else {
+          const d = document.createElement('div');
+          d.innerText = 'No materials listed.';
+          d.style.color = '#777';
+          uDiv.appendChild(d);
+        }
+
+        area.appendChild(uDiv);
+      });
+      attachViewHandlers();
+    }
+
+    function attachViewHandlers() {
+      document.querySelectorAll('.view-btn').forEach(btn => {
+        btn.addEventListener('click', e => {
           e.preventDefault();
           const file = btn.getAttribute('data-file');
-          openInViewer(file);
+          const title = btn.getAttribute('data-title');
+          openInViewer(file, title);
         });
       });
     }
 
-    function openInViewer(file){
+    function openInViewer(file, title) {
       const viewer = document.getElementById('viewer');
       const frame = document.getElementById('pdfFrame');
       const vTitle = document.getElementById('viewerTitle');
@@ -113,30 +234,29 @@
       frame.src = file;
       dl.href = file;
       openNew.href = file;
-      vTitle.innerText = file.split('/').pop();
+      vTitle.innerText = title || file.split('/').pop();
       viewer.style.display = 'block';
-      // scroll viewer into view
-      viewer.scrollIntoView({behavior:'smooth',block:'start'});
+      viewer.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
 
     // filter by year
-    document.getElementById('filterYear').addEventListener('input', e=>{
+    document.getElementById('filterYear').addEventListener('input', e => {
       const val = e.target.value.trim();
-      if(!val) renderList(papers);
-      else renderList(papers.filter(p => String(p.year).includes(val)));
+      if (!val) renderPapers(papersData);
+      else renderPapers(papersData.filter(p => String(p.year).includes(val)));
     });
-    document.getElementById('clearFilter').addEventListener('click', ()=>{
-      document.getElementById('filterYear').value='';
-      renderList(papers);
+    document.getElementById('clearFilter').addEventListener('click', () => {
+      document.getElementById('filterYear').value = '';
+      renderPapers(papersData);
     });
 
-    // Intercept Back link: go one step back if possible, otherwise fall back to index.html
-    (function(){
+    // Intercept Back link
+    (function () {
       const backLink = document.getElementById('backLink');
-      if(!backLink) return;
+      if (!backLink) return;
       const fallback = backLink.dataset.fallback || 'index.html';
 
-      function goBack(e){
+      function goBack(e) {
         if (e) e.preventDefault();
         if (window.history.length > 1) {
           window.history.back();
@@ -145,17 +265,16 @@
         }
       }
 
-      // pointerdown prevents default navigation earlier on touch devices
-      backLink.addEventListener('pointerdown', e=>{ e.preventDefault(); goBack(); });
-      backLink.addEventListener('click', e=>{ goBack(e); });
-      // keyboard support (Enter / Space)
-      backLink.addEventListener('keydown', e=>{
+      backLink.addEventListener('pointerdown', e => { e.preventDefault(); goBack(); });
+      backLink.addEventListener('click', e => { goBack(e); });
+      backLink.addEventListener('keydown', e => {
         if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); goBack(); }
       });
     })();
 
-    // run loader
+    // initial load
     loadData();
   </script>
 </body>
+
 </html>

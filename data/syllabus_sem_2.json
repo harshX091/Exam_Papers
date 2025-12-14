@@ -1,0 +1,8 @@
+[
+  {
+    "subject": "Physics",
+    "units": [
+      {"unit":1, "title":"Oscillations","materials":[{"title":"Oscillation Notes","file":"pdfs/Sem2/Physics/Oscillations.pdf","description":""}]}
+    ]
+  }
+]

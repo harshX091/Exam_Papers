@@ -1,0 +1,113 @@
+[
+  {
+    "subject": "Physics",
+    "units": [
+      {
+        "unit": 1,
+        "category": "Major 1",
+        "title": "Major 1: Mechanics of a Single Particle and System of Particles(3.3 to 3.6)",
+        "materials": [
+          {
+            "title": "Mechanics of a Single Particle and System of Particles(3.3 to 3.6)",
+            "file": "pdfs/Sem4/Physics/Major 1/Unit_1/Mechanics of a Single Particle and System of Particles(3.3 to 3.6).pdf",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "unit": 2,
+        "category": "Major 1",
+        "title": "Major 1: Detectors and Accelerators(1.1.1 to 1.1.4)",
+        "materials": [
+          {
+            "title": "Detectors and Accelerators(1.1.1 to 1.1.4)",
+            "file": "pdfs/Sem4/Physics/Major 1/Unit_2/Detectors and Accelerators(1.1.1 to 1.1.4).pdf",
+            "description": ""
+          },
+          {
+            "title": "The Q Equation(3.1 to 3.5)",
+            "file": "pdfs/Sem4/Physics/Major 1/Unit_2/The Q-Equation(3.1 to 3.5).pdf",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "unit": 3,
+        "category": "Major 1",
+        "title": "Major 1: Radioactivity(2.1 to 2.13)",
+        "materials": [
+          {
+            "title": "Radioactivity(2.1 to 2.13)",
+            "file": "pdfs/Sem4/Physics/Major 1/Unit_3/Radioactivity(2.1 to 2.13).pdf",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "unit": 4,
+        "category": "Major 1",
+        "title": "Major 1: PLASMA Physics MJ401U4 MI402U2",
+        "materials": [
+          {
+            "title": "PLASMA Physics MJ401U4 MI402U2",
+            "file": "pdfs/Sem4/Physics/Major 1/Unit_4/PLASMA Physics MJ401U4 MI402U2.pdf",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "unit": 1,
+        "category": "Major 2",
+        "title": "Major 2: Curvilinear Co ordinates(10.6 to 10.9)",
+        "materials": [
+          {
+            "title": "Curvilinear Co ordinates(10.6 to 10.9)",
+            "file": "pdfs/Sem4/Physics/Major 2/Unit_1/Curvilinear Co-ordinates(10.6 to 10.9).pdf",
+            "description": ""
+          },
+          {
+            "title": "Fourier series(7.1 to 7.11)",
+            "file": "pdfs/Sem4/Physics/Major 2/Unit_1/Fourier series(7.1 to 7.11).pdf",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "unit": 2,
+        "category": "Major 2",
+        "title": "Major 2: Quntum Machanics(2.4 to 2.11)",
+        "materials": [
+          {
+            "title": "Quntum Machanics(2.4 to 2.11)",
+            "file": "pdfs/Sem4/Physics/Major 2/Unit_2/Quntum Machanics(2.4 to 2.11).pdf",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "unit": 3,
+        "category": "Major 2",
+        "title": "Major 2: Transistors & Hybrid Parameters",
+        "materials": [
+          {
+            "title": "Transistors & Hybrid Parameters",
+            "file": "pdfs/Sem4/Physics/Major 2/Unit_3/Transistors & Hybrid Parameters.pdf",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "unit": 4,
+        "category": "Major 2",
+        "title": "Major 2: Digital Electronics MJ401A U4",
+        "materials": [
+          {
+            "title": "Digital Electronics MJ401A U4",
+            "file": "pdfs/Sem4/Physics/Major 2/Unit_4/Digital Electronics MJ401A U4.pdf",
+            "description": ""
+          }
+        ]
+      }
+    ]
+  }
+]

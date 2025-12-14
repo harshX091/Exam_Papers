@@ -1,0 +1,8 @@
+[
+  {
+    "subject": "Physics",
+    "units": [
+      {"unit":1, "title":"Nuclear Physics","materials":[{"title":"Nuclear Notes","file":"pdfs/Sem6/Physics/Nuclear.pdf","description":"Intro to nuclear reactions"}]}
+    ]
+  }
+]

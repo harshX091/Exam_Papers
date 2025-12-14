@@ -1,0 +1,8 @@
+[
+  {
+    "subject": "Physics",
+    "units": [
+      {"unit":1, "title":"Thermodynamics","materials":[{"title":"Thermo Notes","file":"pdfs/Sem3/Physics/Thermodynamics.pdf","description":""}]}
+    ]
+  }
+]

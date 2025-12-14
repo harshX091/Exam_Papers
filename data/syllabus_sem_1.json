@@ -1,0 +1,27 @@
+[
+  {
+    "subject": "Physics",
+    "units": [
+      {
+        "unit": 1,
+        "title": "Mechanics",
+        "materials": [
+          {"title":"Lecture Notes - Mechanics","file":"pdfs/Sem1/Physics/Mechanics_Notes.pdf","description":"Short notes covering laws of motion"}
+        ]
+      },
+      {
+        "unit": 2,
+        "title": "Waves",
+        "materials": [
+          {"title":"Wave Problems","file":"pdfs/Sem1/Physics/Waves_Problems.pdf","description":"Practice problems"}
+        ]
+      }
+    ]
+  },
+  {
+    "subject": "Chemistry",
+    "units": [
+      {"unit":1, "title":"Atomic Structure","materials":[{"title":"Atomic Notes","file":"pdfs/Sem1/Chemistry/Atomic_Notes.pdf","description":""}]}
+    ]
+  }
+]
