@@ -35,10 +35,8 @@
       <div class="viewer-header">
         <div id="viewerTitle" class="viewer-title"></div>
         <div class="viewer-actions">
-          <a id="viewerDownload" class="dl-btn" href="#" download>Download</a>
-          <a class="view-btn" id="openNew" target="_blank">Open in new tab</a>
-          <button id="closeViewer" class="btn" style="background:#dc3545;color:white;border:none;margin-left:8px">Close
-            ✖</button>
+          <a id="viewerDownload" class="btn download-btn" href="#" download>Download ⬇</a>
+          <button id="closeViewer" class="btn close-btn">Close ✖</button>
         </div>
       </div>
       <iframe id="pdfFrame" src=""></iframe>
@@ -68,6 +66,7 @@
 
     closeViewerBtn.addEventListener('click', () => {
       document.getElementById('viewer').style.display = 'none';
+      document.body.style.overflow = ''; // Restore scrolling
       document.getElementById('pdfFrame').src = ''; // Stop loading
     });
 
@@ -174,7 +173,9 @@
         uDiv.style.marginBottom = '20px';
 
         const h3 = document.createElement('h3');
-        if (u.category) {
+        if (u.unit === 0) {
+          h3.innerText = 'Syllabus';
+        } else if (u.category) {
           h3.innerText = `${u.category} — Unit ${u.unit}`;
         } else {
           h3.innerText = `Unit ${u.unit}`;
@@ -229,13 +230,11 @@
       const frame = document.getElementById('pdfFrame');
       const vTitle = document.getElementById('viewerTitle');
       const dl = document.getElementById('viewerDownload');
-      const openNew = document.getElementById('openNew');
-
       frame.src = file;
       dl.href = file;
-      openNew.href = file;
       vTitle.innerText = title || file.split('/').pop();
       viewer.style.display = 'block';
+      document.body.style.overflow = 'hidden'; // Prevent background scrolling
       viewer.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
 

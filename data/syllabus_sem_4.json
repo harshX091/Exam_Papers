@@ -3,6 +3,18 @@
     "subject": "Physics",
     "units": [
       {
+        "unit": 0,
+        "category": null,
+        "title": "Syllabus",
+        "materials": [
+          {
+            "title": "BSC SEMESTER 4 PHY MAJOR",
+            "file": "pdfs/Sem4/Physics/BSC SEMESTER-4_PHY_MAJOR.pdf",
+            "description": ""
+          }
+        ]
+      },
+      {
         "unit": 1,
         "category": "Major 1",
         "title": "Major 1: Mechanics of a Single Particle and System of Particles(3.3 to 3.6)",

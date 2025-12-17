@@ -1,8 +1,73 @@
 [
   {
+    "subject": "English",
+    "units": [
+      {
+        "unit": 0,
+        "category": null,
+        "title": "Syllabus",
+        "materials": [
+          {
+            "title": "sem 3 english AEC internal",
+            "file": "pdfs/Sem3/English/sem-3-english-AEC-internal-2025.pdf",
+            "description": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
     "subject": "Physics",
     "units": [
-      {"unit":1, "title":"Thermodynamics","materials":[{"title":"Thermo Notes","file":"pdfs/Sem3/Physics/Thermodynamics.pdf","description":""}]}
+      {
+        "unit": 0,
+        "category": null,
+        "title": "Syllabus",
+        "materials": [
+          {
+            "title": "B Sc Sem 3 Assignment",
+            "file": "pdfs/Sem3/Physics/B.Sc. Sem 3 Assignment 2025.pdf",
+            "description": ""
+          },
+          {
+            "title": "sem 3 physics major A internal",
+            "file": "pdfs/Sem3/Physics/sem-3-physics-major-A-internal-2025.pdf",
+            "description": ""
+          },
+          {
+            "title": "sem 3 physics major IKS internal",
+            "file": "pdfs/Sem3/Physics/sem-3-physics-major-IKS-internal-2025.pdf",
+            "description": ""
+          },
+          {
+            "title": "sem 3 physics major internal",
+            "file": "pdfs/Sem3/Physics/sem-3-physics-major-internal-2025.pdf",
+            "description": ""
+          },
+          {
+            "title": "sem 3 physics major SEC internal",
+            "file": "pdfs/Sem3/Physics/sem-3-physics-major-SEC-internal-2025.pdf",
+            "description": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "subject": "Zoology",
+    "units": [
+      {
+        "unit": 0,
+        "category": null,
+        "title": "Syllabus",
+        "materials": [
+          {
+            "title": "sem 3 zoology multi internal",
+            "file": "pdfs/Sem3/Zoology/sem-3-zoology-multi-internal-2025.pdf",
+            "description": ""
+          }
+        ]
+      }
     ]
   }
 ]

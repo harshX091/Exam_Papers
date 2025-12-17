@@ -91,6 +91,18 @@ if (isSyllabusMode) {
         // Join intermediate parts as category
         category = parts.slice(semIndex + 2, unitIndex).join(' ').replace(/_/g, ' ');
       }
+    } else {
+      // No Unit folder found, treat as General/Syllabus (Unit 0)
+      // Must ensure we are inside a subject.
+      if (semIndex !== -1 && parts[semIndex + 1]) {
+        unitNum = 0;
+        // Check for Category (between Subject and Filename)
+        // Subject is at semIndex + 1. File is at parts.length - 1.
+        const fileIndex = parts.length - 1;
+        if (fileIndex > semIndex + 2) {
+          category = parts.slice(semIndex + 2, fileIndex).join(' ').replace(/_/g, ' ');
+        }
+      }
     }
 
     if (unitNum === null) return;
@@ -139,6 +151,7 @@ if (isSyllabusMode) {
         // Use the title of the first PDF as the Unit Title if available
         // Prefix with Category if present
         let baseTitle = materials.length > 0 ? materials[0].title : `Unit ${uData.num}`;
+        if (uData.num === 0) baseTitle = "Syllabus";
 
         // If we have a category, prepending it might be good: "Major 1 - Mechanics..."
         // Or just relying on the user to name PDF "Major 1 - Mechanics"?

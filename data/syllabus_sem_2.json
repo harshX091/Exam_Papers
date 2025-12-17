@@ -1,8 +1,127 @@
 [
   {
+    "subject": "Chemistry",
+    "units": [
+      {
+        "unit": 0,
+        "category": null,
+        "title": "Syllabus",
+        "materials": [
+          {
+            "title": "CHEMISTRY SEM 2 MINOR",
+            "file": "pdfs/Sem2/Chemistry/CHEMISTRY-SEM-2-MINOR.pdf",
+            "description": ""
+          },
+          {
+            "title": "CHEMISTRY SEM 2 MINOR INTERNAL",
+            "file": "pdfs/Sem2/Chemistry/CHEMISTRY-SEM-2-MINOR-INTERNAL.pdf",
+            "description": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "subject": "English",
+    "units": [
+      {
+        "unit": 0,
+        "category": null,
+        "title": "Syllabus",
+        "materials": [
+          {
+            "title": "AEC ENGLISH SEM 2",
+            "file": "pdfs/Sem2/English/AEC-ENGLISH-SEM-2.pdf",
+            "description": ""
+          },
+          {
+            "title": "ENGLISH SEM 2",
+            "file": "pdfs/Sem2/English/ENGLISH-SEM-2.pdf",
+            "description": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "subject": "Gita",
+    "units": [
+      {
+        "unit": 0,
+        "category": null,
+        "title": "Syllabus",
+        "materials": [
+          {
+            "title": "VAC BHAGAVAD GITA SEM 2",
+            "file": "pdfs/Sem2/Gita/VAC-BHAGAVAD-GITA-SEM-2.pdf",
+            "description": ""
+          },
+          {
+            "title": "VAC BHAGAVAD GITA SEM 2 INTERNAL",
+            "file": "pdfs/Sem2/Gita/VAC-BHAGAVAD-GITA-SEM-2-INTERNAL.pdf",
+            "description": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
     "subject": "Physics",
     "units": [
-      {"unit":1, "title":"Oscillations","materials":[{"title":"Oscillation Notes","file":"pdfs/Sem2/Physics/Oscillations.pdf","description":""}]}
+      {
+        "unit": 0,
+        "category": null,
+        "title": "Syllabus",
+        "materials": [
+          {
+            "title": "PHYSICS MAJOR SEM 2",
+            "file": "pdfs/Sem2/Physics/PHYSICS-MAJOR-SEM-2.pdf",
+            "description": ""
+          },
+          {
+            "title": "Physics Paper 2024 - M1 U1",
+            "file": "pdfs/Sem2/Physics/PHYSICS-MAJOR-SEM-2-INTERNAL.pdf",
+            "description": "Unit 1 - Mechanics"
+          },
+          {
+            "title": "PHYSICS SEM 2 PRACTICAL",
+            "file": "pdfs/Sem2/Physics/PHYSICS-SEM-2-PRACTICAL.pdf",
+            "description": ""
+          },
+          {
+            "title": "PHYSICS SEM 2 PRACTICAL INTERNAL",
+            "file": "pdfs/Sem2/Physics/PHYSICS-SEM-2-PRACTICAL-INTERNAL.pdf",
+            "description": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "subject": "Zoology",
+    "units": [
+      {
+        "unit": 0,
+        "category": null,
+        "title": "Syllabus",
+        "materials": [
+          {
+            "title": "ZOOLOGY MULTI SEM 2",
+            "file": "pdfs/Sem2/Zoology/ZOOLOGY-MULTI-SEM-2.pdf",
+            "description": ""
+          },
+          {
+            "title": "ZOOLOGY SEM 2 MULTI INTERNAL",
+            "file": "pdfs/Sem2/Zoology/ZOOLOGY-SEM-2-MULTI-INTERNAL.pdf",
+            "description": ""
+          },
+          {
+            "title": "ZOOLOGY SEM 2 PRACTICAL",
+            "file": "pdfs/Sem2/Zoology/ZOOLOGY-SEM-2-PRACTICAL.pdf",
+            "description": ""
+          }
+        ]
+      }
     ]
   }
 ]
