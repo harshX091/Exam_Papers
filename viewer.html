@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>PDF Viewer</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Specific overrides for the standalone viewer page */
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .viewer-page {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            background: var(--bg);
+            position: relative;
+        }
+
+        .viewer-body {
+            flex: 1;
+            width: 100%;
+            height: 100%;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="viewer-page">
+        <div class="viewer-body">
+            <iframe id="pdfFrame" src=""></iframe>
+        </div>
+    </div>
+
+    <script>
+        const params = new URLSearchParams(location.search);
+        const file = params.get('file');
+        const title = params.get('title');
+
+        const pdfFrame = document.getElementById('pdfFrame');
+
+        if (file) {
+            pdfFrame.src = file;
+            document.title = title || 'PDF Viewer';
+        } else {
+            pdfFrame.style.display = 'none';
+            document.body.innerHTML = '<p style="padding:20px">No file specified</p>';
+        }
+    </script>
+</body>
+
+</html>

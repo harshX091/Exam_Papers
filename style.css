@@ -130,39 +130,7 @@ body {
 
 /* viewer area */
 /* viewer area - Fullscreen Overlay */
-.viewer {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 93vh;
-  background: var(--bg);
-  z-index: 1000;
-  padding: 0px;
-  display: flex;
-  flex-direction: column;
-  margin: 0px;
-  /* Resize reset */
-  border: none;
-  border-radius: 0;
-}
-
-.viewer iframe {
-  width: 100%;
-  flex: 1;
-  /* Fill remaining vertical space */
-  height: 100%;
-  /* Reverted to 100% per user request */
-  min-height: 0;
-  /* Crucial for nested flex scrolling/sizing */
-  border: 0;
-  border-radius: 0px;
-  background: white;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  display: block;
-  margin-bottom: 40px;
-  /* Spacing at bottom */
-}
+/* viewer area removed (moved to viewer.html) */
 
 /* small helpers */
 .back {
@@ -237,9 +205,7 @@ input.search {
     font-size: 1.2rem
   }
 
-  .viewer iframe {
-    height: 360px
-  }
+
 }
 
 .viewer-header {

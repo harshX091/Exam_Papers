@@ -31,17 +31,6 @@
 
     <div id="listArea"></div>
 
-    <div id="viewer" class="viewer" style="display:none">
-      <div class="viewer-header">
-        <div id="viewerTitle" class="viewer-title"></div>
-        <div class="viewer-actions">
-          <a id="viewerDownload" class="btn download-btn" href="#" download>Download ⬇</a>
-          <button id="closeViewer" class="btn close-btn">Close ✖</button>
-        </div>
-      </div>
-      <iframe id="pdfFrame" src=""></iframe>
-    </div>
-
   </main>
 
   <script>
@@ -62,13 +51,6 @@
     const btnPapers = document.getElementById('viewPapers');
     const btnSyllabus = document.getElementById('viewSyllabus');
     const filterInput = document.getElementById('filterYear');
-    const closeViewerBtn = document.getElementById('closeViewer');
-
-    closeViewerBtn.addEventListener('click', () => {
-      document.getElementById('viewer').style.display = 'none';
-      document.body.style.overflow = ''; // Restore scrolling
-      document.getElementById('pdfFrame').src = ''; // Stop loading
-    });
 
     function updateViewUI() {
       if (currentView === 'syllabus') {
@@ -80,7 +62,8 @@
         btnPapers.style.color = 'black';
         btnPapers.style.borderColor = '#ccc';
 
-        filterInput.style.display = 'none'; // No year filter for syllabus usually
+        filterInput.style.display = 'block';
+        filterInput.placeholder = "Search topics, units...";
       } else {
         btnPapers.style.background = '#007bff';
         btnPapers.style.color = 'white';
@@ -91,43 +74,99 @@
         btnSyllabus.style.borderColor = '#ccc';
 
         filterInput.style.display = 'block';
+        filterInput.placeholder = "Filter by year (e.g. 2024)";
       }
+      // Re-apply current filter if any
+      const val = filterInput.value.trim();
+      applyFilter(val);
     }
 
-    btnPapers.addEventListener('click', () => { currentView = 'papers'; updateViewUI(); loadData(); });
-    btnSyllabus.addEventListener('click', () => { currentView = 'syllabus'; updateViewUI(); loadData(); });
+    function updateUrlParams(key, value) {
+      const url = new URL(window.location);
+      url.searchParams.set(key, value);
+      window.history.replaceState({}, '', url);
+    }
+
+    btnPapers.addEventListener('click', () => {
+      currentView = 'papers';
+      filterInput.value = '';
+      updateUrlParams('view', 'papers');
+      updateViewUI();
+      loadData();
+    });
+    btnSyllabus.addEventListener('click', () => {
+      currentView = 'syllabus';
+      filterInput.value = '';
+      updateUrlParams('view', 'syllabus');
+      updateViewUI();
+      loadData();
+    });
 
     // Initial UI set
     updateViewUI();
+    filterInput.value = ''; // Force clear on reload
 
     let papersData = [];
     let syllabusData = [];
 
+    // Global Error Handler
+    window.onerror = function (msg, url, lineNo, columnNo, error) {
+      const area = document.getElementById('listArea');
+      if (area) {
+        area.innerHTML = `<div style="color:red;padding:10px;border:1px solid red;background:#xfff">
+          <strong>Runtime Error:</strong> ${msg}
+        </div>` + area.innerHTML;
+      }
+      return false;
+    };
+
+    // Scroll restoration logic
+    document.getElementById('listArea').addEventListener('click', (e) => {
+      if (e.target.closest('.view-btn')) {
+        sessionStorage.setItem('scrollPos', window.scrollY);
+      }
+    });
+
     async function loadData() {
       const area = document.getElementById('listArea');
+      // Only show loading if we are actually fetching, or if the area is empty. 
+      // If we are just re-rendering, maybe don't wipe it? 
+      // But here we are fetching.
       area.innerHTML = '<p>Loading...</p>';
 
       try {
         if (currentView === 'syllabus') {
           const file = `data/syllabus_${sem.toLowerCase()}.json`;
           const res = await fetch(file);
-          if (!res.ok) throw new Error('No syllabus data');
+          if (!res.ok) throw new Error(`Failed to load ${file}: ${res.statusText}`);
           const data = await res.json();
-          // Filter by subject
-          // Structure: [ { subject: "Physics", units: [ ... ] }, ... ]
           const subjData = data.find(s => s.subject.toLowerCase() === subject.toLowerCase());
           syllabusData = subjData ? subjData.units : [];
-          renderSyllabus(syllabusData);
+
+          if (!subjData) console.warn('Subject not found:', subject);
+
+          applyFilter(filterInput.value.trim());
         } else {
           const file = `data/${sem.toLowerCase()}.json`;
           const res = await fetch(file);
-          if (!res.ok) throw new Error('No papers data');
+          if (!res.ok) throw new Error(`Failed to load ${file}: ${res.statusText}`);
           const data = await res.json();
           papersData = data.filter(p => p.subject.toLowerCase() === subject.toLowerCase());
-          renderPapers(papersData);
+          applyFilter(filterInput.value.trim());
         }
+
+        // Restore scroll if exists
+        const savedScroll = sessionStorage.getItem('scrollPos');
+        if (savedScroll) {
+          window.scrollTo(0, parseInt(savedScroll));
+          sessionStorage.removeItem('scrollPos');
+        }
+
       } catch (err) {
-        area.innerHTML = `<p class="empty">No content found for ${subject} (${currentView}) in ${sem}.</p>`;
+        area.innerHTML = `<div class="empty" style="color:red">
+          <p>Error loading content for <strong>${subject}</strong>.</p>
+          <p>${err.message}</p>
+        </div>`;
         console.error(err);
       }
     }
@@ -144,19 +183,19 @@
         const d = document.createElement('div');
         d.className = 'paper-card';
         const filePath = encodeURI(String(p.file || '').replace(/^\/+/, ''));
+        const viewerLink = `viewer.html?file=${encodeURIComponent(filePath)}&title=${encodeURIComponent(p.title)}`;
         d.innerHTML = `
           <div class="paper-info">
             <div class="paper-title">${p.title}</div>
             <div class="paper-sub">${p.subject} • ${p.year} • ${p.description || ''}</div>
           </div>
           <div class="actions">
-            <a class="view-btn" href="#" data-file="${filePath}" data-title="${p.title}">View</a>
+            <a class="view-btn" href="${viewerLink}">View</a>
             <a class="dl-btn" href="${filePath}" download>Download</a>
           </div>
         `;
         area.appendChild(d);
       });
-      attachViewHandlers();
     }
 
     function renderSyllabus(units) {
@@ -190,13 +229,14 @@
             const d = document.createElement('div');
             d.className = 'paper-card'; // Reuse card style
             const filePath = encodeURI(String(m.file || '').replace(/^\/+/, ''));
+            const viewerLink = `viewer.html?file=${encodeURIComponent(filePath)}&title=${encodeURIComponent(m.title)}`;
             d.innerHTML = `
                <div class="paper-info">
                  <div class="paper-title">${m.title}</div>
                  <div class="paper-sub">${m.description || 'Syllabus/Notes'}</div>
                </div>
                <div class="actions">
-                 <a class="view-btn" href="#" data-file="${filePath}" data-title="${m.title}">View</a>
+                 <a class="view-btn" href="${viewerLink}">View</a>
                  <a class="dl-btn" href="${filePath}" download>Download</a>
                </div>
              `;
@@ -211,42 +251,52 @@
 
         area.appendChild(uDiv);
       });
-      attachViewHandlers();
     }
 
-    function attachViewHandlers() {
-      document.querySelectorAll('.view-btn').forEach(btn => {
-        btn.addEventListener('click', e => {
-          e.preventDefault();
-          const file = btn.getAttribute('data-file');
-          const title = btn.getAttribute('data-title');
-          openInViewer(file, title);
-        });
-      });
-    }
+    function applyFilter(val) {
+      try {
+        if (!val) {
+          if (currentView === 'syllabus') renderSyllabus(syllabusData);
+          else renderPapers(papersData);
+          return;
+        }
+        val = val.toLowerCase();
 
-    function openInViewer(file, title) {
-      const viewer = document.getElementById('viewer');
-      const frame = document.getElementById('pdfFrame');
-      const vTitle = document.getElementById('viewerTitle');
-      const dl = document.getElementById('viewerDownload');
-      frame.src = file;
-      dl.href = file;
-      vTitle.innerText = title || file.split('/').pop();
-      viewer.style.display = 'block';
-      document.body.style.overflow = 'hidden'; // Prevent background scrolling
-      viewer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        if (currentView === 'syllabus') {
+          const filtered = (syllabusData || []).map(u => {
+            const unitMatch = (`Unit ${u.unit}`).toLowerCase().includes(val) || (u.category && u.category.toLowerCase().includes(val));
+            const matchingMaterials = u.materials ? u.materials.filter(m =>
+              (m.title && m.title.toLowerCase().includes(val)) ||
+              (m.description && m.description.toLowerCase().includes(val))
+            ) : [];
+
+            if (unitMatch) return u;
+            else if (matchingMaterials.length > 0) return { ...u, materials: matchingMaterials };
+            return null;
+          }).filter(u => u !== null);
+          renderSyllabus(filtered);
+        } else {
+          const filtered = (papersData || []).filter(p =>
+            String(p.year).includes(val) ||
+            (p.title && p.title.toLowerCase().includes(val)) ||
+            (p.description && p.description.toLowerCase().includes(val))
+          );
+          renderPapers(filtered);
+        }
+      } catch (err) {
+        console.error("Filter error:", err);
+        const area = document.getElementById('listArea');
+        if (area) area.innerHTML = `<p style="color:red">Filter Error: ${err.message}</p>`;
+      }
     }
 
     // filter by year
     document.getElementById('filterYear').addEventListener('input', e => {
-      const val = e.target.value.trim();
-      if (!val) renderPapers(papersData);
-      else renderPapers(papersData.filter(p => String(p.year).includes(val)));
+      applyFilter(e.target.value.trim());
     });
     document.getElementById('clearFilter').addEventListener('click', () => {
       document.getElementById('filterYear').value = '';
-      renderPapers(papersData);
+      applyFilter('');
     });
 
     // Intercept Back link
