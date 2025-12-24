@@ -24,7 +24,7 @@
         <button id="viewPapers" class="toggle-btn">Papers</button>
       </div>
       <input id="filterYear" class="search" placeholder="Filter by year (e.g. 2024)" />
-      <button id="clearFilter" class="btn">Clear</button>
+
     </div>
 
     <div id="listArea"></div>
@@ -282,10 +282,7 @@
     document.getElementById('filterYear').addEventListener('input', e => {
       applyFilter(e.target.value.trim());
     });
-    document.getElementById('clearFilter').addEventListener('click', () => {
-      document.getElementById('filterYear').value = '';
-      applyFilter('');
-    });
+
 
     // Intercept Back link
     (function () {
