@@ -5,7 +5,7 @@
       {
         "unit": 0,
         "category": null,
-        "title": "Syllabus",
+        "title": "Syllabus / Resources",
         "materials": [
           {
             "title": "sem 3 english AEC internal",
@@ -20,33 +20,120 @@
     "subject": "Physics",
     "units": [
       {
-        "unit": 0,
-        "category": null,
-        "title": "Syllabus",
+        "unit": 1,
+        "category": "Major 1",
+        "title": "Major 1 : Unit 1",
         "materials": [
           {
-            "title": "B Sc Sem 3 Assignment",
-            "file": "pdfs/Sem3/Physics/B.Sc. Sem 3 Assignment 2025.pdf",
+            "title": "thermodynamics sem 3",
+            "file": "pdfs/Sem3/Physics/Major_1/Unit 1 (Thermodynamics)/thermodynamics sem 3.pdf",
             "description": ""
           },
           {
-            "title": "sem 3 physics major A internal",
-            "file": "pdfs/Sem3/Physics/sem-3-physics-major-A-internal-2025.pdf",
+            "title": "Thermodynamics Unit1 Revision",
+            "file": "pdfs/Sem3/Physics/Major_1/Unit 1 (Thermodynamics)/Thermodynamics_Unit1_Revision.pdf",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "unit": 2,
+        "category": "Major 1",
+        "title": "Major 1 : Unit 2",
+        "materials": [
+          {
+            "title": "Modern Physics",
+            "file": "pdfs/Sem3/Physics/Major_1/Unit 2 (Modern Physics)/Modern Physics.pdf",
             "description": ""
           },
           {
-            "title": "sem 3 physics major IKS internal",
-            "file": "pdfs/Sem3/Physics/sem-3-physics-major-IKS-internal-2025.pdf",
+            "title": "Modern Physics 1D schrodinger equation",
+            "file": "pdfs/Sem3/Physics/Major_1/Unit 2 (Modern Physics)/Modern_Physics_1D_schrodinger_equation.pdf",
             "description": ""
           },
           {
-            "title": "sem 3 physics major internal",
-            "file": "pdfs/Sem3/Physics/sem-3-physics-major-internal-2025.pdf",
+            "title": "Modern Physics Franck Herts Experiment",
+            "file": "pdfs/Sem3/Physics/Major_1/Unit 2 (Modern Physics)/Modern_Physics_Franck-Herts-Experiment.pdf",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "unit": 4,
+        "category": "Major 1",
+        "title": "Major 1 : Unit 4",
+        "materials": [
+          {
+            "title": "Crystal Structure 2",
+            "file": "pdfs/Sem3/Physics/Major_1/Unit 4 (Solid State Physics)/Crystal Structure 2.pdf",
             "description": ""
           },
           {
-            "title": "sem 3 physics major SEC internal",
-            "file": "pdfs/Sem3/Physics/sem-3-physics-major-SEC-internal-2025.pdf",
+            "title": "Crystal Structure JJP",
+            "file": "pdfs/Sem3/Physics/Major_1/Unit 4 (Solid State Physics)/Crystal Structure-JJP.pdf",
+            "description": ""
+          },
+          {
+            "title": "Crystal Structure SRS",
+            "file": "pdfs/Sem3/Physics/Major_1/Unit 4 (Solid State Physics)/Crystal Structure - SRS.pdf",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "unit": 1,
+        "category": "Major 2",
+        "title": "Major 2 : Unit 1",
+        "materials": [
+          {
+            "title": "Dielectric",
+            "file": "pdfs/Sem3/Physics/Major_2/Unit 1 (Electrostatics & Magnetostatics)/Dielectric.pdf",
+            "description": ""
+          },
+          {
+            "title": "Magnetostatics",
+            "file": "pdfs/Sem3/Physics/Major_2/Unit 1 (Electrostatics & Magnetostatics)/Magnetostatics.pdf",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "unit": 2,
+        "category": "Major 2",
+        "title": "Major 2 : Unit 2",
+        "materials": [
+          {
+            "title": "optics huma",
+            "file": "pdfs/Sem3/Physics/Major_2/Unit 2 (Optics Fraunhoffer Diffraction)/optics-huma.pdf",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "unit": 3,
+        "category": "Major 2",
+        "title": "Major 2 : Unit 3",
+        "materials": [
+          {
+            "title": "Sem3 Major Physics 301A Unit3 Fermat Polarization",
+            "file": "pdfs/Sem3/Physics/Major_2/Unit 3 (Farmat Principle)/Sem3 Major Physics 301A Unit3 Fermat Polarization.pdf",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "unit": 4,
+        "category": "Major 2",
+        "title": "Major 2 : Unit 4",
+        "materials": [
+          {
+            "title": "part 1 electronics",
+            "file": "pdfs/Sem3/Physics/Major_2/Unit 4 (Electronics)/part 1 electronics.pdf",
+            "description": ""
+          },
+          {
+            "title": "Transistor Biasing and Stabilization",
+            "file": "pdfs/Sem3/Physics/Major_2/Unit 4 (Electronics)/Transistor Biasing and Stabilization.pdf",
             "description": ""
           }
         ]
@@ -59,7 +146,7 @@
       {
         "unit": 0,
         "category": null,
-        "title": "Syllabus",
+        "title": "Syllabus / Resources",
         "materials": [
           {
             "title": "sem 3 zoology multi internal",

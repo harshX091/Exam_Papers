@@ -5,7 +5,7 @@
       {
         "unit": 0,
         "category": null,
-        "title": "Syllabus",
+        "title": "Syllabus / Resources",
         "materials": [
           {
             "title": "BSC SEMESTER 4 PHY MAJOR",
@@ -17,7 +17,7 @@
       {
         "unit": 1,
         "category": "Major 1",
-        "title": "Major 1: Mechanics of a Single Particle and System of Particles(3.3 to 3.6)",
+        "title": "Major 1 : Unit 1",
         "materials": [
           {
             "title": "Mechanics of a Single Particle and System of Particles(3.3 to 3.6)",
@@ -29,7 +29,7 @@
       {
         "unit": 2,
         "category": "Major 1",
-        "title": "Major 1: Detectors and Accelerators(1.1.1 to 1.1.4)",
+        "title": "Major 1 : Unit 2",
         "materials": [
           {
             "title": "Detectors and Accelerators(1.1.1 to 1.1.4)",
@@ -46,7 +46,7 @@
       {
         "unit": 3,
         "category": "Major 1",
-        "title": "Major 1: Radioactivity(2.1 to 2.13)",
+        "title": "Major 1 : Unit 3",
         "materials": [
           {
             "title": "Radioactivity(2.1 to 2.13)",
@@ -58,7 +58,7 @@
       {
         "unit": 4,
         "category": "Major 1",
-        "title": "Major 1: PLASMA Physics MJ401U4 MI402U2",
+        "title": "Major 1 : Unit 4",
         "materials": [
           {
             "title": "PLASMA Physics MJ401U4 MI402U2",
@@ -70,7 +70,7 @@
       {
         "unit": 1,
         "category": "Major 2",
-        "title": "Major 2: Curvilinear Co ordinates(10.6 to 10.9)",
+        "title": "Major 2 : Unit 1",
         "materials": [
           {
             "title": "Curvilinear Co ordinates(10.6 to 10.9)",
@@ -87,7 +87,7 @@
       {
         "unit": 2,
         "category": "Major 2",
-        "title": "Major 2: Quntum Machanics(2.4 to 2.11)",
+        "title": "Major 2 : Unit 2",
         "materials": [
           {
             "title": "Quntum Machanics(2.4 to 2.11)",
@@ -99,7 +99,7 @@
       {
         "unit": 3,
         "category": "Major 2",
-        "title": "Major 2: Transistors & Hybrid Parameters",
+        "title": "Major 2 : Unit 3",
         "materials": [
           {
             "title": "Transistors & Hybrid Parameters",
@@ -111,7 +111,7 @@
       {
         "unit": 4,
         "category": "Major 2",
-        "title": "Major 2: Digital Electronics MJ401A U4",
+        "title": "Major 2 : Unit 4",
         "materials": [
           {
             "title": "Digital Electronics MJ401A U4",

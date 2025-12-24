@@ -4,24 +4,64 @@
     "units": [
       {
         "unit": 1,
-        "title": "Mechanics",
+        "category": "Major 1",
+        "title": "Major 1 : Unit 1",
         "materials": [
-          {"title":"Lecture Notes - Mechanics","file":"pdfs/Sem1/Physics/Mechanics_Notes.pdf","description":"Short notes covering laws of motion"}
+          {
+            "title": "MathematicalPhysics101U1",
+            "file": "pdfs/Sem1/Physics/Major_1/Unit_1/MathematicalPhysics101U1.pdf",
+            "description": ""
+          }
         ]
       },
       {
         "unit": 2,
-        "title": "Waves",
+        "category": "Major 1",
+        "title": "Major 1 : Unit 2",
         "materials": [
-          {"title":"Wave Problems","file":"pdfs/Sem1/Physics/Waves_Problems.pdf","description":"Practice problems"}
+          {
+            "title": "Thermodynamics fy B Sc",
+            "file": "pdfs/Sem1/Physics/Major_1/Unit_2/Thermodynamics fy B.Sc..pdf",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "unit": 3,
+        "category": "Major 1",
+        "title": "Major 1 : Unit 3",
+        "materials": [
+          {
+            "title": "SEM 1",
+            "file": "pdfs/Sem1/Physics/Major_1/Unit_3/SEM-1.pdf",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "unit": 4,
+        "category": "Major 1",
+        "title": "Major 1 : Unit 4",
+        "materials": [
+          {
+            "title": "1st part Half wave Rectifier",
+            "file": "pdfs/Sem1/Physics/Major_1/Unit_4/1st part Half wave Rectifier.pdf",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "unit": 0,
+        "category": "Syllabus",
+        "title": "Syllabus",
+        "materials": [
+          {
+            "title": "BSC SEMESTER 1 NEP2020(PhyMJ)",
+            "file": "pdfs/Sem1/Physics/Syllabus/BSC SEMESTER-1_NEP2020(PhyMJ).pdf",
+            "description": ""
+          }
         ]
       }
-    ]
-  },
-  {
-    "subject": "Chemistry",
-    "units": [
-      {"unit":1, "title":"Atomic Structure","materials":[{"title":"Atomic Notes","file":"pdfs/Sem1/Chemistry/Atomic_Notes.pdf","description":""}]}
     ]
   }
 ]

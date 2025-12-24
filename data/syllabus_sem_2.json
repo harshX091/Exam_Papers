@@ -5,7 +5,7 @@
       {
         "unit": 0,
         "category": null,
-        "title": "Syllabus",
+        "title": "Syllabus / Resources",
         "materials": [
           {
             "title": "CHEMISTRY SEM 2 MINOR",
@@ -27,7 +27,7 @@
       {
         "unit": 0,
         "category": null,
-        "title": "Syllabus",
+        "title": "Syllabus / Resources",
         "materials": [
           {
             "title": "AEC ENGLISH SEM 2",
@@ -49,7 +49,7 @@
       {
         "unit": 0,
         "category": null,
-        "title": "Syllabus",
+        "title": "Syllabus / Resources",
         "materials": [
           {
             "title": "VAC BHAGAVAD GITA SEM 2",
@@ -69,28 +69,59 @@
     "subject": "Physics",
     "units": [
       {
+        "unit": 1,
+        "category": "Major 1",
+        "title": "Major 1 : Unit 1",
+        "materials": [
+          {
+            "title": "B Sc Sem 2 Electrostatic Unit 1",
+            "file": "pdfs/Sem2/Physics/Major_1/Unit_1/B.Sc-Sem-2 Electrostatic-Unit-1.pdf",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "unit": 3,
+        "category": "Major 1",
+        "title": "Major 1 : Unit 3",
+        "materials": [
+          {
+            "title": "AC Bridges MJ201U3c MD203U1c",
+            "file": "pdfs/Sem2/Physics/Major_1/Unit_3/AC Bridges MJ201U3c MD203U1c.pdf",
+            "description": ""
+          },
+          {
+            "title": "DC Circuits MJ201U3a MD203U1a",
+            "file": "pdfs/Sem2/Physics/Major_1/Unit_3/DC Circuits MJ201U3a MD203U1a.pdf",
+            "description": ""
+          },
+          {
+            "title": "Network Theorems MJ201U3b MD203U1b",
+            "file": "pdfs/Sem2/Physics/Major_1/Unit_3/Network Theorems MJ201U3b MD203U1b.pdf",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "unit": 4,
+        "category": "Major 1",
+        "title": "Major 1 : Unit 4",
+        "materials": [
+          {
+            "title": "Lens Interference & Refraction F Y B Sc",
+            "file": "pdfs/Sem2/Physics/Major_1/Unit_4/Lens - Interference & Refraction F.Y. B.Sc..pdf",
+            "description": ""
+          }
+        ]
+      },
+      {
         "unit": 0,
-        "category": null,
+        "category": "Syllabus",
         "title": "Syllabus",
         "materials": [
           {
-            "title": "PHYSICS MAJOR SEM 2",
-            "file": "pdfs/Sem2/Physics/PHYSICS-MAJOR-SEM-2.pdf",
-            "description": ""
-          },
-          {
-            "title": "Physics Paper 2024 - M1 U1",
-            "file": "pdfs/Sem2/Physics/PHYSICS-MAJOR-SEM-2-INTERNAL.pdf",
-            "description": "Unit 1 - Mechanics"
-          },
-          {
-            "title": "PHYSICS SEM 2 PRACTICAL",
-            "file": "pdfs/Sem2/Physics/PHYSICS-SEM-2-PRACTICAL.pdf",
-            "description": ""
-          },
-          {
-            "title": "PHYSICS SEM 2 PRACTICAL INTERNAL",
-            "file": "pdfs/Sem2/Physics/PHYSICS-SEM-2-PRACTICAL-INTERNAL.pdf",
+            "title": "BSC SEMESTER 2 NEP2020 (PhyMJ Syllabus)",
+            "file": "pdfs/Sem2/Physics/Syllabus/BSC SEMESTER-2_NEP2020 (PhyMJ-Syllabus).pdf",
             "description": ""
           }
         ]
@@ -103,7 +134,7 @@
       {
         "unit": 0,
         "category": null,
-        "title": "Syllabus",
+        "title": "Syllabus / Resources",
         "materials": [
           {
             "title": "ZOOLOGY MULTI SEM 2",
