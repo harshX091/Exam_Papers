@@ -18,12 +18,10 @@
     <!-- keep anchor for non-JS fallback; add data-fallback for script -->
     <a id="backLink" class="back" data-fallback="index.html" href="index.html">⬅ Back</a>
 
-    <div id="controls" style="display:flex;gap:12px;align-items:center;margin:12px 0;flex-wrap:wrap">
-      <div class="toggle-group" style="display:flex;gap:0;">
-        <button id="viewPapers" class="toggle-btn active"
-          style="padding:6px 12px;cursor:pointer;background:#007bff;color:white;border:1px solid #007bff;border-radius:4px 0 0 4px">Papers</button>
-        <button id="viewSyllabus" class="toggle-btn"
-          style="padding:6px 12px;cursor:pointer;background:#f0f0f0;color:black;border:1px solid #ccc;border-left:none;border-radius:0 4px 4px 0">Syllabus</button>
+    <div id="controls">
+      <div class="toggle-group">
+        <button id="viewSyllabus" class="toggle-btn active">Syllabus</button>
+        <button id="viewPapers" class="toggle-btn">Papers</button>
       </div>
       <input id="filterYear" class="search" placeholder="Filter by year (e.g. 2024)" />
       <button id="clearFilter" class="btn">Clear</button>
@@ -43,7 +41,7 @@
     const subject = params.get('subject') || 'Physics';
 
     // View mode: 'papers' or 'syllabus'
-    let currentView = params.get('view') || 'papers';
+    let currentView = params.get('view') || 'syllabus';
 
     document.getElementById('pageTitle').innerText = `${sem.replace(/_/g, ' ')} — ${subject.replace(/_/g, ' ')}`;
     document.getElementById('pageSub').innerText = "Click View to open within page or Download to save";
@@ -54,24 +52,14 @@
 
     function updateViewUI() {
       if (currentView === 'syllabus') {
-        btnSyllabus.style.background = '#007bff';
-        btnSyllabus.style.color = 'white';
-        btnSyllabus.style.borderColor = '#007bff';
-
-        btnPapers.style.background = '#f0f0f0';
-        btnPapers.style.color = 'black';
-        btnPapers.style.borderColor = '#ccc';
+        btnSyllabus.classList.add('active');
+        btnPapers.classList.remove('active');
 
         filterInput.style.display = 'block';
         filterInput.placeholder = "Search topics, units...";
       } else {
-        btnPapers.style.background = '#007bff';
-        btnPapers.style.color = 'white';
-        btnPapers.style.borderColor = '#007bff';
-
-        btnSyllabus.style.background = '#f0f0f0';
-        btnSyllabus.style.color = 'black';
-        btnSyllabus.style.borderColor = '#ccc';
+        btnPapers.classList.add('active');
+        btnSyllabus.classList.remove('active');
 
         filterInput.style.display = 'block';
         filterInput.placeholder = "Filter by year (e.g. 2024)";

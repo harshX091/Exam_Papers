@@ -145,7 +145,19 @@ if (isSyllabusMode) {
       const unitsList = Object.keys(unitsMap).map(uKey => {
         const uData = unitsMap[uKey];
         const materials = uData.materials;
-        materials.sort((a, b) => a.title.localeCompare(b.title));
+        materials.sort((a, b) => {
+          const aLower = a.title.toLowerCase();
+          const bLower = b.title.toLowerCase();
+          // Prioritize files explicitly named "Syllabus"
+          if (aLower === 'syllabus' && bLower !== 'syllabus') return -1;
+          if (bLower === 'syllabus' && aLower !== 'syllabus') return 1;
+          // Prioritize files containing "syllabus"
+          const aHas = aLower.includes('syllabus');
+          const bHas = bLower.includes('syllabus');
+          if (aHas && !bHas) return -1;
+          if (bHas && !aHas) return 1;
+          return a.title.localeCompare(b.title);
+        });
 
         let displayTitle = "";
         if (uData.unit === 0) {
@@ -164,14 +176,28 @@ if (isSyllabusMode) {
 
       // Sort logic
       unitsList.sort((a, b) => {
-        // 1. Category sort
+        const aCat = (a.category || '').toLowerCase();
+        const bCat = (b.category || '').toLowerCase();
+
+        // 1. Prioritize strictly "syllabus" category
+        if (aCat === 'syllabus' && bCat !== 'syllabus') { return -1; }
+        if (bCat === 'syllabus' && aCat !== 'syllabus') { return 1; }
+
+        // 2. Prioritize categories containing "syllabus"
+        const aHas = aCat.includes('syllabus');
+        const bHas = bCat.includes('syllabus');
+        if (aHas && !bHas) return -1;
+        if (bHas && !aHas) return 1;
+
+        // 3. Category sort (alphabetical for others)
         if (a.category && b.category) {
           const c = a.category.localeCompare(b.category);
           if (c !== 0) return c;
         }
         if (a.category && !b.category) return 1;
         if (!a.category && b.category) return -1;
-        // 2. Unit number sort
+
+        // 4. Unit number sort
         return a.unit - b.unit;
       });
 

@@ -1,72 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="Select a semester to view subjects and papers" />
-  <title>Semester Notes</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semester Notes | Exam Papers</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <a class="skip-link" href="#semesters">Skip to semesters</a>
 
-  <header class="header" role="banner">
-    <h1>Semester Notes</h1>
-    <p>Select your semester to view subjects and papers</p>
-  </header>
+    <div class="container">
 
-  <main class="container" id="semesters" role="main">
-    <h2 class="visually-hidden">Select Semester</h2>
+        <header>
+            <h1>Semester Notes</h1>
+            <p>Select your semester to access papers & subjects</p>
+        </header>
 
-    <ul class="grid" aria-label="Semesters list">
-      <li>
-        <a href="subjects.html?sem=1" class="card" aria-label="Semester 1 — view subjects and papers">
-          <strong>Semester 1</strong>
-          <div class="meta">View subjects for first semester</div>
-        </a>
-      </li>
-      <li>
-        <a href="subjects.html?sem=2" class="card" aria-label="Semester 2 — view subjects and papers">
-          <strong>Semester 2</strong>
-          <div class="meta">View subjects for second semester</div>
-        </a>
-      </li>
-      <li>
-        <a href="subjects.html?sem=3" class="card" aria-label="Semester 3 — view subjects and papers">
-          <strong>Semester 3</strong>
-          <div class="meta">View subjects for third semester</div>
-        </a>
-      </li>
-      <li>
-        <a href="subjects.html?sem=4" class="card" aria-label="Semester 4 — view subjects and papers">
-          <strong>Semester 4</strong>
-          <div class="meta">View subjects for fourth semester</div>
-        </a>
-      </li>
-      <li>
-        <a href="subjects.html?sem=5" class="card" aria-label="Semester 5 — view subjects and papers">
-          <strong>Semester 5</strong>
-          <div class="meta">View subjects for fifth semester</div>
-        </a>
-      </li>
-      <li>
-        <a href="subjects.html?sem=6" class="card" aria-label="Semester 6 — view subjects and papers">
-          <strong>Semester 6</strong>
-          <div class="meta">View subjects for sixth semester</div>
-        </a>
-      </li>
-    </ul>
-  </main>
+        <main class="grid">
+            <a href="subjects.html?sem=1" class="card">
+                <h2>Semester 1</h2>
+                <p>View subjects for first semester</p>
+            </a>
 
-  <footer class="footer" role="contentinfo">
-    <small>&copy; <span id="year"></span> Semester Notes</small>
-  </footer>
+            <a href="subjects.html?sem=2" class="card">
+                <h2>Semester 2</h2>
+                <p>View subjects for second semester</p>
+            </a>
 
-  <script>
-    // small UX tweaks
-    document.getElementById('year').textContent = new Date().getFullYear();
-    // accessible focus styles helper (optional)
-    (function(){ try{ document.querySelector('.skip-link').style.position='absolute'; }catch(e){} })();
-  </script>
+            <a href="subjects.html?sem=3" class="card">
+                <h2>Semester 3</h2>
+                <p>View subjects for third semester</p>
+            </a>
+
+            <a href="subjects.html?sem=4" class="card">
+                <h2>Semester 4</h2>
+                <p>View subjects for fourth semester</p>
+            </a>
+
+            <a href="subjects.html?sem=5" class="card">
+                <h2>Semester 5</h2>
+                <p>View subjects for fifth semester</p>
+            </a>
+
+            <a href="subjects.html?sem=6" class="card">
+                <h2>Semester 6</h2>
+                <p>View subjects for sixth semester</p>
+            </a>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Semester Notes. All rights reserved.</p>
+        </footer>
+
+    </div>
+
 </body>
+
 </html>

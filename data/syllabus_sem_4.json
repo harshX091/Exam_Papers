@@ -4,12 +4,12 @@
     "units": [
       {
         "unit": 0,
-        "category": null,
-        "title": "Syllabus / Resources",
+        "category": "Syllabus",
+        "title": "Syllabus",
         "materials": [
           {
             "title": "BSC SEMESTER 4 PHY MAJOR",
-            "file": "pdfs/Sem4/Physics/BSC SEMESTER-4_PHY_MAJOR.pdf",
+            "file": "pdfs/Sem4/Physics/Syllabus/BSC SEMESTER-4_PHY_MAJOR.pdf",
             "description": ""
           }
         ]

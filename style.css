@@ -1,236 +1,349 @@
+/* --- 1. Modern Reset & Variables --- */
 :root {
-  --accent: #0b78d1;
-  --bg: #f5f7fb;
-  --card: #ffffff;
-  --muted: #6b7280;
-  --radius: 10px;
+  --primary-color: #2563eb;
+  /* A nice modern blue */
+  --bg-color: #f8fafc;
+  /* Very light grey for background */
+  --card-bg: #ffffff;
+  /* White for cards */
+  --text-main: #1e293b;
+  /* Dark grey for text */
+  --text-muted: #64748b;
+  /* Lighter grey for descriptions */
+  --radius: 12px;
+  /* Rounded corners */
+  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow */
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 * {
-  box-sizing: border-box
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-sans);
 }
 
 body {
-  font-family: Inter, ui-sans-serif, system-ui, Segoe UI, Roboto, Helvetica, Arial;
-  margin: 0;
-  background: var(--bg);
-  color: #111;
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  line-height: 1.6;
+  padding: 0;
+  /* padding managed by container or specific pages */
   -webkit-font-smoothing: antialiased;
 }
 
-.header {
-  background: linear-gradient(90deg, var(--accent), #0a5fb0);
-  color: white;
-  padding: 28px 16px;
-  text-align: center;
-}
-
-.header h1 {
-  margin: 0;
-  font-size: 1.6rem
-}
-
-.header p {
-  margin: 6px 0 0;
-  color: rgba(255, 255, 255, 0.9)
-}
-
+/* --- 2. Layout Container --- */
 .container {
-  max-width: 1100px;
-  margin: 26px auto;
-  padding: 0 16px
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
 }
 
-/* grid for semester / subject cards */
+/* --- 3. Header Styling --- */
+header,
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+header h1,
+.header h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  color: var(--text-main);
+  letter-spacing: -0.025em;
+  margin-top: 0;
+}
+
+header p,
+.header p {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+}
+
+/* --- 4. Grid Layout for Semesters --- */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 16px
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  list-style: none;
 }
 
-/* card */
+/* --- 5. Card Styling --- */
 .card {
-  background: var(--card);
-  padding: 14px;
+  background: var(--card-bg);
+  padding: 1.5rem;
   border-radius: var(--radius);
-  box-shadow: 0 6px 18px rgba(12, 20, 40, 0.06);
-  cursor: pointer;
+  box-shadow: var(--shadow);
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 1px solid rgba(0, 0, 0, 0.05);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  transition: transform .15s ease, box-shadow .15s ease;
-  text-decoration: none;
-  color: inherit;
+  justify-content: center;
+  color: var(--text-main);
 }
 
 .card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 18px 40px rgba(12, 20, 40, 0.12);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  border-color: var(--primary-color);
 }
 
-/* small meta text */
+.card h2,
+.card strong {
+  font-size: 1.25rem;
+  color: var(--text-main);
+  margin-bottom: 0.25rem;
+  font-weight: 700;
+  display: block;
+}
+
+.card p,
 .meta {
-  color: var(--muted);
   font-size: 0.9rem;
-  margin-top: 8px
+  color: var(--text-muted);
 }
 
-/* paper list */
-.paper-card {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-  padding: 12px;
-  border-radius: 8px;
-  background: var(--card);
-  box-shadow: 0 6px 18px rgba(12, 20, 40, 0.05);
-  margin: 12px 0;
+/* --- 6. Footer --- */
+footer,
+.footer {
+  text-align: center;
+  margin-top: 4rem;
+  color: var(--text-muted);
+  font-size: 0.875rem;
 }
 
-.paper-info {
-  display: flex;
-  flex-direction: column
-}
+/* --- 7. Components for Internal Pages (Subjects, Papers) --- */
 
-.paper-title {
-  font-weight: 600
-}
-
-.paper-sub {
-  color: var(--muted);
-  font-size: 0.9rem
-}
-
-/* action buttons */
-.actions a {
-  display: inline-block;
-  padding: 8px 12px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 600;
-  margin-left: 8px
-}
-
-.view-btn {
-  background: #eef6ff;
-  color: var(--accent);
-  border: 1px solid rgba(11, 120, 209, 0.12)
-}
-
-.view-btn:hover {
-  background: var(--accent);
-  color: white
-}
-
-.dl-btn {
-  background: #0b78d1;
-  color: white
-}
-
-/* viewer area */
-/* viewer area - Fullscreen Overlay */
-/* viewer area removed (moved to viewer.html) */
-
-/* small helpers */
+/* Back Link */
 .back {
   display: inline-block;
-  margin: 8px 0;
-  color: var(--muted);
-  text-decoration: none
+  color: var(--text-muted);
+  text-decoration: none;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
 }
 
-.empty {
-  color: var(--muted);
-  padding: 18px;
-  text-align: center
+.back:hover {
+  color: var(--primary-color);
 }
 
-.searchbar {
+/* Controls / Search */
+.searchbar,
+#controls {
   display: flex;
-  gap: 8px;
-  margin: 12px 0
+  gap: 10px;
+  margin-bottom: 2rem;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-input.search {
+.search {
   flex: 1;
-  padding: 10px 12px;
-  border-radius: 10px;
-  border: 1px solid #e6eef9
+  padding: 12px 16px;
+  font-size: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: var(--radius);
+  outline: none;
+  background: var(--card-bg);
+  color: var(--text-main);
+}
+
+.search:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.1);
 }
 
 .btn {
-  background: var(--accent);
-  color: white;
-  padding: 10px 14px;
-  border-radius: 10px;
-  border: 0;
+  padding: 12px 20px;
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius);
   cursor: pointer;
-}
-
-.close-btn {
-  background: #dc3545;
-  margin: 8px;
-  padding: 6px 12px;
+  font-weight: 600;
   font-size: 0.9rem;
-  border-radius: 6px;
-  transition: background 0.2s;
+  transition: opacity 0.2s;
 }
 
-.close-btn:hover {
-  background: #bb2d3b;
+.btn:hover {
+  opacity: 0.9;
 }
 
-.download-btn {
-  background: #0b78d1;
-  color: white;
-  /* Ensure text is white */
+/* Toggle Group */
+.toggle-group {
+  display: inline-flex;
+  background: #e2e8f0;
+  /* slighly darker than bg-color for contrast */
+  padding: 4px;
+  border-radius: var(--radius);
+}
+
+.toggle-btn {
+  border: none;
+  background: transparent;
+  padding: 8px 16px;
+  border-radius: 8px;
+  /* Slightly smaller radius for inner buttons */
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.toggle-btn.active {
+  background: var(--card-bg);
+  color: var(--primary-color);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* List Items (Papers/Syllabus) */
+.paper-card {
+  background: var(--card-bg);
+  padding: 1rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.paper-info {
+  padding-right: 1rem;
+}
+
+.paper-title {
+  font-weight: 600;
+  color: var(--text-main);
+  margin-bottom: 4px;
+}
+
+.paper-sub {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.actions a {
   text-decoration: none;
-  /* Remove underline for anchor */
-  display: inline-block;
-  /* Behave like button */
-  margin-left: 8px;
-  padding: 6px 12px;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 8px 12px;
   border-radius: 6px;
   transition: background 0.2s;
 }
 
-.download-btn:hover {
-  background: #0a5fb0;
+.view-btn {
+  color: var(--primary-color);
+  background: #eff6ff;
 }
 
-@media (max-width:480px) {
-  .header h1 {
-    font-size: 1.2rem
-  }
+.view-btn:hover {
+  background: #dbeafe;
+}
 
+.dl-btn {
+  color: #fff;
+  background: var(--primary-color);
+}
 
+.dl-btn:hover {
+  opacity: 0.9;
+}
+
+.empty {
+  text-align: center;
+  color: var(--text-muted);
+  padding: 3rem 0;
+}
+
+.unit-block h3 {
+  color: var(--text-main);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Viewer */
+.viewer-page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: var(--bg-color);
 }
 
 .viewer-header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  gap: 12px;
-  /* Ensure spacing between title and buttons */
-  margin-left: 6px;
+  justify-content: space-between;
+  padding: 1rem;
+  background: var(--card-bg);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 0;
 }
 
 .viewer-title {
-  font-weight: 600;
+  font-weight: 700;
+  color: var(--text-main);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  flex: 1;
-  /* Take up remaining space */
-  min-width: 0;
-  /* Allow shrinking below content size */
+  margin-right: 1rem;
 }
 
-.viewer-actions {
-  display: flex;
-  flex-shrink: 0;
-  /* Prevent buttons from shrinking */
-  align-items: center;
+.close-btn {
+  background: transparent;
+  color: var(--text-muted);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 6px 12px;
+  border-radius: 8px;
+}
+
+.close-btn:hover {
+  background: #f1f5f9;
+  color: var(--text-main);
+}
+
+@media (max-width: 600px) {
+
+  header h1,
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .paper-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .actions {
+    width: 100%;
+  }
+
+  .actions a {
+    flex: 1;
+    text-align: center;
+  }
+
+  .toggle-group {
+    width: 100%;
+    display: flex;
+  }
+
+  .toggle-btn {
+    flex: 1;
+  }
 }

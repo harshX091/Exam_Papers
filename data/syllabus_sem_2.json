@@ -69,6 +69,18 @@
     "subject": "Physics",
     "units": [
       {
+        "unit": 0,
+        "category": "Syllabus",
+        "title": "Syllabus",
+        "materials": [
+          {
+            "title": "BSC SEMESTER 2 NEP2020 (PhyMJ Syllabus)",
+            "file": "pdfs/Sem2/Physics/Syllabus/BSC SEMESTER-2_NEP2020 (PhyMJ-Syllabus).pdf",
+            "description": ""
+          }
+        ]
+      },
+      {
         "unit": 1,
         "category": "Major 1",
         "title": "Major 1 : Unit 1",
@@ -110,18 +122,6 @@
           {
             "title": "Lens Interference & Refraction F Y B Sc",
             "file": "pdfs/Sem2/Physics/Major_1/Unit_4/Lens - Interference & Refraction F.Y. B.Sc..pdf",
-            "description": ""
-          }
-        ]
-      },
-      {
-        "unit": 0,
-        "category": "Syllabus",
-        "title": "Syllabus",
-        "materials": [
-          {
-            "title": "BSC SEMESTER 2 NEP2020 (PhyMJ Syllabus)",
-            "file": "pdfs/Sem2/Physics/Syllabus/BSC SEMESTER-2_NEP2020 (PhyMJ-Syllabus).pdf",
             "description": ""
           }
         ]
