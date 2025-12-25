@@ -11,7 +11,6 @@
 <body>
   <header class="header">
     <h1 id="pageTitle">Papers</h1>
-    <p id="pageSub">View or download</p>
   </header>
 
   <main class="container">
@@ -44,7 +43,6 @@
     let currentView = params.get('view') || 'syllabus';
 
     document.getElementById('pageTitle').innerText = `${sem.replace(/_/g, ' ')} — ${subject.replace(/_/g, ' ')}`;
-    document.getElementById('pageSub').innerText = "Click View to open within page or Download to save";
 
     const btnPapers = document.getElementById('viewPapers');
     const btnSyllabus = document.getElementById('viewSyllabus');

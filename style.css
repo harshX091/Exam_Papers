@@ -22,10 +22,12 @@
   padding: 0;
   box-sizing: border-box;
   font-family: var(--font-sans);
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
-  background-color: var(--bg-color);
+  background-color: #F0F4F9;
+  min-height: 100vh;
   color: var(--text-main);
   line-height: 1.6;
   padding: 0;
@@ -44,7 +46,8 @@ body {
 header,
 .header {
   text-align: center;
-  margin-bottom: 3rem;
+  padding-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 header h1,
