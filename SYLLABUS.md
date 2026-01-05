@@ -31,7 +31,7 @@ Folder conventions and automation
 - You can run the scanner to populate `data/sem_4.json` and `data/syllabus_sem_4.json`:
 
   ```bash
-  node scripts/generateData.js --syllabus
+  node scripts/generateData.js
   ```
 
 Sidecar metadata

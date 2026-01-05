@@ -5,8 +5,6 @@ const root = path.resolve(__dirname, '..');
 const pdfRoot = path.join(root, 'pdfs');
 const dataDir = path.join(root, 'data');
 
-const isSyllabusMode = process.argv.includes('--syllabus');
-
 if (!fs.existsSync(pdfRoot)) {
   console.error('pdfs folder not found:', pdfRoot);
   process.exit(1);
@@ -55,17 +53,13 @@ function readSidecar(pdfFull) {
 
 const files = walk(pdfRoot);
 
-if (isSyllabusMode) {
-  // --- SYLLABUS MODE ---
-  console.log('Running in Syllabus Mode...');
+function generateSyllabus() {
+  console.log('--- Generating Syllabus Data ---');
   const syllabusData = {}; // { semKey: { subjectName: { categoryKey: { category, unitNum, materials: [] } } } }
 
   files.forEach(full => {
     const rel = path.relative(root, full).replace(/\\/g, '/'); // pdfs/Sem2/Physics/Major_1/Unit_1/Notes.pdf
     const parts = rel.split('/');
-
-    // Expected structure: pdfs / SemX / Subject / [Category] / ... / File.pdf
-    // "Category" is the folder immediately inside Subject.
 
     const semIndex = parts.findIndex(p => /^sem/i.test(p));
     if (semIndex === -1 || !parts[semIndex + 1]) return; // valid sem and subject required
@@ -213,9 +207,10 @@ if (isSyllabusMode) {
     fs.writeFileSync(outPath, JSON.stringify(outputList, null, 2) + '\n', 'utf8');
     console.log(`Wrote ${outPath} with ${outputList.length} subjects`);
   });
+}
 
-} else {
-  // --- EXAM PAPER MODE ---
+function generatePapers() {
+  console.log('--- Generating Exam Papers Data ---');
   const grouped = {};
 
   files.forEach(full => {
@@ -288,4 +283,12 @@ if (isSyllabusMode) {
   });
 }
 
-console.log('Done.');
+// Run logic
+try {
+  generateSyllabus();
+  generatePapers();
+  console.log('Done.');
+} catch (err) {
+  console.error('Error in generation script:', err);
+  process.exit(1);
+}

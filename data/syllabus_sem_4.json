@@ -32,6 +32,11 @@
         "title": "Major 1 : Unit 2",
         "materials": [
           {
+            "title": "CC 401 UNIT 2 NUCLEAR PHYSICS (1)",
+            "file": "pdfs/Sem4/Physics/Major 1/Unit_2/CC-401-UNIT-2-NUCLEAR PHYSICS (1).pdf",
+            "description": ""
+          },
+          {
             "title": "Detectors and Accelerators(1.1.1 to 1.1.4)",
             "file": "pdfs/Sem4/Physics/Major 1/Unit_2/Detectors and Accelerators(1.1.1 to 1.1.4).pdf",
             "description": ""
@@ -51,6 +56,16 @@
           {
             "title": "Radioactivity(2.1 to 2.13)",
             "file": "pdfs/Sem4/Physics/Major 1/Unit_3/Radioactivity(2.1 to 2.13).pdf",
+            "description": ""
+          },
+          {
+            "title": "SY Radioactivity",
+            "file": "pdfs/Sem4/Physics/Major 1/Unit_3/SY Radioactivity.pdf",
+            "description": ""
+          },
+          {
+            "title": "Theory 2 Radioactivity",
+            "file": "pdfs/Sem4/Physics/Major 1/Unit_3/Theory 2 Radioactivity.pdf",
             "description": ""
           }
         ]
@@ -78,8 +93,23 @@
             "description": ""
           },
           {
+            "title": "Curvilinear Coordinates MJ401A U1b",
+            "file": "pdfs/Sem4/Physics/Major 2/Unit_1/Curvilinear Coordinates MJ401A U1b.pdf",
+            "description": ""
+          },
+          {
+            "title": "Fourier series",
+            "file": "pdfs/Sem4/Physics/Major 2/Unit_1/Fourier series.pdf",
+            "description": ""
+          },
+          {
             "title": "Fourier series(7.1 to 7.11)",
             "file": "pdfs/Sem4/Physics/Major 2/Unit_1/Fourier series(7.1 to 7.11).pdf",
+            "description": ""
+          },
+          {
+            "title": "ફુરિયર શ્રેણી",
+            "file": "pdfs/Sem4/Physics/Major 2/Unit_1/ફુરિયર શ્રેણી.pdf",
             "description": ""
           }
         ]
@@ -93,6 +123,11 @@
             "title": "Quntum Machanics(2.4 to 2.11)",
             "file": "pdfs/Sem4/Physics/Major 2/Unit_2/Quntum Machanics(2.4 to 2.11).pdf",
             "description": ""
+          },
+          {
+            "title": "Quntum Mechanics sem 4",
+            "file": "pdfs/Sem4/Physics/Major 2/Unit_2/Quntum Mechanics sem 4.pdf",
+            "description": ""
           }
         ]
       },
@@ -102,8 +137,18 @@
         "title": "Major 2 : Unit 3",
         "materials": [
           {
-            "title": "Transistors & Hybrid Parameters",
-            "file": "pdfs/Sem4/Physics/Major 2/Unit_3/Transistors & Hybrid Parameters.pdf",
+            "title": "FET",
+            "file": "pdfs/Sem4/Physics/Major 2/Unit_3/FET.pdf",
+            "description": ""
+          },
+          {
+            "title": "h Parameters sem 4 Electronbics",
+            "file": "pdfs/Sem4/Physics/Major 2/Unit_3/h-Parameters sem 4 Electronbics.pdf",
+            "description": ""
+          },
+          {
+            "title": "SY Solidstate Devices UJT, SCR",
+            "file": "pdfs/Sem4/Physics/Major 2/Unit_3/SY Solidstate Devices- UJT, SCR...pdf",
             "description": ""
           }
         ]
