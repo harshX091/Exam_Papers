@@ -4,12 +4,36 @@
     "units": [
       {
         "unit": 0,
-        "category": null,
-        "title": "Syllabus / Resources",
+        "category": "Syllabus",
+        "title": "Syllabus",
         "materials": [
           {
-            "title": "chemistry sem4 minor practical syllbus",
-            "file": "pdfs/Sem4/Chemistry/chemistry-sem4-minor-practical-syllbus.pdf",
+            "title": "Chemistry minor sem4",
+            "file": "pdfs/Sem4/Chemistry/Syllabus/Chemistry-minor-sem4.pdf",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "unit": 1,
+        "category": null,
+        "title": "Unit 1",
+        "materials": [
+          {
+            "title": "B Sc Sem 4 Electro chemistry",
+            "file": "pdfs/Sem4/Chemistry/Unit 1 (Electro Chemistry)/B.Sc. Sem 4 ..Electro chemistry.pdf",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "unit": 2,
+        "category": null,
+        "title": "Unit 2",
+        "materials": [
+          {
+            "title": "INORGANIC POLYMER B SC SEM 4",
+            "file": "pdfs/Sem4/Chemistry/Unit 2 (Inorganic Polymers)/INORGANIC POLYMER B.SC SEM 4.pdf",
             "description": ""
           }
         ]
