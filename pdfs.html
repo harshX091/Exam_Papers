@@ -31,18 +31,22 @@
   </main>
 
   <script>
-    // get params and normalize semester value
+    // get params and normalize
     const params = new URLSearchParams(location.search);
-    const semRaw = params.get('sem') || 'Sem_1';
-    let sem = semRaw;
-    if (/^\d+$/.test(semRaw)) sem = `Sem_${semRaw}`;
-    sem = sem.replace(/\s+/g, '_');
-    const subject = params.get('subject') || 'Physics';
+    const semRaw = params.get('sem') || '1';
+    
+    // Robust semester normalization (e.g., '1', 'Sem1', 'Sem 1' -> 'sem_1')
+    let semNum = semRaw.match(/\d+/)?.[0] || '1';
+    const sem = `sem_${semNum}`;
+    
+    // Normalize subject (e.g., 'Computer_Science' -> 'Computer Science')
+    const subjectRaw = params.get('subject') || 'Physics';
+    const subject = subjectRaw.replace(/_/g, ' ');
 
     // View mode: 'papers' or 'syllabus'
     let currentView = params.get('view') || 'syllabus';
 
-    document.getElementById('pageTitle').innerText = `${sem.replace(/_/g, ' ')} — ${subject.replace(/_/g, ' ')}`;
+    document.getElementById('pageTitle').innerText = `${sem.replace('_', ' ').toUpperCase()} — ${subject}`;
 
     const btnPapers = document.getElementById('viewPapers');
     const btnSyllabus = document.getElementById('viewSyllabus');
