@@ -1,5 +1,33 @@
 [
   {
+    "subject": "English",
+    "title": "AEC ENGLISH SEM 2",
+    "year": null,
+    "file": "pdfs/Sem2/English/Papers/AEC-ENGLISH-SEM-2.pdf",
+    "description": ""
+  },
+  {
+    "subject": "Chemistry",
+    "title": "CHEMISTRY SEM 2 MINOR",
+    "year": null,
+    "file": "pdfs/Sem2/Chemistry/Papers/CHEMISTRY-SEM-2-MINOR.pdf",
+    "description": ""
+  },
+  {
+    "subject": "Chemistry",
+    "title": "CHEMISTRY SEM 2 MINOR INTERNAL",
+    "year": null,
+    "file": "pdfs/Sem2/Chemistry/Papers/CHEMISTRY-SEM-2-MINOR-INTERNAL.pdf",
+    "description": ""
+  },
+  {
+    "subject": "English",
+    "title": "ENGLISH SEM 2",
+    "year": null,
+    "file": "pdfs/Sem2/English/Papers/ENGLISH-SEM-2.pdf",
+    "description": ""
+  },
+  {
     "subject": "Physics",
     "title": "PHYSICS MAJOR SEM 2",
     "year": null,
@@ -25,6 +53,41 @@
     "title": "PHYSICS SEM 2 PRACTICAL INTERNAL",
     "year": null,
     "file": "pdfs/Sem2/Physics/Papers/PHYSICS-SEM-2-PRACTICAL-INTERNAL.pdf",
+    "description": ""
+  },
+  {
+    "subject": "Gita",
+    "title": "VAC BHAGAVAD GITA SEM 2",
+    "year": null,
+    "file": "pdfs/Sem2/Gita/Papers/VAC-BHAGAVAD-GITA-SEM-2.pdf",
+    "description": ""
+  },
+  {
+    "subject": "Gita",
+    "title": "VAC BHAGAVAD GITA SEM 2 INTERNAL",
+    "year": null,
+    "file": "pdfs/Sem2/Gita/Papers/VAC-BHAGAVAD-GITA-SEM-2-INTERNAL.pdf",
+    "description": ""
+  },
+  {
+    "subject": "Zoology",
+    "title": "ZOOLOGY MULTI SEM 2",
+    "year": null,
+    "file": "pdfs/Sem2/Zoology/Papers/ZOOLOGY-MULTI-SEM-2.pdf",
+    "description": ""
+  },
+  {
+    "subject": "Zoology",
+    "title": "ZOOLOGY SEM 2 MULTI INTERNAL",
+    "year": null,
+    "file": "pdfs/Sem2/Zoology/Papers/ZOOLOGY-SEM-2-MULTI-INTERNAL.pdf",
+    "description": ""
+  },
+  {
+    "subject": "Zoology",
+    "title": "ZOOLOGY SEM 2 PRACTICAL",
+    "year": null,
+    "file": "pdfs/Sem2/Zoology/Papers/ZOOLOGY-SEM-2-PRACTICAL.pdf",
     "description": ""
   }
 ]

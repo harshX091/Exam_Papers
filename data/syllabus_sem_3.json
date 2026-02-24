@@ -139,22 +139,5 @@
         ]
       }
     ]
-  },
-  {
-    "subject": "Zoology",
-    "units": [
-      {
-        "unit": 0,
-        "category": null,
-        "title": "Syllabus / Resources",
-        "materials": [
-          {
-            "title": "sem 3 zoology multi internal",
-            "file": "pdfs/Sem3/Zoology/sem-3-zoology-multi-internal-2025.pdf",
-            "description": ""
-          }
-        ]
-      }
-    ]
   }
 ]
