@@ -1,22 +1,5 @@
 [
   {
-    "subject": "English",
-    "units": [
-      {
-        "unit": 0,
-        "category": null,
-        "title": "Syllabus / Resources",
-        "materials": [
-          {
-            "title": "sem 3 english AEC internal",
-            "file": "pdfs/Sem3/English/sem-3-english-AEC-internal-2025.pdf",
-            "description": ""
-          }
-        ]
-      }
-    ]
-  },
-  {
     "subject": "Physics",
     "units": [
       {
