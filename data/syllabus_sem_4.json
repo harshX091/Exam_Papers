@@ -61,6 +61,11 @@
         "title": "Major 1 : Unit 1",
         "materials": [
           {
+            "title": "Document from Aesha Pandya",
+            "file": "pdfs/Sem4/Physics/Major 1/Unit_1/Document from Aesha  Pandya.pdf",
+            "description": ""
+          },
+          {
             "title": "Mechanics of a Single Particle and System of Particles(3.3 to 3.6)",
             "file": "pdfs/Sem4/Physics/Major 1/Unit_1/Mechanics of a Single Particle and System of Particles(3.3 to 3.6).pdf",
             "description": ""
@@ -202,6 +207,18 @@
           {
             "title": "Digital Electronics MJ401A U4",
             "file": "pdfs/Sem4/Physics/Major 2/Unit_4/Digital Electronics MJ401A U4.pdf",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "unit": 0,
+        "category": "SEC",
+        "title": "SEC",
+        "materials": [
+          {
+            "title": "ES Solar & Cosmic Rays 08·16·16",
+            "file": "pdfs/Sem4/Physics/SEC/ES Solar & Cosmic Rays  08·16·16.pdf",
             "description": ""
           }
         ]
