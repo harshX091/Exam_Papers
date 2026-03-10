@@ -36,17 +36,10 @@ export default async function handler(req, res) {
             return res.status(500).json({ error: 'Server misconfiguration: Missing GitHub credentials.' });
         }
 
-        // 1. Generate a secure, standardized file name
+        // 1. Generate a secure, standardized file name based on the original name
         let newFileName = fileName;
-        if (category === 'Papers' && year) {
-            newFileName = `${year}_Paper.pdf`;
-        } else if (category === 'Syllabus') {
-            newFileName = `Syllabus.pdf`;
-        } else if (category === 'Notes' && unit) {
-            newFileName = `Unit_${unit}_Notes.pdf`;
-        }
 
-        // Remove spaces and sanitize
+        // Remove spaces and sanitize (keeping standard characters)
         newFileName = newFileName.replace(/[^a-zA-Z0-9.\-_]/g, '_');
 
         // 2. Construct the Git Path
