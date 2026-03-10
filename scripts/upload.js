@@ -1,6 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('uploadForm');
     const categorySelect = document.getElementById('category');
+    const semesterSelect = document.getElementById('semester');
+    const subjectSelect = document.getElementById('subject');
     const yearGroup = document.getElementById('yearGroup');
     const unitGroup = document.getElementById('unitGroup');
     const yearInput = document.getElementById('year');
@@ -26,6 +28,40 @@ document.addEventListener('DOMContentLoaded', () => {
             yearGroup.style.display = 'none';
             unitGroup.style.display = 'flex';
             yearInput.value = '';
+        }
+    });
+
+    // Fetch subjects when a semester is selected
+    semesterSelect.addEventListener('change', async (e) => {
+        const semNum = e.target.value;
+        if (!semNum) return;
+
+        subjectSelect.innerHTML = '<option value="" disabled selected>Loading subjects...</option>';
+        subjectSelect.disabled = true;
+
+        try {
+            // We use the syllabus JSON which reliably contains all subjects for that semester
+            const response = await fetch(`data/syllabus_sem_${semNum}.json`);
+            if (!response.ok) throw new Error('Could not load subjects for this semester.');
+
+            const data = await response.json();
+
+            subjectSelect.innerHTML = '<option value="" disabled selected>Select Subject</option>';
+
+            if (data.length === 0) {
+                subjectSelect.innerHTML += '<option value="" disabled>No subjects found</option>';
+            } else {
+                data.forEach(item => {
+                    const option = document.createElement('option');
+                    option.value = item.subject;
+                    option.textContent = item.subject;
+                    subjectSelect.appendChild(option);
+                });
+                subjectSelect.disabled = false;
+            }
+        } catch (error) {
+            console.error(error);
+            subjectSelect.innerHTML = '<option value="" disabled selected>Error loading subjects</option>';
         }
     });
 
