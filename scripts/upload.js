@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // 3. Prepare Payload for Serverless Function
             const payload = {
-                semester: `Sem_${semester}`,
+                semester: `Sem${semester}`,
                 subjectTitle: subject,
                 subjectFolder: subjectFolder,
                 category: category,
