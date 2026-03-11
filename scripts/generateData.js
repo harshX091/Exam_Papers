@@ -55,53 +55,47 @@ const files = walk(pdfRoot);
 
 function generateSyllabus() {
   console.log('--- Generating Syllabus Data ---');
-  const syllabusData = {}; // { semKey: { subjectName: { categoryKey: { category, unitNum, materials: [] } } } }
+  const syllabusData = {}; // { semKey: { subjectName: { unitKey: { category, unitName, courseType, unitType, materials: [] } } } }
 
   files.forEach(full => {
-    const rel = path.relative(root, full).replace(/\\/g, '/'); // pdfs/Sem2/Physics/Major_1/Unit_1/Notes.pdf
+    const rel = path.relative(root, full).replace(/\\/g, '/');
     const parts = rel.split('/');
 
     const semIndex = parts.findIndex(p => /^sem/i.test(p));
-    if (semIndex === -1 || !parts[semIndex + 1]) return; // valid sem and subject required
+    if (semIndex === -1 || !parts[semIndex + 1]) return;
 
     const semKey = normalizeSem(parts[semIndex]);
     const subject = parts[semIndex + 1].replace(/_/g, ' ');
 
-    const categoryFolder = parts[semIndex + 2];
+    // Path structure: pdfs/{Semester}/{Subject}/{CourseType}/[{UnitType}]/{Category}/[{UnitName}]/filename.pdf
+    const courseType = parts[semIndex + 2];
+    if (!courseType || courseType.toLowerCase() === 'papers') return; // Skip papers mode
 
-    // 1. If inside "Papers" folder (normalized), IGNORE in Syllabus Mode.
-    if (categoryFolder && categoryFolder.toLowerCase() === 'papers') return;
+    let unitType = null;
+    let category = null;
+    let unitName = null;
 
-    // 2. Identify Unit and Category Display
-    let unitNum = 0; // Default to 0 (General/Syllabus)
-    let displayCategory = null;
+    let currentIndex = semIndex + 3;
 
-    // Determine Category Name and Unit
-    if (categoryFolder) {
-      if (categoryFolder.toLowerCase().endsWith('.pdf')) {
-        displayCategory = null; // File is at root, so no category
-      } else {
-        // Is the category folder itself a Unit folder?
-        const catUnit = normalizeUnit(categoryFolder);
-        if (catUnit !== null) {
-          unitNum = catUnit;
-          displayCategory = null; // It's just a Unit folder at root of subject
-        } else {
-          // It is a named category like "Major_1", "Syllabus", "SEC", "Yoga-IKS"
-          displayCategory = categoryFolder.replace(/_/g, ' ');
+    // Check if next folder is SEC or IKS
+    if (parts[currentIndex] && (parts[currentIndex].toUpperCase() === 'SEC' || parts[currentIndex].toUpperCase() === 'IKS')) {
+      unitType = parts[currentIndex].toUpperCase();
+      currentIndex++;
+    }
 
-          // Check if there is a sub-unit folder?
-          // e.g. Sem2/Physics/Major_1/Unit_1/Notes.pdf
-          const subFolder = parts[semIndex + 3];
-          if (subFolder) {
-            const subUnit = normalizeUnit(subFolder);
-            if (subUnit !== null) {
-              unitNum = subUnit;
-            }
-          }
-        }
+    // Next folder must be Category (Syllabus, Notes, etc.)
+    if (parts[currentIndex]) {
+      category = parts[currentIndex];
+      currentIndex++;
+
+      // If there's another folder before the file, it's the UnitName
+      if (parts[currentIndex] && !parts[currentIndex].toLowerCase().endsWith('.pdf')) {
+        unitName = parts[currentIndex].replace(/_/g, ' ');
       }
     }
+
+    // Ignore if not explicitly notes/syllabus or if logic fell apart
+    if (!category || category.toLowerCase() === 'papers') return;
 
     const filename = path.basename(full);
     const titleGuess = cleanTitle(filename);
@@ -116,13 +110,19 @@ function generateSyllabus() {
     if (!syllabusData[semKey]) syllabusData[semKey] = {};
     if (!syllabusData[semKey][subject]) syllabusData[semKey][subject] = {};
 
-    const catStr = displayCategory || '';
-    const unitKey = `${catStr}:::${unitNum}`;
+    // Create a unique key for grouping
+    const catStr = category || '';
+    const ctStr = courseType || '';
+    const utStr = unitType || 'REGULAR';
+    const unStr = unitName || 'GENERAL';
+    const unitKey = `${ctStr}:::${utStr}:::${catStr}:::${unStr}`;
 
     if (!syllabusData[semKey][subject][unitKey]) {
       syllabusData[semKey][subject][unitKey] = {
-        unit: unitNum,
-        category: displayCategory,
+        courseType: courseType,
+        unitType: unitType,
+        category: category,
+        unitName: unitName,
         materials: []
       };
     }
@@ -142,10 +142,8 @@ function generateSyllabus() {
         materials.sort((a, b) => {
           const aLower = a.title.toLowerCase();
           const bLower = b.title.toLowerCase();
-          // Prioritize files explicitly named "Syllabus"
           if (aLower === 'syllabus' && bLower !== 'syllabus') return -1;
           if (bLower === 'syllabus' && aLower !== 'syllabus') return 1;
-          // Prioritize files containing "syllabus"
           const aHas = aLower.includes('syllabus');
           const bHas = bLower.includes('syllabus');
           if (aHas && !bHas) return -1;
@@ -153,46 +151,48 @@ function generateSyllabus() {
           return a.title.localeCompare(b.title);
         });
 
-        let displayTitle = "";
-        if (uData.unit === 0) {
-          displayTitle = uData.category ? uData.category : "Syllabus / Resources";
+        // Construct readable Title based on Major/Minor, SEC/IKS, and Unit Name
+        let displayTitle = uData.courseType || "General";
+        if (uData.unitType) displayTitle += ` • ${uData.unitType}`;
+
+        if (uData.category.toLowerCase() === 'syllabus') {
+           displayTitle += ` — Syllabus`;
+        } else if (uData.category.toLowerCase() === 'notes') {
+           if (uData.unitName) {
+             let cleanUnitName = uData.unitName.replace(/_/g, ' ');
+             // Prevent "Major — Unit: Major 1 - ..." repetition by collapsing
+             if (uData.courseType && cleanUnitName.toLowerCase().startsWith(uData.courseType.toLowerCase())) {
+                 displayTitle = cleanUnitName;
+                 if (uData.unitType) displayTitle += ` (${uData.unitType})`;
+             } else {
+                 displayTitle += ` — Unit: ${cleanUnitName}`;
+             }
+           } else {
+             displayTitle += ` — Notes`;
+           }
         } else {
-          displayTitle = uData.category ? `${uData.category} : Unit ${uData.unit}` : `Unit ${uData.unit}`;
+           displayTitle += ` — ${uData.category}`;
         }
 
         return {
-          unit: uData.unit,
-          category: uData.category,
+          // Pass empty unit/category so the frontend falls back strictly on our generated title
+          unit: 0, 
+          category: '', 
           title: displayTitle,
+          courseType: uData.courseType, // Add raw fields for custom sorting
           materials: materials
         };
       });
 
-      // Sort logic
+      // Sort logic for grouped units
       unitsList.sort((a, b) => {
-        const aCat = (a.category || '').toLowerCase();
-        const bCat = (b.category || '').toLowerCase();
+        // Sort by CourseType first
+        const cA = a.courseType || '';
+        const cB = b.courseType || '';
+        if (cA !== cB) return cA.localeCompare(cB);
 
-        // 1. Prioritize strictly "syllabus" category
-        if (aCat === 'syllabus' && bCat !== 'syllabus') { return -1; }
-        if (bCat === 'syllabus' && aCat !== 'syllabus') { return 1; }
-
-        // 2. Prioritize categories containing "syllabus"
-        const aHas = aCat.includes('syllabus');
-        const bHas = bCat.includes('syllabus');
-        if (aHas && !bHas) return -1;
-        if (bHas && !aHas) return 1;
-
-        // 3. Category sort (alphabetical for others)
-        if (a.category && b.category) {
-          const c = a.category.localeCompare(b.category);
-          if (c !== 0) return c;
-        }
-        if (a.category && !b.category) return 1;
-        if (!a.category && b.category) return -1;
-
-        // 4. Unit number sort
-        return a.unit - b.unit;
+        // Then naturally by our generated title (which includes SEC/IKS and Unit Name)
+        return a.title.localeCompare(b.title);
       });
 
       return {
@@ -222,10 +222,35 @@ function generatePapers() {
 
     const semKey = normalizeSem(parts[semIndex]);
     const subject = parts[semIndex + 1].replace(/_/g, ' ');
-    const categoryFolder = parts[semIndex + 2];
+
+    // Path structure: pdfs/{Semester}/{Subject}/{CourseType}/[{UnitType}]/{Category}/[{UnitName}]/filename.pdf
+    const courseType = parts[semIndex + 2];
+    if (!courseType) return;
+    
+    // Fall back to old papers processing temporarily if they uploaded to root "Papers" somehow
+    if (courseType.toLowerCase() === 'papers') {
+        processLegacyPaper(full, rel, semKey, subject, grouped);
+        return;
+    }
+
+    let unitType = null;
+    let category = null;
+
+    let currentIndex = semIndex + 3;
+
+    if (parts[currentIndex] && (parts[currentIndex].toUpperCase() === 'SEC' || parts[currentIndex].toUpperCase() === 'IKS')) {
+      unitType = parts[currentIndex].toUpperCase();
+      currentIndex++;
+    }
+
+    if (parts[currentIndex]) {
+      category = parts[currentIndex];
+    } else {
+      return; // No category found
+    }
 
     // PAPERS MODE: Only include if explicitly in "Papers" folder
-    if (!categoryFolder || categoryFolder.toLowerCase() !== 'papers') {
+    if (category.toLowerCase() !== 'papers') {
       return;
     }
 
@@ -234,10 +259,15 @@ function generatePapers() {
     const year = yearMatch ? Number(yearMatch[0]) : null;
     const titleGuess = cleanTitle(filename);
     const side = readSidecar(full);
+    
+    // Construct readable Title based on Major/Minor, SEC/IKS
+    let displayTitle = courseType || "General";
+    if (unitType) displayTitle += ` • ${unitType}`;
+    displayTitle += ` — ${titleGuess || filename}`;
 
     const entry = {
       subject: (side && side.subject) || subject,
-      title: (side && side.title) || titleGuess || filename,
+      title: (side && side.title) || displayTitle,
       year: (side && side.year) || year,
       file: rel.replace(/^\/+/, ''),
       description: (side && side.description) || ''
@@ -246,6 +276,7 @@ function generatePapers() {
     grouped[semKey] = grouped[semKey] || [];
     grouped[semKey].push(entry);
   });
+  
 
   // Merge with existing and write
   const allSemKeys = new Set([...Object.keys(grouped)]);
@@ -281,6 +312,25 @@ function generatePapers() {
     fs.writeFileSync(outPath, JSON.stringify(merged, null, 2) + '\n', 'utf8');
     console.log('Wrote', outPath, merged.length, 'entries');
   });
+}
+
+function processLegacyPaper(full, rel, semKey, subject, grouped) {
+    const filename = path.basename(full);
+    const yearMatch = filename.match(/\b(19|20)\d{2}\b/);
+    const year = yearMatch ? Number(yearMatch[0]) : null;
+    const titleGuess = cleanTitle(filename);
+    const side = readSidecar(full);
+
+    const entry = {
+      subject: (side && side.subject) || subject,
+      title: (side && side.title) || titleGuess || filename,
+      year: (side && side.year) || year,
+      file: rel.replace(/^\/+/, ''),
+      description: (side && side.description) || ''
+    };
+
+    grouped[semKey] = grouped[semKey] || [];
+    grouped[semKey].push(entry);
 }
 
 // Run logic

@@ -1,93 +1,93 @@
 [
   {
     "subject": "English",
-    "title": "AEC ENGLISH SEM 2",
+    "title": "Major — AEC ENGLISH SEM 2",
     "year": null,
-    "file": "pdfs/Sem2/English/Papers/AEC-ENGLISH-SEM-2.pdf",
+    "file": "pdfs/Sem_2/English/Major/Papers/AEC-ENGLISH-SEM-2.pdf",
     "description": ""
   },
   {
     "subject": "Chemistry",
-    "title": "CHEMISTRY SEM 2 MINOR",
+    "title": "Major — CHEMISTRY SEM 2 MINOR",
     "year": null,
-    "file": "pdfs/Sem2/Chemistry/Papers/CHEMISTRY-SEM-2-MINOR.pdf",
+    "file": "pdfs/Sem_2/Chemistry/Major/Papers/CHEMISTRY-SEM-2-MINOR.pdf",
     "description": ""
   },
   {
     "subject": "Chemistry",
-    "title": "CHEMISTRY SEM 2 MINOR INTERNAL",
+    "title": "Major — CHEMISTRY SEM 2 MINOR INTERNAL",
     "year": null,
-    "file": "pdfs/Sem2/Chemistry/Papers/CHEMISTRY-SEM-2-MINOR-INTERNAL.pdf",
+    "file": "pdfs/Sem_2/Chemistry/Major/Papers/CHEMISTRY-SEM-2-MINOR-INTERNAL.pdf",
     "description": ""
   },
   {
     "subject": "English",
-    "title": "ENGLISH SEM 2",
+    "title": "Major — ENGLISH SEM 2",
     "year": null,
-    "file": "pdfs/Sem2/English/Papers/ENGLISH-SEM-2.pdf",
+    "file": "pdfs/Sem_2/English/Major/Papers/ENGLISH-SEM-2.pdf",
     "description": ""
   },
   {
     "subject": "Physics",
-    "title": "PHYSICS MAJOR SEM 2",
+    "title": "Major — PHYSICS MAJOR SEM 2",
     "year": null,
-    "file": "pdfs/Sem2/Physics/Papers/PHYSICS-MAJOR-SEM-2.pdf",
+    "file": "pdfs/Sem_2/Physics/Major/Papers/PHYSICS-MAJOR-SEM-2.pdf",
     "description": ""
   },
   {
     "subject": "Physics",
-    "title": "PHYSICS MAJOR SEM 2 INTERNAL",
+    "title": "Major — PHYSICS MAJOR SEM 2 INTERNAL",
     "year": null,
-    "file": "pdfs/Sem2/Physics/Papers/PHYSICS-MAJOR-SEM-2-INTERNAL.pdf",
+    "file": "pdfs/Sem_2/Physics/Major/Papers/PHYSICS-MAJOR-SEM-2-INTERNAL.pdf",
     "description": ""
   },
   {
     "subject": "Physics",
-    "title": "PHYSICS SEM 2 PRACTICAL",
+    "title": "Major — PHYSICS SEM 2 SEC",
     "year": null,
-    "file": "pdfs/Sem2/Physics/Papers/PHYSICS-SEM-2-PRACTICAL.pdf",
+    "file": "pdfs/Sem_2/Physics/Major/Papers/PHYSICS-SEM-2-SEC.pdf",
     "description": ""
   },
   {
     "subject": "Physics",
-    "title": "PHYSICS SEM 2 PRACTICAL INTERNAL",
+    "title": "Major — PHYSICS SEM 2 SEC INTERNAL",
     "year": null,
-    "file": "pdfs/Sem2/Physics/Papers/PHYSICS-SEM-2-PRACTICAL-INTERNAL.pdf",
+    "file": "pdfs/Sem_2/Physics/Major/Papers/PHYSICS-SEM-2-SEC-INTERNAL.pdf",
     "description": ""
   },
   {
     "subject": "Gita",
-    "title": "VAC BHAGAVAD GITA SEM 2",
+    "title": "Major — VAC BHAGAVAD GITA SEM 2",
     "year": null,
-    "file": "pdfs/Sem2/Gita/Papers/VAC-BHAGAVAD-GITA-SEM-2.pdf",
+    "file": "pdfs/Sem_2/Gita/Major/Papers/VAC-BHAGAVAD-GITA-SEM-2.pdf",
     "description": ""
   },
   {
     "subject": "Gita",
-    "title": "VAC BHAGAVAD GITA SEM 2 INTERNAL",
+    "title": "Major — VAC BHAGAVAD GITA SEM 2 INTERNAL",
     "year": null,
-    "file": "pdfs/Sem2/Gita/Papers/VAC-BHAGAVAD-GITA-SEM-2-INTERNAL.pdf",
+    "file": "pdfs/Sem_2/Gita/Major/Papers/VAC-BHAGAVAD-GITA-SEM-2-INTERNAL.pdf",
     "description": ""
   },
   {
     "subject": "Zoology",
-    "title": "ZOOLOGY MULTI SEM 2",
+    "title": "Major — ZOOLOGY MULTI SEM 2",
     "year": null,
-    "file": "pdfs/Sem2/Zoology/Papers/ZOOLOGY-MULTI-SEM-2.pdf",
+    "file": "pdfs/Sem_2/Zoology/Major/Papers/ZOOLOGY-MULTI-SEM-2.pdf",
     "description": ""
   },
   {
     "subject": "Zoology",
-    "title": "ZOOLOGY SEM 2 MULTI INTERNAL",
+    "title": "Major — ZOOLOGY SEM 2 MULTI INTERNAL",
     "year": null,
-    "file": "pdfs/Sem2/Zoology/Papers/ZOOLOGY-SEM-2-MULTI-INTERNAL.pdf",
+    "file": "pdfs/Sem_2/Zoology/Major/Papers/ZOOLOGY-SEM-2-MULTI-INTERNAL.pdf",
     "description": ""
   },
   {
     "subject": "Zoology",
-    "title": "ZOOLOGY SEM 2 PRACTICAL",
+    "title": "Major — ZOOLOGY SEM 2 PRACTICAL",
     "year": null,
-    "file": "pdfs/Sem2/Zoology/Papers/ZOOLOGY-SEM-2-PRACTICAL.pdf",
+    "file": "pdfs/Sem_2/Zoology/Major/Papers/ZOOLOGY-SEM-2-PRACTICAL.pdf",
     "description": ""
   }
 ]

@@ -3,120 +3,127 @@
     "subject": "Physics",
     "units": [
       {
-        "unit": 1,
-        "category": "Major 1",
-        "title": "Major 1 : Unit 1",
+        "unit": 0,
+        "category": "",
+        "title": "Major 1 - Unit 1 (Thermodynamics)",
+        "courseType": "Major",
         "materials": [
           {
             "title": "thermodynamics sem 3",
-            "file": "pdfs/Sem3/Physics/Major_1/Unit 1 (Thermodynamics)/thermodynamics sem 3.pdf",
+            "file": "pdfs/Sem_3/Physics/Major/Notes/Major 1 - Unit 1 (Thermodynamics)/thermodynamics sem 3.pdf",
             "description": ""
           },
           {
             "title": "Thermodynamics Unit1 Revision",
-            "file": "pdfs/Sem3/Physics/Major_1/Unit 1 (Thermodynamics)/Thermodynamics_Unit1_Revision.pdf",
+            "file": "pdfs/Sem_3/Physics/Major/Notes/Major 1 - Unit 1 (Thermodynamics)/Thermodynamics_Unit1_Revision.pdf",
             "description": ""
           }
         ]
       },
       {
-        "unit": 2,
-        "category": "Major 1",
-        "title": "Major 1 : Unit 2",
+        "unit": 0,
+        "category": "",
+        "title": "Major 1 - Unit 2 (Modern Physics)",
+        "courseType": "Major",
         "materials": [
           {
             "title": "Modern Physics",
-            "file": "pdfs/Sem3/Physics/Major_1/Unit 2 (Modern Physics)/Modern Physics.pdf",
+            "file": "pdfs/Sem_3/Physics/Major/Notes/Major 1 - Unit 2 (Modern Physics)/Modern Physics.pdf",
             "description": ""
           },
           {
             "title": "Modern Physics 1D schrodinger equation",
-            "file": "pdfs/Sem3/Physics/Major_1/Unit 2 (Modern Physics)/Modern_Physics_1D_schrodinger_equation.pdf",
+            "file": "pdfs/Sem_3/Physics/Major/Notes/Major 1 - Unit 2 (Modern Physics)/Modern_Physics_1D_schrodinger_equation.pdf",
             "description": ""
           },
           {
             "title": "Modern Physics Franck Herts Experiment",
-            "file": "pdfs/Sem3/Physics/Major_1/Unit 2 (Modern Physics)/Modern_Physics_Franck-Herts-Experiment.pdf",
+            "file": "pdfs/Sem_3/Physics/Major/Notes/Major 1 - Unit 2 (Modern Physics)/Modern_Physics_Franck-Herts-Experiment.pdf",
             "description": ""
           }
         ]
       },
       {
-        "unit": 4,
-        "category": "Major 1",
-        "title": "Major 1 : Unit 4",
+        "unit": 0,
+        "category": "",
+        "title": "Major 1 - Unit 4 (Solid State Physics)",
+        "courseType": "Major",
         "materials": [
           {
             "title": "Crystal Structure 2",
-            "file": "pdfs/Sem3/Physics/Major_1/Unit 4 (Solid State Physics)/Crystal Structure 2.pdf",
+            "file": "pdfs/Sem_3/Physics/Major/Notes/Major 1 - Unit 4 (Solid State Physics)/Crystal Structure 2.pdf",
             "description": ""
           },
           {
             "title": "Crystal Structure JJP",
-            "file": "pdfs/Sem3/Physics/Major_1/Unit 4 (Solid State Physics)/Crystal Structure-JJP.pdf",
+            "file": "pdfs/Sem_3/Physics/Major/Notes/Major 1 - Unit 4 (Solid State Physics)/Crystal Structure-JJP.pdf",
             "description": ""
           },
           {
             "title": "Crystal Structure SRS",
-            "file": "pdfs/Sem3/Physics/Major_1/Unit 4 (Solid State Physics)/Crystal Structure - SRS.pdf",
+            "file": "pdfs/Sem_3/Physics/Major/Notes/Major 1 - Unit 4 (Solid State Physics)/Crystal Structure - SRS.pdf",
             "description": ""
           }
         ]
       },
       {
-        "unit": 1,
-        "category": "Major 2",
-        "title": "Major 2 : Unit 1",
+        "unit": 0,
+        "category": "",
+        "title": "Major 2 - Unit 1 (Electrostatics & Magnetostatics)",
+        "courseType": "Major",
         "materials": [
           {
             "title": "Dielectric",
-            "file": "pdfs/Sem3/Physics/Major_2/Unit 1 (Electrostatics & Magnetostatics)/Dielectric.pdf",
+            "file": "pdfs/Sem_3/Physics/Major/Notes/Major 2 - Unit 1 (Electrostatics & Magnetostatics)/Dielectric.pdf",
             "description": ""
           },
           {
             "title": "Magnetostatics",
-            "file": "pdfs/Sem3/Physics/Major_2/Unit 1 (Electrostatics & Magnetostatics)/Magnetostatics.pdf",
+            "file": "pdfs/Sem_3/Physics/Major/Notes/Major 2 - Unit 1 (Electrostatics & Magnetostatics)/Magnetostatics.pdf",
             "description": ""
           }
         ]
       },
       {
-        "unit": 2,
-        "category": "Major 2",
-        "title": "Major 2 : Unit 2",
+        "unit": 0,
+        "category": "",
+        "title": "Major 2 - Unit 2 (Optics Fraunhoffer Diffraction)",
+        "courseType": "Major",
         "materials": [
           {
             "title": "optics huma",
-            "file": "pdfs/Sem3/Physics/Major_2/Unit 2 (Optics Fraunhoffer Diffraction)/optics-huma.pdf",
+            "file": "pdfs/Sem_3/Physics/Major/Notes/Major 2 - Unit 2 (Optics Fraunhoffer Diffraction)/optics-huma.pdf",
             "description": ""
           }
         ]
       },
       {
-        "unit": 3,
-        "category": "Major 2",
-        "title": "Major 2 : Unit 3",
+        "unit": 0,
+        "category": "",
+        "title": "Major 2 - Unit 3 (Farmat Principle)",
+        "courseType": "Major",
         "materials": [
           {
             "title": "Sem3 Major Physics 301A Unit3 Fermat Polarization",
-            "file": "pdfs/Sem3/Physics/Major_2/Unit 3 (Farmat Principle)/Sem3 Major Physics 301A Unit3 Fermat Polarization.pdf",
+            "file": "pdfs/Sem_3/Physics/Major/Notes/Major 2 - Unit 3 (Farmat Principle)/Sem3 Major Physics 301A Unit3 Fermat Polarization.pdf",
             "description": ""
           }
         ]
       },
       {
-        "unit": 4,
-        "category": "Major 2",
-        "title": "Major 2 : Unit 4",
+        "unit": 0,
+        "category": "",
+        "title": "Major 2 - Unit 4 (Electronics)",
+        "courseType": "Major",
         "materials": [
           {
             "title": "part 1 electronics",
-            "file": "pdfs/Sem3/Physics/Major_2/Unit 4 (Electronics)/part 1 electronics.pdf",
+            "file": "pdfs/Sem_3/Physics/Major/Notes/Major 2 - Unit 4 (Electronics)/part 1 electronics.pdf",
             "description": ""
           },
           {
             "title": "Transistor Biasing and Stabilization",
-            "file": "pdfs/Sem3/Physics/Major_2/Unit 4 (Electronics)/Transistor Biasing and Stabilization.pdf",
+            "file": "pdfs/Sem_3/Physics/Major/Notes/Major 2 - Unit 4 (Electronics)/Transistor Biasing and Stabilization.pdf",
             "description": ""
           }
         ]

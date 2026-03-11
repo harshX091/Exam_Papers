@@ -17,14 +17,16 @@ export default async function handler(req, res) {
             semester,     // e.g. "Sem_4"
             subjectTitle, // e.g. "Physics"
             subjectFolder,// e.g. "Physics" (underscored)
+            courseType,   // "Major", "Minor", "Multi", etc.
             category,     // "Papers", "Syllabus", "Notes"
             year,         // 2026 or null
-            unit,         // 1 or null
+            unitName,     // e.g. "Mechanics"
+            unitType,     // "SEC" or "IKS"
             fileName,     // "original_file.pdf"
             fileContent   // Base64 string
         } = req.body;
 
-        if (!semester || !subjectFolder || !category || !fileName || !fileContent) {
+        if (!semester || !subjectFolder || !courseType || !category || !fileName || !fileContent) {
             return res.status(400).json({ error: 'Missing required fields' });
         }
 
@@ -43,8 +45,26 @@ export default async function handler(req, res) {
         newFileName = newFileName.replace(/[^a-zA-Z0-9.\-_]/g, '_');
 
         // 2. Construct the Git Path
-        // e.g., pdfs/Sem_4/Physics/Papers/2026_Paper.pdf
-        const targetPath = `pdfs/${semester}/${subjectFolder}/${category}/${newFileName}`;
+        // New Nested Path: pdfs/{Semester}/{Subject}/{CourseType}/[{UnitType}]/{Category}/[{UnitName}]/filename.pdf
+        const pathParts = [
+            'pdfs',
+            semester,
+            subjectFolder,
+            courseType
+        ];
+
+        if (unitType) pathParts.push(unitType);
+        pathParts.push(category);
+        
+        // Only append unitName folder if it's Notes or Syllabus that specified a Unit Name explicitly
+        if (unitName) {
+             // Sanitize unitName for folder usage
+             const safeUnitName = unitName.replace(/[^a-zA-Z0-9.\-_]/g, '_');
+             pathParts.push(safeUnitName);
+        }
+        
+        pathParts.push(newFileName);
+        const targetPath = pathParts.join('/');
 
         // Generate dynamic branch name
         const timestamp = Date.now();
@@ -98,9 +118,11 @@ A user has submitted a new academic document for review.
 
 - **Semester:** ${semester}
 - **Subject:** ${subjectTitle}
+- **Course Type:** ${courseType}
 - **Type:** ${category}
 ${year ? `- **Year:** ${year}` : ''}
-${unit ? `- **Unit:** ${unit}` : ''}
+${unitName ? `- **Unit Name:** ${unitName}` : ''}
+${unitType ? `- **Unit Type:** ${unitType}` : ''}
 - **Target Path:** \`${targetPath}\`
 
 Please review the attached PDF file. Merging this PR will automatically publish the document.

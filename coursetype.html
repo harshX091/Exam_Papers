@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Course Type</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="header">
+    <h1 id="title">Course Type</h1>
+    <p id="subtitle">Choose a course type</p>
+  </header>
+
+  <main class="container">
+    <a id="backLink" class="back" href="subjects.html">⬅ Back to subjects</a>
+    <div class="searchbar">
+      <input id="search" class="search" placeholder="Search course types..." />
+    </div>
+    <div class="grid" id="courseTypeGrid"></div>
+  </main>
+
+  <script>
+    // PREDEFINED COURSE TYPES
+    const courseTypes = [
+      "Major", "Minor", "Multi"
+    ];
+
+    // read params
+    const params = new URLSearchParams(location.search);
+    const semRaw = params.get('sem') || '1';
+    const semDisplay = semRaw.toLowerCase().startsWith('sem') ? semRaw.replace(/_/g, ' ') : `Semester ${semRaw}`;
+    const sem = semRaw;
+    const subject = params.get('subject') || '';
+    
+    document.getElementById('title').innerText = subject.replace(/_/g, ' ');
+    document.getElementById('subtitle').innerText = "Choose a course type for " + subject.replace(/_/g, ' ') + " (" + semDisplay + ")";
+
+    // Set dynamic back link
+    document.getElementById('backLink').href = `subjects.html?sem=${encodeURIComponent(sem)}`;
+
+    const grid = document.getElementById('courseTypeGrid');
+    function render(filter = '') {
+      grid.innerHTML = '';
+      courseTypes.filter(ct => ct.toLowerCase().includes(filter.toLowerCase())).forEach(ct => {
+        const a = document.createElement('a');
+        a.className = 'card';
+        // link to pdfs page with semester, subject, and course type
+        a.href = `pdfs.html?sem=${encodeURIComponent(sem)}&subject=${encodeURIComponent(subject)}&coursetype=${encodeURIComponent(ct)}`;
+        a.innerHTML = `<strong>${ct.replace(/_/g, ' ')}</strong><div class="meta">View ${ct.replace(/_/g, ' ')} materials</div>`;
+        grid.appendChild(a);
+      });
+    }
+
+    document.getElementById('search').addEventListener('input', e => render(e.target.value));
+
+    render();
+  </script>
+</body>
+
+</html>

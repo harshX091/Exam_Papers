@@ -15,7 +15,7 @@
 
   <main class="container">
     <!-- keep anchor for non-JS fallback; add data-fallback for script -->
-    <a id="backLink" class="back" data-fallback="index.html" href="index.html">⬅ Back</a>
+    <a id="backLink" class="back" data-fallback="subjects.html" href="subjects.html">⬅ Back</a>
 
     <div id="controls">
       <div class="toggle-group">
@@ -43,10 +43,13 @@
     const subjectRaw = params.get('subject') || 'Physics';
     const subject = subjectRaw.replace(/_/g, ' ');
 
+    const courseTypeRaw = params.get('coursetype') || '';
+    const courseType = courseTypeRaw.replace(/_/g, ' ');
+
     // View mode: 'papers' or 'syllabus'
     let currentView = params.get('view') || 'syllabus';
 
-    document.getElementById('pageTitle').innerText = `${sem.replace('_', ' ').toUpperCase()} — ${subject}`;
+    document.getElementById('pageTitle').innerText = `${sem.replace('_', ' ').toUpperCase()} — ${subject.toUpperCase()} ${courseType ? `(${courseType.toUpperCase()})` : ''}`;
 
     const btnPapers = document.getElementById('viewPapers');
     const btnSyllabus = document.getElementById('viewSyllabus');
@@ -131,7 +134,16 @@
           if (!res.ok) throw new Error(`Failed to load ${file}: ${res.statusText}`);
           const data = await res.json();
           const subjData = data.find(s => s.subject.toLowerCase() === subject.toLowerCase());
-          syllabusData = subjData ? subjData.units : [];
+          
+          if (subjData) {
+            if (courseType) {
+                syllabusData = subjData.units.filter(u => u.courseType && u.courseType.toLowerCase() === courseTypeRaw.toLowerCase());
+            } else {
+                syllabusData = subjData.units;
+            }
+          } else {
+            syllabusData = [];
+          }
 
           if (!subjData) console.warn('Subject not found:', subject);
 
@@ -141,7 +153,14 @@
           const res = await fetch(file);
           if (!res.ok) throw new Error(`Failed to load ${file}: ${res.statusText}`);
           const data = await res.json();
-          papersData = data.filter(p => p.subject.toLowerCase() === subject.toLowerCase());
+          let rawPapers = data.filter(p => p.subject.toLowerCase() === subject.toLowerCase());
+          
+          if (courseType) {
+             papersData = rawPapers.filter(p => p.title.toLowerCase().startsWith(courseTypeRaw.toLowerCase()));
+          } else {
+             papersData = rawPapers;
+          }
+          
           applyFilter(filterInput.value.trim());
         }
 
@@ -292,7 +311,7 @@
     (function () {
       const backLink = document.getElementById('backLink');
       if (!backLink) return;
-      const fallback = backLink.dataset.fallback || 'index.html';
+      const fallback = `coursetype.html?sem=${encodeURIComponent(sem)}&subject=${encodeURIComponent(subjectRaw)}`;
 
       function goBack(e) {
         if (e) e.preventDefault();

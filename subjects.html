@@ -33,9 +33,12 @@
 
     // read sem param
     const params = new URLSearchParams(location.search);
-    const sem = params.get('sem') || 'Sem_1';
-    document.getElementById('title').innerText = sem.replace('_', ' ');
-    document.getElementById('subtitle').innerText = "Choose a subject for " + sem.replace('_', ' ');
+    const semRaw = params.get('sem') || '1';
+    const semDisplay = semRaw.toLowerCase().startsWith('sem') ? semRaw.replace(/_/g, ' ') : `Semester ${semRaw}`;
+    const sem = semRaw; // keep original for links
+    
+    document.getElementById('title').innerText = semDisplay;
+    document.getElementById('subtitle').innerText = "Choose a subject for " + semDisplay;
 
     const grid = document.getElementById('subjectGrid');
     function render(filter = '') {
@@ -43,9 +46,9 @@
       subjects.filter(s => s.toLowerCase().includes(filter.toLowerCase())).forEach(s => {
         const a = document.createElement('a');
         a.className = 'card';
-        // link to pdfs page with semester & subject
-        a.href = `pdfs.html?sem=${encodeURIComponent(sem)}&subject=${encodeURIComponent(s)}`;
-        a.innerHTML = `<strong>${s.replace(/_/g, ' ')}</strong><div class="meta">Open ${s.replace(/_/g, ' ')} papers</div>`;
+        // link to coursetype page with semester & subject
+        a.href = `coursetype.html?sem=${encodeURIComponent(sem)}&subject=${encodeURIComponent(s)}`;
+        a.innerHTML = `<strong>${s.replace(/_/g, ' ')}</strong><div class="meta">Select course type for ${s.replace(/_/g, ' ')}</div>`;
         grid.appendChild(a);
       });
     }

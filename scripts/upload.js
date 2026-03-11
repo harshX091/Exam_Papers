@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const yearGroup = document.getElementById('yearGroup');
     const unitGroup = document.getElementById('unitGroup');
     const yearInput = document.getElementById('year');
-    const unitInput = document.getElementById('unit');
+    const unitNameInput = document.getElementById('unitName');
     const submitBtn = document.getElementById('submitBtn');
     const spinner = document.getElementById('submitSpinner');
     const statusMessage = document.getElementById('statusMessage');
@@ -18,12 +18,12 @@ document.addEventListener('DOMContentLoaded', () => {
         if (val === 'Papers') {
             yearGroup.style.display = 'flex';
             unitGroup.style.display = 'none';
-            unitInput.value = '';
+            unitNameInput.value = '';
         } else if (val === 'Syllabus') {
             yearGroup.style.display = 'none';
             unitGroup.style.display = 'none';
             yearInput.value = '';
-            unitInput.value = '';
+            unitNameInput.value = '';
         } else if (val === 'Notes') {
             yearGroup.style.display = 'none';
             unitGroup.style.display = 'flex';
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const ALL_SUBJECTS = [
         "Physics", "Chemistry", "Mathematics", "Electronics",
         "Zoology", "Botany", "Computer_Science", "English",
-        "Sanskrit", "Statistics", "Gita", "Yoga-IKS", "SEC"
+        "Sanskrit", "Statistics"
     ];
 
     // Populate the dropdown initially
@@ -67,11 +67,20 @@ document.addEventListener('DOMContentLoaded', () => {
         // 1. Get Form Data
         const formData = new FormData(form);
         const semester = formData.get('semester');
-        let subject = formData.get('subject').trim();
+        let subject = formData.get('subject');
+        const courseType = formData.get('courseType');
         const category = formData.get('category');
         const year = formData.get('year');
-        const unit = formData.get('unit');
+        const unitName = formData.get('unitName');
+        const unitType = formData.get('unitType');
         const file = formData.get('pdfFile');
+
+        if (!subject) {
+            showError('Please select a Subject.');
+            return;
+        }
+
+        subject = subject.trim();
 
         // Basic validation
         if (!file || file.type !== 'application/pdf') {
@@ -101,12 +110,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // 3. Prepare Payload for Serverless Function
             const payload = {
-                semester: `Sem${semester}`,
+                semester: `Sem_${semester}`,
                 subjectTitle: subject,
                 subjectFolder: subjectFolder,
+                courseType: courseType,
                 category: category,
                 year: year ? parseInt(year, 10) : null,
-                unit: unit ? parseInt(unit, 10) : null,
+                unitName: unitName ? unitName.trim() : null,
+                unitType: unitType || null,
                 fileName: originalFilename,
                 fileContent: base64Data
             };

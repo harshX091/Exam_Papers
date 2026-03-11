@@ -160,10 +160,21 @@
 
             <div class="form-group">
                 <label for="subject">Subject Name</label>
-                <select id="subject" name="subject" required disabled>
+                <select id="subject" name="subject" disabled>
                     <option value="" disabled selected>Select a semester first</option>
                 </select>
                 <div class="help-text">Choose from the existing subjects for the selected semester.</div>
+            </div>
+
+            <div class="form-group">
+                <label for="courseType">Course Type</label>
+                <select id="courseType" name="courseType" required>
+                    <option value="" disabled selected>Select Course Type</option>
+                    <option value="Major">Major</option>
+                    <option value="Minor">Minor</option>
+                    <option value="Multi">Multi</option>
+                </select>
+                <div class="help-text">Select the type of course for this subject.</div>
             </div>
 
             <div class="form-group">
@@ -182,9 +193,19 @@
             </div>
 
             <div class="form-group" id="unitGroup" style="display:none;">
-                <label for="unit">Unit Number (Optional)</label>
-                <input type="number" id="unit" name="unit" placeholder="e.g. 1" min="1" max="10">
-                <div class="help-text">If these notes are for a specific unit, enter the number.</div>
+                <label for="unitName">Unit Name / Module (Optional)</label>
+                <input type="text" id="unitName" name="unitName" placeholder="e.g. Mechanics or Unit 1">
+                <div class="help-text">If these notes are for a specific unit, enter its name.</div>
+
+                <label for="unitType" style="margin-top: 1rem;">Unit Designation (Optional)</label>
+                <select id="unitType" name="unitType">
+                    <option value="">None (Regular Unit)</option>
+                    <option value="Major 1">Major 1</option>
+                    <option value="Major 2">Major 2</option>
+                    <option value="SEC">SEC</option>
+                    <option value="IKS">IKS</option>
+                </select>
+                <div class="help-text">Select if this unit is specifically designated as SEC, IKS, Major 1, etc.</div>
             </div>
 
             <div class="form-group">

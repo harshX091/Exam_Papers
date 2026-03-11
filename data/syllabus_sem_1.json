@@ -4,60 +4,65 @@
     "units": [
       {
         "unit": 0,
-        "category": "Syllabus",
-        "title": "Syllabus",
+        "category": "",
+        "title": "Major — Syllabus",
+        "courseType": "Major",
         "materials": [
           {
             "title": "BSC SEMESTER 1 NEP2020(PhyMJ)",
-            "file": "pdfs/Sem1/Physics/Syllabus/BSC SEMESTER-1_NEP2020(PhyMJ).pdf",
+            "file": "pdfs/Sem_1/Physics/Major/Syllabus/BSC SEMESTER-1_NEP2020(PhyMJ).pdf",
             "description": ""
           }
         ]
       },
       {
-        "unit": 1,
-        "category": "Major 1",
-        "title": "Major 1 : Unit 1",
+        "unit": 0,
+        "category": "",
+        "title": "Major 1 - Unit 1",
+        "courseType": "Major",
         "materials": [
           {
             "title": "MathematicalPhysics101U1",
-            "file": "pdfs/Sem1/Physics/Major_1/Unit_1/MathematicalPhysics101U1.pdf",
+            "file": "pdfs/Sem_1/Physics/Major/Notes/Major 1 - Unit_1/MathematicalPhysics101U1.pdf",
             "description": ""
           }
         ]
       },
       {
-        "unit": 2,
-        "category": "Major 1",
-        "title": "Major 1 : Unit 2",
+        "unit": 0,
+        "category": "",
+        "title": "Major 1 - Unit 2",
+        "courseType": "Major",
         "materials": [
           {
             "title": "Thermodynamics fy B Sc",
-            "file": "pdfs/Sem1/Physics/Major_1/Unit_2/Thermodynamics fy B.Sc..pdf",
+            "file": "pdfs/Sem_1/Physics/Major/Notes/Major 1 - Unit_2/Thermodynamics fy B.Sc..pdf",
             "description": ""
           }
         ]
       },
       {
-        "unit": 3,
-        "category": "Major 1",
-        "title": "Major 1 : Unit 3",
+        "unit": 0,
+        "category": "",
+        "title": "Major 1 - Unit 3",
+        "courseType": "Major",
         "materials": [
           {
             "title": "SEM 1",
-            "file": "pdfs/Sem1/Physics/Major_1/Unit_3/SEM-1.pdf",
+            "file": "pdfs/Sem_1/Physics/Major/Notes/Major 1 - Unit_3/SEM-1.pdf",
             "description": ""
           }
         ]
       },
       {
-        "unit": 4,
-        "category": "Major 1",
-        "title": "Major 1 : Unit 4",
+        "unit": 0,
+        "category": "",
+        "title": "Major 1 - Unit 4",
+        "courseType": "Major",
         "materials": [
           {
             "title": "1st part Half wave Rectifier",
-            "file": "pdfs/Sem1/Physics/Major_1/Unit_4/1st part Half wave Rectifier.pdf",
+            "file": "pdfs/Sem_1/Physics/Major/Notes/Major 1 - Unit_4/1st part Half wave Rectifier.pdf",
             "description": ""
           }
         ]

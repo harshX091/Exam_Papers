@@ -1,9 +1,44 @@
 [
   {
     "subject": "English",
-    "title": "English AEC sem 4",
+    "title": "Major — 2025 Paper",
     "year": null,
-    "file": "pdfs/Sem4/English/Papers/English AEC sem 4.pdf",
+    "file": "pdfs/Sem_4/English/Major/Papers/2025_Paper.pdf",
+    "description": ""
+  },
+  {
+    "subject": "Physics",
+    "title": "Major — 2026 Paper",
+    "year": null,
+    "file": "pdfs/Sem_4/Physics/Major/Papers/2026_Paper.pdf",
+    "description": ""
+  },
+  {
+    "subject": "Chemistry",
+    "title": "Major — CHEMISTRY MINOR 402",
+    "year": null,
+    "file": "pdfs/Sem_4/Chemistry/Major/Papers/CHEMISTRY_MINOR_402.pdf",
+    "description": ""
+  },
+  {
+    "subject": "Eng",
+    "title": "Major — ENGLISH",
+    "year": null,
+    "file": "pdfs/Sem_4/Eng/Major/Papers/ENGLISH.pdf",
+    "description": ""
+  },
+  {
+    "subject": "English",
+    "title": "Major — English AEC sem 4",
+    "year": null,
+    "file": "pdfs/Sem_4/English/Major/Papers/English AEC sem 4.pdf",
+    "description": ""
+  },
+  {
+    "subject": "Physics",
+    "title": "Major — MAJOR PHYSICS 401A",
+    "year": null,
+    "file": "pdfs/Sem_4/Physics/Major/Papers/MAJOR_PHYSICS_401A.pdf",
     "description": ""
   }
 ]
