@@ -78,7 +78,7 @@ function generateSyllabus() {
     let currentIndex = semIndex + 3;
 
     // Check if next folder is SEC or IKS
-    if (parts[currentIndex] && (parts[currentIndex].toUpperCase() === 'SEC' || parts[currentIndex].toUpperCase() === 'IKS')) {
+    if (parts[currentIndex] && (parts[currentIndex].toUpperCase() === 'SEC' || parts[currentIndex].toUpperCase() === 'IKS' || parts[currentIndex].toUpperCase() === 'VAC')) {
       unitType = parts[currentIndex].toUpperCase();
       currentIndex++;
     }
@@ -238,7 +238,7 @@ function generatePapers() {
 
     let currentIndex = semIndex + 3;
 
-    if (parts[currentIndex] && (parts[currentIndex].toUpperCase() === 'SEC' || parts[currentIndex].toUpperCase() === 'IKS')) {
+    if (parts[currentIndex] && (parts[currentIndex].toUpperCase() === 'SEC' || parts[currentIndex].toUpperCase() === 'IKS' || parts[currentIndex].toUpperCase() === 'VAC')) {
       unitType = parts[currentIndex].toUpperCase();
       currentIndex++;
     }
