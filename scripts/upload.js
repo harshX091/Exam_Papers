@@ -2,7 +2,7 @@
 // Fine-grained PAT: Contents (Read & Write) + Pull requests (Read & Write)
 // Scope is limited to this repo only, so exposure risk is minimal.
 // Replace the placeholder below with your actual token before deploying.
-const GITHUB_TOKEN = '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'; // ← paste your token here
+const GITHUB_TOKEN = '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'; // ← paste your token here
 const GITHUB_REPO = 'harshX091/Exam_Papers';
 // ─────────────────────────────────────────────────────────────────────────────
 
