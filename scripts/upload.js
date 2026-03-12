@@ -1,3 +1,11 @@
+// ─── GitHub Configuration ────────────────────────────────────────────────────
+// Fine-grained PAT: Contents (Read & Write) + Pull requests (Read & Write)
+// Scope is limited to this repo only, so exposure risk is minimal.
+// Replace the placeholder below with your actual token before deploying.
+const GITHUB_TOKEN = 'YOUR_GITHUB_TOKEN_HERE'; // ← paste your token here
+const GITHUB_REPO  = 'harshX091/Exam_Papers';
+// ─────────────────────────────────────────────────────────────────────────────
+
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('uploadForm');
     const categorySelect = document.getElementById('category');
@@ -42,7 +50,6 @@ document.addEventListener('DOMContentLoaded', () => {
     subjectSelect.innerHTML = '<option value="" disabled selected>Select Subject</option>';
     ALL_SUBJECTS.sort().forEach(sub => {
         const option = document.createElement('option');
-        // Clean up formatting for display
         const displaySub = sub.replace(/_/g, ' ');
         option.value = displaySub;
         option.textContent = displaySub;
@@ -66,120 +73,171 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // 1. Get Form Data
         const formData = new FormData(form);
-        const semester = formData.get('semester');
-        let subject = formData.get('subject');
+        const semester   = formData.get('semester');
+        let   subject    = formData.get('subject');
         const courseType = formData.get('courseType');
-        const category = formData.get('category');
-        const year = formData.get('year');
-        const unitName = formData.get('unitName');
-        const unitType = formData.get('unitType');
-        const file = formData.get('pdfFile');
+        const category   = formData.get('category');
+        const year       = formData.get('year');
+        const unitName   = formData.get('unitName');
+        const unitType   = formData.get('unitType');
+        const file       = formData.get('pdfFile');
 
         if (!subject) {
             showError('Please select a Subject.');
             return;
         }
-
         subject = subject.trim();
 
-        // Basic validation
         if (!file || file.type !== 'application/pdf') {
             showError('Please select a valid PDF file.');
             return;
         }
 
-        if (file.size > 10 * 1024 * 1024) { // 10MB
-            showError('File is too large. Maximum size is 10MB.');
+        // 50 MB limit — safe well within GitHub API's ~75 MB effective ceiling
+        if (file.size > 50 * 1024 * 1024) {
+            showError('File is too large. Maximum size is 50 MB.');
             return;
         }
 
-        // Format Subject (Title Case, replace spaces with underscores for folder structure)
-        subject = subject.replace(/\w\S*/g, (txt) => {
-            return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
-        });
+        // Format subject for folder path
+        subject = subject.replace(/\w\S*/g, txt =>
+            txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase()
+        );
         const subjectFolder = subject.replace(/\s+/g, '_');
 
-        // 2. Read File as Base64
         setLoading(true);
         try {
+            // 2. Read file as Base64
             const base64Content = await getBase64(file);
-            // Remove the Data URL prefix (e.g., "data:application/pdf;base64,")
-            const base64Data = base64Content.split(',')[1];
+            const base64Data    = base64Content.split(',')[1]; // strip data-URL prefix
 
-            const originalFilename = file.name;
+            // 3. Sanitize filename
+            const newFileName = file.name.replace(/[^a-zA-Z0-9.\-_]/g, '_');
 
-            // 3. Prepare Payload for Serverless Function
-            const payload = {
-                semester: `Sem_${semester}`,
-                subjectTitle: subject,
-                subjectFolder: subjectFolder,
-                courseType: courseType,
-                category: category,
-                year: year ? parseInt(year, 10) : null,
-                unitName: unitName ? unitName.trim() : null,
-                unitType: unitType || null,
-                fileName: originalFilename,
-                fileContent: base64Data
+            // 4. Build target path: pdfs/{Semester}/{Subject}/{CourseType}/[{UnitType}]/{Category}/[{UnitName}]/file.pdf
+            const semesterKey = `Sem_${semester}`;
+            const pathParts   = ['pdfs', semesterKey, subjectFolder, courseType];
+            if (unitType) pathParts.push(unitType);
+            pathParts.push(category);
+            if (unitName && unitName.trim()) {
+                pathParts.push(unitName.trim().replace(/[^a-zA-Z0-9.\-_]/g, '_'));
+            }
+            pathParts.push(newFileName);
+            const targetPath = pathParts.join('/');
+
+            // 5. Generate a unique branch name
+            const branchName = `upload-${semesterKey.toLowerCase()}-${subjectFolder.toLowerCase()}-${Date.now()}`;
+
+            const ghHeaders = {
+                'Authorization': `Bearer ${GITHUB_TOKEN}`,
+                'Accept':        'application/vnd.github.v3+json',
+                'Content-Type':  'application/json',
             };
 
-            // 4. Send to Serverless API
-            // Note: Update this URL to the actual deployed endpoint
-            const response = await fetch('/api/upload', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(payload)
-            });
+            // A. Get SHA of main branch
+            const refRes = await fetch(
+                `https://api.github.com/repos/${GITHUB_REPO}/git/refs/heads/main`,
+                { headers: ghHeaders }
+            );
+            if (!refRes.ok) throw new Error('Could not reach GitHub. Check your token.');
+            const refData  = await refRes.json();
+            const mainSha  = refData.object.sha;
 
-            const result = await response.json();
+            // B. Create new branch
+            const branchRes = await fetch(
+                `https://api.github.com/repos/${GITHUB_REPO}/git/refs`,
+                {
+                    method:  'POST',
+                    headers: ghHeaders,
+                    body:    JSON.stringify({ ref: `refs/heads/${branchName}`, sha: mainSha })
+                }
+            );
+            if (!branchRes.ok) throw new Error('Failed to create upload branch on GitHub.');
 
-            if (response.ok) {
-                showSuccess('Success! Your paper has been submitted for admin approval.');
-                form.reset();
-                categorySelect.dispatchEvent(new Event('change')); // Reset UI state
-            } else {
-                throw new Error(result.error || 'Failed to submit file.');
+            // C. Commit the file to the new branch
+            const commitMsg = `Add ${category} for ${subject} (${semesterKey})`;
+            const uploadRes = await fetch(
+                `https://api.github.com/repos/${GITHUB_REPO}/contents/${targetPath}`,
+                {
+                    method:  'PUT',
+                    headers: ghHeaders,
+                    body:    JSON.stringify({ message: commitMsg, content: base64Data, branch: branchName })
+                }
+            );
+            if (!uploadRes.ok) {
+                const err = await uploadRes.json();
+                throw new Error(`GitHub file upload failed: ${err.message}`);
             }
+
+            // D. Open a Pull Request for admin review
+            const prBody = `
+## New Student Upload
+A user has submitted a new academic document for review.
+
+- **Semester:** ${semesterKey}
+- **Subject:** ${subject}
+- **Course Type:** ${courseType}
+- **Type:** ${category}
+${year     ? `- **Year:** ${year}`          : ''}
+${unitName ? `- **Unit Name:** ${unitName}` : ''}
+${unitType ? `- **Unit Type:** ${unitType}` : ''}
+- **Target Path:** \`${targetPath}\`
+
+Merging this PR will automatically publish the document and regenerate the site data.
+            `;
+
+            const prRes = await fetch(
+                `https://api.github.com/repos/${GITHUB_REPO}/pulls`,
+                {
+                    method:  'POST',
+                    headers: ghHeaders,
+                    body:    JSON.stringify({ title: commitMsg, body: prBody, head: branchName, base: 'main' })
+                }
+            );
+            if (!prRes.ok) throw new Error('Failed to create Pull Request.');
+            const prData = await prRes.json();
+
+            showSuccess(
+                `✅ Submitted for admin review! ` +
+                `<a href="${prData.html_url}" target="_blank" rel="noopener">View Pull Request →</a>`
+            );
+            form.reset();
+            categorySelect.dispatchEvent(new Event('change'));
 
         } catch (error) {
             console.error('Upload error:', error);
-            showError(`Error: ${error.message} (Is the backend running?)`);
+            showError(`Error: ${error.message}`);
         } finally {
             setLoading(false);
         }
     });
 
+    // ── Helpers ──────────────────────────────────────────────────────────────
+
     function getBase64(file) {
         return new Promise((resolve, reject) => {
             const reader = new FileReader();
             reader.readAsDataURL(file);
-            reader.onload = () => resolve(reader.result);
-            reader.onerror = error => reject(error);
+            reader.onload  = () => resolve(reader.result);
+            reader.onerror = err => reject(err);
         });
     }
 
     function setLoading(isLoading) {
-        if (isLoading) {
-            submitBtn.disabled = true;
-            btnText.style.display = 'none';
-            spinner.style.display = 'block';
-        } else {
-            submitBtn.disabled = false;
-            btnText.style.display = 'block';
-            spinner.style.display = 'none';
-        }
+        submitBtn.disabled       = isLoading;
+        btnText.style.display    = isLoading ? 'none'  : 'block';
+        spinner.style.display    = isLoading ? 'block' : 'none';
     }
 
     function showError(msg) {
-        statusMessage.className = 'error';
-        statusMessage.innerHTML = msg;
+        statusMessage.className    = 'error';
+        statusMessage.innerHTML    = msg;
         statusMessage.style.display = 'block';
     }
 
     function showSuccess(msg) {
-        statusMessage.className = 'success';
-        statusMessage.innerHTML = msg;
+        statusMessage.className    = 'success';
+        statusMessage.innerHTML    = msg;
         statusMessage.style.display = 'block';
     }
 });
