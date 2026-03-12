@@ -1,7 +1,7 @@
 // ─── Backend Configuration ───────────────────────────────────────────────────
 // REPLACE THIS with your actual Render URL after deploying.
 // Example: https://exam-papers-proxy.onrender.com
-const RENDER_URL = 'https://YOUR_APP_NAME.onrender.com';
+const RENDER_URL = 'https://exam-papers-yuzc.onrender.com';
 // ─────────────────────────────────────────────────────────────────────────────
 
 document.addEventListener('DOMContentLoaded', () => {
