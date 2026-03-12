@@ -1,9 +1,7 @@
-// ─── GitHub Configuration ────────────────────────────────────────────────────
-// To prevent GitHub from automatically revoking the token, we store it as a 
-// Base64 encoded string. Use btoa('your_token') in your console to get the string.
-const MASKED_TOKEN = 'Z2l0aHViX3BhdF8xMUE3TFpDSlEwQ0hwOWZJSzZnejRhX2Fyck1jM3YwT0x6QmJKMXplN1ExekxMT2J4VFZVWmxIRWtGdDFCWTlxQTNaTE5GSVhLSXZXMTF6R1pR'; // ← paste your BASE64 ENCODED token here
-const GITHUB_REPO = 'harshX091/Exam_Papers';
-const GITHUB_TOKEN = MASKED_TOKEN ? atob(MASKED_TOKEN) : '';
+// ─── Backend Configuration ───────────────────────────────────────────────────
+// REPLACE THIS with your actual Render URL after deploying.
+// Example: https://exam-papers-proxy.onrender.com
+const RENDER_URL = 'https://YOUR_APP_NAME.onrender.com';
 // ─────────────────────────────────────────────────────────────────────────────
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -66,6 +64,11 @@ document.addEventListener('DOMContentLoaded', () => {
     form.addEventListener('submit', async (e) => {
         e.preventDefault();
 
+        if (RENDER_URL.includes('YOUR_APP_NAME')) {
+            showError('<strong>Setup Required:</strong> Please update the <code>RENDER_URL</code> in <code>scripts/upload.js</code> after deploying to Render.');
+            return;
+        }
+
         // Reset status
         statusMessage.className = '';
         statusMessage.innerHTML = '';
@@ -125,51 +128,9 @@ document.addEventListener('DOMContentLoaded', () => {
             pathParts.push(newFileName);
             const targetPath = pathParts.join('/');
 
-            // 5. Generate a unique branch name
+            // 5. Generate metadata
             const branchName = `upload-${semesterKey.toLowerCase()}-${subjectFolder.toLowerCase()}-${Date.now()}`;
-
-            const ghHeaders = {
-                'Authorization': `Bearer ${GITHUB_TOKEN}`,
-                'Accept': 'application/vnd.github.v3+json',
-                'Content-Type': 'application/json',
-            };
-
-            // A. Get SHA of main branch
-            console.log("Step A: Getting main branch SHA...");
-            const refRes = await fetch(
-                `https://api.github.com/repos/${GITHUB_REPO}/git/refs/heads/main`,
-                { headers: ghHeaders }
-            );
-            const refData = await handleResponse(refRes, "Fetching main branch SHA");
-            const mainSha = refData.object.sha;
-
-            // B. Create new branch
-            console.log("Step B: Creating new branch...");
-            const branchRes = await fetch(
-                `https://api.github.com/repos/${GITHUB_REPO}/git/refs`,
-                {
-                    method: 'POST',
-                    headers: ghHeaders,
-                    body: JSON.stringify({ ref: `refs/heads/${branchName}`, sha: mainSha })
-                }
-            );
-            await handleResponse(branchRes, "Creating upload branch");
-
-            // C. Commit the file to the new branch
-            console.log("Step C: Committing file...");
             const commitMsg = `Add ${category} for ${subject} (${semesterKey})`;
-            const uploadRes = await fetch(
-                `https://api.github.com/repos/${GITHUB_REPO}/contents/${targetPath}`,
-                {
-                    method: 'PUT',
-                    headers: ghHeaders,
-                    body: JSON.stringify({ message: commitMsg, content: base64Data, branch: branchName })
-                }
-            );
-            await handleResponse(uploadRes, "Uploading file");
-
-            // D. Open a Pull Request for admin review
-            console.log("Step D: Opening Pull Request...");
             const prBody = `
 ## New Student Upload
 A user has submitted a new academic document for review.
@@ -186,55 +147,41 @@ ${unitType ? `- **Unit Type:** ${unitType}` : ''}
 Merging this PR will automatically publish the document and regenerate the site data.
             `;
 
-            const prRes = await fetch(
-                `https://api.github.com/repos/${GITHUB_REPO}/pulls`,
-                {
-                    method: 'POST',
-                    headers: ghHeaders,
-                    body: JSON.stringify({ title: commitMsg, body: prBody, head: branchName, base: 'main' })
-                }
-            );
-            const prData = await handleResponse(prRes, "Creating Pull Request");
+            // 6. Send to PROXY Server
+            console.log("Sending upload request to proxy...");
+            const response = await fetch(`${RENDER_URL}/upload`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    targetPath,
+                    branchName,
+                    commitMsg,
+                    base64Data,
+                    prBody
+                })
+            });
+
+            if (!response.ok) {
+                const errData = await response.json().catch(() => ({}));
+                throw new Error(errData.message || `Proxy Error (${response.status})`);
+            }
+
+            const data = await response.json();
 
             showSuccess(
                 `✅ Submitted for admin review! ` +
-                `<a href="${prData.html_url}" target="_blank" rel="noopener">View Pull Request →</a>`
+                `<a href="${data.prUrl}" target="_blank" rel="noopener">View Pull Request →</a>`
             );
             form.reset();
             categorySelect.dispatchEvent(new Event('change'));
 
         } catch (error) {
-            console.error('Full upload error details:', error);
-            
-            let displayError = error.message;
-            if (error.status) {
-                displayError = `GitHub API Error (${error.status}): ${error.message}`;
-                if (error.status === 401) {
-                    displayError += "<br><br><strong>Note:</strong> 401 usually means GitHub has revoked your token because it was detected in a public repository.";
-                }
-            }
-            showError(displayError);
+            console.error('Final upload error details:', error);
+            showError(`Error: ${error.message}<br><small>If this persists, check your Render server logs.</small>`);
         } finally {
             setLoading(false);
         }
     });
-
-    // Helper to handle GitHub API responses and extract errors
-    async function handleResponse(response, context) {
-        if (!response.ok) {
-            let errorMessage = 'Unknown error';
-            try {
-                const data = await response.json();
-                errorMessage = data.message || JSON.stringify(data);
-            } catch (e) {
-                errorMessage = response.statusText;
-            }
-            const error = new Error(`${context}: ${errorMessage}`);
-            error.status = response.status;
-            throw error;
-        }
-        return response.json();
-    }
 
     // ── Helpers ──────────────────────────────────────────────────────────────
 
