@@ -226,6 +226,19 @@
       {
         "unit": 0,
         "category": "",
+        "title": "Major • VAC — Unit: VAC PHY405",
+        "courseType": "Major",
+        "materials": [
+          {
+            "title": "New Doc 03 05 2026 12.17 compressed",
+            "file": "pdfs/Sem_4/Physics/Major/VAC/Notes/VAC_PHY405/New_Doc_03-05-2026_12.17-compressed.pdf",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "unit": 0,
+        "category": "",
         "title": "SEC — ES Solar & Cosmic Rays  08·16·16.pdf",
         "courseType": "SEC",
         "materials": [
