@@ -169,8 +169,7 @@ Merging this PR will automatically publish the document and regenerate the site 
             const data = await response.json();
 
             showSuccess(
-                `✅ Submitted for admin review! ` +
-                `<a href="${data.prUrl}" target="_blank" rel="noopener">View Pull Request →</a>`
+                `✅ Submitted for admin review! Your material will be available soon.`
             );
             form.reset();
             categorySelect.dispatchEvent(new Event('change'));

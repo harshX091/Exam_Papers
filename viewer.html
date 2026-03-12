@@ -42,6 +42,13 @@
 <body>
 
     <div class="viewer-page">
+        <header class="viewer-header">
+            <div style="display: flex; align-items: center; gap: 1rem;">
+                <button onclick="window.history.back()" class="close-btn">← Back</button>
+                <div id="viewerTitle" class="viewer-title">Loading PDF...</div>
+            </div>
+            <a href="index.html" class="nav-link" style="font-size: 0.9rem;">Close & Home</a>
+        </header>
 
         <div class="viewer-body">
             <iframe id="pdfFrame" src=""></iframe>
@@ -59,6 +66,7 @@
             pdfFrame.src = file;
             const displayTitle = title || 'PDF Viewer';
             document.title = displayTitle;
+            document.getElementById('viewerTitle').innerText = displayTitle;
         } else {
             pdfFrame.style.display = 'none';
             document.body.innerHTML = '<p style="padding:20px">No file specified</p>';
