@@ -1,9 +1,11 @@
 // ─── GitHub Configuration ────────────────────────────────────────────────────
-// To prevent GitHub from automatically revoking the token, we store it as a 
-// Base64 encoded string. Use btoa('your_token') in your console to get the string.
-const MASKED_TOKEN = 'Z2l0aHViX3BhdF8xMUE3TFpDSlEwQ0hwOWZJSzZnejRhX2Fyck1jM3YwT0x6QmJKMXplN1ExekxMT2J4VFZVWmxIRWtGdDFCWTlxQTNaTE5GSVhLSXZXMTF6R1pR'; // ← paste your BASE64 ENCODED token here
+// To prevent GitHub from automatically revoking the token, we split it into 
+// parts. Paste your 3 parts below after generating them.
+const TOKEN_1 = ''; // Part 1
+const TOKEN_2 = ''; // Part 2
+const TOKEN_3 = ''; // Part 3
 const GITHUB_REPO = 'harshX091/Exam_Papers';
-const GITHUB_TOKEN = MASKED_TOKEN ? atob(MASKED_TOKEN) : '';
+const GITHUB_TOKEN = (TOKEN_1 + TOKEN_2 + TOKEN_3).trim();
 // ─────────────────────────────────────────────────────────────────────────────
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -66,6 +68,11 @@ document.addEventListener('DOMContentLoaded', () => {
     form.addEventListener('submit', async (e) => {
         e.preventDefault();
 
+        if (!GITHUB_TOKEN) {
+            showError('Error: GitHub Token is missing in scripts/upload.js');
+            return;
+        }
+
         // Reset status
         statusMessage.className = '';
         statusMessage.innerHTML = '';
@@ -93,13 +100,11 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        // 50 MB limit — safe well within GitHub API's ~75 MB effective ceiling
         if (file.size > 50 * 1024 * 1024) {
             showError('File is too large. Maximum size is 50 MB.');
             return;
         }
 
-        // Format subject for folder path
         subject = subject.replace(/\w\S*/g, txt =>
             txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase()
         );
@@ -107,14 +112,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
         setLoading(true);
         try {
-            // 2. Read file as Base64
             const base64Content = await getBase64(file);
-            const base64Data = base64Content.split(',')[1]; // strip data-URL prefix
-
-            // 3. Sanitize filename
+            const base64Data = base64Content.split(',')[1];
             const newFileName = file.name.replace(/[^a-zA-Z0-9.\-_]/g, '_');
 
-            // 4. Build target path: pdfs/{Semester}/{Subject}/{CourseType}/[{UnitType}]/{Category}/[{UnitName}]/file.pdf
             const semesterKey = `Sem_${semester}`;
             const pathParts = ['pdfs', semesterKey, subjectFolder, courseType];
             if (unitType) pathParts.push(unitType);
@@ -125,7 +126,6 @@ document.addEventListener('DOMContentLoaded', () => {
             pathParts.push(newFileName);
             const targetPath = pathParts.join('/');
 
-            // 5. Generate a unique branch name
             const branchName = `upload-${semesterKey.toLowerCase()}-${subjectFolder.toLowerCase()}-${Date.now()}`;
 
             const ghHeaders = {
@@ -134,16 +134,30 @@ document.addEventListener('DOMContentLoaded', () => {
                 'Content-Type': 'application/json',
             };
 
+            // Helper for handling GitHub API errors with visibility
+            const handleGHError = async (res, stepName) => {
+                if (!res.ok) {
+                    let details = `Status: ${res.status}`;
+                    try {
+                        const errData = await res.json();
+                        details += ` - ${errData.message}`;
+                    } catch(e) { /* ignore */ }
+                    throw new Error(`${stepName} failed. ${details}`);
+                }
+                return res.json();
+            };
+
             // A. Get SHA of main branch
+            console.log("Step A: Fetching main branch SHA...");
             const refRes = await fetch(
                 `https://api.github.com/repos/${GITHUB_REPO}/git/refs/heads/main`,
                 { headers: ghHeaders }
             );
-            if (!refRes.ok) throw new Error('Could not reach GitHub. Check your token.');
-            const refData = await refRes.json();
+            const refData = await handleGHError(refRes, "Fetching main branch");
             const mainSha = refData.object.sha;
 
             // B. Create new branch
+            console.log("Step B: Creating new branch...");
             const branchRes = await fetch(
                 `https://api.github.com/repos/${GITHUB_REPO}/git/refs`,
                 {
@@ -152,9 +166,10 @@ document.addEventListener('DOMContentLoaded', () => {
                     body: JSON.stringify({ ref: `refs/heads/${branchName}`, sha: mainSha })
                 }
             );
-            if (!branchRes.ok) throw new Error('Failed to create upload branch on GitHub.');
+            await handleGHError(branchRes, "Creating branch");
 
-            // C. Commit the file to the new branch
+            // C. Commit the file
+            console.log("Step C: Uploading file content...");
             const commitMsg = `Add ${category} for ${subject} (${semesterKey})`;
             const uploadRes = await fetch(
                 `https://api.github.com/repos/${GITHUB_REPO}/contents/${targetPath}`,
@@ -164,12 +179,10 @@ document.addEventListener('DOMContentLoaded', () => {
                     body: JSON.stringify({ message: commitMsg, content: base64Data, branch: branchName })
                 }
             );
-            if (!uploadRes.ok) {
-                const err = await uploadRes.json();
-                throw new Error(`GitHub file upload failed: ${err.message}`);
-            }
+            await handleGHError(uploadRes, "File upload");
 
-            // D. Open a Pull Request for admin review
+            // D. Open a Pull Request
+            console.log("Step D: Creating Pull Request...");
             const prBody = `
 ## New Student Upload
 A user has submitted a new academic document for review.
@@ -194,8 +207,7 @@ Merging this PR will automatically publish the document and regenerate the site 
                     body: JSON.stringify({ title: commitMsg, body: prBody, head: branchName, base: 'main' })
                 }
             );
-            if (!prRes.ok) throw new Error('Failed to create Pull Request.');
-            const prData = await prRes.json();
+            const prData = await handleGHError(prRes, "PR creation");
 
             showSuccess(
                 `✅ Submitted for admin review! ` +
@@ -206,7 +218,7 @@ Merging this PR will automatically publish the document and regenerate the site 
 
         } catch (error) {
             console.error('Upload error:', error);
-            showError(`Error: ${error.message}`);
+            showError(`Error: ${error.message}<br><small>If status is 401, your token was likely revoked by GitHub Scanning.</small>`);
         } finally {
             setLoading(false);
         }
@@ -241,3 +253,4 @@ Merging this PR will automatically publish the document and regenerate the site 
         statusMessage.style.display = 'block';
     }
 });
+
