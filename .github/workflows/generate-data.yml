@@ -14,6 +14,8 @@ jobs:
   generate:
     name: Run generateData.js and commit results
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     steps:
       # 1. Check out the repo (full history so we can push back)
