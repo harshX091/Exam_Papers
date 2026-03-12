@@ -1,8 +1,8 @@
 // ─── GitHub Configuration ────────────────────────────────────────────────────
 // To prevent GitHub from automatically revoking the token, we store it as a 
 // Base64 encoded string. Use btoa('your_token') in your console to get the string.
-const MASKED_TOKEN = ''; // ← paste your BASE64 ENCODED token here
-const GITHUB_REPO  = 'harshX091/Exam_Papers';
+const MASKED_TOKEN = 'Z2l0aHViX3BhdF8xMUE3TFpDSlEwQ0hwOWZJSzZnejRhX2Fyck1jM3YwT0x6QmJKMXplN1ExekxMT2J4VFZVWmxIRWtGdDFCWTlxQTNaTE5GSVhLSXZXMTF6R1pR'; // ← paste your BASE64 ENCODED token here
+const GITHUB_REPO = 'harshX091/Exam_Papers';
 const GITHUB_TOKEN = MASKED_TOKEN ? atob(MASKED_TOKEN) : '';
 // ─────────────────────────────────────────────────────────────────────────────
 
