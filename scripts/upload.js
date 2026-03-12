@@ -2,8 +2,8 @@
 // Fine-grained PAT: Contents (Read & Write) + Pull requests (Read & Write)
 // Scope is limited to this repo only, so exposure risk is minimal.
 // Replace the placeholder below with your actual token before deploying.
-const GITHUB_TOKEN = 'YOUR_GITHUB_TOKEN_HERE'; // ← paste your token here
-const GITHUB_REPO  = 'harshX091/Exam_Papers';
+const GITHUB_TOKEN = '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'; // ← paste your token here
+const GITHUB_REPO = 'harshX091/Exam_Papers';
 // ─────────────────────────────────────────────────────────────────────────────
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -73,14 +73,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // 1. Get Form Data
         const formData = new FormData(form);
-        const semester   = formData.get('semester');
-        let   subject    = formData.get('subject');
+        const semester = formData.get('semester');
+        let subject = formData.get('subject');
         const courseType = formData.get('courseType');
-        const category   = formData.get('category');
-        const year       = formData.get('year');
-        const unitName   = formData.get('unitName');
-        const unitType   = formData.get('unitType');
-        const file       = formData.get('pdfFile');
+        const category = formData.get('category');
+        const year = formData.get('year');
+        const unitName = formData.get('unitName');
+        const unitType = formData.get('unitType');
+        const file = formData.get('pdfFile');
 
         if (!subject) {
             showError('Please select a Subject.');
@@ -109,14 +109,14 @@ document.addEventListener('DOMContentLoaded', () => {
         try {
             // 2. Read file as Base64
             const base64Content = await getBase64(file);
-            const base64Data    = base64Content.split(',')[1]; // strip data-URL prefix
+            const base64Data = base64Content.split(',')[1]; // strip data-URL prefix
 
             // 3. Sanitize filename
             const newFileName = file.name.replace(/[^a-zA-Z0-9.\-_]/g, '_');
 
             // 4. Build target path: pdfs/{Semester}/{Subject}/{CourseType}/[{UnitType}]/{Category}/[{UnitName}]/file.pdf
             const semesterKey = `Sem_${semester}`;
-            const pathParts   = ['pdfs', semesterKey, subjectFolder, courseType];
+            const pathParts = ['pdfs', semesterKey, subjectFolder, courseType];
             if (unitType) pathParts.push(unitType);
             pathParts.push(category);
             if (unitName && unitName.trim()) {
@@ -130,8 +130,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const ghHeaders = {
                 'Authorization': `Bearer ${GITHUB_TOKEN}`,
-                'Accept':        'application/vnd.github.v3+json',
-                'Content-Type':  'application/json',
+                'Accept': 'application/vnd.github.v3+json',
+                'Content-Type': 'application/json',
             };
 
             // A. Get SHA of main branch
@@ -140,16 +140,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 { headers: ghHeaders }
             );
             if (!refRes.ok) throw new Error('Could not reach GitHub. Check your token.');
-            const refData  = await refRes.json();
-            const mainSha  = refData.object.sha;
+            const refData = await refRes.json();
+            const mainSha = refData.object.sha;
 
             // B. Create new branch
             const branchRes = await fetch(
                 `https://api.github.com/repos/${GITHUB_REPO}/git/refs`,
                 {
-                    method:  'POST',
+                    method: 'POST',
                     headers: ghHeaders,
-                    body:    JSON.stringify({ ref: `refs/heads/${branchName}`, sha: mainSha })
+                    body: JSON.stringify({ ref: `refs/heads/${branchName}`, sha: mainSha })
                 }
             );
             if (!branchRes.ok) throw new Error('Failed to create upload branch on GitHub.');
@@ -159,9 +159,9 @@ document.addEventListener('DOMContentLoaded', () => {
             const uploadRes = await fetch(
                 `https://api.github.com/repos/${GITHUB_REPO}/contents/${targetPath}`,
                 {
-                    method:  'PUT',
+                    method: 'PUT',
                     headers: ghHeaders,
-                    body:    JSON.stringify({ message: commitMsg, content: base64Data, branch: branchName })
+                    body: JSON.stringify({ message: commitMsg, content: base64Data, branch: branchName })
                 }
             );
             if (!uploadRes.ok) {
@@ -178,7 +178,7 @@ A user has submitted a new academic document for review.
 - **Subject:** ${subject}
 - **Course Type:** ${courseType}
 - **Type:** ${category}
-${year     ? `- **Year:** ${year}`          : ''}
+${year ? `- **Year:** ${year}` : ''}
 ${unitName ? `- **Unit Name:** ${unitName}` : ''}
 ${unitType ? `- **Unit Type:** ${unitType}` : ''}
 - **Target Path:** \`${targetPath}\`
@@ -189,9 +189,9 @@ Merging this PR will automatically publish the document and regenerate the site 
             const prRes = await fetch(
                 `https://api.github.com/repos/${GITHUB_REPO}/pulls`,
                 {
-                    method:  'POST',
+                    method: 'POST',
                     headers: ghHeaders,
-                    body:    JSON.stringify({ title: commitMsg, body: prBody, head: branchName, base: 'main' })
+                    body: JSON.stringify({ title: commitMsg, body: prBody, head: branchName, base: 'main' })
                 }
             );
             if (!prRes.ok) throw new Error('Failed to create Pull Request.');
@@ -218,26 +218,26 @@ Merging this PR will automatically publish the document and regenerate the site 
         return new Promise((resolve, reject) => {
             const reader = new FileReader();
             reader.readAsDataURL(file);
-            reader.onload  = () => resolve(reader.result);
+            reader.onload = () => resolve(reader.result);
             reader.onerror = err => reject(err);
         });
     }
 
     function setLoading(isLoading) {
-        submitBtn.disabled       = isLoading;
-        btnText.style.display    = isLoading ? 'none'  : 'block';
-        spinner.style.display    = isLoading ? 'block' : 'none';
+        submitBtn.disabled = isLoading;
+        btnText.style.display = isLoading ? 'none' : 'block';
+        spinner.style.display = isLoading ? 'block' : 'none';
     }
 
     function showError(msg) {
-        statusMessage.className    = 'error';
-        statusMessage.innerHTML    = msg;
+        statusMessage.className = 'error';
+        statusMessage.innerHTML = msg;
         statusMessage.style.display = 'block';
     }
 
     function showSuccess(msg) {
-        statusMessage.className    = 'success';
-        statusMessage.innerHTML    = msg;
+        statusMessage.className = 'success';
+        statusMessage.innerHTML = msg;
         statusMessage.style.display = 'block';
     }
 });
