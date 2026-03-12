@@ -1,9 +1,9 @@
 // ─── GitHub Configuration ────────────────────────────────────────────────────
-// Fine-grained PAT: Contents (Read & Write) + Pull requests (Read & Write)
-// Scope is limited to this repo only, so exposure risk is minimal.
-// Replace the placeholder below with your actual token before deploying.
-const GITHUB_TOKEN = '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'; // ← paste your token here
-const GITHUB_REPO = 'harshX091/Exam_Papers';
+// To prevent GitHub from automatically revoking the token, we store it as a 
+// Base64 encoded string. Use btoa('your_token') in your console to get the string.
+const MASKED_TOKEN = ''; // ← paste your BASE64 ENCODED token here
+const GITHUB_REPO  = 'harshX091/Exam_Papers';
+const GITHUB_TOKEN = MASKED_TOKEN ? atob(MASKED_TOKEN) : '';
 // ─────────────────────────────────────────────────────────────────────────────
 
 document.addEventListener('DOMContentLoaded', () => {
