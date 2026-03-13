@@ -1,7 +1,6 @@
-// ─── Backend Configuration ───────────────────────────────────────────────────
-// REPLACE THIS with your actual Render URL after deploying.
-// Example: https://exam-papers-proxy.onrender.com
-const RENDER_URL = 'https://exam-papers-yuzc.onrender.com';
+// REPLACE THIS with your actual Cloudflare Worker URL after deploying.
+// Example: https://exam-pdf-proxy.your-subdomain.workers.dev
+const WORKER_URL = 'https://pdf-upload.harshthakor091.workers.dev';
 // ─────────────────────────────────────────────────────────────────────────────
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -64,8 +63,8 @@ document.addEventListener('DOMContentLoaded', () => {
     form.addEventListener('submit', async (e) => {
         e.preventDefault();
 
-        if (RENDER_URL.includes('YOUR_APP_NAME')) {
-            showError('<strong>Setup Required:</strong> Please update the <code>RENDER_URL</code> in <code>scripts/upload.js</code> after deploying to Render.');
+        if (WORKER_URL.includes('REPLACE_WITH_YOUR')) {
+            showError('<strong>Setup Required:</strong> Please update the <code>WORKER_URL</code> in <code>scripts/upload.js</code> after deploying to Cloudflare.');
             return;
         }
 
@@ -149,7 +148,7 @@ Merging this PR will automatically publish the document and regenerate the site 
 
             // 6. Send to PROXY Server
             console.log("Sending upload request to proxy...");
-            const response = await fetch(`${RENDER_URL}/upload`, {
+            const response = await fetch(`${WORKER_URL}`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
@@ -176,7 +175,7 @@ Merging this PR will automatically publish the document and regenerate the site 
 
         } catch (error) {
             console.error('Final upload error details:', error);
-            showError(`Error: ${error.message}<br><small>If this persists, check your Render server logs.</small>`);
+            showError(`Error: ${error.message}<br><small>If this persists, check your Cloudflare Worker logs.</small>`);
         } finally {
             setLoading(false);
         }

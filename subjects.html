@@ -36,9 +36,8 @@
   <script>
     // COMMON SUBJECTS used across semesters
     const subjects = [
-      "Physics", "Chemistry", "Mathematics", "Electronics",
-      "Zoology", "Botany", "Computer_Science", "English",
-      "Sanskrit", "Statistics", "Gita", "Yoga-IKS", "SEC"
+      "Physics", "Chemistry", "Zoology", "Botany", "Mathematics",
+      "Computer_Science", "English_AEC"
     ];
 
     // read sem param
@@ -46,7 +45,7 @@
     const semRaw = params.get('sem') || '1';
     const semDisplay = semRaw.toLowerCase().startsWith('sem') ? semRaw.replace(/_/g, ' ') : `Semester ${semRaw}`;
     const sem = semRaw; // keep original for links
-    
+
     document.getElementById('title').innerText = semDisplay;
     document.getElementById('subtitle').innerText = "Choose a subject for " + semDisplay;
 
