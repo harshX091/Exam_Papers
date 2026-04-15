@@ -90,7 +90,7 @@ body {
 header,
 .header {
   text-align: center;
-  padding: 3rem 1rem 1rem;
+  padding: 2rem 1rem 1rem;
   margin-bottom: 1rem;
 }
 
@@ -397,16 +397,16 @@ footer,
 
 /* --- 8. Global Search Component --- */
 .global-search-container {
-  max-width: 600px;
-  margin: 2rem auto 0;
+  max-width: 500px;
+  margin: 1rem auto 0;
   position: relative;
   z-index: 50;
 }
 
 #globalSearchInput {
   width: 100%;
-  padding: 16px 24px;
-  font-size: 1.1rem;
+  padding: 10px 20px;
+  font-size: 0.95rem;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
