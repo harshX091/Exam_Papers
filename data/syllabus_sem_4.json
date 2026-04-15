@@ -18,12 +18,12 @@
       {
         "unit": 0,
         "category": "",
-        "title": "Unit 1 (Electro Chemistry) — B.Sc. Sem 4 ..Electro chemistry.pdf",
-        "courseType": "Unit 1 (Electro Chemistry)",
+        "title": "Minor — Unit: Unit 1",
+        "courseType": "Minor",
         "materials": [
           {
             "title": "B Sc Sem 4 Electro chemistry",
-            "file": "pdfs/Sem_4/Chemistry/Unit 1 (Electro Chemistry)/B.Sc. Sem 4 ..Electro chemistry.pdf",
+            "file": "pdfs/Sem_4/Chemistry/Minor/Notes/Unit 1/B.Sc. Sem 4 ..Electro chemistry.pdf",
             "description": ""
           }
         ]
@@ -31,12 +31,12 @@
       {
         "unit": 0,
         "category": "",
-        "title": "Unit 2 (Inorganic Polymers) — INORGANIC POLYMER B.SC SEM 4.pdf",
-        "courseType": "Unit 2 (Inorganic Polymers)",
+        "title": "Minor — Unit: Unit 2",
+        "courseType": "Minor",
         "materials": [
           {
             "title": "INORGANIC POLYMER B SC SEM 4",
-            "file": "pdfs/Sem_4/Chemistry/Unit 2 (Inorganic Polymers)/INORGANIC POLYMER B.SC SEM 4.pdf",
+            "file": "pdfs/Sem_4/Chemistry/Minor/Notes/Unit 2/INORGANIC POLYMER B.SC SEM 4.pdf",
             "description": ""
           }
         ]
