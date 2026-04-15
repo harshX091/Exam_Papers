@@ -7,6 +7,13 @@
     "description": "Course: Major • Category: Papers • Year: 2025"
   },
   {
+    "subject": "Zoology",
+    "title": "Multi — sem 3 zoology multi internal",
+    "year": 2025,
+    "file": "pdfs/Sem_3/Zoology/Multi/Papers/sem-3-zoology-multi-internal-2025.pdf",
+    "description": ""
+  },
+  {
     "subject": "English",
     "title": "sem-3-english-AEC-internal-2025.pdf",
     "year": 2025,
@@ -39,13 +46,6 @@
     "title": "sem-3-physics-major-SEC-internal-2025.pdf",
     "year": 2025,
     "file": "pdfs/Sem_3/Physics/Major/Papers/sem-3-physics-major-SEC-internal-2025.pdf",
-    "description": "Course: Major • Category: Papers • Year: 2025"
-  },
-  {
-    "subject": "Zoology",
-    "title": "sem-3-zoology-multi-internal-2025.pdf",
-    "year": 2025,
-    "file": "pdfs/Sem_3/Zoology/Major/Papers/sem-3-zoology-multi-internal-2025.pdf",
     "description": "Course: Major • Category: Papers • Year: 2025"
   }
 ]
