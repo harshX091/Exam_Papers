@@ -144,12 +144,12 @@
           if (!res.ok) throw new Error(`Failed to load ${file}: ${res.statusText}`);
           const data = await res.json();
           const subjData = data.find(s => s.subject.toLowerCase() === subject.toLowerCase());
-          
+
           if (subjData) {
             if (courseType) {
-                syllabusData = subjData.units.filter(u => u.courseType && u.courseType.toLowerCase() === courseTypeRaw.toLowerCase());
+              syllabusData = subjData.units.filter(u => u.courseType && u.courseType.toLowerCase() === courseTypeRaw.toLowerCase());
             } else {
-                syllabusData = subjData.units;
+              syllabusData = subjData.units;
             }
           } else {
             syllabusData = [];
@@ -164,13 +164,13 @@
           if (!res.ok) throw new Error(`Failed to load ${file}: ${res.statusText}`);
           const data = await res.json();
           let rawPapers = data.filter(p => p.subject.toLowerCase() === subject.toLowerCase());
-          
+
           if (courseType) {
-             papersData = rawPapers.filter(p => p.title.toLowerCase().startsWith(courseTypeRaw.toLowerCase()));
+            papersData = rawPapers.filter(p => p.title.toLowerCase().startsWith(courseTypeRaw.toLowerCase()));
           } else {
-             papersData = rawPapers;
+            papersData = rawPapers;
           }
-          
+
           applyFilter(filterInput.value.trim());
         }
 

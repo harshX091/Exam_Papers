@@ -1,19 +1,5 @@
 [
   {
-    "subject": "Chemistry",
-    "title": "CHEMISTRY-SEM-2-MINOR-INTERNAL.pdf",
-    "year": null,
-    "file": "pdfs/Sem_2/Chemistry/Major/Papers/CHEMISTRY-SEM-2-MINOR-INTERNAL.pdf",
-    "description": "Course: Major • Category: Papers"
-  },
-  {
-    "subject": "Chemistry",
-    "title": "CHEMISTRY-SEM-2-MINOR.pdf",
-    "year": null,
-    "file": "pdfs/Sem_2/Chemistry/Major/Papers/CHEMISTRY-SEM-2-MINOR.pdf",
-    "description": "Course: Major • Category: Papers"
-  },
-  {
     "subject": "English",
     "title": "ENGLISH-SEM-2.pdf",
     "year": null,
@@ -46,6 +32,20 @@
     "title": "Major • VAC — VAC BHAGAVAD GITA SEM 2 INTERNAL",
     "year": null,
     "file": "pdfs/Sem_2/Gita/Major/VAC/Papers/VAC-BHAGAVAD-GITA-SEM-2-INTERNAL.pdf",
+    "description": ""
+  },
+  {
+    "subject": "Chemistry",
+    "title": "Minor — CHEMISTRY SEM 2 MINOR",
+    "year": null,
+    "file": "pdfs/Sem_2/Chemistry/Minor/Papers/CHEMISTRY-SEM-2-MINOR.pdf",
+    "description": ""
+  },
+  {
+    "subject": "Chemistry",
+    "title": "Minor — CHEMISTRY SEM 2 MINOR INTERNAL",
+    "year": null,
+    "file": "pdfs/Sem_2/Chemistry/Minor/Papers/CHEMISTRY-SEM-2-MINOR-INTERNAL.pdf",
     "description": ""
   },
   {

@@ -44,7 +44,7 @@
     const semDisplay = semRaw.toLowerCase().startsWith('sem') ? semRaw.replace(/_/g, ' ') : `Semester ${semRaw}`;
     const sem = semRaw;
     const subject = params.get('subject') || '';
-    
+
     document.getElementById('title').innerText = subject.replace(/_/g, ' ');
     document.getElementById('subtitle').innerText = "Choose a course type for " + subject.replace(/_/g, ' ') + " (" + semDisplay + ")";
 
