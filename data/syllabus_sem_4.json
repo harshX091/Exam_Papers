@@ -5,12 +5,12 @@
       {
         "unit": 0,
         "category": "",
-        "title": "Major — Syllabus",
-        "courseType": "Major",
+        "title": "Minor — Syllabus",
+        "courseType": "Minor",
         "materials": [
           {
             "title": "Chemistry minor sem4",
-            "file": "pdfs/Sem_4/Chemistry/Major/Syllabus/Chemistry-minor-sem4.pdf",
+            "file": "pdfs/Sem_4/Chemistry/Minor/Syllabus/Chemistry-minor-sem4.pdf",
             "description": ""
           }
         ]
