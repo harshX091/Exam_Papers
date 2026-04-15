@@ -49,6 +49,27 @@
     "description": ""
   },
   {
+    "subject": "Zoology",
+    "title": "Multi — ZOOLOGY MULTI SEM 2",
+    "year": null,
+    "file": "pdfs/Sem_2/Zoology/Multi/Papers/ZOOLOGY-MULTI-SEM-2.pdf",
+    "description": ""
+  },
+  {
+    "subject": "Zoology",
+    "title": "Multi — ZOOLOGY SEM 2 MULTI INTERNAL",
+    "year": null,
+    "file": "pdfs/Sem_2/Zoology/Multi/Papers/ZOOLOGY-SEM-2-MULTI-INTERNAL.pdf",
+    "description": ""
+  },
+  {
+    "subject": "Zoology",
+    "title": "Multi — ZOOLOGY SEM 2 PRACTICAL",
+    "year": null,
+    "file": "pdfs/Sem_2/Zoology/Multi/Papers/ZOOLOGY-SEM-2-PRACTICAL.pdf",
+    "description": ""
+  },
+  {
     "subject": "Physics",
     "title": "PHYSICS-MAJOR-SEM-2-INTERNAL.pdf",
     "year": null,
@@ -60,27 +81,6 @@
     "title": "PHYSICS-MAJOR-SEM-2.pdf",
     "year": null,
     "file": "pdfs/Sem_2/Physics/Major/Papers/PHYSICS-MAJOR-SEM-2.pdf",
-    "description": "Course: Major • Category: Papers"
-  },
-  {
-    "subject": "Zoology",
-    "title": "ZOOLOGY-MULTI-SEM-2.pdf",
-    "year": null,
-    "file": "pdfs/Sem_2/Zoology/Major/Papers/ZOOLOGY-MULTI-SEM-2.pdf",
-    "description": "Course: Major • Category: Papers"
-  },
-  {
-    "subject": "Zoology",
-    "title": "ZOOLOGY-SEM-2-MULTI-INTERNAL.pdf",
-    "year": null,
-    "file": "pdfs/Sem_2/Zoology/Major/Papers/ZOOLOGY-SEM-2-MULTI-INTERNAL.pdf",
-    "description": "Course: Major • Category: Papers"
-  },
-  {
-    "subject": "Zoology",
-    "title": "ZOOLOGY-SEM-2-PRACTICAL.pdf",
-    "year": null,
-    "file": "pdfs/Sem_2/Zoology/Major/Papers/ZOOLOGY-SEM-2-PRACTICAL.pdf",
     "description": "Course: Major • Category: Papers"
   }
 ]
