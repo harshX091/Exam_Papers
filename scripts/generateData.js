@@ -52,6 +52,17 @@ function readSidecar(pdfFull) {
 }
 
 const files = walk(pdfRoot);
+const globalSearchIndex = [];
+
+function addToGlobalIndex(entry, type, semKey, subject) {
+  globalSearchIndex.push({
+    title: entry.title,
+    subject: subject,
+    type: type,
+    semester: semKey.replace('sem_', 'Semester '),
+    file: entry.file
+  });
+}
 
 function generateSyllabus() {
   console.log('--- Generating Syllabus Data ---');
@@ -106,6 +117,7 @@ function generateSyllabus() {
       file: rel.replace(/^\/+/, ''), // relative path
       description: (side && side.description) || ''
     };
+    addToGlobalIndex(entry, category || 'Notes', semKey, subject);
 
     if (!syllabusData[semKey]) syllabusData[semKey] = {};
     if (!syllabusData[semKey][subject]) syllabusData[semKey][subject] = {};
@@ -272,6 +284,7 @@ function generatePapers() {
       file: rel.replace(/^\/+/, ''),
       description: (side && side.description) || ''
     };
+    addToGlobalIndex(entry, 'Papers', semKey, subject);
 
     grouped[semKey] = grouped[semKey] || [];
     grouped[semKey].push(entry);
@@ -328,6 +341,7 @@ function processLegacyPaper(full, rel, semKey, subject, grouped) {
       file: rel.replace(/^\/+/, ''),
       description: (side && side.description) || ''
     };
+    addToGlobalIndex(entry, 'Papers', semKey, subject);
 
     grouped[semKey] = grouped[semKey] || [];
     grouped[semKey].push(entry);
@@ -337,6 +351,11 @@ function processLegacyPaper(full, rel, semKey, subject, grouped) {
 try {
   generateSyllabus();
   generatePapers();
+  
+  const searchIndexPath = path.join(dataDir, 'search_index.json');
+  fs.writeFileSync(searchIndexPath, JSON.stringify(globalSearchIndex, null, 0) + '\n', 'utf8');
+  console.log(`Wrote ${searchIndexPath} with ${globalSearchIndex.length} items for global search.`);
+  
   console.log('Done.');
 } catch (err) {
   console.error('Error in generation script:', err);

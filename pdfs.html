@@ -285,7 +285,7 @@
 
         if (currentView === 'syllabus') {
           const filtered = (syllabusData || []).map(u => {
-            const unitMatch = (`Unit ${u.unit}`).toLowerCase().includes(val) || (u.category && u.category.toLowerCase().includes(val));
+            const unitMatch = (`Unit ${u.unit}`).toLowerCase().includes(val) || (u.category && u.category.toLowerCase().includes(val)) || (u.title && u.title.toLowerCase().includes(val));
             const matchingMaterials = u.materials ? u.materials.filter(m =>
               (m.title && m.title.toLowerCase().includes(val)) ||
               (m.description && m.description.toLowerCase().includes(val))

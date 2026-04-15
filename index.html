@@ -26,6 +26,11 @@
         <div style="margin-top: 1.5rem;">
             <a href="upload.html" class="btn" style="text-decoration: none; display: inline-block;">Contribution / Upload Material</a>
         </div>
+        
+        <div class="global-search-container">
+            <input type="text" id="globalSearchInput" placeholder="Search for any syllabus, notes, or past papers..." autocomplete="off">
+            <div id="globalSearchResults" class="search-dropdown" style="display: none;"></div>
+        </div>
     </header>
 
     <div class="container">
@@ -68,6 +73,67 @@
 
     </div>
 
-</body>
+    <script>
+        const searchInput = document.getElementById('globalSearchInput');
+        const searchResults = document.getElementById('globalSearchResults');
+        let searchIndex = null;
 
+        // Lazy load the search index when user focuses on the input
+        searchInput.addEventListener('focus', async () => {
+            if (!searchIndex) {
+                try {
+                    const res = await fetch('data/search_index.json');
+                    if (res.ok) {
+                        searchIndex = await res.json();
+                    }
+                } catch (e) {
+                    console.error("Failed to load search index", e);
+                }
+            }
+        });
+
+        searchInput.addEventListener('input', (e) => {
+            const val = e.target.value.toLowerCase().trim();
+            if (!val || !searchIndex) {
+                searchResults.style.display = 'none';
+                return;
+            }
+
+            // Filter results
+            const filtered = searchIndex.filter(item => 
+                (item.title && item.title.toLowerCase().includes(val)) ||
+                (item.subject && item.subject.toLowerCase().includes(val)) ||
+                (item.type && item.type.toLowerCase().includes(val)) ||
+                (item.file && item.file.toLowerCase().includes(val))
+            ).slice(0, 10); // show top 10 results
+
+            if (filtered.length === 0) {
+                searchResults.innerHTML = '<div class="dropdown-empty">No results found.</div>';
+                searchResults.style.display = 'block';
+                return;
+            }
+
+            searchResults.innerHTML = filtered.map(item => {
+                const filePath = encodeURI(String(item.file || '').replace(/^\/+/, ''));
+                const viewerLink = `viewer.html?file=${encodeURIComponent(filePath)}&title=${encodeURIComponent(item.title)}`;
+                return `
+                    <a href="${viewerLink}" class="dropdown-item">
+                        <div class="di-title">${item.title}</div>
+                        <div class="di-meta">${item.subject} • ${item.type} • ${item.semester}</div>
+                    </a>
+                `;
+            }).join('');
+            
+            searchResults.style.display = 'block';
+        });
+
+        // Hide dropdown when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.global-search-container')) {
+                searchResults.style.display = 'none';
+            }
+        });
+    </script>
+
+</body>
 </html>
