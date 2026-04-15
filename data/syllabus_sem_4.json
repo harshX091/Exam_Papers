@@ -226,6 +226,19 @@
       {
         "unit": 0,
         "category": "",
+        "title": "Major • SEC — Unit: Astro   Space Physics SC23SECPHY406",
+        "courseType": "Major",
+        "materials": [
+          {
+            "title": "ES Solar Cosmic Rays 08 16 16",
+            "file": "pdfs/Sem_4/Physics/Major/SEC/Notes/Astro___Space_Physics_SC23SECPHY406/ES_Solar___Cosmic_Rays__08_16_16.pdf",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "unit": 0,
+        "category": "",
         "title": "Major • SEC — Unit: ES Solar Cosmic Rays",
         "courseType": "Major",
         "materials": [
