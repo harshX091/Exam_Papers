@@ -8,20 +8,6 @@
   },
   {
     "subject": "Physics",
-    "title": "Major — VAC BHAGAVAD GITA SEM 2",
-    "year": null,
-    "file": "pdfs/Sem_2/Physics/Major/Papers/VAC-BHAGAVAD-GITA-SEM-2.pdf",
-    "description": ""
-  },
-  {
-    "subject": "Physics",
-    "title": "Major — VAC BHAGAVAD GITA SEM 2 INTERNAL",
-    "year": null,
-    "file": "pdfs/Sem_2/Physics/Major/Papers/VAC-BHAGAVAD-GITA-SEM-2-INTERNAL.pdf",
-    "description": ""
-  },
-  {
-    "subject": "Physics",
     "title": "Major • SEC — PHYSICS SEM 2 SEC",
     "year": null,
     "file": "pdfs/Sem_2/Physics/Major/SEC/Papers/PHYSICS-SEM-2-SEC.pdf",
@@ -32,6 +18,20 @@
     "title": "Major • SEC — PHYSICS SEM 2 SEC INTERNAL",
     "year": null,
     "file": "pdfs/Sem_2/Physics/Major/SEC/Papers/PHYSICS-SEM-2-SEC-INTERNAL.pdf",
+    "description": ""
+  },
+  {
+    "subject": "Physics",
+    "title": "Major • VAC — VAC BHAGAVAD GITA SEM 2",
+    "year": null,
+    "file": "pdfs/Sem_2/Physics/Major/VAC/Papers/VAC-BHAGAVAD-GITA-SEM-2.pdf",
+    "description": ""
+  },
+  {
+    "subject": "Physics",
+    "title": "Major • VAC — VAC BHAGAVAD GITA SEM 2 INTERNAL",
+    "year": null,
+    "file": "pdfs/Sem_2/Physics/Major/VAC/Papers/VAC-BHAGAVAD-GITA-SEM-2-INTERNAL.pdf",
     "description": ""
   },
   {
