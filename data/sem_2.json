@@ -1,12 +1,5 @@
 [
   {
-    "subject": "English",
-    "title": "AEC-ENGLISH-SEM-2.pdf",
-    "year": null,
-    "file": "pdfs/Sem_2/English/Major/Papers/AEC-ENGLISH-SEM-2.pdf",
-    "description": "Course: Major • Category: Papers"
-  },
-  {
     "subject": "Chemistry",
     "title": "CHEMISTRY-SEM-2-MINOR-INTERNAL.pdf",
     "year": null,
@@ -29,6 +22,34 @@
   },
   {
     "subject": "Physics",
+    "title": "Major • SEC — PHYSICS SEM 2 SEC",
+    "year": null,
+    "file": "pdfs/Sem_2/Physics/Major/SEC/Papers/PHYSICS-SEM-2-SEC.pdf",
+    "description": ""
+  },
+  {
+    "subject": "Physics",
+    "title": "Major • SEC — PHYSICS SEM 2 SEC INTERNAL",
+    "year": null,
+    "file": "pdfs/Sem_2/Physics/Major/SEC/Papers/PHYSICS-SEM-2-SEC-INTERNAL.pdf",
+    "description": ""
+  },
+  {
+    "subject": "Gita",
+    "title": "Major • VAC — VAC BHAGAVAD GITA SEM 2",
+    "year": null,
+    "file": "pdfs/Sem_2/Gita/Major/VAC/Papers/VAC-BHAGAVAD-GITA-SEM-2.pdf",
+    "description": ""
+  },
+  {
+    "subject": "Gita",
+    "title": "Major • VAC — VAC BHAGAVAD GITA SEM 2 INTERNAL",
+    "year": null,
+    "file": "pdfs/Sem_2/Gita/Major/VAC/Papers/VAC-BHAGAVAD-GITA-SEM-2-INTERNAL.pdf",
+    "description": ""
+  },
+  {
+    "subject": "Physics",
     "title": "PHYSICS-MAJOR-SEM-2-INTERNAL.pdf",
     "year": null,
     "file": "pdfs/Sem_2/Physics/Major/Papers/PHYSICS-MAJOR-SEM-2-INTERNAL.pdf",
@@ -39,34 +60,6 @@
     "title": "PHYSICS-MAJOR-SEM-2.pdf",
     "year": null,
     "file": "pdfs/Sem_2/Physics/Major/Papers/PHYSICS-MAJOR-SEM-2.pdf",
-    "description": "Course: Major • Category: Papers"
-  },
-  {
-    "subject": "Physics",
-    "title": "PHYSICS-SEM-2-SEC-INTERNAL.pdf",
-    "year": null,
-    "file": "pdfs/Sem_2/Physics/Major/Papers/PHYSICS-SEM-2-SEC-INTERNAL.pdf",
-    "description": "Course: Major • Category: Papers"
-  },
-  {
-    "subject": "Physics",
-    "title": "PHYSICS-SEM-2-SEC.pdf",
-    "year": null,
-    "file": "pdfs/Sem_2/Physics/Major/Papers/PHYSICS-SEM-2-SEC.pdf",
-    "description": "Course: Major • Category: Papers"
-  },
-  {
-    "subject": "Gita",
-    "title": "VAC-BHAGAVAD-GITA-SEM-2-INTERNAL.pdf",
-    "year": null,
-    "file": "pdfs/Sem_2/Gita/Major/Papers/VAC-BHAGAVAD-GITA-SEM-2-INTERNAL.pdf",
-    "description": "Course: Major • Category: Papers"
-  },
-  {
-    "subject": "Gita",
-    "title": "VAC-BHAGAVAD-GITA-SEM-2.pdf",
-    "year": null,
-    "file": "pdfs/Sem_2/Gita/Major/Papers/VAC-BHAGAVAD-GITA-SEM-2.pdf",
     "description": "Course: Major • Category: Papers"
   },
   {

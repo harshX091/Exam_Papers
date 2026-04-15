@@ -44,6 +44,24 @@
     ]
   },
   {
+    "subject": "English",
+    "units": [
+      {
+        "unit": 0,
+        "category": "",
+        "title": "Major — AEC",
+        "courseType": "Major",
+        "materials": [
+          {
+            "title": "English AEC sem 4",
+            "file": "pdfs/Sem_4/English/Major/AEC/Papers/English AEC sem 4.pdf",
+            "description": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
     "subject": "Physics",
     "units": [
       {

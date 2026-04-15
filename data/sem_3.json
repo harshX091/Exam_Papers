@@ -7,18 +7,25 @@
     "description": "Course: Major • Category: Papers • Year: 2025"
   },
   {
+    "subject": "Physics",
+    "title": "Major • IKS — sem 3 physics major IKS internal",
+    "year": 2025,
+    "file": "pdfs/Sem_3/Physics/Major/IKS/Papers/sem-3-physics-major-IKS-internal-2025.pdf",
+    "description": ""
+  },
+  {
+    "subject": "Physics",
+    "title": "Major • SEC — sem 3 physics major SEC internal",
+    "year": 2025,
+    "file": "pdfs/Sem_3/Physics/Major/SEC/Papers/sem-3-physics-major-SEC-internal-2025.pdf",
+    "description": ""
+  },
+  {
     "subject": "Zoology",
     "title": "Multi — sem 3 zoology multi internal",
     "year": 2025,
     "file": "pdfs/Sem_3/Zoology/Multi/Papers/sem-3-zoology-multi-internal-2025.pdf",
     "description": ""
-  },
-  {
-    "subject": "English",
-    "title": "sem-3-english-AEC-internal-2025.pdf",
-    "year": 2025,
-    "file": "pdfs/Sem_3/English/Major/Papers/sem-3-english-AEC-internal-2025.pdf",
-    "description": "Course: Major • Category: Papers • Year: 2025"
   },
   {
     "subject": "Physics",
@@ -29,23 +36,9 @@
   },
   {
     "subject": "Physics",
-    "title": "sem-3-physics-major-IKS-internal-2025.pdf",
-    "year": 2025,
-    "file": "pdfs/Sem_3/Physics/Major/Papers/sem-3-physics-major-IKS-internal-2025.pdf",
-    "description": "Course: Major • Category: Papers • Year: 2025"
-  },
-  {
-    "subject": "Physics",
     "title": "sem-3-physics-major-internal-2025.pdf",
     "year": 2025,
     "file": "pdfs/Sem_3/Physics/Major/Papers/sem-3-physics-major-internal-2025.pdf",
-    "description": "Course: Major • Category: Papers • Year: 2025"
-  },
-  {
-    "subject": "Physics",
-    "title": "sem-3-physics-major-SEC-internal-2025.pdf",
-    "year": 2025,
-    "file": "pdfs/Sem_3/Physics/Major/Papers/sem-3-physics-major-SEC-internal-2025.pdf",
     "description": "Course: Major • Category: Papers • Year: 2025"
   }
 ]

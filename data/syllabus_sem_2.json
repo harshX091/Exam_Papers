@@ -1,5 +1,23 @@
 [
   {
+    "subject": "English",
+    "units": [
+      {
+        "unit": 0,
+        "category": "",
+        "title": "Major — AEC",
+        "courseType": "Major",
+        "materials": [
+          {
+            "title": "AEC ENGLISH SEM 2",
+            "file": "pdfs/Sem_2/English/Major/AEC/Papers/AEC-ENGLISH-SEM-2.pdf",
+            "description": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
     "subject": "Physics",
     "units": [
       {

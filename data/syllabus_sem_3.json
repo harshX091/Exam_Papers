@@ -1,5 +1,23 @@
 [
   {
+    "subject": "English",
+    "units": [
+      {
+        "unit": 0,
+        "category": "",
+        "title": "Major — AEC",
+        "courseType": "Major",
+        "materials": [
+          {
+            "title": "sem 3 english AEC internal",
+            "file": "pdfs/Sem_3/English/Major/AEC/Papers/sem-3-english-AEC-internal-2025.pdf",
+            "description": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
     "subject": "Physics",
     "units": [
       {
