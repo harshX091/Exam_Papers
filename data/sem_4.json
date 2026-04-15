@@ -14,13 +14,6 @@
     "description": "Course: Major • Category: Papers"
   },
   {
-    "subject": "Chemistry",
-    "title": "CHEMISTRY_MINOR_402.pdf",
-    "year": null,
-    "file": "pdfs/Sem_4/Chemistry/Major/Papers/CHEMISTRY_MINOR_402.pdf",
-    "description": "Course: Major • Category: Papers"
-  },
-  {
     "subject": "English",
     "title": "English AEC sem 4.pdf",
     "year": null,
@@ -40,5 +33,12 @@
     "year": null,
     "file": "pdfs/Sem_4/Physics/Major/Papers/MAJOR_PHYSICS_401A.pdf",
     "description": "Course: Major • Category: Papers"
+  },
+  {
+    "subject": "Chemistry",
+    "title": "Minor — CHEMISTRY MINOR 402",
+    "year": null,
+    "file": "pdfs/Sem_4/Chemistry/Minor/Papers/CHEMISTRY_MINOR_402.pdf",
+    "description": ""
   }
 ]
