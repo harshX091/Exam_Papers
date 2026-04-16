@@ -62,6 +62,24 @@
     ]
   },
   {
+    "subject": "Mathematics",
+    "units": [
+      {
+        "unit": 0,
+        "category": "",
+        "title": "Minor — Unit: Unit 2",
+        "courseType": "Minor",
+        "materials": [
+          {
+            "title": "Numerical Analysis whole unit 2",
+            "file": "pdfs/Sem_4/Mathematics/Minor/Notes/Unit_2/Numerical_Analysis_whole_unit-2.pdf",
+            "description": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
     "subject": "Physics",
     "units": [
       {
