@@ -109,14 +109,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
         setLoading(true);
         try {
-            // 2. Read file as Base64
-            const base64Content = await getBase64(file);
-            const base64Data = base64Content.split(',')[1]; // strip data-URL prefix
-
-            // 3. Sanitize filename
+            // 2. Sanitize filename
             const newFileName = file.name.replace(/[^a-zA-Z0-9.\-_]/g, '_');
 
-            // 4. Build target path: pdfs/{Semester}/{Subject}/{CourseType}/[{UnitType}]/{Category}/[{UnitName}]/file.pdf
+            // 3. Build target path: pdfs/{Semester}/{Subject}/{CourseType}/[{UnitType}]/{Category}/[{UnitName}]/file.pdf
             const semesterKey = `Sem_${semester}`;
             const pathParts = ['pdfs', semesterKey, subjectFolder, courseType];
             if (unitType) pathParts.push(unitType);
@@ -127,7 +123,7 @@ document.addEventListener('DOMContentLoaded', () => {
             pathParts.push(newFileName);
             const targetPath = pathParts.join('/');
 
-            // 5. Generate metadata
+            // 4. Generate metadata
             const branchName = `upload-${semesterKey.toLowerCase()}-${subjectFolder.toLowerCase()}-${Date.now()}`;
             const commitMsg = `Add ${category} for ${subject} (${semesterKey})`;
             const prBody = `
@@ -146,18 +142,20 @@ ${unitType ? `- **Unit Type:** ${unitType}` : ''}
 Merging this PR will automatically publish the document and regenerate the site data.
             `;
 
+            // 5. Create FormData for raw binary upload
+            const payload = new FormData();
+            payload.append('file', file);
+            payload.append('targetPath', targetPath);
+            payload.append('branchName', branchName);
+            payload.append('commitMsg', commitMsg);
+            payload.append('prBody', prBody);
+
             // 6. Send to PROXY Server
             console.log("Sending upload request to proxy...");
             const response = await fetch(`${WORKER_URL}`, {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({
-                    targetPath,
-                    branchName,
-                    commitMsg,
-                    base64Data,
-                    prBody
-                })
+                // Exclude Content-Type header so the browser sets the correct multipart boundary
+                body: payload
             });
 
             if (!response.ok) {
@@ -182,15 +180,6 @@ Merging this PR will automatically publish the document and regenerate the site 
     });
 
     // ── Helpers ──────────────────────────────────────────────────────────────
-
-    function getBase64(file) {
-        return new Promise((resolve, reject) => {
-            const reader = new FileReader();
-            reader.readAsDataURL(file);
-            reader.onload = () => resolve(reader.result);
-            reader.onerror = err => reject(err);
-        });
-    }
 
     function setLoading(isLoading) {
         submitBtn.disabled = isLoading;
