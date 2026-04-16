@@ -67,6 +67,19 @@
       {
         "unit": 0,
         "category": "",
+        "title": "Minor — Unit: Unit 1",
+        "courseType": "Minor",
+        "materials": [
+          {
+            "title": "Numerical Analysis Unit 1 compressed",
+            "file": "pdfs/Sem_4/Mathematics/Minor/Notes/Unit_1/Numerical_Analysis__Unit-1_-compressed.pdf",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "unit": 0,
+        "category": "",
         "title": "Minor — Unit: Unit 2",
         "courseType": "Minor",
         "materials": [
