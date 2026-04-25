@@ -1,86 +1,110 @@
 [
   {
     "subject": "English",
-    "title": "ENGLISH-SEM-2.pdf",
+    "title": "Major — ENGLISH-SEM-2",
+    "courseType": "Major",
+    "unitType": null,
     "year": null,
     "file": "pdfs/Sem_2/English/Major/Papers/ENGLISH-SEM-2.pdf",
-    "description": "Course: Major • Category: Papers"
+    "description": ""
   },
   {
     "subject": "Physics",
-    "title": "Major • SEC — PHYSICS SEM 2 SEC",
+    "title": "Major — PHYSICS-MAJOR-SEM-2",
+    "courseType": "Major",
+    "unitType": null,
+    "year": null,
+    "file": "pdfs/Sem_2/Physics/Major/Papers/PHYSICS-MAJOR-SEM-2.pdf",
+    "description": ""
+  },
+  {
+    "subject": "Physics",
+    "title": "Major — PHYSICS-MAJOR-SEM-2-INTERNAL",
+    "courseType": "Major",
+    "unitType": null,
+    "year": null,
+    "file": "pdfs/Sem_2/Physics/Major/Papers/PHYSICS-MAJOR-SEM-2-INTERNAL.pdf",
+    "description": ""
+  },
+  {
+    "subject": "Physics",
+    "title": "Major • SEC — PHYSICS-SEM-2-SEC",
+    "courseType": "Major",
+    "unitType": "SEC",
     "year": null,
     "file": "pdfs/Sem_2/Physics/Major/SEC/Papers/PHYSICS-SEM-2-SEC.pdf",
     "description": ""
   },
   {
     "subject": "Physics",
-    "title": "Major • SEC — PHYSICS SEM 2 SEC INTERNAL",
+    "title": "Major • SEC — PHYSICS-SEM-2-SEC-INTERNAL",
+    "courseType": "Major",
+    "unitType": "SEC",
     "year": null,
     "file": "pdfs/Sem_2/Physics/Major/SEC/Papers/PHYSICS-SEM-2-SEC-INTERNAL.pdf",
     "description": ""
   },
   {
     "subject": "Physics",
-    "title": "Major • VAC — VAC BHAGAVAD GITA SEM 2",
+    "title": "Major • VAC — VAC-BHAGAVAD-GITA-SEM-2",
+    "courseType": "Major",
+    "unitType": "VAC",
     "year": null,
     "file": "pdfs/Sem_2/Physics/Major/VAC/Papers/VAC-BHAGAVAD-GITA-SEM-2.pdf",
     "description": ""
   },
   {
     "subject": "Physics",
-    "title": "Major • VAC — VAC BHAGAVAD GITA SEM 2 INTERNAL",
+    "title": "Major • VAC — VAC-BHAGAVAD-GITA-SEM-2-INTERNAL",
+    "courseType": "Major",
+    "unitType": "VAC",
     "year": null,
     "file": "pdfs/Sem_2/Physics/Major/VAC/Papers/VAC-BHAGAVAD-GITA-SEM-2-INTERNAL.pdf",
     "description": ""
   },
   {
     "subject": "Chemistry",
-    "title": "Minor — CHEMISTRY SEM 2 MINOR",
+    "title": "Minor — CHEMISTRY-SEM-2-MINOR",
+    "courseType": "Minor",
+    "unitType": null,
     "year": null,
     "file": "pdfs/Sem_2/Chemistry/Minor/Papers/CHEMISTRY-SEM-2-MINOR.pdf",
     "description": ""
   },
   {
     "subject": "Chemistry",
-    "title": "Minor — CHEMISTRY SEM 2 MINOR INTERNAL",
+    "title": "Minor — CHEMISTRY-SEM-2-MINOR-INTERNAL",
+    "courseType": "Minor",
+    "unitType": null,
     "year": null,
     "file": "pdfs/Sem_2/Chemistry/Minor/Papers/CHEMISTRY-SEM-2-MINOR-INTERNAL.pdf",
     "description": ""
   },
   {
     "subject": "Zoology",
-    "title": "Multi — ZOOLOGY MULTI SEM 2",
+    "title": "Multi — ZOOLOGY-MULTI-SEM-2",
+    "courseType": "Multi",
+    "unitType": null,
     "year": null,
     "file": "pdfs/Sem_2/Zoology/Multi/Papers/ZOOLOGY-MULTI-SEM-2.pdf",
     "description": ""
   },
   {
     "subject": "Zoology",
-    "title": "Multi — ZOOLOGY SEM 2 MULTI INTERNAL",
+    "title": "Multi — ZOOLOGY-SEM-2-MULTI-INTERNAL",
+    "courseType": "Multi",
+    "unitType": null,
     "year": null,
     "file": "pdfs/Sem_2/Zoology/Multi/Papers/ZOOLOGY-SEM-2-MULTI-INTERNAL.pdf",
     "description": ""
   },
   {
     "subject": "Zoology",
-    "title": "Multi — ZOOLOGY SEM 2 PRACTICAL",
+    "title": "Multi — ZOOLOGY-SEM-2-PRACTICAL",
+    "courseType": "Multi",
+    "unitType": null,
     "year": null,
     "file": "pdfs/Sem_2/Zoology/Multi/Papers/ZOOLOGY-SEM-2-PRACTICAL.pdf",
     "description": ""
-  },
-  {
-    "subject": "Physics",
-    "title": "PHYSICS-MAJOR-SEM-2-INTERNAL.pdf",
-    "year": null,
-    "file": "pdfs/Sem_2/Physics/Major/Papers/PHYSICS-MAJOR-SEM-2-INTERNAL.pdf",
-    "description": "Course: Major • Category: Papers"
-  },
-  {
-    "subject": "Physics",
-    "title": "PHYSICS-MAJOR-SEM-2.pdf",
-    "year": null,
-    "file": "pdfs/Sem_2/Physics/Major/Papers/PHYSICS-MAJOR-SEM-2.pdf",
-    "description": "Course: Major • Category: Papers"
   }
 ]

@@ -19,6 +19,7 @@ export default async function handler(req, res) {
             subjectFolder,// e.g. "Physics" (underscored)
             courseType,   // "Major", "Minor", "Multi", etc.
             category,     // "Papers", "Syllabus", "Notes"
+            examType,     // "Internal" or "External"
             year,         // 2026 or null
             unitName,     // e.g. "Mechanics"
             unitType,     // "SEC" or "IKS"
@@ -55,6 +56,10 @@ export default async function handler(req, res) {
 
         if (unitType) pathParts.push(unitType);
         pathParts.push(category);
+
+        if (category === 'Papers' && examType) {
+            pathParts.push(examType);
+        }
         
         // Only append unitName folder if it's Notes or Syllabus that specified a Unit Name explicitly
         if (unitName) {
@@ -119,7 +124,7 @@ A user has submitted a new academic document for review.
 - **Semester:** ${semester}
 - **Subject:** ${subjectTitle}
 - **Course Type:** ${courseType}
-- **Type:** ${category}
+- **Type:** ${category} ${category === 'Papers' && examType ? `(${examType})` : ''}
 ${year ? `- **Year:** ${year}` : ''}
 ${unitName ? `- **Unit Name:** ${unitName}` : ''}
 ${unitType ? `- **Unit Type:** ${unitType}` : ''}

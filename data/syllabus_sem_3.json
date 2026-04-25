@@ -9,7 +9,7 @@
         "courseType": "Major",
         "materials": [
           {
-            "title": "sem 3 english AEC internal",
+            "title": "sem-3-english-AEC-internal-2025",
             "file": "pdfs/Sem_3/English/Major/AEC/Papers/sem-3-english-AEC-internal-2025.pdf",
             "description": ""
           }
@@ -55,7 +55,7 @@
             "description": ""
           },
           {
-            "title": "Modern Physics Franck Herts Experiment",
+            "title": "Modern Physics Franck-Herts-Experiment",
             "file": "pdfs/Sem_3/Physics/Major/Notes/Major 1 - Unit 2 (Modern Physics)/Modern_Physics_Franck-Herts-Experiment.pdf",
             "description": ""
           }
@@ -68,18 +68,18 @@
         "courseType": "Major",
         "materials": [
           {
+            "title": "Crystal Structure - SRS",
+            "file": "pdfs/Sem_3/Physics/Major/Notes/Major 1 - Unit 4 (Solid State Physics)/Crystal Structure - SRS.pdf",
+            "description": ""
+          },
+          {
             "title": "Crystal Structure 2",
             "file": "pdfs/Sem_3/Physics/Major/Notes/Major 1 - Unit 4 (Solid State Physics)/Crystal Structure 2.pdf",
             "description": ""
           },
           {
-            "title": "Crystal Structure JJP",
+            "title": "Crystal Structure-JJP",
             "file": "pdfs/Sem_3/Physics/Major/Notes/Major 1 - Unit 4 (Solid State Physics)/Crystal Structure-JJP.pdf",
-            "description": ""
-          },
-          {
-            "title": "Crystal Structure SRS",
-            "file": "pdfs/Sem_3/Physics/Major/Notes/Major 1 - Unit 4 (Solid State Physics)/Crystal Structure - SRS.pdf",
             "description": ""
           }
         ]
@@ -109,7 +109,7 @@
         "courseType": "Major",
         "materials": [
           {
-            "title": "optics huma",
+            "title": "optics-huma",
             "file": "pdfs/Sem_3/Physics/Major/Notes/Major 2 - Unit 2 (Optics Fraunhoffer Diffraction)/optics-huma.pdf",
             "description": ""
           }

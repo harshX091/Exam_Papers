@@ -9,7 +9,7 @@
         "courseType": "Minor",
         "materials": [
           {
-            "title": "Chemistry minor sem4",
+            "title": "Chemistry-minor-sem4",
             "file": "pdfs/Sem_4/Chemistry/Minor/Syllabus/Chemistry-minor-sem4.pdf",
             "description": ""
           }
@@ -71,7 +71,7 @@
         "courseType": "Minor",
         "materials": [
           {
-            "title": "Numerical Analysis Unit 1 compressed",
+            "title": "Numerical Analysis Unit-1 -compressed",
             "file": "pdfs/Sem_4/Mathematics/Minor/Notes/Unit_1/Numerical_Analysis__Unit-1_-compressed.pdf",
             "description": ""
           }
@@ -84,7 +84,7 @@
         "courseType": "Minor",
         "materials": [
           {
-            "title": "Numerical Analysis whole unit 2",
+            "title": "Numerical Analysis whole unit-2",
             "file": "pdfs/Sem_4/Mathematics/Minor/Notes/Unit_2/Numerical_Analysis_whole_unit-2.pdf",
             "description": ""
           }
@@ -120,7 +120,7 @@
         "courseType": "Major",
         "materials": [
           {
-            "title": "CC 401 UNIT 2 NUCLEAR PHYSICS (1)",
+            "title": "CC-401-UNIT-2-NUCLEAR PHYSICS (1)",
             "file": "pdfs/Sem_4/Physics/Major/Notes/Major  1 - Unit_2/CC-401-UNIT-2-NUCLEAR PHYSICS (1).pdf",
             "description": ""
           },
@@ -130,7 +130,7 @@
             "description": ""
           },
           {
-            "title": "The Q Equation(3.1 to 3.5)",
+            "title": "The Q-Equation(3.1 to 3.5)",
             "file": "pdfs/Sem_4/Physics/Major/Notes/Major  1 - Unit_2/The Q-Equation(3.1 to 3.5).pdf",
             "description": ""
           }
@@ -179,7 +179,7 @@
         "courseType": "Major",
         "materials": [
           {
-            "title": "Curvilinear Co ordinates(10.6 to 10.9)",
+            "title": "Curvilinear Co-ordinates(10.6 to 10.9)",
             "file": "pdfs/Sem_4/Physics/Major/Notes/Major  2 - Unit_1/Curvilinear Co-ordinates(10.6 to 10.9).pdf",
             "description": ""
           },
@@ -235,12 +235,12 @@
             "description": ""
           },
           {
-            "title": "h Parameters sem 4 Electronbics",
+            "title": "h-Parameters sem 4 Electronbics",
             "file": "pdfs/Sem_4/Physics/Major/Notes/Major  2 - Unit_3/h-Parameters sem 4 Electronbics.pdf",
             "description": ""
           },
           {
-            "title": "SY Solidstate Devices UJT, SCR",
+            "title": "SY Solidstate Devices- UJT, SCR",
             "file": "pdfs/Sem_4/Physics/Major/Notes/Major  2 - Unit_3/SY Solidstate Devices- UJT, SCR...pdf",
             "description": ""
           }
@@ -266,7 +266,7 @@
         "courseType": "Major",
         "materials": [
           {
-            "title": "BSC SEMESTER 4 PHY MAJOR",
+            "title": "BSC SEMESTER-4 PHY MAJOR",
             "file": "pdfs/Sem_4/Physics/Major/Syllabus/BSC SEMESTER-4_PHY_MAJOR.pdf",
             "description": ""
           }
@@ -292,7 +292,7 @@
         "courseType": "Major",
         "materials": [
           {
-            "title": "New Doc 03 05 2026 12.17 compressed",
+            "title": "New Doc 03-05-2026 12.17-compressed",
             "file": "pdfs/Sem_4/Physics/Major/VAC/Notes/VAC_PHY405/New_Doc_03-05-2026_12.17-compressed.pdf",
             "description": ""
           }

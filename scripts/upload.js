@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const semesterSelect = document.getElementById('semester');
     const subjectSelect = document.getElementById('subject');
     const yearGroup = document.getElementById('yearGroup');
+    const examTypeGroup = document.getElementById('examTypeGroup');
     const unitGroup = document.getElementById('unitGroup');
     const yearInput = document.getElementById('year');
     const unitNameInput = document.getElementById('unitName');
@@ -22,15 +23,18 @@ document.addEventListener('DOMContentLoaded', () => {
         const val = e.target.value;
         if (val === 'Papers') {
             yearGroup.style.display = 'flex';
+            examTypeGroup.style.display = 'flex';
             unitGroup.style.display = 'none';
             unitNameInput.value = '';
         } else if (val === 'Syllabus') {
             yearGroup.style.display = 'none';
+            examTypeGroup.style.display = 'none';
             unitGroup.style.display = 'none';
             yearInput.value = '';
             unitNameInput.value = '';
         } else if (val === 'Notes') {
             yearGroup.style.display = 'none';
+            examTypeGroup.style.display = 'none';
             unitGroup.style.display = 'flex';
             yearInput.value = '';
         }
@@ -79,10 +83,12 @@ document.addEventListener('DOMContentLoaded', () => {
         let subject = formData.get('subject');
         const courseType = formData.get('courseType');
         const category = formData.get('category');
+        const examType = formData.get('examType');
         const year = formData.get('year');
         const unitName = formData.get('unitName');
         const unitType = formData.get('unitType');
         const file = formData.get('pdfFile');
+        const subjectTitle = subject.trim();
 
         if (!subject) {
             showError('Please select a Subject.');
@@ -117,6 +123,9 @@ document.addEventListener('DOMContentLoaded', () => {
             const pathParts = ['pdfs', semesterKey, subjectFolder, courseType];
             if (unitType) pathParts.push(unitType);
             pathParts.push(category);
+            if (category === 'Papers' && examType) {
+                pathParts.push(examType);
+            }
             if (unitName && unitName.trim()) {
                 pathParts.push(unitName.trim().replace(/[^a-zA-Z0-9.\-_]/g, '_'));
             }
@@ -131,9 +140,9 @@ document.addEventListener('DOMContentLoaded', () => {
 A user has submitted a new academic document for review.
 
 - **Semester:** ${semesterKey}
-- **Subject:** ${subject}
+- **Subject:** ${subjectTitle}
 - **Course Type:** ${courseType}
-- **Type:** ${category}
+- **Type:** ${category} ${category === 'Papers' && examType ? `(${examType})` : ''}
 ${year ? `- **Year:** ${year}` : ''}
 ${unitName ? `- **Unit Name:** ${unitName}` : ''}
 ${unitType ? `- **Unit Type:** ${unitType}` : ''}

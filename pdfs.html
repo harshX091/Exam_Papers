@@ -168,7 +168,14 @@
           let rawPapers = data.filter(p => p.subject.toLowerCase() === subject.toLowerCase());
 
           if (courseType) {
-            papersData = rawPapers.filter(p => p.title.toLowerCase().startsWith(courseTypeRaw.toLowerCase()));
+            papersData = rawPapers.filter(p => {
+              // 1. If JSON has courseType field, use it (exact match)
+              if (p.courseType) {
+                return p.courseType.toLowerCase() === courseTypeRaw.toLowerCase();
+              }
+              // 2. Fallback to older title prefix matching
+              return p.title.toLowerCase().startsWith(courseTypeRaw.toLowerCase());
+            });
           } else {
             papersData = rawPapers;
           }

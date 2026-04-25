@@ -1,49 +1,63 @@
 [
   {
     "subject": "Physics",
-    "title": "Major — MAJOR PHYSICS 401 Internal Exam March",
+    "title": "Major — MAJOR PHYSICS 401 Internal Exam March-2026",
+    "courseType": "Major",
+    "unitType": null,
     "year": 2026,
     "file": "pdfs/Sem_4/Physics/Major/Papers/Internal/MAJOR_PHYSICS_401_Internal_Exam_March-2026.pdf",
+    "description": "Internal"
+  },
+  {
+    "subject": "English",
+    "title": "Major — 2025 Paper",
+    "courseType": "Major",
+    "unitType": null,
+    "year": null,
+    "file": "pdfs/Sem_4/English/Major/Papers/2025_Paper.pdf",
+    "description": ""
+  },
+  {
+    "subject": "Physics",
+    "title": "Major — 2026 Paper",
+    "courseType": "Major",
+    "unitType": null,
+    "year": null,
+    "file": "pdfs/Sem_4/Physics/Major/Papers/2026_Paper.pdf",
     "description": ""
   },
   {
     "subject": "English",
-    "title": "2025_Paper.pdf",
+    "title": "Major — English External 2026",
+    "courseType": "Major",
+    "unitType": null,
     "year": null,
-    "file": "pdfs/Sem_4/English/Major/Papers/2025_Paper.pdf",
-    "description": "Course: Major • Category: Papers"
+    "file": "pdfs/Sem_4/English/Major/Papers/English_External_2026.pdf",
+    "description": ""
   },
   {
     "subject": "Physics",
-    "title": "2026_Paper.pdf",
+    "title": "Major — MAJOR PHYSICS 401A",
+    "courseType": "Major",
+    "unitType": null,
     "year": null,
-    "file": "pdfs/Sem_4/Physics/Major/Papers/2026_Paper.pdf",
-    "description": "Course: Major • Category: Papers"
-  },
-  {
-    "subject": "English",
-    "title": "English_External_2026.pdf",
-    "year": null,
-    "file": "pdfs/Sem_4/English/Major/Papers/English_External_2026.pdf",
-    "description": "Course: Major • Category: Papers"
+    "file": "pdfs/Sem_4/Physics/Major/Papers/MAJOR_PHYSICS_401A.pdf",
+    "description": ""
   },
   {
     "subject": "Physics",
     "title": "Major — phy sem 4 Major Uni 2025 paper",
+    "courseType": "Major",
+    "unitType": null,
     "year": null,
     "file": "pdfs/Sem_4/Physics/Major/Papers/phy_sem_4_Major_Uni_2025_paper.pdf",
     "description": ""
   },
   {
-    "subject": "Physics",
-    "title": "MAJOR_PHYSICS_401A.pdf",
-    "year": null,
-    "file": "pdfs/Sem_4/Physics/Major/Papers/MAJOR_PHYSICS_401A.pdf",
-    "description": "Course: Major • Category: Papers"
-  },
-  {
     "subject": "Chemistry",
     "title": "Minor — CHEMISTRY MINOR 402",
+    "courseType": "Minor",
+    "unitType": null,
     "year": null,
     "file": "pdfs/Sem_4/Chemistry/Minor/Papers/CHEMISTRY_MINOR_402.pdf",
     "description": ""

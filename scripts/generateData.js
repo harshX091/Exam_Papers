@@ -38,8 +38,7 @@ function normalizeUnit(seg) {
 function cleanTitle(name) {
   return name
     .replace(/\.(pdf)$/i, '')
-    .replace(/\b(19|20)\d{2}\b/, '')
-    .replace(/[_\-]+/g, ' ')       // remove underscores and dashes
+    .replace(/_+/g, ' ') // Only remove underscores, keep hyphens
     .replace(/(?<!\d)\.+(?!\d)/g, ' ') // remove dots NOT between digits
     .replace(/\s+/g, ' ')
     .trim();
@@ -112,12 +111,34 @@ function generateSyllabus() {
     const titleGuess = cleanTitle(filename);
     const side = readSidecar(full);
 
+    const baseTitle = (side && side.title) || titleGuess || filename;
+    
+    // Construct readable Title based on Major/Minor, SEC/IKS, and Unit for Global Search
+    let searchDisplayTitle = courseType || "General";
+    if (unitType) searchDisplayTitle += ` • ${unitType}`;
+    
+    if (unitName) {
+      let cleanUnitName = unitName.replace(/_/g, ' ');
+      if (courseType && cleanUnitName.toLowerCase().startsWith(courseType.toLowerCase())) {
+         searchDisplayTitle = cleanUnitName;
+         if (unitType) searchDisplayTitle += ` • ${unitType}`;
+      } else {
+         // Avoid double "Unit Unit 1", just in case
+         let displayUnit = cleanUnitName.toLowerCase().startsWith('unit') ? cleanUnitName : `Unit ${cleanUnitName}`;
+         searchDisplayTitle += ` • ${displayUnit}`;
+      }
+    }
+    
+    searchDisplayTitle += ` — ${baseTitle}`;
+
     const entry = {
-      title: (side && side.title) || titleGuess || filename,
+      title: baseTitle,
       file: rel.replace(/^\/+/, ''), // relative path
       description: (side && side.description) || ''
     };
-    addToGlobalIndex(entry, category || 'Notes', semKey, subject);
+    
+    // Add specifically styled title to global search index
+    addToGlobalIndex({ ...entry, title: searchDisplayTitle }, category || 'Notes', semKey, subject);
 
     if (!syllabusData[semKey]) syllabusData[semKey] = {};
     if (!syllabusData[semKey][subject]) syllabusData[semKey][subject] = {};
@@ -257,6 +278,7 @@ function generatePapers() {
 
     if (parts[currentIndex]) {
       category = parts[currentIndex];
+      currentIndex++;
     } else {
       return; // No category found
     }
@@ -264,6 +286,12 @@ function generatePapers() {
     // PAPERS MODE: Only include if explicitly in "Papers" folder
     if (category.toLowerCase() !== 'papers') {
       return;
+    }
+
+    let examType = null;
+    if (parts[currentIndex] && !parts[currentIndex].toLowerCase().endsWith('.pdf')) {
+      examType = parts[currentIndex];
+      // Normalize if possible, but keep original for now
     }
 
     const filename = path.basename(full);
@@ -277,12 +305,19 @@ function generatePapers() {
     if (unitType) displayTitle += ` • ${unitType}`;
     displayTitle += ` — ${titleGuess || filename}`;
 
+    let description = (side && side.description) || '';
+    if (examType && !description.includes(examType)) {
+      description = description ? `${examType} • ${description}` : examType;
+    }
+
     const entry = {
       subject: (side && side.subject) || subject,
       title: (side && side.title) || displayTitle,
+      courseType: courseType, // Store raw course type for robust filtering
+      unitType: unitType,
       year: (side && side.year) || year,
       file: rel.replace(/^\/+/, ''),
-      description: (side && side.description) || ''
+      description: description
     };
     addToGlobalIndex(entry, 'Papers', semKey, subject);
 
@@ -310,9 +345,13 @@ function generatePapers() {
     const merged = entries.map(e => {
       const ex = existingMap.get(e.file);
       if (ex) {
+        // Prioritize generated fields if they are more informative or required for UI logic
         return {
           ...e,
-          title: ex.title || e.title,
+          // If the existing title doesn't start with the course type but the new one does, 
+          // we favor the new one to fix visibility issues.
+          title: (e.title.toLowerCase().startsWith(e.courseType.toLowerCase()) && !ex.title.toLowerCase().startsWith(e.courseType.toLowerCase())) 
+                 ? e.title : (ex.title || e.title),
           description: ex.description || e.description,
           year: ex.year || e.year,
           subject: ex.subject || e.subject

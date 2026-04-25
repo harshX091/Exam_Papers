@@ -1,44 +1,56 @@
 [
   {
     "subject": "Physics",
-    "title": "B.Sc. Sem 3 Assignment 2025.pdf",
+    "title": "Major — B Sc Sem 3 Assignment 2025",
+    "courseType": "Major",
+    "unitType": null,
     "year": 2025,
     "file": "pdfs/Sem_3/Physics/Major/Papers/B.Sc. Sem 3 Assignment 2025.pdf",
-    "description": "Course: Major • Category: Papers • Year: 2025"
+    "description": ""
   },
   {
     "subject": "Physics",
-    "title": "Major • IKS — sem 3 physics major IKS internal",
+    "title": "Major — sem-3-physics-major-A-internal-2025",
+    "courseType": "Major",
+    "unitType": null,
+    "year": 2025,
+    "file": "pdfs/Sem_3/Physics/Major/Papers/sem-3-physics-major-A-internal-2025.pdf",
+    "description": ""
+  },
+  {
+    "subject": "Physics",
+    "title": "Major — sem-3-physics-major-internal-2025",
+    "courseType": "Major",
+    "unitType": null,
+    "year": 2025,
+    "file": "pdfs/Sem_3/Physics/Major/Papers/sem-3-physics-major-internal-2025.pdf",
+    "description": ""
+  },
+  {
+    "subject": "Physics",
+    "title": "Major • IKS — sem-3-physics-major-IKS-internal-2025",
+    "courseType": "Major",
+    "unitType": "IKS",
     "year": 2025,
     "file": "pdfs/Sem_3/Physics/Major/IKS/Papers/sem-3-physics-major-IKS-internal-2025.pdf",
     "description": ""
   },
   {
     "subject": "Physics",
-    "title": "Major • SEC — sem 3 physics major SEC internal",
+    "title": "Major • SEC — sem-3-physics-major-SEC-internal-2025",
+    "courseType": "Major",
+    "unitType": "SEC",
     "year": 2025,
     "file": "pdfs/Sem_3/Physics/Major/SEC/Papers/sem-3-physics-major-SEC-internal-2025.pdf",
     "description": ""
   },
   {
     "subject": "Zoology",
-    "title": "Multi — sem 3 zoology multi internal",
+    "title": "Multi — sem-3-zoology-multi-internal-2025",
+    "courseType": "Multi",
+    "unitType": null,
     "year": 2025,
     "file": "pdfs/Sem_3/Zoology/Multi/Papers/sem-3-zoology-multi-internal-2025.pdf",
     "description": ""
-  },
-  {
-    "subject": "Physics",
-    "title": "sem-3-physics-major-A-internal-2025.pdf",
-    "year": 2025,
-    "file": "pdfs/Sem_3/Physics/Major/Papers/sem-3-physics-major-A-internal-2025.pdf",
-    "description": "Course: Major • Category: Papers • Year: 2025"
-  },
-  {
-    "subject": "Physics",
-    "title": "sem-3-physics-major-internal-2025.pdf",
-    "year": 2025,
-    "file": "pdfs/Sem_3/Physics/Major/Papers/sem-3-physics-major-internal-2025.pdf",
-    "description": "Course: Major • Category: Papers • Year: 2025"
   }
 ]
