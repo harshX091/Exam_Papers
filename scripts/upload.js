@@ -8,6 +8,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const categorySelect = document.getElementById('category');
     const semesterSelect = document.getElementById('semester');
     const subjectSelect = document.getElementById('subject');
+    const courseTypeSelect = document.getElementById('courseType');
+    const courseTypeGroup = document.getElementById('courseTypeGroup');
     const yearGroup = document.getElementById('yearGroup');
     const examTypeGroup = document.getElementById('examTypeGroup');
     const unitGroup = document.getElementById('unitGroup');
@@ -61,6 +63,22 @@ document.addEventListener('DOMContentLoaded', () => {
     semesterSelect.addEventListener('change', () => {
         if (semesterSelect.value) {
             subjectSelect.disabled = false;
+        }
+    });
+
+    // Hide Course Type for general subjects
+    subjectSelect.addEventListener('change', (e) => {
+        const val = e.target.value;
+        const generalSubjects = ['English AEC', 'SEC', 'IKS', 'VAC'];
+        
+        if (generalSubjects.includes(val)) {
+            courseTypeGroup.style.display = 'none';
+            courseTypeSelect.value = 'General';
+        } else {
+            courseTypeGroup.style.display = 'flex';
+            if (courseTypeSelect.value === 'General') {
+                courseTypeSelect.value = '';
+            }
         }
     });
 
