@@ -124,6 +124,14 @@ document.addEventListener('DOMContentLoaded', () => {
         
         if (!subject || !courseCode) return '';
         
+        if (category === 'Notes') {
+            const fileInput = document.getElementById('pdfFile');
+            if (fileInput && fileInput.files.length > 0) {
+                return fileInput.files[0].name.replace(/[^a-zA-Z0-9.\-_ ]/g, '').replace(/\s+/g, ' ');
+            }
+            return '[Original_File_Name].pdf';
+        }
+        
         let parts = [];
         // Convert internal underscores to spaces for the filename
         parts.push(subject.replace(/_/g, ' '));
@@ -140,9 +148,6 @@ document.addEventListener('DOMContentLoaded', () => {
             if (year) parts.push(year);
         } else if (category === 'Syllabus') {
             parts.push('Syllabus');
-        } else if (category === 'Notes') {
-            if (unitName) parts.push(unitName);
-            parts.push('notes');
         }
         
         // Remove illegal characters but KEEP spaces
@@ -160,7 +165,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     
     // Attach listeners to update live preview
-    const previewInputs = [categorySelect, subjectSelect, courseCodeInput, document.getElementById('examType'), document.getElementById('year'), document.getElementById('unitName')];
+    const previewInputs = [categorySelect, subjectSelect, courseCodeInput, document.getElementById('examType'), document.getElementById('year'), document.getElementById('unitName'), document.getElementById('pdfFile')];
     if (coreSubjectSelect) previewInputs.push(coreSubjectSelect);
     
     previewInputs.forEach(el => {
