@@ -61,10 +61,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const coreSubjectGroup = document.getElementById('coreSubjectGroup');
     if (coreSubjectSelect) {
         // Populate coreSubject dropdown with non-general subjects
-        const NON_GENERAL_SUBJECTS = typeof GENERAL_SUBJECTS !== 'undefined' 
+        const NON_GENERAL_SUBJECTS = typeof GENERAL_SUBJECTS !== 'undefined'
             ? COMMON_SUBJECTS.filter(s => !GENERAL_SUBJECTS.includes(s))
             : COMMON_SUBJECTS;
-            
+
         NON_GENERAL_SUBJECTS.sort().forEach(sub => {
             const option = document.createElement('option');
             const displaySub = sub.replace(/_/g, ' ');
@@ -84,15 +84,15 @@ document.addEventListener('DOMContentLoaded', () => {
     // Hide Course Type for general subjects and show Core Subject instead
     subjectSelect.addEventListener('change', (e) => {
         const val = e.target.value;
-        const generalSubjectsDisplay = typeof GENERAL_SUBJECTS !== 'undefined' 
-            ? GENERAL_SUBJECTS.map(s => s.replace(/_/g, ' ')) 
+        const generalSubjectsDisplay = typeof GENERAL_SUBJECTS !== 'undefined'
+            ? GENERAL_SUBJECTS.map(s => s.replace(/_/g, ' '))
             : ['English AEC', 'SEC', 'IKS', 'VAC'];
-        
+
         if (generalSubjectsDisplay.includes(val)) {
             courseTypeGroup.style.display = 'none';
             courseTypeSelect.value = 'General';
             courseTypeSelect.removeAttribute('required');
-            
+
             if (coreSubjectGroup) {
                 coreSubjectGroup.style.display = 'flex';
                 coreSubjectSelect.setAttribute('required', 'required');
@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (courseTypeSelect.value === 'General') {
                 courseTypeSelect.value = '';
             }
-            
+
             if (coreSubjectGroup) {
                 coreSubjectGroup.style.display = 'none';
                 coreSubjectSelect.removeAttribute('required');
@@ -121,9 +121,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const examType = document.getElementById('examType').value;
         const year = document.getElementById('year').value;
         const unitName = document.getElementById('unitName').value.trim();
-        
+
         if (!subject || !courseCode) return '';
-        
+
         if (category === 'Notes') {
             const fileInput = document.getElementById('pdfFile');
             if (fileInput && fileInput.files.length > 0) {
@@ -131,29 +131,29 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             return '[Original_File_Name].pdf';
         }
-        
+
         let parts = [];
         // Convert internal underscores to spaces for the filename
         parts.push(subject.replace(/_/g, ' '));
-        
+
         // Add core subject if it is visible and selected
         if (coreSubjectGroup && coreSubjectGroup.style.display !== 'none' && coreSubject) {
             parts.push(coreSubject.replace(/_/g, ' '));
         }
-        
+
         parts.push(courseCode);
-        
+
         if (category === 'Papers') {
             if (examType) parts.push(examType);
             if (year) parts.push(year);
         } else if (category === 'Syllabus') {
             parts.push('Syllabus');
         }
-        
+
         // Remove illegal characters but KEEP spaces
         return parts.join(' ').replace(/[^a-zA-Z0-9.\-_ ]/g, '').replace(/\s+/g, ' ') + '.pdf';
     }
-    
+
     function updatePreview() {
         const fn = generateSemanticFilename();
         if (fn) {
@@ -163,11 +163,11 @@ document.addEventListener('DOMContentLoaded', () => {
             filenamePreview.style.display = 'none';
         }
     }
-    
+
     // Attach listeners to update live preview
     const previewInputs = [categorySelect, subjectSelect, courseCodeInput, document.getElementById('examType'), document.getElementById('year'), document.getElementById('unitName'), document.getElementById('pdfFile')];
     if (coreSubjectSelect) previewInputs.push(coreSubjectSelect);
-    
+
     previewInputs.forEach(el => {
         if (el) {
             el.addEventListener('input', updatePreview);
@@ -201,7 +201,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const unitType = formData.get('unitType');
         const file = formData.get('pdfFile');
         const subjectTitle = subject.trim();
-        
+
         let courseCodeVal = formData.get('courseCode');
         if (courseCodeVal) {
             courseCodeVal = courseCodeVal.trim().toUpperCase();
@@ -238,12 +238,12 @@ document.addEventListener('DOMContentLoaded', () => {
         try {
             // 2. Sanitize filename using dynamic naming logic
             const newFileName = generateSemanticFilename();
-            
+
             // Determine the final course type to use in the path
-            const generalSubjectsDisplay = typeof GENERAL_SUBJECTS !== 'undefined' 
-                ? GENERAL_SUBJECTS.map(s => s.replace(/_/g, ' ')) 
+            const generalSubjectsDisplay = typeof GENERAL_SUBJECTS !== 'undefined'
+                ? GENERAL_SUBJECTS.map(s => s.replace(/_/g, ' '))
                 : ['English AEC', 'SEC', 'IKS', 'VAC'];
-                
+
             let finalCourseType = courseType;
             if (generalSubjectsDisplay.includes(subjectTitle)) {
                 // If it's a general subject, use the selected Core Subject (e.g. Physics) as the CourseType folder
@@ -286,7 +286,7 @@ Merging this PR will automatically publish the document and regenerate the site 
 
             // 5. Create FormData for raw binary upload
             const payload = new FormData();
-            
+
             // Pre-read the file into memory. This prevents the "Failed to fetch" error
             // on mobile devices when selecting a virtual file directly from Google Drive.
             let safeFile = file;
@@ -326,7 +326,7 @@ Merging this PR will automatically publish the document and regenerate the site 
 
         } catch (error) {
             console.error('Final upload error details:', error);
-            showError(`Error: ${error.message}<br><small>If this persists, check your Cloudflare Worker logs.</small>`);
+            showError(`Error:${error.message}<br><small>If this persists, check your Cloudflare Worker logs.</small>`);
         } finally {
             setLoading(false);
         }
