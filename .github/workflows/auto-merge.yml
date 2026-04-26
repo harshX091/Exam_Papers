@@ -27,3 +27,27 @@ jobs:
           
           # Auto-merge the PR using GitHub CLI and delete the branch
           gh pr merge ${{ github.event.pull_request.number }} --repo ${{ github.repository }} --merge --delete-branch
+
+      - name: Setup Node.js
+        if: startsWith(github.head_ref, 'upload-')
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Regenerate and Push Site Data
+        if: startsWith(github.head_ref, 'upload-')
+        run: |
+          # Fetch and checkout main to get the newly merged PDF
+          git fetch origin main
+          git checkout main
+          git pull origin main
+          
+          # Run the data generation script
+          node scripts/generateData.js
+          
+          # Commit and push the updated data files
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/
+          git diff --cached --quiet || git commit -m "chore: regenerate data JSONs after auto-merge [skip ci]"
+          git push origin main
