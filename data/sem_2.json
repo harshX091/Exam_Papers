@@ -108,12 +108,21 @@
     "description": "Internal"
   },
   {
-    "subject": "English",
-    "title": "Major — ENGLISH-SEM-2",
-    "courseType": "Major",
+    "subject": "English Aec",
+    "title": "General — AEC-ENGLISH-SEM-2",
+    "courseType": "General",
     "unitType": null,
     "year": null,
-    "file": "pdfs/Sem_2/English/Major/Papers/ENGLISH-SEM-2.pdf",
+    "file": "pdfs/Sem_2/English_Aec/General/Papers/AEC-ENGLISH-SEM-2.pdf",
+    "description": ""
+  },
+  {
+    "subject": "English Aec",
+    "title": "General — ENGLISH-SEM-2",
+    "courseType": "General",
+    "unitType": null,
+    "year": null,
+    "file": "pdfs/Sem_2/English_Aec/General/Papers/ENGLISH-SEM-2.pdf",
     "description": ""
   },
   {

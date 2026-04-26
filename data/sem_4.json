@@ -18,21 +18,30 @@
     "description": "Internal"
   },
   {
-    "subject": "English",
-    "title": "Major — 2025 Paper",
-    "courseType": "Major",
+    "subject": "English Aec",
+    "title": "General — 2025 Paper",
+    "courseType": "General",
     "unitType": null,
     "year": null,
-    "file": "pdfs/Sem_4/English/Major/Papers/2025_Paper.pdf",
+    "file": "pdfs/Sem_4/English_Aec/General/Papers/2025_Paper.pdf",
     "description": ""
   },
   {
-    "subject": "English",
-    "title": "Major — English External 2026",
-    "courseType": "Major",
+    "subject": "English Aec",
+    "title": "General — English AEC sem 4",
+    "courseType": "General",
     "unitType": null,
     "year": null,
-    "file": "pdfs/Sem_4/English/Major/Papers/English_External_2026.pdf",
+    "file": "pdfs/Sem_4/English_Aec/General/Papers/English AEC sem 4.pdf",
+    "description": ""
+  },
+  {
+    "subject": "English Aec",
+    "title": "General — English External 2026",
+    "courseType": "General",
+    "unitType": null,
+    "year": null,
+    "file": "pdfs/Sem_4/English_Aec/General/Papers/English_External_2026.pdf",
     "description": ""
   },
   {

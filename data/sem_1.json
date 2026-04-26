@@ -63,22 +63,13 @@
     "description": "Internal"
   },
   {
-    "subject": "English",
-    "title": "Major — English AEC104 External 2024",
-    "courseType": "Major",
+    "subject": "English Aec",
+    "title": "General — English AEC104 External 2024",
+    "courseType": "General",
     "unitType": null,
     "year": null,
-    "file": "pdfs/Sem_1/English/Major/Papers/External/English_AEC104_External_2024.pdf",
+    "file": "pdfs/Sem_1/English_Aec/General/Papers/External/English_AEC104_External_2024.pdf",
     "description": "External"
-  },
-  {
-    "subject": "English",
-    "title": "Major — English AEC104 Internal 2024",
-    "courseType": "Major",
-    "unitType": null,
-    "year": null,
-    "file": "pdfs/Sem_1/English/Major/Papers/Internal/English_AEC104_Internal_2024.pdf",
-    "description": "Internal"
   },
   {
     "subject": "Physics",
@@ -96,15 +87,6 @@
     "unitType": null,
     "year": null,
     "file": "pdfs/Sem_1/Physics/Major/Papers/Internal/Physics_101_Internal_2024.pdf",
-    "description": "Internal"
-  },
-  {
-    "subject": "Physics",
-    "title": "Major — SEC Physics 106 Internal 2024",
-    "courseType": "Major",
-    "unitType": null,
-    "year": null,
-    "file": "pdfs/Sem_1/Physics/Major/Papers/Internal/SEC_Physics_106_Internal_2024.pdf",
     "description": "Internal"
   },
   {
