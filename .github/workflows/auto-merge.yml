@@ -22,4 +22,4 @@ jobs:
           sleep 10
           
           # Auto-merge the PR using GitHub CLI and delete the branch
-          gh pr merge ${{ github.event.pull_request.number }} --merge --delete-branch
+          gh pr merge ${{ github.event.pull_request.number }} --repo ${{ github.repository }} --merge --delete-branch
