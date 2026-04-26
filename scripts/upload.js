@@ -42,9 +42,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // COMMON SUBJECTS used across semesters
     const ALL_SUBJECTS = [
-        "Physics", "Chemistry", "Mathematics", "Electronics",
-        "Zoology", "Botany", "Computer_Science", "English",
-        "Sanskrit", "Statistics"
+        "Physics", "Chemistry", "Mathematics", "Zoology",
+        "Botany", "Computer_Science", "English_AEC",
+        "SEC", "IKS", "VAC"
     ];
 
     // Populate the dropdown initially
