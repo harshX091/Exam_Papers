@@ -11,6 +11,10 @@ jobs:
       contents: write
       pull-requests: write
     steps:
+      - name: Checkout repository
+        if: startsWith(github.head_ref, 'upload-')
+        uses: actions/checkout@v4
+
       - name: Auto-merge PR
         # We only auto-merge PRs created by the upload script (branch starts with 'upload-')
         # This prevents auto-merging unrelated manual PRs you might make in the future.
