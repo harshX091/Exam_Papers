@@ -248,9 +248,18 @@
             <div class="paper-sub">${p.subject} • ${p.year} • ${p.description || ''}</div>
           </div>
           <div class="actions">
-            <a class="view-btn" href="${viewerLink}">View</a>
-            <a class="dl-btn" href="${filePath}" download>Download</a>
-            <button class="share-btn" onclick="handleShare('${p.title.replace(/'/g, "\\'")}', '${filePath}')" style="border:none; cursor:pointer; font-size:0.85rem; font-weight:600; padding:8px 12px; border-radius:6px; transition:background 0.2s;">Share</button>
+            <a class="view-btn" href="${viewerLink}">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+              View
+            </a>
+            <a class="dl-btn" href="${filePath}" download>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+              Download
+            </a>
+            <button class="share-btn" onclick="handleShare('${p.title.replace(/'/g, "\\'")}', '${filePath}')">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" x2="12" y1="2" y2="15"/></svg>
+              Share
+            </button>
           </div>
         `;
         area.appendChild(d);
@@ -297,9 +306,18 @@
                  <div class="paper-sub">${m.description || 'Syllabus/Notes'}</div>
                </div>
                <div class="actions">
-                 <a class="view-btn" href="${viewerLink}">View</a>
-                 <a class="dl-btn" href="${filePath}" download>Download</a>
-                 <button class="share-btn" onclick="handleShare('${m.title.replace(/'/g, "\\'")}', '${filePath}')" style="border:none; cursor:pointer; font-size:0.85rem; font-weight:600; padding:8px 12px; border-radius:6px; transition:background 0.2s;">Share</button>
+                 <a class="view-btn" href="${viewerLink}">
+                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+                   View
+                 </a>
+                 <a class="dl-btn" href="${filePath}" download>
+                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+                   Download
+                 </a>
+                 <button class="share-btn" onclick="handleShare('${m.title.replace(/'/g, "\\'")}', '${filePath}')">
+                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" x2="12" y1="2" y2="15"/></svg>
+                   Share
+                 </button>
                </div>
              `;
             uDiv.appendChild(d);

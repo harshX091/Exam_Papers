@@ -287,31 +287,38 @@ footer,
   gap: 8px;
 }
 
-.actions a {
+.actions a, .actions button {
   text-decoration: none;
   font-size: 0.85rem;
   font-weight: 600;
-  padding: 8px 12px;
-  border-radius: 6px;
-  transition: background 0.2s;
+  padding: 8px 14px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border: none;
+  cursor: pointer;
 }
 
 .view-btn {
-  color: var(--primary-color);
+  color: #2563eb;
   background: #eff6ff;
 }
 
 .view-btn:hover {
   background: #dbeafe;
+  transform: translateY(-1px);
 }
 
 .dl-btn {
-  color: #fff;
-  background: var(--primary-color);
+  color: #4f46e5;
+  background: #eef2ff;
 }
 
 .dl-btn:hover {
-  opacity: 0.9;
+  background: #e0e7ff;
+  transform: translateY(-1px);
 }
 
 .share-btn {
@@ -321,6 +328,7 @@ footer,
 
 .share-btn:hover {
   background: #d1fae5;
+  transform: translateY(-1px);
 }
 
 .empty {
