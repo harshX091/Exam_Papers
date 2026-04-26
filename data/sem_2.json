@@ -1,6 +1,15 @@
 [
   {
     "subject": "Physics",
+    "title": "Major — Physics 201 External 2024",
+    "courseType": "Major",
+    "unitType": null,
+    "year": 2024,
+    "file": "pdfs/Sem_2/Physics/Major/Papers/External/Physics 201 External 2024.pdf",
+    "description": "External"
+  },
+  {
+    "subject": "Physics",
     "title": "Major — Physics 201 Internal 2024",
     "courseType": "Major",
     "unitType": null,
