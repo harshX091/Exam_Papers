@@ -314,6 +314,15 @@ footer,
   opacity: 0.9;
 }
 
+.share-btn {
+  color: #059669;
+  background: #ecfdf5;
+}
+
+.share-btn:hover {
+  background: #d1fae5;
+}
+
 .empty {
   text-align: center;
   color: var(--text-muted);

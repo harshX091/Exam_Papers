@@ -6,6 +6,12 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Papers</title>
   <link rel="stylesheet" href="style.css">
+  <!-- Open Graph / Social Media Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Semester Notes | Exam Papers & Study Materials">
+  <meta property="og:description" content="Access curated exam papers, syllabus, and study materials for every semester. Simplify your studies with our free portal.">
+  <meta property="og:image" content="images/social-preview.png">
+  <meta property="og:url" content="https://harshx091.github.io/Exam_Papers/">
 </head>
 
 <body>
@@ -132,6 +138,27 @@
       }
     });
 
+    async function handleShare(title, filePath) {
+      const fullUrl = window.location.origin + window.location.pathname.replace('pdfs.html', filePath);
+      const shareData = {
+        title: title,
+        text: `Check out this academic paper: ${title}`,
+        url: fullUrl
+      };
+
+      try {
+        if (navigator.share) {
+          await navigator.share(shareData);
+        } else {
+          // Fallback: Copy to clipboard
+          await navigator.clipboard.writeText(fullUrl);
+          alert('Link copied to clipboard!');
+        }
+      } catch (err) {
+        console.error('Share failed:', err);
+      }
+    }
+
     async function loadData() {
       const area = document.getElementById('listArea');
       // Only show loading if we are actually fetching, or if the area is empty. 
@@ -220,6 +247,7 @@
           <div class="actions">
             <a class="view-btn" href="${viewerLink}">View</a>
             <a class="dl-btn" href="${filePath}" download>Download</a>
+            <button class="share-btn" onclick="handleShare('${p.title.replace(/'/g, "\\'")}', '${filePath}')" style="border:none; cursor:pointer; font-size:0.85rem; font-weight:600; padding:8px 12px; border-radius:6px; transition:background 0.2s;">Share</button>
           </div>
         `;
         area.appendChild(d);
@@ -268,6 +296,7 @@
                <div class="actions">
                  <a class="view-btn" href="${viewerLink}">View</a>
                  <a class="dl-btn" href="${filePath}" download>Download</a>
+                 <button class="share-btn" onclick="handleShare('${m.title.replace(/'/g, "\\'")}', '${filePath}')" style="border:none; cursor:pointer; font-size:0.85rem; font-weight:600; padding:8px 12px; border-radius:6px; transition:background 0.2s;">Share</button>
                </div>
              `;
             uDiv.appendChild(d);
