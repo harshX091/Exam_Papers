@@ -1,6 +1,15 @@
 [
   {
     "subject": "Physics",
+    "title": "Major — Physics 401 External 2026",
+    "courseType": "Major",
+    "unitType": null,
+    "year": 2026,
+    "file": "pdfs/Sem_4/Physics/Major/Papers/External/Physics 401 External 2026.pdf",
+    "description": "External"
+  },
+  {
+    "subject": "Physics",
     "title": "Major — Physics 401 Internal 2026",
     "courseType": "Major",
     "unitType": null,
