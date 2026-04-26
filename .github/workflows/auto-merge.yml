@@ -1,0 +1,25 @@
+name: Auto-Merge Upload PRs
+
+on:
+  pull_request:
+    types: [opened, ready_for_review, synchronize]
+
+jobs:
+  auto-merge:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Auto-merge PR
+        # We only auto-merge PRs created by the upload script (branch starts with 'upload-')
+        # This prevents auto-merging unrelated manual PRs you might make in the future.
+        if: startsWith(github.head_ref, 'upload-')
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # Wait 10 seconds to ensure GitHub finishes processing the new PR
+          sleep 10
+          
+          # Auto-merge the PR using GitHub CLI and delete the branch
+          gh pr merge ${{ github.event.pull_request.number }} --merge --delete-branch
