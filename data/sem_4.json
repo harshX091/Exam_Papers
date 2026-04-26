@@ -1,23 +1,5 @@
 [
   {
-    "subject": "Physics",
-    "title": "Major — MAJOR PHYSICS 401 Internal Exam March-2026",
-    "courseType": "Major",
-    "unitType": null,
-    "year": 2026,
-    "file": "pdfs/Sem_4/Physics/Major/Papers/Internal/MAJOR_PHYSICS_401_Internal_Exam_March-2026.pdf",
-    "description": "Internal"
-  },
-  {
-    "subject": "Physics",
-    "title": "Major — VAC PHYSICS 405 SC23VACPHY405 Shrimad Bhagvad Geeta Stress Management in Life Internal Exam March-2026",
-    "courseType": "Major",
-    "unitType": null,
-    "year": 2026,
-    "file": "pdfs/Sem_4/Physics/Major/Papers/Internal/VAC_PHYSICS_405_SC23VACPHY405___Shrimad_Bhagvad_Geeta___Stress_Management_in_Life__Internal_Exam_March-2026.pdf",
-    "description": "Internal"
-  },
-  {
     "subject": "English Aec",
     "title": "General — 2025 Paper",
     "courseType": "General",
@@ -43,51 +25,6 @@
     "year": null,
     "file": "pdfs/Sem_4/English_Aec/General/Papers/English_External_2026.pdf",
     "description": ""
-  },
-  {
-    "subject": "Physics",
-    "title": "Major — Physics Major 2 401A External 2026",
-    "courseType": "Major",
-    "unitType": null,
-    "year": null,
-    "file": "pdfs/Sem_4/Physics/Major/Papers/External/Physics_Major_2_401A_External_2026.pdf",
-    "description": "External"
-  },
-  {
-    "subject": "Physics",
-    "title": "Major — Physics Major 401 External 2026",
-    "courseType": "Major",
-    "unitType": null,
-    "year": null,
-    "file": "pdfs/Sem_4/Physics/Major/Papers/External/Physics_Major_401_External_2026.pdf",
-    "description": "External"
-  },
-  {
-    "subject": "Physics",
-    "title": "Major — SEC 406 Astro Space Physics External 2026",
-    "courseType": "Major",
-    "unitType": null,
-    "year": null,
-    "file": "pdfs/Sem_4/Physics/Major/Papers/External/SEC_406_Astro_Space_Physics__External_2026.pdf",
-    "description": "External"
-  },
-  {
-    "subject": "Physics",
-    "title": "Major — SEC PHYSICS 406 INTERNAL 2026",
-    "courseType": "Major",
-    "unitType": null,
-    "year": null,
-    "file": "pdfs/Sem_4/Physics/Major/Papers/Internal/SEC_PHYSICS_406_INTERNAL_2026.pdf",
-    "description": "Internal"
-  },
-  {
-    "subject": "Physics",
-    "title": "Major — VAC -Shrimad Bhagvad Gita Stress Management in Life SC23VACPHY405 External 2026",
-    "courseType": "Major",
-    "unitType": null,
-    "year": null,
-    "file": "pdfs/Sem_4/Physics/Major/Papers/External/VAC_-Shrimad_Bhagvad_Gita___Stress_Management_in_Life__SC23VACPHY405__External_2026.pdf",
-    "description": "External"
   },
   {
     "subject": "Chemistry",
