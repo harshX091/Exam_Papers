@@ -99,6 +99,15 @@
     "description": "Internal"
   },
   {
+    "subject": "English Aec",
+    "title": "General — English AEC 404 External 2025",
+    "courseType": "General",
+    "unitType": null,
+    "year": 2025,
+    "file": "pdfs/Sem_4/English_Aec/General/Papers/External/English AEC 404 External 2025.pdf",
+    "description": "External"
+  },
+  {
     "subject": "Physics",
     "title": "Major — Physics 401A External 2025",
     "courseType": "Major",
@@ -115,15 +124,6 @@
     "year": 2024,
     "file": "pdfs/Sem_4/Chemistry/Minor/Papers/Internal/Chemistry 402 Internal 2024.pdf",
     "description": "Internal"
-  },
-  {
-    "subject": "English Aec",
-    "title": "General — 2025 Paper",
-    "courseType": "General",
-    "unitType": null,
-    "year": null,
-    "file": "pdfs/Sem_4/English_Aec/General/Papers/2025_Paper.pdf",
-    "description": ""
   },
   {
     "subject": "English Aec",
