@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const categorySelect = document.getElementById('category');
     const semesterSelect = document.getElementById('semester');
     const subjectSelect = document.getElementById('subject');
+    const courseCodeInput = document.getElementById('courseCode');
     const courseTypeSelect = document.getElementById('courseType');
     const courseTypeGroup = document.getElementById('courseTypeGroup');
     const yearGroup = document.getElementById('yearGroup');
@@ -18,6 +19,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const submitBtn = document.getElementById('submitBtn');
     const spinner = document.getElementById('submitSpinner');
     const statusMessage = document.getElementById('statusMessage');
+    const filenamePreview = document.getElementById('filenamePreview');
+    const previewText = document.getElementById('previewText');
     const btnText = submitBtn.querySelector('span');
 
     // Toggle fields based on category
@@ -82,6 +85,52 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    // ── Dynamic Filename Generation ──
+    function generateSemanticFilename() {
+        const subject = subjectSelect.value || '';
+        const courseCode = courseCodeInput.value.trim();
+        const category = categorySelect.value;
+        const examType = document.getElementById('examType').value;
+        const year = document.getElementById('year').value;
+        const unitName = document.getElementById('unitName').value.trim();
+        
+        if (!subject || !courseCode) return '';
+        
+        let parts = [];
+        // Convert internal underscores to spaces for the filename
+        parts.push(subject.replace(/_/g, ' '));
+        parts.push(courseCode);
+        
+        if (category === 'Papers') {
+            if (examType) parts.push(examType);
+            if (year) parts.push(year);
+        } else if (category === 'Syllabus') {
+            parts.push('Syllabus');
+        } else if (category === 'Notes') {
+            if (unitName) parts.push(unitName);
+            parts.push('notes');
+        }
+        
+        // Remove illegal characters but KEEP spaces
+        return parts.join(' ').replace(/[^a-zA-Z0-9.\-_ ]/g, '').replace(/\s+/g, ' ') + '.pdf';
+    }
+    
+    function updatePreview() {
+        const fn = generateSemanticFilename();
+        if (fn) {
+            filenamePreview.style.display = 'block';
+            previewText.textContent = fn;
+        } else {
+            filenamePreview.style.display = 'none';
+        }
+    }
+    
+    // Attach listeners to update live preview
+    [categorySelect, subjectSelect, courseCodeInput, document.getElementById('examType'), document.getElementById('year'), document.getElementById('unitName')].forEach(el => {
+        el.addEventListener('input', updatePreview);
+        el.addEventListener('change', updatePreview);
+    });
+
     form.addEventListener('submit', async (e) => {
         e.preventDefault();
 
@@ -133,8 +182,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         setLoading(true);
         try {
-            // 2. Sanitize filename
-            const newFileName = file.name.replace(/[^a-zA-Z0-9.\-_]/g, '_');
+            // 2. Sanitize filename using dynamic naming logic
+            const newFileName = generateSemanticFilename();
 
             // 3. Build target path: pdfs/{Semester}/{Subject}/{CourseType}/[{UnitType}]/{Category}/[{UnitName}]/file.pdf
             const semesterKey = `Sem_${semester}`;
@@ -177,7 +226,7 @@ Merging this PR will automatically publish the document and regenerate the site 
             let safeFile = file;
             try {
                 const arrayBuffer = await file.arrayBuffer();
-                safeFile = new File([arrayBuffer], file.name, { type: file.type });
+                safeFile = new File([arrayBuffer], newFileName, { type: file.type });
             } catch (readError) {
                 throw new Error("Could not read the file. If you are selecting directly from Google Drive, please download the PDF to your device first before uploading.");
             }

@@ -175,6 +175,12 @@
                 <div class="help-text">Choose from the existing subjects for the selected semester.</div>
             </div>
 
+            <div class="form-group">
+                <label for="courseCode">Course Code</label>
+                <input type="text" id="courseCode" name="courseCode" placeholder="e.g. 101, 101A, Physics 106" required>
+                <div class="help-text">Enter the specific course code (e.g. 101, 106).</div>
+            </div>
+
             <div class="form-group" id="courseTypeGroup">
                 <label for="courseType">Course Type</label>
                 <select id="courseType" name="courseType" required>
@@ -232,6 +238,10 @@
                 <label for="pdfFile">Upload PDF</label>
                 <input type="file" id="pdfFile" name="pdfFile" accept="application/pdf" required>
                 <div class="help-text">Max file size: 50MB. Only PDF files are accepted.</div>
+            </div>
+
+            <div id="filenamePreview" style="margin-top: 0.5rem; padding: 12px; background: #f0fdf4; border: 1px solid #bbf7d0; color: #166534; border-radius: var(--radius); font-weight: 500; display: none;">
+                <strong>File will be named:</strong> <span id="previewText" style="font-family: monospace;"></span>
             </div>
 
             <button type="submit" id="submitBtn" class="btn-submit">
