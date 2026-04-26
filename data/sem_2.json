@@ -108,24 +108,6 @@
     "description": "Internal"
   },
   {
-    "subject": "Chemistry",
-    "title": "Minor — CHEMISTRY-SEM-2-MINOR",
-    "courseType": "Minor",
-    "unitType": null,
-    "year": null,
-    "file": "pdfs/Sem_2/Chemistry/Minor/Papers/CHEMISTRY-SEM-2-MINOR.pdf",
-    "description": ""
-  },
-  {
-    "subject": "Chemistry",
-    "title": "Minor — CHEMISTRY-SEM-2-MINOR-INTERNAL",
-    "courseType": "Minor",
-    "unitType": null,
-    "year": null,
-    "file": "pdfs/Sem_2/Chemistry/Minor/Papers/CHEMISTRY-SEM-2-MINOR-INTERNAL.pdf",
-    "description": ""
-  },
-  {
     "subject": "Zoology",
     "title": "Multi — ZOOLOGY-MULTI-SEM-2",
     "courseType": "Multi",
