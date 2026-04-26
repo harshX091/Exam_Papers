@@ -106,5 +106,14 @@
     "year": 2025,
     "file": "pdfs/Sem_3/Zoology/Multi/Papers/sem-3-zoology-multi-internal-2025.pdf",
     "description": ""
+  },
+  {
+    "subject": "Iks",
+    "title": "Physics — IKS Physics 305 Internal 2025",
+    "courseType": "Physics",
+    "unitType": null,
+    "year": 2025,
+    "file": "pdfs/Sem_3/Iks/Physics/Papers/Internal/IKS Physics 305 Internal 2025.pdf",
+    "description": "Internal"
   }
 ]
