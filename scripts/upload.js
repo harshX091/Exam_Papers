@@ -94,8 +94,14 @@ document.addEventListener('DOMContentLoaded', () => {
             courseTypeSelect.removeAttribute('required');
 
             if (coreSubjectGroup) {
-                coreSubjectGroup.style.display = 'flex';
-                coreSubjectSelect.setAttribute('required', 'required');
+                if (val === 'English AEC') {
+                    coreSubjectGroup.style.display = 'none';
+                    coreSubjectSelect.removeAttribute('required');
+                    coreSubjectSelect.value = '';
+                } else {
+                    coreSubjectGroup.style.display = 'flex';
+                    coreSubjectSelect.setAttribute('required', 'required');
+                }
             }
         } else {
             courseTypeGroup.style.display = 'flex';
