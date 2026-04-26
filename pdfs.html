@@ -139,7 +139,10 @@
     });
 
     async function handleShare(title, filePath) {
-      const fullUrl = window.location.origin + window.location.pathname.replace('pdfs.html', filePath);
+      // Re-encode just in case the browser decoded it in the onclick attribute
+      const encodedPath = encodeURI(filePath);
+      const fullUrl = new URL(encodedPath, window.location.href).href;
+      
       const shareData = {
         title: title,
         text: `Check out this academic paper: ${title}`,
