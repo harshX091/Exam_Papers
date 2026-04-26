@@ -177,8 +177,8 @@
 
             <div class="form-group">
                 <label for="courseCode">Course Code</label>
-                <input type="text" id="courseCode" name="courseCode" placeholder="e.g. 101, 101A, Physics 106" required>
-                <div class="help-text">Enter the specific course code (e.g. 101, 106).</div>
+                <input type="text" id="courseCode" name="courseCode" placeholder="e.g. 101, 101A" pattern="^\d{3}[Aa]?$" title="Course code must be exactly a 3-digit number, optionally followed by 'A' (e.g., 101 or 101A)" required>
+                <div class="help-text">Course code must be a 3-digit number, optionally followed by 'A' (e.g. 101, 101A).</div>
             </div>
 
             <div class="form-group" id="coreSubjectGroup" style="display:none;">

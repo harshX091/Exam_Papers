@@ -116,7 +116,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function generateSemanticFilename() {
         const subject = subjectSelect.value || '';
         const coreSubject = coreSubjectSelect ? coreSubjectSelect.value : '';
-        const courseCode = courseCodeInput.value.trim();
+        const courseCode = courseCodeInput.value.trim().toUpperCase();
         const category = categorySelect.value;
         const examType = document.getElementById('examType').value;
         const year = document.getElementById('year').value;
@@ -196,6 +196,15 @@ document.addEventListener('DOMContentLoaded', () => {
         const unitType = formData.get('unitType');
         const file = formData.get('pdfFile');
         const subjectTitle = subject.trim();
+        
+        let courseCodeVal = formData.get('courseCode');
+        if (courseCodeVal) {
+            courseCodeVal = courseCodeVal.trim().toUpperCase();
+            if (!/^\d{3}A?$/.test(courseCodeVal)) {
+                showError('Course code must be exactly a 3-digit number, optionally followed by the letter "A" (e.g., 101 or 101A).');
+                return;
+            }
+        }
 
         if (!subject) {
             showError('Please select a Subject.');
