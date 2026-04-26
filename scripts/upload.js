@@ -319,7 +319,7 @@ Merging this PR will automatically publish the document and regenerate the site 
             const data = await response.json();
 
             showSuccess(
-                `✅ Submitted for admin review! Your material will be available soon.`
+                `✅ PDF submitted successfully! It will be live on the site in a few minutes.`
             );
             form.reset();
             categorySelect.dispatchEvent(new Event('change'));
