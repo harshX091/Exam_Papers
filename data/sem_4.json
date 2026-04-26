@@ -115,32 +115,5 @@
     "year": 2025,
     "file": "pdfs/Sem_4/Physics/Major/Papers/External/Physics 401A External 2025.pdf",
     "description": "External"
-  },
-  {
-    "subject": "Chemistry",
-    "title": "Minor — Chemistry 402 Internal 2024",
-    "courseType": "Minor",
-    "unitType": null,
-    "year": 2024,
-    "file": "pdfs/Sem_4/Chemistry/Minor/Papers/Internal/Chemistry 402 Internal 2024.pdf",
-    "description": "Internal"
-  },
-  {
-    "subject": "Chemistry",
-    "title": "Minor — Chemistry Minor 402 External 2026",
-    "courseType": "Minor",
-    "unitType": null,
-    "year": null,
-    "file": "pdfs/Sem_4/Chemistry/Minor/Papers/External/Chemistry_Minor_402_External_2026.pdf",
-    "description": "External"
-  },
-  {
-    "subject": "Chemistry",
-    "title": "Minor — Chemistry Minor 402 internal 2026",
-    "courseType": "Minor",
-    "unitType": null,
-    "year": null,
-    "file": "pdfs/Sem_4/Chemistry/Minor/Papers/Internal/Chemistry_Minor_402_internal_2026.pdf",
-    "description": "Internal"
   }
 ]
