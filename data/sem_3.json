@@ -124,5 +124,14 @@
     "year": 2025,
     "file": "pdfs/Sem_3/Iks/Physics/Papers/Internal/IKS Physics 305 Internal 2025.pdf",
     "description": "Internal"
+  },
+  {
+    "subject": "Sec",
+    "title": "Physics — SEC Physics 306A Internal 2025",
+    "courseType": "Physics",
+    "unitType": null,
+    "year": 2025,
+    "file": "pdfs/Sem_3/Sec/Physics/Papers/Internal/SEC Physics 306A Internal 2025.pdf",
+    "description": "Internal"
   }
 ]
