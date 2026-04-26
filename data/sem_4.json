@@ -9,6 +9,15 @@
     "description": "Internal"
   },
   {
+    "subject": "Physics",
+    "title": "Major — VAC PHYSICS 405 SC23VACPHY405 Shrimad Bhagvad Geeta Stress Management in Life Internal Exam March-2026",
+    "courseType": "Major",
+    "unitType": null,
+    "year": 2026,
+    "file": "pdfs/Sem_4/Physics/Major/Papers/Internal/VAC_PHYSICS_405_SC23VACPHY405___Shrimad_Bhagvad_Geeta___Stress_Management_in_Life__Internal_Exam_March-2026.pdf",
+    "description": "Internal"
+  },
+  {
     "subject": "English",
     "title": "Major — 2025 Paper",
     "courseType": "Major",
@@ -81,6 +90,15 @@
     "description": "Internal"
   },
   {
+    "subject": "Physics",
+    "title": "Major — VAC -Shrimad Bhagvad Gita Stress Management in Life SC23VACPHY405 External 2026",
+    "courseType": "Major",
+    "unitType": null,
+    "year": null,
+    "file": "pdfs/Sem_4/Physics/Major/Papers/External/VAC_-Shrimad_Bhagvad_Gita___Stress_Management_in_Life__SC23VACPHY405__External_2026.pdf",
+    "description": "External"
+  },
+  {
     "subject": "Chemistry",
     "title": "Minor — CHEMISTRY MINOR 402",
     "courseType": "Minor",
@@ -88,5 +106,23 @@
     "year": null,
     "file": "pdfs/Sem_4/Chemistry/Minor/Papers/CHEMISTRY_MINOR_402.pdf",
     "description": ""
+  },
+  {
+    "subject": "Chemistry",
+    "title": "Minor — Chemistry Minor 402 External 2026",
+    "courseType": "Minor",
+    "unitType": null,
+    "year": null,
+    "file": "pdfs/Sem_4/Chemistry/Minor/Papers/External/Chemistry_Minor_402_External_2026.pdf",
+    "description": "External"
+  },
+  {
+    "subject": "Chemistry",
+    "title": "Minor — Chemistry Minor 402 internal 2026",
+    "courseType": "Minor",
+    "unitType": null,
+    "year": null,
+    "file": "pdfs/Sem_4/Chemistry/Minor/Papers/Internal/Chemistry_Minor_402_internal_2026.pdf",
+    "description": "Internal"
   }
 ]
