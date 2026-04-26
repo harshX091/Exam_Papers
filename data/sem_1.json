@@ -34,5 +34,23 @@
     "year": null,
     "file": "pdfs/Sem_1/Physics/Major/Papers/Internal/Physics_101_Internal_2024.pdf",
     "description": "Internal"
+  },
+  {
+    "subject": "Chemistry",
+    "title": "Minor — Chemistry 102 External 2024",
+    "courseType": "Minor",
+    "unitType": null,
+    "year": null,
+    "file": "pdfs/Sem_1/Chemistry/Minor/Papers/External/Chemistry_102_External_2024.pdf",
+    "description": "External"
+  },
+  {
+    "subject": "Chemistry",
+    "title": "Minor — Chemistry 102 Internal 2024",
+    "courseType": "Minor",
+    "unitType": null,
+    "year": null,
+    "file": "pdfs/Sem_1/Chemistry/Minor/Papers/Internal/Chemistry_102_Internal_2024.pdf",
+    "description": "Internal"
   }
 ]
