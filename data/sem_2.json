@@ -108,60 +108,6 @@
     "description": "Internal"
   },
   {
-    "subject": "Physics",
-    "title": "Major — PHYSICS-MAJOR-SEM-2",
-    "courseType": "Major",
-    "unitType": null,
-    "year": null,
-    "file": "pdfs/Sem_2/Physics/Major/Papers/PHYSICS-MAJOR-SEM-2.pdf",
-    "description": ""
-  },
-  {
-    "subject": "Physics",
-    "title": "Major — PHYSICS-MAJOR-SEM-2-INTERNAL",
-    "courseType": "Major",
-    "unitType": null,
-    "year": null,
-    "file": "pdfs/Sem_2/Physics/Major/Papers/PHYSICS-MAJOR-SEM-2-INTERNAL.pdf",
-    "description": ""
-  },
-  {
-    "subject": "Physics",
-    "title": "Major • SEC — PHYSICS-SEM-2-SEC",
-    "courseType": "Major",
-    "unitType": "SEC",
-    "year": null,
-    "file": "pdfs/Sem_2/Physics/Major/SEC/Papers/PHYSICS-SEM-2-SEC.pdf",
-    "description": ""
-  },
-  {
-    "subject": "Physics",
-    "title": "Major • SEC — PHYSICS-SEM-2-SEC-INTERNAL",
-    "courseType": "Major",
-    "unitType": "SEC",
-    "year": null,
-    "file": "pdfs/Sem_2/Physics/Major/SEC/Papers/PHYSICS-SEM-2-SEC-INTERNAL.pdf",
-    "description": ""
-  },
-  {
-    "subject": "Physics",
-    "title": "Major • VAC — VAC-BHAGAVAD-GITA-SEM-2",
-    "courseType": "Major",
-    "unitType": "VAC",
-    "year": null,
-    "file": "pdfs/Sem_2/Physics/Major/VAC/Papers/VAC-BHAGAVAD-GITA-SEM-2.pdf",
-    "description": ""
-  },
-  {
-    "subject": "Physics",
-    "title": "Major • VAC — VAC-BHAGAVAD-GITA-SEM-2-INTERNAL",
-    "courseType": "Major",
-    "unitType": "VAC",
-    "year": null,
-    "file": "pdfs/Sem_2/Physics/Major/VAC/Papers/VAC-BHAGAVAD-GITA-SEM-2-INTERNAL.pdf",
-    "description": ""
-  },
-  {
     "subject": "Chemistry",
     "title": "Minor — CHEMISTRY-SEM-2-MINOR",
     "courseType": "Minor",
