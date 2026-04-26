@@ -153,7 +153,18 @@ Merging this PR will automatically publish the document and regenerate the site 
 
             // 5. Create FormData for raw binary upload
             const payload = new FormData();
-            payload.append('file', file);
+            
+            // Pre-read the file into memory. This prevents the "Failed to fetch" error
+            // on mobile devices when selecting a virtual file directly from Google Drive.
+            let safeFile = file;
+            try {
+                const arrayBuffer = await file.arrayBuffer();
+                safeFile = new File([arrayBuffer], file.name, { type: file.type });
+            } catch (readError) {
+                throw new Error("Could not read the file. If you are selecting directly from Google Drive, please download the PDF to your device first before uploading.");
+            }
+
+            payload.append('file', safeFile);
             payload.append('targetPath', targetPath);
             payload.append('branchName', branchName);
             payload.append('commitMsg', commitMsg);
