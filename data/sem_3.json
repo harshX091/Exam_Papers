@@ -4,8 +4,8 @@
     "title": "General — English AEC 304 External 2025",
     "courseType": "General",
     "unitType": null,
-    "year": 2025,
-    "file": "pdfs/Sem_3/English_Aec/General/Papers/External/English AEC 304 External 2025.pdf",
+    "year": null,
+    "file": "pdfs/Sem_3/English_Aec/General/Papers/External/English_AEC_304_External_2025.pdf",
     "description": "External"
   },
   {
@@ -13,8 +13,8 @@
     "title": "General — English AEC 304 Internal 2025",
     "courseType": "General",
     "unitType": null,
-    "year": 2025,
-    "file": "pdfs/Sem_3/English_Aec/General/Papers/Internal/English AEC 304 Internal 2025.pdf",
+    "year": null,
+    "file": "pdfs/Sem_3/English_Aec/General/Papers/Internal/English_AEC_304_Internal_2025.pdf",
     "description": "Internal"
   },
   {
@@ -22,8 +22,8 @@
     "title": "Major — Physics 301 External 2025",
     "courseType": "Major",
     "unitType": null,
-    "year": 2025,
-    "file": "pdfs/Sem_3/Physics/Major/Papers/External/Physics 301 External 2025.pdf",
+    "year": null,
+    "file": "pdfs/Sem_3/Physics/Major/Papers/External/Physics_301_External_2025.pdf",
     "description": "External"
   },
   {
@@ -31,8 +31,8 @@
     "title": "Major — Physics 301 Internal 2025",
     "courseType": "Major",
     "unitType": null,
-    "year": 2025,
-    "file": "pdfs/Sem_3/Physics/Major/Papers/Internal/Physics 301 Internal 2025.pdf",
+    "year": null,
+    "file": "pdfs/Sem_3/Physics/Major/Papers/Internal/Physics_301_Internal_2025.pdf",
     "description": "Internal"
   },
   {
@@ -40,8 +40,8 @@
     "title": "Major — Physics 301A External 2025",
     "courseType": "Major",
     "unitType": null,
-    "year": 2025,
-    "file": "pdfs/Sem_3/Physics/Major/Papers/External/Physics 301A External 2025.pdf",
+    "year": null,
+    "file": "pdfs/Sem_3/Physics/Major/Papers/External/Physics_301A_External_2025.pdf",
     "description": "External"
   },
   {
@@ -49,8 +49,8 @@
     "title": "Major — Physics 301A Internal 2025",
     "courseType": "Major",
     "unitType": null,
-    "year": 2025,
-    "file": "pdfs/Sem_3/Physics/Major/Papers/Internal/Physics 301A Internal 2025.pdf",
+    "year": null,
+    "file": "pdfs/Sem_3/Physics/Major/Papers/Internal/Physics_301A_Internal_2025.pdf",
     "description": "Internal"
   },
   {
@@ -58,8 +58,8 @@
     "title": "Multi — Zoology 303 External 2025",
     "courseType": "Multi",
     "unitType": null,
-    "year": 2025,
-    "file": "pdfs/Sem_3/Zoology/Multi/Papers/External/Zoology 303 External 2025.pdf",
+    "year": null,
+    "file": "pdfs/Sem_3/Zoology/Multi/Papers/External/Zoology_303_External_2025.pdf",
     "description": "External"
   },
   {
@@ -67,8 +67,8 @@
     "title": "Multi — Zoology 303 Internal 2025",
     "courseType": "Multi",
     "unitType": null,
-    "year": 2025,
-    "file": "pdfs/Sem_3/Zoology/Multi/Papers/Internal/Zoology 303 Internal 2025.pdf",
+    "year": null,
+    "file": "pdfs/Sem_3/Zoology/Multi/Papers/Internal/Zoology_303_Internal_2025.pdf",
     "description": "Internal"
   },
   {
@@ -76,8 +76,8 @@
     "title": "Physics — IKS Physics 305 External 2025",
     "courseType": "Physics",
     "unitType": null,
-    "year": 2025,
-    "file": "pdfs/Sem_3/Iks/Physics/Papers/External/IKS Physics 305 External 2025.pdf",
+    "year": null,
+    "file": "pdfs/Sem_3/Iks/Physics/Papers/External/IKS_Physics_305_External_2025.pdf",
     "description": "External"
   },
   {
@@ -85,8 +85,8 @@
     "title": "Physics — IKS Physics 305 Internal 2025",
     "courseType": "Physics",
     "unitType": null,
-    "year": 2025,
-    "file": "pdfs/Sem_3/Iks/Physics/Papers/Internal/IKS Physics 305 Internal 2025.pdf",
+    "year": null,
+    "file": "pdfs/Sem_3/Iks/Physics/Papers/Internal/IKS_Physics_305_Internal_2025.pdf",
     "description": "Internal"
   },
   {
@@ -94,8 +94,8 @@
     "title": "Physics — SEC Physics 306A External 2025",
     "courseType": "Physics",
     "unitType": null,
-    "year": 2025,
-    "file": "pdfs/Sem_3/Sec/Physics/Papers/External/SEC Physics 306A External 2025.pdf",
+    "year": null,
+    "file": "pdfs/Sem_3/Sec/Physics/Papers/External/SEC_Physics_306A_External_2025.pdf",
     "description": "External"
   },
   {
@@ -103,8 +103,8 @@
     "title": "Physics — SEC Physics 306A Internal 2025",
     "courseType": "Physics",
     "unitType": null,
-    "year": 2025,
-    "file": "pdfs/Sem_3/Sec/Physics/Papers/Internal/SEC Physics 306A Internal 2025.pdf",
+    "year": null,
+    "file": "pdfs/Sem_3/Sec/Physics/Papers/Internal/SEC_Physics_306A_Internal_2025.pdf",
     "description": "Internal"
   }
 ]

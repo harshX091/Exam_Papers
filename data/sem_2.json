@@ -4,8 +4,8 @@
     "title": "General — English AEC 204 External 2025",
     "courseType": "General",
     "unitType": null,
-    "year": 2025,
-    "file": "pdfs/Sem_2/English_Aec/General/Papers/External/English AEC 204 External 2025.pdf",
+    "year": null,
+    "file": "pdfs/Sem_2/English_Aec/General/Papers/External/English_AEC_204_External_2025.pdf",
     "description": "External"
   },
   {
@@ -13,80 +13,8 @@
     "title": "General — English AEC 204 Internal 2025",
     "courseType": "General",
     "unitType": null,
-    "year": 2025,
-    "file": "pdfs/Sem_2/English_Aec/General/Papers/Internal/English AEC 204 Internal 2025.pdf",
-    "description": "Internal"
-  },
-  {
-    "subject": "Chemistry",
-    "title": "Minor — Chemistry 202 External 2025",
-    "courseType": "Minor",
-    "unitType": null,
-    "year": 2025,
-    "file": "pdfs/Sem_2/Chemistry/Minor/Papers/External/Chemistry 202 External 2025.pdf",
-    "description": "External"
-  },
-  {
-    "subject": "Chemistry",
-    "title": "Minor — Chemistry 202 Internal 2025",
-    "courseType": "Minor",
-    "unitType": null,
-    "year": 2025,
-    "file": "pdfs/Sem_2/Chemistry/Minor/Papers/Internal/Chemistry 202 Internal 2025.pdf",
-    "description": "Internal"
-  },
-  {
-    "subject": "Zoology",
-    "title": "Multi — Zoology 203 External 2025",
-    "courseType": "Multi",
-    "unitType": null,
-    "year": 2025,
-    "file": "pdfs/Sem_2/Zoology/Multi/Papers/External/Zoology 203 External 2025.pdf",
-    "description": "External"
-  },
-  {
-    "subject": "Zoology",
-    "title": "Multi — Zoology 203 Internal 2025",
-    "courseType": "Multi",
-    "unitType": null,
-    "year": 2025,
-    "file": "pdfs/Sem_2/Zoology/Multi/Papers/Internal/Zoology 203 Internal 2025.pdf",
-    "description": "Internal"
-  },
-  {
-    "subject": "Iks",
-    "title": "Physics — IKS Physics 205 Internal 2025",
-    "courseType": "Physics",
-    "unitType": null,
-    "year": 2025,
-    "file": "pdfs/Sem_2/Iks/Physics/Papers/Internal/IKS Physics 205 Internal 2025.pdf",
-    "description": "Internal"
-  },
-  {
-    "subject": "Sec",
-    "title": "Physics — SEC Physics 206 External 2025",
-    "courseType": "Physics",
-    "unitType": null,
-    "year": 2025,
-    "file": "pdfs/Sem_2/Sec/Physics/Papers/External/SEC Physics 206 External 2025.pdf",
-    "description": "External"
-  },
-  {
-    "subject": "Sec",
-    "title": "Physics — SEC Physics 206 Internal 2025",
-    "courseType": "Physics",
-    "unitType": null,
-    "year": 2025,
-    "file": "pdfs/Sem_2/Sec/Physics/Papers/Internal/SEC Physics 206 Internal 2025.pdf",
-    "description": "Internal"
-  },
-  {
-    "subject": "Vac",
-    "title": "Physics — VAC Physics 205 Internal 2025",
-    "courseType": "Physics",
-    "unitType": null,
-    "year": 2025,
-    "file": "pdfs/Sem_2/Vac/Physics/Papers/Internal/VAC Physics 205 Internal 2025.pdf",
+    "year": null,
+    "file": "pdfs/Sem_2/English_Aec/General/Papers/Internal/English_AEC_204_Internal_2025.pdf",
     "description": "Internal"
   },
   {
@@ -94,8 +22,8 @@
     "title": "Major — Physics 201 External 2024",
     "courseType": "Major",
     "unitType": null,
-    "year": 2024,
-    "file": "pdfs/Sem_2/Physics/Major/Papers/External/Physics 201 External 2024.pdf",
+    "year": null,
+    "file": "pdfs/Sem_2/Physics/Major/Papers/External/Physics_201_External_2024.pdf",
     "description": "External"
   },
   {
@@ -103,8 +31,80 @@
     "title": "Major — Physics 201 Internal 2024",
     "courseType": "Major",
     "unitType": null,
-    "year": 2024,
-    "file": "pdfs/Sem_2/Physics/Major/Papers/Internal/Physics 201 Internal 2024.pdf",
+    "year": null,
+    "file": "pdfs/Sem_2/Physics/Major/Papers/Internal/Physics_201_Internal_2024.pdf",
+    "description": "Internal"
+  },
+  {
+    "subject": "Chemistry",
+    "title": "Minor — Chemistry 202 External 2025",
+    "courseType": "Minor",
+    "unitType": null,
+    "year": null,
+    "file": "pdfs/Sem_2/Chemistry/Minor/Papers/External/Chemistry_202_External_2025.pdf",
+    "description": "External"
+  },
+  {
+    "subject": "Chemistry",
+    "title": "Minor — Chemistry 202 Internal 2025",
+    "courseType": "Minor",
+    "unitType": null,
+    "year": null,
+    "file": "pdfs/Sem_2/Chemistry/Minor/Papers/Internal/Chemistry_202_Internal_2025.pdf",
+    "description": "Internal"
+  },
+  {
+    "subject": "Zoology",
+    "title": "Multi — Zoology 203 External 2025",
+    "courseType": "Multi",
+    "unitType": null,
+    "year": null,
+    "file": "pdfs/Sem_2/Zoology/Multi/Papers/External/Zoology_203_External_2025.pdf",
+    "description": "External"
+  },
+  {
+    "subject": "Zoology",
+    "title": "Multi — Zoology 203 Internal 2025",
+    "courseType": "Multi",
+    "unitType": null,
+    "year": null,
+    "file": "pdfs/Sem_2/Zoology/Multi/Papers/Internal/Zoology_203_Internal_2025.pdf",
+    "description": "Internal"
+  },
+  {
+    "subject": "Iks",
+    "title": "Physics — IKS Physics 205 Internal 2025",
+    "courseType": "Physics",
+    "unitType": null,
+    "year": null,
+    "file": "pdfs/Sem_2/Iks/Physics/Papers/Internal/IKS_Physics_205_Internal_2025.pdf",
+    "description": "Internal"
+  },
+  {
+    "subject": "Sec",
+    "title": "Physics — SEC Physics 206 External 2025",
+    "courseType": "Physics",
+    "unitType": null,
+    "year": null,
+    "file": "pdfs/Sem_2/Sec/Physics/Papers/External/SEC_Physics_206_External_2025.pdf",
+    "description": "External"
+  },
+  {
+    "subject": "Sec",
+    "title": "Physics — SEC Physics 206 Internal 2025",
+    "courseType": "Physics",
+    "unitType": null,
+    "year": null,
+    "file": "pdfs/Sem_2/Sec/Physics/Papers/Internal/SEC_Physics_206_Internal_2025.pdf",
+    "description": "Internal"
+  },
+  {
+    "subject": "Vac",
+    "title": "Physics — VAC Physics 205 Internal 2025",
+    "courseType": "Physics",
+    "unitType": null,
+    "year": null,
+    "file": "pdfs/Sem_2/Vac/Physics/Papers/Internal/VAC_Physics_205_Internal_2025.pdf",
     "description": "Internal"
   }
 ]

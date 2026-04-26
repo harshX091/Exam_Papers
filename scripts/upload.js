@@ -156,8 +156,8 @@ document.addEventListener('DOMContentLoaded', () => {
             parts.push('Syllabus');
         }
 
-        // Remove illegal characters but KEEP spaces
-        return parts.join(' ').replace(/[^a-zA-Z0-9.\-_ ]/g, '').replace(/\s+/g, ' ') + '.pdf';
+        // Use underscores instead of spaces for better web compatibility
+        return parts.join('_').replace(/[^a-zA-Z0-9.\-_]/g, '').replace(/[\s_]+/g, '_') + '.pdf';
     }
 
     function updatePreview() {

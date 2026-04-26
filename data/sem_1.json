@@ -4,8 +4,8 @@
     "title": "General — English AEC 104 External 2024",
     "courseType": "General",
     "unitType": null,
-    "year": 2024,
-    "file": "pdfs/Sem_1/English_Aec/General/Papers/External/English AEC 104 External 2024.pdf",
+    "year": null,
+    "file": "pdfs/Sem_1/English_Aec/General/Papers/External/English_AEC_104_External_2024.pdf",
     "description": "External"
   },
   {
@@ -13,53 +13,8 @@
     "title": "General — English AEC 104 Internal 2024",
     "courseType": "General",
     "unitType": null,
-    "year": 2024,
-    "file": "pdfs/Sem_1/English_Aec/General/Papers/Internal/English AEC 104 Internal 2024.pdf",
-    "description": "Internal"
-  },
-  {
-    "subject": "Zoology",
-    "title": "Multi — Zoology 103 Internal 2024",
-    "courseType": "Multi",
-    "unitType": null,
-    "year": 2024,
-    "file": "pdfs/Sem_1/Zoology/Multi/Papers/Internal/Zoology 103 Internal 2024.pdf",
-    "description": "Internal"
-  },
-  {
-    "subject": "Iks",
-    "title": "Physics — IKS Physics 105 External 2024",
-    "courseType": "Physics",
-    "unitType": null,
-    "year": 2024,
-    "file": "pdfs/Sem_1/Iks/Physics/Papers/External/IKS Physics 105 External 2024.pdf",
-    "description": "External"
-  },
-  {
-    "subject": "Iks",
-    "title": "Physics — IKS Physics 105 Internal 2024",
-    "courseType": "Physics",
-    "unitType": null,
-    "year": 2024,
-    "file": "pdfs/Sem_1/Iks/Physics/Papers/Internal/IKS Physics 105 Internal 2024.pdf",
-    "description": "Internal"
-  },
-  {
-    "subject": "Sec",
-    "title": "Physics — SEC Physics 106 External 2024",
-    "courseType": "Physics",
-    "unitType": null,
-    "year": 2024,
-    "file": "pdfs/Sem_1/Sec/Physics/Papers/External/SEC Physics 106 External 2024.pdf",
-    "description": "External"
-  },
-  {
-    "subject": "Sec",
-    "title": "Physics — SEC Physics 106 Internal 2024",
-    "courseType": "Physics",
-    "unitType": null,
-    "year": 2024,
-    "file": "pdfs/Sem_1/Sec/Physics/Papers/Internal/SEC Physics 106 Internal 2024.pdf",
+    "year": null,
+    "file": "pdfs/Sem_1/English_Aec/General/Papers/Internal/English_AEC_104_Internal_2024.pdf",
     "description": "Internal"
   },
   {
@@ -96,6 +51,51 @@
     "unitType": null,
     "year": null,
     "file": "pdfs/Sem_1/Chemistry/Minor/Papers/Internal/Chemistry_102_Internal_2024.pdf",
+    "description": "Internal"
+  },
+  {
+    "subject": "Zoology",
+    "title": "Multi — Zoology 103 Internal 2024",
+    "courseType": "Multi",
+    "unitType": null,
+    "year": null,
+    "file": "pdfs/Sem_1/Zoology/Multi/Papers/Internal/Zoology_103_Internal_2024.pdf",
+    "description": "Internal"
+  },
+  {
+    "subject": "Iks",
+    "title": "Physics — IKS Physics 105 External 2024",
+    "courseType": "Physics",
+    "unitType": null,
+    "year": null,
+    "file": "pdfs/Sem_1/Iks/Physics/Papers/External/IKS_Physics_105_External_2024.pdf",
+    "description": "External"
+  },
+  {
+    "subject": "Iks",
+    "title": "Physics — IKS Physics 105 Internal 2024",
+    "courseType": "Physics",
+    "unitType": null,
+    "year": null,
+    "file": "pdfs/Sem_1/Iks/Physics/Papers/Internal/IKS_Physics_105_Internal_2024.pdf",
+    "description": "Internal"
+  },
+  {
+    "subject": "Sec",
+    "title": "Physics — SEC Physics 106 External 2024",
+    "courseType": "Physics",
+    "unitType": null,
+    "year": null,
+    "file": "pdfs/Sem_1/Sec/Physics/Papers/External/SEC_Physics_106_External_2024.pdf",
+    "description": "External"
+  },
+  {
+    "subject": "Sec",
+    "title": "Physics — SEC Physics 106 Internal 2024",
+    "courseType": "Physics",
+    "unitType": null,
+    "year": null,
+    "file": "pdfs/Sem_1/Sec/Physics/Papers/Internal/SEC_Physics_106_Internal_2024.pdf",
     "description": "Internal"
   }
 ]
