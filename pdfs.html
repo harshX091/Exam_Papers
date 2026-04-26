@@ -142,7 +142,7 @@
       try {
         if (currentView === 'syllabus') {
           const file = `data/syllabus_${sem.toLowerCase()}.json`;
-          const res = await fetch(file);
+          const res = await fetch(file, { cache: 'no-cache' });
           if (!res.ok) throw new Error(`Failed to load ${file}: ${res.statusText}`);
           const data = await res.json();
           const subjData = data.find(s => s.subject.toLowerCase() === subject.toLowerCase());
@@ -162,7 +162,7 @@
           applyFilter(filterInput.value.trim());
         } else {
           const file = `data/${sem.toLowerCase()}.json`;
-          const res = await fetch(file);
+          const res = await fetch(file, { cache: 'no-cache' });
           if (!res.ok) throw new Error(`Failed to load ${file}: ${res.statusText}`);
           const data = await res.json();
           let rawPapers = data.filter(p => p.subject.toLowerCase() === subject.toLowerCase());

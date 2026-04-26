@@ -91,7 +91,7 @@
         searchInput.addEventListener('focus', async () => {
             if (!searchIndex) {
                 try {
-                    const res = await fetch('data/search_index.json');
+                    const res = await fetch('data/search_index.json', { cache: 'no-cache' });
                     if (res.ok) {
                         searchIndex = await res.json();
                     }
