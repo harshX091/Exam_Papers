@@ -35,12 +35,10 @@
     <div class="grid" id="subjectGrid"></div>
   </main>
 
+  <script src="scripts/subjects.js"></script>
   <script>
-    // COMMON SUBJECTS used across semesters
-    const subjects = [
-      "Physics", "Chemistry", "Zoology", "Botany", "Mathematics",
-      "Computer_Science", "English"
-    ];
+    // COMMON_SUBJECTS is loaded from scripts/subjects.js
+    const subjects = COMMON_SUBJECTS;
 
     // read sem param
     const params = new URLSearchParams(location.search);
@@ -57,9 +55,17 @@
       subjects.filter(s => s.toLowerCase().includes(filter.toLowerCase())).forEach(s => {
         const a = document.createElement('a');
         a.className = 'card';
-        // link to coursetype page with semester & subject
-        a.href = `coursetype.html?sem=${encodeURIComponent(sem)}&subject=${encodeURIComponent(s)}`;
-        a.innerHTML = `<strong>${s.replace(/_/g, ' ')}</strong><div class="meta">Select course type for ${s.replace(/_/g, ' ')}</div>`;
+        
+        if (typeof GENERAL_SUBJECTS !== 'undefined' && GENERAL_SUBJECTS.includes(s)) {
+            // skip coursetype for general subjects, show all sub-subjects together
+            a.href = `pdfs.html?sem=${encodeURIComponent(sem)}&subject=${encodeURIComponent(s)}`;
+            a.innerHTML = `<strong>${s.replace(/_/g, ' ')}</strong><div class="meta">View materials for ${s.replace(/_/g, ' ')}</div>`;
+        } else {
+            // link to coursetype page with semester & subject
+            a.href = `coursetype.html?sem=${encodeURIComponent(sem)}&subject=${encodeURIComponent(s)}`;
+            a.innerHTML = `<strong>${s.replace(/_/g, ' ')}</strong><div class="meta">Select course type for ${s.replace(/_/g, ' ')}</div>`;
+        }
+        
         grid.appendChild(a);
       });
     }

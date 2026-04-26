@@ -181,6 +181,14 @@
                 <div class="help-text">Enter the specific course code (e.g. 101, 106).</div>
             </div>
 
+            <div class="form-group" id="coreSubjectGroup" style="display:none;">
+                <label for="coreSubject">Associated Core Subject</label>
+                <select id="coreSubject" name="coreSubject">
+                    <option value="" disabled selected>Select Core Subject</option>
+                </select>
+                <div class="help-text">Select the main subject this is associated with (e.g. Physics for SEC of Physics).</div>
+            </div>
+
             <div class="form-group" id="courseTypeGroup">
                 <label for="courseType">Course Type</label>
                 <select id="courseType" name="courseType" required>
@@ -257,6 +265,7 @@
         </footer>
     </div>
 
+    <script src="scripts/subjects.js"></script>
     <script src="scripts/upload.js?v=3"></script>
 
 </body>

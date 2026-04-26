@@ -45,22 +45,34 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // COMMON SUBJECTS used across semesters
-    const ALL_SUBJECTS = [
-        "Physics", "Chemistry", "Mathematics", "Zoology",
-        "Botany", "Computer_Science", "English_AEC",
-        "SEC", "IKS", "VAC"
-    ];
+    // COMMON SUBJECTS is now loaded from scripts/subjects.js
 
     // Populate the dropdown initially
     subjectSelect.innerHTML = '<option value="" disabled selected>Select Subject</option>';
-    ALL_SUBJECTS.sort().forEach(sub => {
+    COMMON_SUBJECTS.sort().forEach(sub => {
         const option = document.createElement('option');
         const displaySub = sub.replace(/_/g, ' ');
         option.value = displaySub;
         option.textContent = displaySub;
         subjectSelect.appendChild(option);
     });
+
+    const coreSubjectSelect = document.getElementById('coreSubject');
+    const coreSubjectGroup = document.getElementById('coreSubjectGroup');
+    if (coreSubjectSelect) {
+        // Populate coreSubject dropdown with non-general subjects
+        const NON_GENERAL_SUBJECTS = typeof GENERAL_SUBJECTS !== 'undefined' 
+            ? COMMON_SUBJECTS.filter(s => !GENERAL_SUBJECTS.includes(s))
+            : COMMON_SUBJECTS;
+            
+        NON_GENERAL_SUBJECTS.sort().forEach(sub => {
+            const option = document.createElement('option');
+            const displaySub = sub.replace(/_/g, ' ');
+            option.value = displaySub;
+            option.textContent = displaySub;
+            coreSubjectSelect.appendChild(option);
+        });
+    }
 
     // Enable the subject dropdown if a semester is chosen
     semesterSelect.addEventListener('change', () => {
@@ -69,18 +81,33 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Hide Course Type for general subjects
+    // Hide Course Type for general subjects and show Core Subject instead
     subjectSelect.addEventListener('change', (e) => {
         const val = e.target.value;
-        const generalSubjects = ['English AEC', 'SEC', 'IKS', 'VAC'];
+        const generalSubjectsDisplay = typeof GENERAL_SUBJECTS !== 'undefined' 
+            ? GENERAL_SUBJECTS.map(s => s.replace(/_/g, ' ')) 
+            : ['English AEC', 'SEC', 'IKS', 'VAC'];
         
-        if (generalSubjects.includes(val)) {
+        if (generalSubjectsDisplay.includes(val)) {
             courseTypeGroup.style.display = 'none';
             courseTypeSelect.value = 'General';
+            courseTypeSelect.removeAttribute('required');
+            
+            if (coreSubjectGroup) {
+                coreSubjectGroup.style.display = 'flex';
+                coreSubjectSelect.setAttribute('required', 'required');
+            }
         } else {
             courseTypeGroup.style.display = 'flex';
+            courseTypeSelect.setAttribute('required', 'required');
             if (courseTypeSelect.value === 'General') {
                 courseTypeSelect.value = '';
+            }
+            
+            if (coreSubjectGroup) {
+                coreSubjectGroup.style.display = 'none';
+                coreSubjectSelect.removeAttribute('required');
+                coreSubjectSelect.value = '';
             }
         }
     });
@@ -88,6 +115,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // ── Dynamic Filename Generation ──
     function generateSemanticFilename() {
         const subject = subjectSelect.value || '';
+        const coreSubject = coreSubjectSelect ? coreSubjectSelect.value : '';
         const courseCode = courseCodeInput.value.trim();
         const category = categorySelect.value;
         const examType = document.getElementById('examType').value;
@@ -99,6 +127,12 @@ document.addEventListener('DOMContentLoaded', () => {
         let parts = [];
         // Convert internal underscores to spaces for the filename
         parts.push(subject.replace(/_/g, ' '));
+        
+        // Add core subject if it is visible and selected
+        if (coreSubjectGroup && coreSubjectGroup.style.display !== 'none' && coreSubject) {
+            parts.push(coreSubject.replace(/_/g, ' '));
+        }
+        
         parts.push(courseCode);
         
         if (category === 'Papers') {
@@ -126,9 +160,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     
     // Attach listeners to update live preview
-    [categorySelect, subjectSelect, courseCodeInput, document.getElementById('examType'), document.getElementById('year'), document.getElementById('unitName')].forEach(el => {
-        el.addEventListener('input', updatePreview);
-        el.addEventListener('change', updatePreview);
+    const previewInputs = [categorySelect, subjectSelect, courseCodeInput, document.getElementById('examType'), document.getElementById('year'), document.getElementById('unitName')];
+    if (coreSubjectSelect) previewInputs.push(coreSubjectSelect);
+    
+    previewInputs.forEach(el => {
+        if (el) {
+            el.addEventListener('input', updatePreview);
+            el.addEventListener('change', updatePreview);
+        }
     });
 
     form.addEventListener('submit', async (e) => {
@@ -149,6 +188,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const semester = formData.get('semester');
         let subject = formData.get('subject');
         const courseType = formData.get('courseType');
+        const coreSubject = formData.get('coreSubject');
         const category = formData.get('category');
         const examType = formData.get('examType');
         const year = formData.get('year');
@@ -184,10 +224,22 @@ document.addEventListener('DOMContentLoaded', () => {
         try {
             // 2. Sanitize filename using dynamic naming logic
             const newFileName = generateSemanticFilename();
+            
+            // Determine the final course type to use in the path
+            const generalSubjectsDisplay = typeof GENERAL_SUBJECTS !== 'undefined' 
+                ? GENERAL_SUBJECTS.map(s => s.replace(/_/g, ' ')) 
+                : ['English AEC', 'SEC', 'IKS', 'VAC'];
+                
+            let finalCourseType = courseType;
+            if (generalSubjectsDisplay.includes(subjectTitle)) {
+                // If it's a general subject, use the selected Core Subject (e.g. Physics) as the CourseType folder
+                // Fallback to "General" if coreSubject is empty for some reason
+                finalCourseType = coreSubject ? coreSubject.replace(/\s+/g, '_') : 'General';
+            }
 
             // 3. Build target path: pdfs/{Semester}/{Subject}/{CourseType}/[{UnitType}]/{Category}/[{UnitName}]/file.pdf
             const semesterKey = `Sem_${semester}`;
-            const pathParts = ['pdfs', semesterKey, subjectFolder, courseType];
+            const pathParts = ['pdfs', semesterKey, subjectFolder, finalCourseType];
             if (unitType) pathParts.push(unitType);
             pathParts.push(category);
             if (category === 'Papers' && examType) {
@@ -208,7 +260,7 @@ A user has submitted a new academic document for review.
 
 - **Semester:** ${semesterKey}
 - **Subject:** ${subjectTitle}
-- **Course Type:** ${courseType}
+- **Course Type:** ${finalCourseType} ${coreSubject ? '(Core Subject)' : ''}
 - **Type:** ${category} ${category === 'Papers' && examType ? `(${examType})` : ''}
 ${year ? `- **Year:** ${year}` : ''}
 ${unitName ? `- **Unit Name:** ${unitName}` : ''}
