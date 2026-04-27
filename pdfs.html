@@ -139,13 +139,18 @@
     });
 
     async function handleShare(title, filePath) {
-      // Re-encode just in case the browser decoded it in the onclick attribute
-      const encodedPath = encodeURI(filePath);
-      const fullUrl = new URL(encodedPath, window.location.href).href;
-      
+      // Encode each path segment individually so spaces/special chars in folder
+      // names (e.g. "Major  1 - Unit_1") are properly percent-encoded.
+      // encodeURI() on the whole path is not sufficient for WhatsApp link previews.
+      const safeEncodedPath = filePath
+        .split('/')
+        .map(segment => encodeURIComponent(decodeURIComponent(segment)))
+        .join('/');
+      const fullUrl = new URL(safeEncodedPath, window.location.href).href;
+
       const shareData = {
         title: title,
-        text: `Check out this academic paper: ${title}`,
+        text: `Check out this study material: ${title}`,
         url: fullUrl
       };
 
