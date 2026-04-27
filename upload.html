@@ -166,6 +166,166 @@
                 transform: rotate(360deg);
             }
         }
+
+        /* ── Scan Guide Card ─────────────────────────────────────────── */
+        .scan-guide {
+            background: linear-gradient(135deg, #eff6ff 0%, #f0fdf4 100%);
+            border: 1px solid #bfdbfe;
+            border-radius: var(--radius);
+            margin-bottom: 1.5rem;
+            overflow: hidden;
+        }
+
+        .scan-guide-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem 1.25rem;
+            cursor: pointer;
+            user-select: none;
+            gap: 0.75rem;
+        }
+
+        .scan-guide-header:hover {
+            background: rgba(37, 99, 235, 0.05);
+        }
+
+        .scan-guide-title {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            font-weight: 700;
+            font-size: 1rem;
+            color: #1e40af;
+        }
+
+        .scan-guide-title span.icon {
+            font-size: 1.25rem;
+        }
+
+        .scan-guide-chevron {
+            color: #3b82f6;
+            font-size: 1rem;
+            transition: transform 0.25s ease;
+            flex-shrink: 0;
+        }
+
+        .scan-guide-body {
+            display: none;
+            padding: 0 1.25rem 1.25rem;
+            animation: fadeIn 0.2s ease;
+        }
+
+        .scan-guide-body.open {
+            display: block;
+        }
+
+        .scan-guide-chevron.open {
+            transform: rotate(180deg);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-6px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+
+        .scan-apps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 0.75rem;
+            margin-bottom: 1.1rem;
+        }
+
+        .scan-app-card {
+            background: #fff;
+            border: 1px solid #e0e7ef;
+            border-radius: 10px;
+            padding: 0.85rem 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.3rem;
+        }
+
+        .scan-app-name {
+            font-weight: 700;
+            font-size: 0.95rem;
+            color: var(--text-main);
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .scan-app-badge {
+            display: inline-block;
+            font-size: 0.68rem;
+            font-weight: 700;
+            padding: 1px 6px;
+            border-radius: 999px;
+            background: #dcfce7;
+            color: #166534;
+            letter-spacing: 0.02em;
+        }
+
+        .scan-app-desc {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        .scan-app-links {
+            display: flex;
+            gap: 0.5rem;
+            margin-top: 0.35rem;
+            flex-wrap: wrap;
+        }
+
+        .scan-app-links a {
+            font-size: 0.75rem;
+            font-weight: 600;
+            padding: 3px 10px;
+            border-radius: 999px;
+            text-decoration: none;
+            background: #eff6ff;
+            color: #1d4ed8;
+            border: 1px solid #bfdbfe;
+            transition: background 0.15s;
+        }
+
+        .scan-app-links a:hover {
+            background: #dbeafe;
+        }
+
+        .scan-tips {
+            border-top: 1px solid #bfdbfe;
+            padding-top: 0.9rem;
+            margin-top: 0.25rem;
+        }
+
+        .scan-tips-title {
+            font-size: 0.82rem;
+            font-weight: 700;
+            color: #1e40af;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            margin-bottom: 0.55rem;
+        }
+
+        .scan-tips ol {
+            margin: 0;
+            padding-left: 1.3rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.35rem;
+        }
+
+        .scan-tips li {
+            font-size: 0.85rem;
+            color: var(--text-main);
+            line-height: 1.45;
+        }
+
+        .scan-tips li strong {
+            color: #1e40af;
+        }
     </style>
 </head>
 
@@ -187,6 +347,69 @@
     </header>
 
     <div class="container">
+
+        <!-- ── Scan Guide ───────────────────────────────────────────── -->
+        <div class="scan-guide">
+            <div class="scan-guide-header" id="scanGuideToggle" role="button" aria-expanded="false" tabindex="0">
+                <div class="scan-guide-title">
+                    <span class="icon">📷</span>
+                    <span>Have a physical paper? Scan it first — it's free &amp; fast</span>
+                </div>
+                <span class="scan-guide-chevron" id="scanGuideChevron">▼</span>
+            </div>
+
+            <div class="scan-guide-body" id="scanGuideBody">
+                <p style="font-size:0.88rem;color:var(--text-muted);margin:0 0 0.85rem;">
+                    Use one of these <strong>free apps</strong> on your smartphone to scan your paper before uploading. They auto-detect edges, fix perspective, and produce clean small PDFs.
+                </p>
+
+                <div class="scan-apps">
+                    <!-- Microsoft Lens -->
+                    <div class="scan-app-card">
+                        <div class="scan-app-name">
+                            🔵 Microsoft Lens
+                            <span class="scan-app-badge">BEST</span>
+                        </div>
+                        <div class="scan-app-desc">No account needed. Edge detection, perspective fix, exports PDF.</div>
+                        <div class="scan-app-links">
+                            <a href="https://play.google.com/store/apps/details?id=com.microsoft.office.officelens" target="_blank" rel="noopener">Android</a>
+                            <a href="https://apps.apple.com/app/microsoft-lens-pdf-scanner/id975925059" target="_blank" rel="noopener">iPhone</a>
+                        </div>
+                    </div>
+
+                    <!-- Adobe Scan -->
+                    <div class="scan-app-card">
+                        <div class="scan-app-name">🔴 Adobe Scan</div>
+                        <div class="scan-app-desc">Free Adobe account required. Excellent quality, OCR text recognition.</div>
+                        <div class="scan-app-links">
+                            <a href="https://play.google.com/store/apps/details?id=com.adobe.scan.android" target="_blank" rel="noopener">Android</a>
+                            <a href="https://apps.apple.com/app/adobe-scan-pdf-ocr-scanner/id1199564834" target="_blank" rel="noopener">iPhone</a>
+                        </div>
+                    </div>
+
+                    <!-- Google Drive -->
+                    <div class="scan-app-card">
+                        <div class="scan-app-name">🟡 Google Drive</div>
+                        <div class="scan-app-desc">Already on your phone. Tap + → Scan. Needs Google account.</div>
+                        <div class="scan-app-links">
+                            <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.docs" target="_blank" rel="noopener">Android</a>
+                            <a href="https://apps.apple.com/app/google-drive/id507874739" target="_blank" rel="noopener">iPhone</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scan-tips">
+                    <div class="scan-tips-title">📋 Tips for a good scan</div>
+                    <ol>
+                        <li><strong>Good lighting</strong> — scan near a window or under a bright light. Avoid shadows.</li>
+                        <li><strong>Flat surface</strong> — lay the paper flat on a table, don't hold it in the air.</li>
+                        <li><strong>Hold phone directly above</strong> — look straight down at the paper, not at an angle.</li>
+                        <li><strong>Export as PDF</strong> — not as a photo/image — to keep file size small.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <!-- ───────────────────────────────────────────────────────── -->
 
         <form id="uploadForm" class="upload-form">
             <div class="form-group">
@@ -303,6 +526,33 @@
 
     <script src="scripts/subjects.js"></script>
     <script src="scripts/upload.js?v=3"></script>
+    <script>
+        // ── Scan guide collapsible toggle ─────────────────────────────────
+        (function () {
+            const toggle  = document.getElementById('scanGuideToggle');
+            const body    = document.getElementById('scanGuideBody');
+            const chevron = document.getElementById('scanGuideChevron');
+            if (!toggle) return;
+
+            function open() {
+                body.classList.add('open');
+                chevron.classList.add('open');
+                toggle.setAttribute('aria-expanded', 'true');
+            }
+            function close() {
+                body.classList.remove('open');
+                chevron.classList.remove('open');
+                toggle.setAttribute('aria-expanded', 'false');
+            }
+
+            toggle.addEventListener('click', () => {
+                body.classList.contains('open') ? close() : open();
+            });
+            toggle.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle.click(); }
+            });
+        })();
+    </script>
 
 </body>
 
