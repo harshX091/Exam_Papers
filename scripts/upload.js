@@ -258,15 +258,28 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             // 3. Build target path: pdfs/{Semester}/{Subject}/{CourseType}/[{UnitType}]/{Category}/[{UnitName}]/file.pdf
+            // Sanitize every path segment to avoid spaces/special chars that break URLs.
+            function sanitizeSegment(s) {
+                return String(s)
+                    .replace(/[^a-zA-Z0-9_.\-]/g, '_')  // unsafe chars → _
+                    .replace(/_+/g, '_')                  // collapse multiples
+                    .replace(/^_+|_+$/g, '');             // strip leading/trailing _
+            }
+
             const semesterKey = `Sem_${semester}`;
-            const pathParts = ['pdfs', semesterKey, subjectFolder, finalCourseType];
-            if (unitType) pathParts.push(unitType);
-            pathParts.push(category);
+            const pathParts = [
+                'pdfs',
+                semesterKey,
+                sanitizeSegment(subjectFolder),
+                sanitizeSegment(finalCourseType)
+            ];
+            if (unitType) pathParts.push(sanitizeSegment(unitType));
+            pathParts.push(sanitizeSegment(category));
             if (category === 'Papers' && examType) {
-                pathParts.push(examType);
+                pathParts.push(sanitizeSegment(examType));
             }
             if (unitName && unitName.trim()) {
-                pathParts.push(unitName.trim().replace(/[^a-zA-Z0-9.\-_]/g, '_'));
+                pathParts.push(sanitizeSegment(unitName.trim()));
             }
             pathParts.push(newFileName);
             const targetPath = pathParts.join('/');

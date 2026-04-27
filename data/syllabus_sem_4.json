@@ -23,7 +23,7 @@
         "materials": [
           {
             "title": "B Sc Sem 4 Electro chemistry",
-            "file": "pdfs/Sem_4/Chemistry/Minor/Notes/Unit 1/B.Sc._Sem_4_..Electro_chemistry.pdf",
+            "file": "pdfs/Sem_4/Chemistry/Minor/Notes/Unit_1/B.Sc._Sem_4_..Electro_chemistry.pdf",
             "description": ""
           }
         ]
@@ -36,7 +36,7 @@
         "materials": [
           {
             "title": "INORGANIC POLYMER B SC SEM 4",
-            "file": "pdfs/Sem_4/Chemistry/Minor/Notes/Unit 2/INORGANIC_POLYMER_B.SC_SEM_4.pdf",
+            "file": "pdfs/Sem_4/Chemistry/Minor/Notes/Unit_2/INORGANIC_POLYMER_B.SC_SEM_4.pdf",
             "description": ""
           }
         ]
@@ -54,7 +54,7 @@
         "materials": [
           {
             "title": "Numerical Analysis Unit-1 -compressed",
-            "file": "pdfs/Sem_4/Mathematics/Minor/Notes/Unit_1/Numerical_Analysis__Unit-1_-compressed.pdf",
+            "file": "pdfs/Sem_4/Mathematics/Minor/Notes/Unit_1/Numerical_Analysis_Unit-1_-compressed.pdf",
             "description": ""
           }
         ]
@@ -80,170 +80,6 @@
       {
         "unit": 0,
         "category": "",
-        "title": "Major  1 - Unit 1",
-        "courseType": "Major",
-        "materials": [
-          {
-            "title": "Document from Aesha Pandya",
-            "file": "pdfs/Sem_4/Physics/Major/Notes/Major  1 - Unit_1/Document_from_Aesha_Pandya.pdf",
-            "description": ""
-          },
-          {
-            "title": "Mechanics of a Single Particle and System of Particles(3.3 to 3.6)",
-            "file": "pdfs/Sem_4/Physics/Major/Notes/Major  1 - Unit_1/Mechanics_of_a_Single_Particle_and_System_of_Particles(3.3_to_3.6).pdf",
-            "description": ""
-          }
-        ]
-      },
-      {
-        "unit": 0,
-        "category": "",
-        "title": "Major  1 - Unit 2",
-        "courseType": "Major",
-        "materials": [
-          {
-            "title": "CC-401-UNIT-2-NUCLEAR PHYSICS (1)",
-            "file": "pdfs/Sem_4/Physics/Major/Notes/Major  1 - Unit_2/CC-401-UNIT-2-NUCLEAR_PHYSICS_(1).pdf",
-            "description": ""
-          },
-          {
-            "title": "Detectors and Accelerators(1.1.1 to 1.1.4)",
-            "file": "pdfs/Sem_4/Physics/Major/Notes/Major  1 - Unit_2/Detectors_and_Accelerators(1.1.1_to_1.1.4).pdf",
-            "description": ""
-          },
-          {
-            "title": "The Q-Equation(3.1 to 3.5)",
-            "file": "pdfs/Sem_4/Physics/Major/Notes/Major  1 - Unit_2/The_Q-Equation(3.1_to_3.5).pdf",
-            "description": ""
-          }
-        ]
-      },
-      {
-        "unit": 0,
-        "category": "",
-        "title": "Major  1 - Unit 3",
-        "courseType": "Major",
-        "materials": [
-          {
-            "title": "Radioactivity(2.1 to 2.13)",
-            "file": "pdfs/Sem_4/Physics/Major/Notes/Major  1 - Unit_3/Radioactivity(2.1_to_2.13).pdf",
-            "description": ""
-          },
-          {
-            "title": "SY Radioactivity",
-            "file": "pdfs/Sem_4/Physics/Major/Notes/Major  1 - Unit_3/SY_Radioactivity.pdf",
-            "description": ""
-          },
-          {
-            "title": "Theory 2 Radioactivity",
-            "file": "pdfs/Sem_4/Physics/Major/Notes/Major  1 - Unit_3/Theory_2_Radioactivity.pdf",
-            "description": ""
-          }
-        ]
-      },
-      {
-        "unit": 0,
-        "category": "",
-        "title": "Major  1 - Unit 4",
-        "courseType": "Major",
-        "materials": [
-          {
-            "title": "PLASMA Physics MJ401U4 MI402U2",
-            "file": "pdfs/Sem_4/Physics/Major/Notes/Major  1 - Unit_4/PLASMA_Physics_MJ401U4_MI402U2.pdf",
-            "description": ""
-          }
-        ]
-      },
-      {
-        "unit": 0,
-        "category": "",
-        "title": "Major  2 - Unit 1",
-        "courseType": "Major",
-        "materials": [
-          {
-            "title": "Curvilinear Co-ordinates(10.6 to 10.9)",
-            "file": "pdfs/Sem_4/Physics/Major/Notes/Major  2 - Unit_1/Curvilinear_Co-ordinates(10.6_to_10.9).pdf",
-            "description": ""
-          },
-          {
-            "title": "Curvilinear Coordinates MJ401A U1b",
-            "file": "pdfs/Sem_4/Physics/Major/Notes/Major  2 - Unit_1/Curvilinear_Coordinates_MJ401A_U1b.pdf",
-            "description": ""
-          },
-          {
-            "title": "Fourier series",
-            "file": "pdfs/Sem_4/Physics/Major/Notes/Major  2 - Unit_1/Fourier_series.pdf",
-            "description": ""
-          },
-          {
-            "title": "Fourier series(7.1 to 7.11)",
-            "file": "pdfs/Sem_4/Physics/Major/Notes/Major  2 - Unit_1/Fourier_series(7.1_to_7.11).pdf",
-            "description": ""
-          },
-          {
-            "title": "ફુરિયર શ્રેણી",
-            "file": "pdfs/Sem_4/Physics/Major/Notes/Major  2 - Unit_1/ફુરિયર_શ્રેણી.pdf",
-            "description": ""
-          }
-        ]
-      },
-      {
-        "unit": 0,
-        "category": "",
-        "title": "Major  2 - Unit 2",
-        "courseType": "Major",
-        "materials": [
-          {
-            "title": "Quntum Machanics(2.4 to 2.11)",
-            "file": "pdfs/Sem_4/Physics/Major/Notes/Major  2 - Unit_2/Quntum_Machanics(2.4_to_2.11).pdf",
-            "description": ""
-          },
-          {
-            "title": "Quntum Mechanics sem 4",
-            "file": "pdfs/Sem_4/Physics/Major/Notes/Major  2 - Unit_2/Quntum_Mechanics_sem_4.pdf",
-            "description": ""
-          }
-        ]
-      },
-      {
-        "unit": 0,
-        "category": "",
-        "title": "Major  2 - Unit 3",
-        "courseType": "Major",
-        "materials": [
-          {
-            "title": "FET",
-            "file": "pdfs/Sem_4/Physics/Major/Notes/Major  2 - Unit_3/FET.pdf",
-            "description": ""
-          },
-          {
-            "title": "h-Parameters sem 4 Electronbics",
-            "file": "pdfs/Sem_4/Physics/Major/Notes/Major  2 - Unit_3/h-Parameters_sem_4_Electronbics.pdf",
-            "description": ""
-          },
-          {
-            "title": "SY Solidstate Devices- UJT, SCR",
-            "file": "pdfs/Sem_4/Physics/Major/Notes/Major  2 - Unit_3/SY_Solidstate_Devices-_UJT,_SCR...pdf",
-            "description": ""
-          }
-        ]
-      },
-      {
-        "unit": 0,
-        "category": "",
-        "title": "Major  2 - Unit 4",
-        "courseType": "Major",
-        "materials": [
-          {
-            "title": "Digital Electronics MJ401A U4",
-            "file": "pdfs/Sem_4/Physics/Major/Notes/Major  2 - Unit_4/Digital_Electronics_MJ401A_U4.pdf",
-            "description": ""
-          }
-        ]
-      },
-      {
-        "unit": 0,
-        "category": "",
         "title": "Major — Syllabus",
         "courseType": "Major",
         "materials": [
@@ -257,12 +93,12 @@
       {
         "unit": 0,
         "category": "",
-        "title": "Major • SEC — Unit: Astro   Space Physics SC23SECPHY406",
+        "title": "Major • SEC — Unit: Astro Space Physics SC23SECPHY406",
         "courseType": "Major",
         "materials": [
           {
             "title": "ES Solar Cosmic Rays 08 16 16",
-            "file": "pdfs/Sem_4/Physics/Major/SEC/Notes/Astro___Space_Physics_SC23SECPHY406/ES_Solar___Cosmic_Rays__08_16_16.pdf",
+            "file": "pdfs/Sem_4/Physics/Major/SEC/Notes/Astro_Space_Physics_SC23SECPHY406/ES_Solar_Cosmic_Rays_08_16_16.pdf",
             "description": ""
           }
         ]
@@ -276,6 +112,170 @@
           {
             "title": "New Doc 03-05-2026 12.17-compressed",
             "file": "pdfs/Sem_4/Physics/Major/VAC/Notes/VAC_PHY405/New_Doc_03-05-2026_12.17-compressed.pdf",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "unit": 0,
+        "category": "",
+        "title": "Major 1 - Unit 1",
+        "courseType": "Major",
+        "materials": [
+          {
+            "title": "Document from Aesha Pandya",
+            "file": "pdfs/Sem_4/Physics/Major/Notes/Major_1_-_Unit_1/Document_from_Aesha_Pandya.pdf",
+            "description": ""
+          },
+          {
+            "title": "Mechanics of a Single Particle and System of Particles 3.3 to 3.6",
+            "file": "pdfs/Sem_4/Physics/Major/Notes/Major_1_-_Unit_1/Mechanics_of_a_Single_Particle_and_System_of_Particles_3.3_to_3.6_.pdf",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "unit": 0,
+        "category": "",
+        "title": "Major 1 - Unit 2",
+        "courseType": "Major",
+        "materials": [
+          {
+            "title": "CC-401-UNIT-2-NUCLEAR PHYSICS 1",
+            "file": "pdfs/Sem_4/Physics/Major/Notes/Major_1_-_Unit_2/CC-401-UNIT-2-NUCLEAR_PHYSICS_1_.pdf",
+            "description": ""
+          },
+          {
+            "title": "Detectors and Accelerators 1.1.1 to 1.1.4",
+            "file": "pdfs/Sem_4/Physics/Major/Notes/Major_1_-_Unit_2/Detectors_and_Accelerators_1.1.1_to_1.1.4_.pdf",
+            "description": ""
+          },
+          {
+            "title": "The Q-Equation 3.1 to 3.5",
+            "file": "pdfs/Sem_4/Physics/Major/Notes/Major_1_-_Unit_2/The_Q-Equation_3.1_to_3.5_.pdf",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "unit": 0,
+        "category": "",
+        "title": "Major 1 - Unit 3",
+        "courseType": "Major",
+        "materials": [
+          {
+            "title": "Radioactivity 2.1 to 2.13",
+            "file": "pdfs/Sem_4/Physics/Major/Notes/Major_1_-_Unit_3/Radioactivity_2.1_to_2.13_.pdf",
+            "description": ""
+          },
+          {
+            "title": "SY Radioactivity",
+            "file": "pdfs/Sem_4/Physics/Major/Notes/Major_1_-_Unit_3/SY_Radioactivity.pdf",
+            "description": ""
+          },
+          {
+            "title": "Theory 2 Radioactivity",
+            "file": "pdfs/Sem_4/Physics/Major/Notes/Major_1_-_Unit_3/Theory_2_Radioactivity.pdf",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "unit": 0,
+        "category": "",
+        "title": "Major 1 - Unit 4",
+        "courseType": "Major",
+        "materials": [
+          {
+            "title": "PLASMA Physics MJ401U4 MI402U2",
+            "file": "pdfs/Sem_4/Physics/Major/Notes/Major_1_-_Unit_4/PLASMA_Physics_MJ401U4_MI402U2.pdf",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "unit": 0,
+        "category": "",
+        "title": "Major 2 - Unit 1",
+        "courseType": "Major",
+        "materials": [
+          {
+            "title": "Curvilinear Co-ordinates 10.6 to 10.9",
+            "file": "pdfs/Sem_4/Physics/Major/Notes/Major_2_-_Unit_1/Curvilinear_Co-ordinates_10.6_to_10.9_.pdf",
+            "description": ""
+          },
+          {
+            "title": "Curvilinear Coordinates MJ401A U1b",
+            "file": "pdfs/Sem_4/Physics/Major/Notes/Major_2_-_Unit_1/Curvilinear_Coordinates_MJ401A_U1b.pdf",
+            "description": ""
+          },
+          {
+            "title": "Fourier series",
+            "file": "pdfs/Sem_4/Physics/Major/Notes/Major_2_-_Unit_1/Fourier_series.pdf",
+            "description": ""
+          },
+          {
+            "title": "Fourier series 7.1 to 7.11",
+            "file": "pdfs/Sem_4/Physics/Major/Notes/Major_2_-_Unit_1/Fourier_series_7.1_to_7.11_.pdf",
+            "description": ""
+          },
+          {
+            "title": "Fourier series Gujarati",
+            "file": "pdfs/Sem_4/Physics/Major/Notes/Major_2_-_Unit_1/Fourier_series_Gujarati.pdf",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "unit": 0,
+        "category": "",
+        "title": "Major 2 - Unit 2",
+        "courseType": "Major",
+        "materials": [
+          {
+            "title": "Quntum Machanics 2.4 to 2.11",
+            "file": "pdfs/Sem_4/Physics/Major/Notes/Major_2_-_Unit_2/Quntum_Machanics_2.4_to_2.11_.pdf",
+            "description": ""
+          },
+          {
+            "title": "Quntum Mechanics sem 4",
+            "file": "pdfs/Sem_4/Physics/Major/Notes/Major_2_-_Unit_2/Quntum_Mechanics_sem_4.pdf",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "unit": 0,
+        "category": "",
+        "title": "Major 2 - Unit 3",
+        "courseType": "Major",
+        "materials": [
+          {
+            "title": "FET",
+            "file": "pdfs/Sem_4/Physics/Major/Notes/Major_2_-_Unit_3/FET.pdf",
+            "description": ""
+          },
+          {
+            "title": "h-Parameters sem 4 Electronbics",
+            "file": "pdfs/Sem_4/Physics/Major/Notes/Major_2_-_Unit_3/h-Parameters_sem_4_Electronbics.pdf",
+            "description": ""
+          },
+          {
+            "title": "SY Solidstate Devices- UJT SCR",
+            "file": "pdfs/Sem_4/Physics/Major/Notes/Major_2_-_Unit_3/SY_Solidstate_Devices-_UJT_SCR...pdf",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "unit": 0,
+        "category": "",
+        "title": "Major 2 - Unit 4",
+        "courseType": "Major",
+        "materials": [
+          {
+            "title": "Digital Electronics MJ401A U4",
+            "file": "pdfs/Sem_4/Physics/Major/Notes/Major_2_-_Unit_4/Digital_Electronics_MJ401A_U4.pdf",
             "description": ""
           }
         ]
