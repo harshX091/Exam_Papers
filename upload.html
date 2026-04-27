@@ -98,6 +98,35 @@
             margin-top: -4px;
         }
 
+        /* File size feedback banner */
+        #fileSizeMsg {
+            display: none;
+            padding: 10px 14px;
+            border-radius: var(--radius);
+            font-size: 0.88rem;
+            font-weight: 500;
+            margin-top: 6px;
+            line-height: 1.5;
+        }
+        #fileSizeMsg.size-ok {
+            display: block;
+            background: #f0fdf4;
+            color: #166534;
+            border: 1px solid #bbf7d0;
+        }
+        #fileSizeMsg.size-warn {
+            display: block;
+            background: #fffbeb;
+            color: #92400e;
+            border: 1px solid #fde68a;
+        }
+        #fileSizeMsg.size-error {
+            display: block;
+            background: #fee2e2;
+            color: #991b1b;
+            border: 1px solid #fecaca;
+        }
+
         /* Status Messages */
         #statusMessage {
             padding: 1rem;
@@ -251,7 +280,8 @@
             <div class="form-group">
                 <label for="pdfFile">Upload PDF</label>
                 <input type="file" id="pdfFile" name="pdfFile" accept="application/pdf" required>
-                <div class="help-text">Max file size: 50MB. Only PDF files are accepted.</div>
+                <div class="help-text">Max file size: 50 MB. Only PDF files are accepted. Compress large files at <a href="https://ilovepdf.com/compress_pdf" target="_blank" rel="noopener">ilovepdf.com</a> (free).</div>
+                <div id="fileSizeMsg"></div>
             </div>
 
             <div id="filenamePreview" style="margin-top: 0.5rem; padding: 12px; background: #f0fdf4; border: 1px solid #bbf7d0; color: #166534; border-radius: var(--radius); font-weight: 500; display: none;">

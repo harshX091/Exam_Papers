@@ -170,8 +170,44 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    // ── Live file size checker ────────────────────────────────────────────────
+    const pdfFileInput = document.getElementById('pdfFile');
+    const fileSizeMsg  = document.getElementById('fileSizeMsg');
+    const WARN_MB  = 10;   // amber warning above this
+    const BLOCK_MB = 50;   // red error above this (hard limit)
+
+    function checkFileSize() {
+        if (!pdfFileInput.files || pdfFileInput.files.length === 0) {
+            fileSizeMsg.className = '';
+            fileSizeMsg.innerHTML = '';
+            return;
+        }
+        const file = pdfFileInput.files[0];
+        const mb = file.size / (1024 * 1024);
+        const mbStr = mb.toFixed(1) + ' MB';
+
+        if (mb > BLOCK_MB) {
+            fileSizeMsg.className = 'size-error';
+            fileSizeMsg.innerHTML = `❌ File is too large (${mbStr}). Maximum allowed is ${BLOCK_MB} MB.<br>
+                Please compress it first at <a href="https://ilovepdf.com/compress_pdf" target="_blank" rel="noopener">ilovepdf.com</a> (free, no sign-up).`;
+            submitBtn.disabled = true;
+        } else if (mb > WARN_MB) {
+            fileSizeMsg.className = 'size-warn';
+            fileSizeMsg.innerHTML = `⚠️ Large file (${mbStr}). Consider compressing it at 
+                <a href="https://ilovepdf.com/compress_pdf" target="_blank" rel="noopener">ilovepdf.com</a> 
+                (free) to keep the site fast. You can still submit as-is.`;
+            submitBtn.disabled = false;
+        } else {
+            fileSizeMsg.className = 'size-ok';
+            fileSizeMsg.innerHTML = `✅ Good file size (${mbStr}).`;
+            submitBtn.disabled = false;
+        }
+    }
+
+    pdfFileInput.addEventListener('change', checkFileSize);
+
     // Attach listeners to update live preview
-    const previewInputs = [categorySelect, subjectSelect, courseCodeInput, document.getElementById('examType'), document.getElementById('year'), document.getElementById('unitName'), document.getElementById('pdfFile')];
+    const previewInputs = [categorySelect, subjectSelect, courseCodeInput, document.getElementById('examType'), document.getElementById('year'), document.getElementById('unitName'), pdfFileInput];
     if (coreSubjectSelect) previewInputs.push(coreSubjectSelect);
 
     previewInputs.forEach(el => {
