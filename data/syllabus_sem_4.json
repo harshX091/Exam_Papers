@@ -281,5 +281,36 @@
         ]
       }
     ]
+  },
+  {
+    "subject": "Sec",
+    "units": [
+      {
+        "unit": 0,
+        "category": "",
+        "title": "Botany — Syllabus",
+        "courseType": "Botany",
+        "materials": [
+          {
+            "title": "SEC Botany 405 Syllabus",
+            "file": "pdfs/Sem_4/Sec/Botany/Syllabus/SEC_Botany_405_Syllabus.pdf",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "unit": 0,
+        "category": "",
+        "title": "Botany — Unit: Unit 1 2",
+        "courseType": "Botany",
+        "materials": [
+          {
+            "title": "sec",
+            "file": "pdfs/Sem_4/Sec/Botany/Notes/Unit_1_2/sec.pdf",
+            "description": ""
+          }
+        ]
+      }
+    ]
   }
 ]
