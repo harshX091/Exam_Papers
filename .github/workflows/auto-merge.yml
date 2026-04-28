@@ -14,23 +14,40 @@ jobs:
       - name: Checkout repository
         if: startsWith(github.head_ref, 'upload-')
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: main
 
-      - name: Auto-merge PR
-        # Only auto-merge PRs whose branch starts with 'upload-' (created by the upload script).
-        # This prevents auto-merging unrelated manual PRs.
-        #
-        # NOTE: Data regeneration is intentionally NOT done here.
-        # The merge commit below pushes a PDF into pdfs/**, which automatically triggers
-        # the separate "Regenerate Site Data" workflow (generate-data.yml).
-        # Running generateData.js in both places simultaneously caused a git push race
-        # condition where the slower job always failed with a non-fast-forward rejection.
+      - name: Set up Node.js
+        if: startsWith(github.head_ref, 'upload-')
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Auto-merge PR and Regenerate Data
         if: startsWith(github.head_ref, 'upload-')
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          # Wait 10 seconds to ensure GitHub finishes processing the new PR
-          sleep 10
-
-          # Merge the PR and delete the feature branch.
-          # The resulting push to main (pdfs/** changed) triggers generate-data.yml automatically.
+          # 1. Merge the PR and delete the feature branch.
+          # We use --merge to create a merge commit.
           gh pr merge ${{ github.event.pull_request.number }} --repo ${{ github.repository }} --merge --delete-branch
+
+          # 2. Pull the newly merged changes (the PDF) into the local environment
+          git pull origin main
+
+          # 3. Run the data generation script
+          node scripts/generateData.js
+
+          # 4. Commit and push the updated data/ JSON files
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/
+          
+          # Only commit/push if there are actual changes
+          if git diff --cached --quiet; then
+            echo "No data changes detected."
+          else
+            git commit -m "chore: regenerate site data after merge [skip ci]"
+            git push origin main
+          fi
