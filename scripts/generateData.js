@@ -93,6 +93,12 @@ function generateSyllabus() {
       currentIndex++;
     }
 
+    // Auto-assign unitType if the subject itself is a general subject (e.g. pdfs/Sem_4/Sec/Botany/...)
+    const genSubjs = ['SEC', 'IKS', 'VAC'];
+    if (!unitType && genSubjs.includes(subject.toUpperCase())) {
+      unitType = subject.toUpperCase();
+    }
+
     // Next folder must be Category (Syllabus, Notes, etc.)
     if (parts[currentIndex]) {
       category = parts[currentIndex];
@@ -274,6 +280,12 @@ function generatePapers() {
     if (parts[currentIndex] && (parts[currentIndex].toUpperCase() === 'SEC' || parts[currentIndex].toUpperCase() === 'IKS' || parts[currentIndex].toUpperCase() === 'VAC')) {
       unitType = parts[currentIndex].toUpperCase();
       currentIndex++;
+    }
+
+    // Auto-assign unitType if the subject itself is a general subject
+    const genSubjs = ['SEC', 'IKS', 'VAC'];
+    if (!unitType && genSubjs.includes(subject.toUpperCase())) {
+      unitType = subject.toUpperCase();
     }
 
     if (parts[currentIndex]) {

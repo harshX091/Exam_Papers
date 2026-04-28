@@ -75,7 +75,7 @@
     "subject": "Iks",
     "title": "Physics — IKS Physics 205 Internal 2025",
     "courseType": "Physics",
-    "unitType": null,
+    "unitType": "IKS",
     "year": null,
     "file": "pdfs/Sem_2/Iks/Physics/Papers/Internal/IKS_Physics_205_Internal_2025.pdf",
     "description": "Internal"
@@ -84,7 +84,7 @@
     "subject": "Sec",
     "title": "Physics — SEC Physics 206 External 2025",
     "courseType": "Physics",
-    "unitType": null,
+    "unitType": "SEC",
     "year": null,
     "file": "pdfs/Sem_2/Sec/Physics/Papers/External/SEC_Physics_206_External_2025.pdf",
     "description": "External"
@@ -93,7 +93,7 @@
     "subject": "Sec",
     "title": "Physics — SEC Physics 206 Internal 2025",
     "courseType": "Physics",
-    "unitType": null,
+    "unitType": "SEC",
     "year": null,
     "file": "pdfs/Sem_2/Sec/Physics/Papers/Internal/SEC_Physics_206_Internal_2025.pdf",
     "description": "Internal"
@@ -102,7 +102,7 @@
     "subject": "Vac",
     "title": "Physics — VAC Physics 205 Internal 2025",
     "courseType": "Physics",
-    "unitType": null,
+    "unitType": "VAC",
     "year": null,
     "file": "pdfs/Sem_2/Vac/Physics/Papers/Internal/VAC_Physics_205_Internal_2025.pdf",
     "description": "Internal"

@@ -84,7 +84,7 @@
     "subject": "Sec",
     "title": "Physics — SEC Physics 406 External 2026",
     "courseType": "Physics",
-    "unitType": null,
+    "unitType": "SEC",
     "year": null,
     "file": "pdfs/Sem_4/Sec/Physics/Papers/External/SEC_Physics_406_External_2026.pdf",
     "description": "External"
@@ -93,7 +93,7 @@
     "subject": "Sec",
     "title": "Physics — SEC Physics 406 Internal 2026",
     "courseType": "Physics",
-    "unitType": null,
+    "unitType": "SEC",
     "year": null,
     "file": "pdfs/Sem_4/Sec/Physics/Papers/Internal/SEC_Physics_406_Internal_2026.pdf",
     "description": "Internal"
@@ -102,7 +102,7 @@
     "subject": "Vac",
     "title": "Physics — VAC Physics 405 External 2026",
     "courseType": "Physics",
-    "unitType": null,
+    "unitType": "VAC",
     "year": null,
     "file": "pdfs/Sem_4/Vac/Physics/Papers/External/VAC_Physics_405_External_2026.pdf",
     "description": "External"
@@ -111,7 +111,7 @@
     "subject": "Vac",
     "title": "Physics — VAC Physics 405 Internal 2026",
     "courseType": "Physics",
-    "unitType": null,
+    "unitType": "VAC",
     "year": null,
     "file": "pdfs/Sem_4/Vac/Physics/Papers/Internal/VAC_Physics_405_Internal_2026.pdf",
     "description": "Internal"
