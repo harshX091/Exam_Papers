@@ -16,38 +16,21 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Auto-merge PR
-        # We only auto-merge PRs created by the upload script (branch starts with 'upload-')
-        # This prevents auto-merging unrelated manual PRs you might make in the future.
+        # Only auto-merge PRs whose branch starts with 'upload-' (created by the upload script).
+        # This prevents auto-merging unrelated manual PRs.
+        #
+        # NOTE: Data regeneration is intentionally NOT done here.
+        # The merge commit below pushes a PDF into pdfs/**, which automatically triggers
+        # the separate "Regenerate Site Data" workflow (generate-data.yml).
+        # Running generateData.js in both places simultaneously caused a git push race
+        # condition where the slower job always failed with a non-fast-forward rejection.
         if: startsWith(github.head_ref, 'upload-')
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           # Wait 10 seconds to ensure GitHub finishes processing the new PR
           sleep 10
-          
-          # Auto-merge the PR using GitHub CLI and delete the branch
+
+          # Merge the PR and delete the feature branch.
+          # The resulting push to main (pdfs/** changed) triggers generate-data.yml automatically.
           gh pr merge ${{ github.event.pull_request.number }} --repo ${{ github.repository }} --merge --delete-branch
-
-      - name: Setup Node.js
-        if: startsWith(github.head_ref, 'upload-')
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-
-      - name: Regenerate and Push Site Data
-        if: startsWith(github.head_ref, 'upload-')
-        run: |
-          # Fetch and checkout main to get the newly merged PDF
-          git fetch origin main
-          git checkout main
-          git pull origin main
-          
-          # Run the data generation script
-          node scripts/generateData.js
-          
-          # Commit and push the updated data files
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/
-          git diff --cached --quiet || git commit -m "chore: regenerate data JSONs after auto-merge [skip ci]"
-          git push origin main

@@ -84,9 +84,12 @@ document.addEventListener('DOMContentLoaded', () => {
     // Hide Course Type for general subjects and show Core Subject instead
     subjectSelect.addEventListener('change', (e) => {
         const val = e.target.value;
+        // GENERAL_SUBJECTS is defined in scripts/subjects.js with underscores (e.g. "English_AEC").
+        // We map to display form (spaces) here because subjectSelect.value also uses spaces.
+        // The fallback must match that same display form — do NOT change to underscores.
         const generalSubjectsDisplay = typeof GENERAL_SUBJECTS !== 'undefined'
             ? GENERAL_SUBJECTS.map(s => s.replace(/_/g, ' '))
-            : ['English AEC', 'SEC', 'IKS', 'VAC'];
+            : ['English AEC', 'SEC', 'IKS', 'VAC']; // display form (spaces), not underscore form
 
         if (generalSubjectsDisplay.includes(val)) {
             courseTypeGroup.style.display = 'none';
@@ -281,10 +284,12 @@ document.addEventListener('DOMContentLoaded', () => {
             // 2. Sanitize filename using dynamic naming logic
             const newFileName = generateSemanticFilename();
 
-            // Determine the final course type to use in the path
+            // Determine the final course type to use in the path.
+            // GENERAL_SUBJECTS uses underscores (subjects.js), but subjectTitle here is already
+            // in display form (spaces), so we convert before comparing. Fallback must match too.
             const generalSubjectsDisplay = typeof GENERAL_SUBJECTS !== 'undefined'
                 ? GENERAL_SUBJECTS.map(s => s.replace(/_/g, ' '))
-                : ['English AEC', 'SEC', 'IKS', 'VAC'];
+                : ['English AEC', 'SEC', 'IKS', 'VAC']; // display form (spaces), not underscore form
 
             let finalCourseType = courseType;
             if (generalSubjectsDisplay.includes(subjectTitle)) {
