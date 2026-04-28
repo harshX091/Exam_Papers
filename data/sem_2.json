@@ -18,6 +18,15 @@
     "description": "Internal"
   },
   {
+    "subject": "Computer Science",
+    "title": "Major — ComputerScience 201 External 2026",
+    "courseType": "Major",
+    "unitType": null,
+    "year": null,
+    "file": "pdfs/Sem_2/Computer_Science/Major/Papers/External/ComputerScience_201_External_2026.pdf",
+    "description": "External"
+  },
+  {
     "subject": "Physics",
     "title": "Major — Physics 201 External 2024",
     "courseType": "Major",
