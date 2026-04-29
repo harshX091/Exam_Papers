@@ -63,6 +63,15 @@
     "description": "Internal"
   },
   {
+    "subject": "Computer Science",
+    "title": "Minor — ComputerScience 102 External",
+    "courseType": "Minor",
+    "unitType": null,
+    "year": null,
+    "file": "pdfs/Sem_1/Computer_Science/Minor/Papers/External/ComputerScience_102_External.pdf",
+    "description": "External"
+  },
+  {
     "subject": "Zoology",
     "title": "Multi — Zoology 103 Internal 2024",
     "courseType": "Multi",
