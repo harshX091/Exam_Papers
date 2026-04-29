@@ -10,6 +10,8 @@ jobs:
     permissions:
       contents: write
       pull-requests: write
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
     steps:
       - name: Checkout repository
         if: startsWith(github.head_ref, 'upload-')
@@ -22,7 +24,7 @@ jobs:
         if: startsWith(github.head_ref, 'upload-')
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '24'
 
       - name: Auto-merge PR and Regenerate Data
         if: startsWith(github.head_ref, 'upload-')
