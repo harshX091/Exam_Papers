@@ -18,15 +18,6 @@
     "description": "Internal"
   },
   {
-    "subject": "Computer Science",
-    "title": "Major — ComputerScience 101 External 2026",
-    "courseType": "Major",
-    "unitType": null,
-    "year": null,
-    "file": "pdfs/Sem_1/Computer_Science/Major/Papers/External/ComputerScience_101_External_2026.pdf",
-    "description": "External"
-  },
-  {
     "subject": "Physics",
     "title": "Major — Physics 101 External 2024",
     "courseType": "Major",
@@ -61,24 +52,6 @@
     "year": null,
     "file": "pdfs/Sem_1/Chemistry/Minor/Papers/Internal/Chemistry_102_Internal_2024.pdf",
     "description": "Internal"
-  },
-  {
-    "subject": "Computer Science",
-    "title": "Minor — ComputerScience 102 External 2026",
-    "courseType": "Minor",
-    "unitType": null,
-    "year": null,
-    "file": "pdfs/Sem_1/Computer_Science/Minor/Papers/External/ComputerScience_102_External_2026.pdf",
-    "description": "External"
-  },
-  {
-    "subject": "Computer Science",
-    "title": "Multi — ComputerScience 103 External 2026",
-    "courseType": "Multi",
-    "unitType": null,
-    "year": null,
-    "file": "pdfs/Sem_1/Computer_Science/Multi/Papers/External/ComputerScience_103_External_2026.pdf",
-    "description": "External"
   },
   {
     "subject": "Zoology",
