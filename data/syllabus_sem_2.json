@@ -18,6 +18,19 @@
       {
         "unit": 0,
         "category": "",
+        "title": "Major — Unit: Unit 2",
+        "courseType": "Major",
+        "materials": [
+          {
+            "title": "BSc2 NEP Major Minor U2 S H M",
+            "file": "pdfs/Sem_2/Physics/Major/Notes/Unit_2/BSc2 NEP Major Minor U2 S.H.M..pdf",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "unit": 0,
+        "category": "",
         "title": "Major — Unit: Unit 4",
         "courseType": "Major",
         "materials": [
