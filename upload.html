@@ -572,9 +572,15 @@
             </div>
 
             <div class="form-group" id="unitGroup" style="display:none;">
-                <label for="unitName">Unit Name / Module (Optional)</label>
-                <input type="text" id="unitName" name="unitName" placeholder="e.g. Mechanics or Unit 1">
-                <div class="help-text">If these notes are for a specific unit, enter its name.</div>
+                <label for="unitName">Unit Number (Optional)</label>
+                <select id="unitName" name="unitName">
+                    <option value="">None / General Notes</option>
+                    <option value="1">Unit 1</option>
+                    <option value="2">Unit 2</option>
+                    <option value="3">Unit 3</option>
+                    <option value="4">Unit 4</option>
+                </select>
+                <div class="help-text">Select the unit number for these notes.</div>
 
                 <label for="unitType" style="margin-top: 0.75rem; padding-top: 0.75rem; border-top: 1px solid rgba(0,0,0,0.07);">Unit Designation (Optional)</label>
                 <select id="unitType" name="unitType">

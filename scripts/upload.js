@@ -314,14 +314,42 @@ document.addEventListener('DOMContentLoaded', () => {
                 sanitizeSegment(subjectFolder),
                 sanitizeSegment(finalCourseType)
             ];
-            if (unitType) pathParts.push(sanitizeSegment(unitType));
+
+            // 1. Handle Unit Designation (SEC/IKS/VAC) as a separate folder level if applicable
+            // For Major 1/2, we will combine it with the Unit Name instead.
+            const isGeneralUnitType = ['SEC', 'IKS', 'VAC'].includes(unitType?.toUpperCase());
+            if (unitType && isGeneralUnitType) {
+                pathParts.push(sanitizeSegment(unitType));
+            }
+
+            // 2. Add Category (Papers, Notes, Syllabus)
             pathParts.push(sanitizeSegment(category));
+
+            // 3. Add Exam Type for Papers
             if (category === 'Papers' && examType) {
                 pathParts.push(sanitizeSegment(examType));
             }
+
+            // 4. Construct Unit Name segment (for Notes)
+            let displayUnitName = '';
             if (unitName && unitName.trim()) {
-                pathParts.push(sanitizeSegment(unitName.trim()));
+                const num = unitName.trim();
+                displayUnitName = `Unit ${num}`;
             }
+
+            // 5. If it's a Major designation, prefix it to the unit name (e.g. Major 1 - Unit 1)
+            if (unitType && !isGeneralUnitType) {
+                if (displayUnitName) {
+                    displayUnitName = `${unitType} - ${displayUnitName}`;
+                } else {
+                    displayUnitName = unitType;
+                }
+            }
+
+            if (displayUnitName) {
+                pathParts.push(sanitizeSegment(displayUnitName));
+            }
+
             pathParts.push(newFileName);
             const targetPath = pathParts.join('/');
 
@@ -337,8 +365,8 @@ A user has submitted a new academic document for review.
 - **Course Type:** ${finalCourseType} ${coreSubject ? '(Core Subject)' : ''}
 - **Type:** ${category} ${category === 'Papers' && examType ? `(${examType})` : ''}
 ${year ? `- **Year:** ${year}` : ''}
-${unitName ? `- **Unit Name:** ${unitName}` : ''}
-${unitType ? `- **Unit Type:** ${unitType}` : ''}
+${unitName ? `- **Unit Number:** ${unitName}` : ''}
+${unitType ? `- **Unit Designation:** ${unitType}` : ''}
 - **Target Path:** \`${targetPath}\`
 
 Merging this PR will automatically publish the document and regenerate the site data.
