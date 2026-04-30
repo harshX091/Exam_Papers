@@ -65,5 +65,23 @@
         ]
       }
     ]
+  },
+  {
+    "subject": "Sec",
+    "units": [
+      {
+        "unit": 0,
+        "category": "",
+        "title": "Physics • SEC — Unit: Passive Circuit Elements",
+        "courseType": "Physics",
+        "materials": [
+          {
+            "title": "BSc Sem2 SEC Physics Unit12",
+            "file": "pdfs/Sem_2/Sec/Physics/Notes/Passive_Circuit_Elements/BSc Sem2 SEC Physics Unit12.pdf",
+            "description": ""
+          }
+        ]
+      }
+    ]
   }
 ]
