@@ -5,7 +5,7 @@
       {
         "unit": 0,
         "category": "",
-        "title": "Major — Syllabus",
+        "title": "Major Syllabus",
         "courseType": "Major",
         "materials": [
           {
@@ -18,61 +18,53 @@
       {
         "unit": 0,
         "category": "",
-        "title": "Major — Unit: Unit 4",
+        "title": "Unit 1",
+        "courseType": "Major",
+        "materials": [
+          {
+            "title": "B Sc-Sem-2 Electrostatic-Unit-1",
+            "file": "pdfs/Sem_2/Physics/Major/Notes/Unit_1/B.Sc-Sem-2_Electrostatic-Unit-1.pdf",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "unit": 0,
+        "category": "",
+        "title": "Unit 3",
+        "courseType": "Major",
+        "materials": [
+          {
+            "title": "AC Bridges MJ201U3c MD203U1c",
+            "file": "pdfs/Sem_2/Physics/Major/Notes/Unit_3/AC_Bridges_MJ201U3c_MD203U1c.pdf",
+            "description": ""
+          },
+          {
+            "title": "DC Circuits MJ201U3a MD203U1a",
+            "file": "pdfs/Sem_2/Physics/Major/Notes/Unit_3/DC_Circuits_MJ201U3a_MD203U1a.pdf",
+            "description": ""
+          },
+          {
+            "title": "Network Theorems MJ201U3b MD203U1b",
+            "file": "pdfs/Sem_2/Physics/Major/Notes/Unit_3/Network_Theorems_MJ201U3b_MD203U1b.pdf",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "unit": 0,
+        "category": "",
+        "title": "Unit 4",
         "courseType": "Major",
         "materials": [
           {
             "title": "FY MJ Multi Optics - interference Jatin Sir",
             "file": "pdfs/Sem_2/Physics/Major/Notes/Unit_4/FY MJ Multi Optics - interference Jatin Sir.pdf",
             "description": ""
-          }
-        ]
-      },
-      {
-        "unit": 0,
-        "category": "",
-        "title": "Major 1 - Unit 1",
-        "courseType": "Major",
-        "materials": [
-          {
-            "title": "B Sc-Sem-2 Electrostatic-Unit-1",
-            "file": "pdfs/Sem_2/Physics/Major/Notes/Major_1_-_Unit_1/B.Sc-Sem-2_Electrostatic-Unit-1.pdf",
-            "description": ""
-          }
-        ]
-      },
-      {
-        "unit": 0,
-        "category": "",
-        "title": "Major 1 - Unit 3",
-        "courseType": "Major",
-        "materials": [
-          {
-            "title": "AC Bridges MJ201U3c MD203U1c",
-            "file": "pdfs/Sem_2/Physics/Major/Notes/Major_1_-_Unit_3/AC_Bridges_MJ201U3c_MD203U1c.pdf",
-            "description": ""
           },
-          {
-            "title": "DC Circuits MJ201U3a MD203U1a",
-            "file": "pdfs/Sem_2/Physics/Major/Notes/Major_1_-_Unit_3/DC_Circuits_MJ201U3a_MD203U1a.pdf",
-            "description": ""
-          },
-          {
-            "title": "Network Theorems MJ201U3b MD203U1b",
-            "file": "pdfs/Sem_2/Physics/Major/Notes/Major_1_-_Unit_3/Network_Theorems_MJ201U3b_MD203U1b.pdf",
-            "description": ""
-          }
-        ]
-      },
-      {
-        "unit": 0,
-        "category": "",
-        "title": "Major 1 - Unit 4",
-        "courseType": "Major",
-        "materials": [
           {
             "title": "Lens - Interference Refraction F Y B Sc",
-            "file": "pdfs/Sem_2/Physics/Major/Notes/Major_1_-_Unit_4/Lens_-_Interference_Refraction_F.Y._B.Sc..pdf",
+            "file": "pdfs/Sem_2/Physics/Major/Notes/Unit_4/Lens_-_Interference_Refraction_F.Y._B.Sc..pdf",
             "description": ""
           }
         ]
@@ -85,7 +77,7 @@
       {
         "unit": 0,
         "category": "",
-        "title": "Physics • SEC — Unit: Passive Circuit Elements",
+        "title": "SEC Passive Circuit Elements",
         "courseType": "Physics",
         "materials": [
           {

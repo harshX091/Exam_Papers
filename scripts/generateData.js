@@ -190,27 +190,27 @@ function generateSyllabus() {
           return a.title.localeCompare(b.title);
         });
 
-        // Construct readable Title based on Major/Minor, SEC/IKS, and Unit Name
-        let displayTitle = uData.courseType || "General";
-        if (uData.unitType) displayTitle += ` • ${uData.unitType}`;
+        // Construct a clean, readable Title (e.g., "Major Unit 1" or "SEC Passive Circuit Elements")
+        const typeStr = uData.unitType || uData.courseType || "";
+        let displayTitle = "";
 
         if (uData.category.toLowerCase() === 'syllabus') {
-           displayTitle += ` — Syllabus`;
+            displayTitle = typeStr ? `${typeStr} Syllabus` : "Syllabus";
         } else if (uData.category.toLowerCase() === 'notes') {
-           if (uData.unitName) {
-             let cleanUnitName = uData.unitName.replace(/_/g, ' ');
-             // Prevent "Major — Unit: Major 1 - ..." repetition by collapsing
-             if (uData.courseType && cleanUnitName.toLowerCase().startsWith(uData.courseType.toLowerCase())) {
-                 displayTitle = cleanUnitName;
-                 if (uData.unitType) displayTitle += ` (${uData.unitType})`;
-             } else {
-                 displayTitle += ` — Unit: ${cleanUnitName}`;
-             }
-           } else {
-             displayTitle += ` — Notes`;
-           }
+            if (uData.unitName) {
+                const cleanUnitName = uData.unitName.replace(/_/g, ' ');
+                // If it's a designated unit (Major 1/2) or already starts with "Unit", use it directly
+                // This prevents "Major Unit 1" and favors just "Unit 1" for regular units.
+                if (cleanUnitName.toLowerCase().includes("major") || cleanUnitName.toLowerCase().startsWith("unit")) {
+                    displayTitle = cleanUnitName;
+                } else {
+                    displayTitle = typeStr ? `${typeStr} ${cleanUnitName}` : cleanUnitName;
+                }
+            } else {
+                displayTitle = typeStr ? `${typeStr} Notes` : "Notes";
+            }
         } else {
-           displayTitle += ` — ${uData.category}`;
+            displayTitle = typeStr ? `${typeStr} ${uData.category}` : uData.category;
         }
 
         return {
@@ -312,10 +312,10 @@ function generatePapers() {
     const titleGuess = cleanTitle(filename);
     const side = readSidecar(full);
     
-    // Construct readable Title based on Major/Minor, SEC/IKS
-    let displayTitle = courseType || "General";
-    if (unitType) displayTitle += ` • ${unitType}`;
-    displayTitle += ` — ${titleGuess || filename}`;
+    // Construct a clean, readable Title (e.g., "Major — Physics 201")
+    const typeStr = unitType || courseType || "";
+    const cleanFileName = titleGuess || filename;
+    const displayTitle = typeStr ? `${typeStr} — ${cleanFileName}` : cleanFileName;
 
     let description = (side && side.description) || '';
     if (examType && !description.includes(examType)) {
