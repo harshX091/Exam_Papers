@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>PDF Viewer | Semester Notes</title>
+    <title>PDF Viewer</title>
     <link rel="stylesheet" href="style.css">
     <style>
         /* Specific overrides for the standalone viewer page */
@@ -14,7 +14,6 @@
             padding: 0;
             height: 100%;
             overflow: hidden;
-            background: #f1f5f9;
         }
 
         .viewer-page {
@@ -25,135 +24,10 @@
             position: relative;
         }
 
-        /* ── Premium Header ─────────────────────────────────────────── */
-        .viewer-header {
-            background: rgba(255, 255, 255, 0.85);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-            padding: 0.75rem 1.25rem;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 1.5rem;
-            z-index: 100;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
-        }
-
-        .header-left {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            min-width: 0;
-            flex: 1;
-        }
-
-        .back-btn-circle {
-            width: 38px;
-            height: 38px;
-            border-radius: 50%;
-            background: #fff;
-            border: 1px solid rgba(0,0,0,0.1);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--text-main);
-            text-decoration: none;
-            transition: all 0.2s;
-            flex-shrink: 0;
-        }
-        .back-btn-circle:hover {
-            background: var(--primary-color);
-            color: #fff;
-            border-color: var(--primary-color);
-            transform: translateX(-2px);
-        }
-
-        .title-container {
-            min-width: 0;
-        }
-
-        .viewer-title {
-            font-size: 1rem;
-            font-weight: 700;
-            color: var(--text-main);
-            margin: 0;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            line-height: 1.2;
-        }
-
-        .viewer-meta {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            margin-top: 4px;
-            flex-wrap: wrap;
-        }
-
-        .badge {
-            font-size: 0.72rem;
-            font-weight: 700;
-            padding: 2px 8px;
-            border-radius: 6px;
-            text-transform: uppercase;
-            letter-spacing: 0.02em;
-        }
-
-        .badge-sem { background: #eff6ff; color: #1d4ed8; border: 1px solid #bfdbfe; }
-        .badge-subj { background: #f8fafc; color: #64748b; border: 1px solid #e2e8f0; }
-        .badge-core { background: #f0fdf4; color: #166534; border: 1px solid #bbf7d0; }
-
-        .header-right {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            flex-shrink: 0;
-        }
-
-        .icon-btn {
-            width: 38px;
-            height: 38px;
-            border-radius: 10px;
-            background: #fff;
-            border: 1px solid rgba(0,0,0,0.1);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--text-main);
-            text-decoration: none;
-            transition: all 0.2s;
-            cursor: pointer;
-            padding: 0;
-        }
-
-        .icon-btn:hover {
-            background: #f8fafc;
-            border-color: var(--primary-color);
-            color: var(--primary-color);
-            transform: translateY(-1px);
-        }
-
-        .btn-text {
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            padding: 0 14px;
-            height: 38px;
-            width: auto;
-            font-size: 0.88rem;
-            font-weight: 600;
-            border-radius: 10px;
-        }
-
-        /* ── Viewer Body ────────────────────────────────────────────── */
         .viewer-body {
             flex: 1;
             width: 100%;
             height: 100%;
-            position: relative;
-            background: #525659; /* Standard PDF viewer grey */
         }
 
         iframe {
@@ -162,53 +36,12 @@
             border: none;
             display: block;
         }
-
-        /* Mobile Adjustments */
-        @media (max-width: 600px) {
-            .viewer-header {
-                padding: 0.6rem 1rem;
-                gap: 0.75rem;
-            }
-            .header-right .btn-text span {
-                display: none;
-            }
-            .header-right .btn-text {
-                padding: 0;
-                width: 38px;
-            }
-            .viewer-meta .badge-subj {
-                display: none;
-            }
-        }
     </style>
 </head>
 
 <body>
 
     <div class="viewer-page">
-        <header class="viewer-header">
-            <div class="header-left">
-                <a href="javascript:history.back()" class="back-btn-circle" title="Go Back">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
-                </a>
-                <div class="title-container">
-                    <h1 class="viewer-title" id="displayTitle">Loading...</h1>
-                    <div class="viewer-meta" id="displayMeta">
-                        <!-- Badges injected by JS -->
-                    </div>
-                </div>
-            </div>
-
-            <div class="header-right">
-                <a id="dlBtn" href="#" class="icon-btn btn-text dl-btn" download title="Download PDF">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
-                    <span>Download</span>
-                </a>
-                <button id="shareBtn" class="icon-btn" title="Share Link">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" x2="12" y1="2" y2="15"/></svg>
-                </button>
-            </div>
-        </header>
 
         <div class="viewer-body">
             <iframe id="pdfFrame" src=""></iframe>
@@ -218,62 +51,16 @@
     <script>
         const params = new URLSearchParams(location.search);
         const file = params.get('file');
-        const title = params.get('title') || 'PDF Viewer';
-        const subject = params.get('subject') || '';
-        const courseType = params.get('coursetype') || '';
-        const sem = params.get('sem') || '';
+        const title = params.get('title');
 
         const pdfFrame = document.getElementById('pdfFrame');
-        const displayTitle = document.getElementById('displayTitle');
-        const displayMeta = document.getElementById('displayMeta');
-        const dlBtn = document.getElementById('dlBtn');
-        const shareBtn = document.getElementById('shareBtn');
 
         if (file) {
-            // Set basic info
             pdfFrame.src = file;
-            document.title = title + ' | Semester Notes';
-            displayTitle.textContent = title;
-            dlBtn.href = file;
-
-            // Injected Meta Badges
-            let metaHtml = '';
-            if (sem) metaHtml += `<span class="badge badge-sem">Sem ${sem}</span>`;
-            if (subject) metaHtml += `<span class="badge badge-subj">${subject}</span>`;
-            
-            // Highlight Associated Core Subject for SEC/IKS/VAC
-            const isGeneral = ['SEC', 'IKS', 'VAC'].includes(subject.toUpperCase());
-            if (isGeneral && courseType && courseType.toLowerCase() !== 'general') {
-                metaHtml += `<span class="badge badge-core">Core: ${courseType.replace(/_/g, ' ')}</span>`;
-            } else if (courseType && courseType.toLowerCase() !== 'general' && courseType.toLowerCase() !== subject.toLowerCase()) {
-                // Also show course type for others if it's different from subject
-                metaHtml += `<span class="badge badge-subj">${courseType.replace(/_/g, ' ')}</span>`;
-            }
-            
-            displayMeta.innerHTML = metaHtml;
-
-            // Share Logic
-            shareBtn.addEventListener('click', async () => {
-                const fullUrl = window.location.href;
-                if (navigator.share) {
-                    try {
-                        await navigator.share({
-                            title: title,
-                            text: `Check out this study material: ${title}`,
-                            url: fullUrl
-                        });
-                    } catch (err) { console.log('Share failed', err); }
-                } else {
-                    navigator.clipboard.writeText(fullUrl);
-                    alert('Viewer link copied to clipboard!');
-                }
-            });
-
+            document.title = title || 'PDF Viewer';
         } else {
             pdfFrame.style.display = 'none';
-            document.body.innerHTML = '<div style="padding:40px; text-align:center; font-family:sans-serif;">' +
-                '<h2>File not found</h2><p>No PDF file specified in the URL.</p>' +
-                '<a href="index.html" style="color:var(--primary-color)">Go back Home</a></div>';
+            document.body.innerHTML = '<p style="padding:20px">No file specified</p>';
         }
     </script>
 </body>
