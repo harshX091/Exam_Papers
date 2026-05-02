@@ -288,6 +288,19 @@
       {
         "unit": 0,
         "category": "",
+        "title": "SEC Notes",
+        "courseType": "Botany",
+        "materials": [
+          {
+            "title": "sec",
+            "file": "pdfs/Sem_4/Sec/Botany/Notes/sec.pdf",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "unit": 0,
+        "category": "",
         "title": "Unit 1 2",
         "courseType": "Botany",
         "materials": [
