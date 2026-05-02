@@ -5,6 +5,19 @@
       {
         "unit": 0,
         "category": "",
+        "title": "Major Syllabus",
+        "courseType": "Major",
+        "materials": [
+          {
+            "title": "BSC SEMESTER-1 NEP2020 PhyMJ",
+            "file": "pdfs/Sem_1/Physics/Major/Syllabus/BSC_SEMESTER-1_NEP2020_PhyMJ_.pdf",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "unit": 0,
+        "category": "",
         "title": "Major 1 - Unit 1",
         "courseType": "Major",
         "materials": [
@@ -50,19 +63,6 @@
           {
             "title": "1st part Half wave Rectifier",
             "file": "pdfs/Sem_1/Physics/Major/Notes/Major_1_-_Unit_4/1st_part_Half_wave_Rectifier.pdf",
-            "description": ""
-          }
-        ]
-      },
-      {
-        "unit": 0,
-        "category": "",
-        "title": "Major Syllabus",
-        "courseType": "Major",
-        "materials": [
-          {
-            "title": "BSC SEMESTER-1 NEP2020 PhyMJ",
-            "file": "pdfs/Sem_1/Physics/Major/Syllabus/BSC_SEMESTER-1_NEP2020_PhyMJ_.pdf",
             "description": ""
           }
         ]

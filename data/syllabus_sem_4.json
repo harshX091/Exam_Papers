@@ -80,6 +80,19 @@
       {
         "unit": 0,
         "category": "",
+        "title": "Major Syllabus",
+        "courseType": "Major",
+        "materials": [
+          {
+            "title": "BSC SEMESTER-4 PHY MAJOR",
+            "file": "pdfs/Sem_4/Physics/Major/Syllabus/BSC_SEMESTER-4_PHY_MAJOR.pdf",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "unit": 0,
+        "category": "",
         "title": "Major 1 - Unit 1",
         "courseType": "Major",
         "materials": [
@@ -240,45 +253,6 @@
             "description": ""
           }
         ]
-      },
-      {
-        "unit": 0,
-        "category": "",
-        "title": "Major Syllabus",
-        "courseType": "Major",
-        "materials": [
-          {
-            "title": "BSC SEMESTER-4 PHY MAJOR",
-            "file": "pdfs/Sem_4/Physics/Major/Syllabus/BSC_SEMESTER-4_PHY_MAJOR.pdf",
-            "description": ""
-          }
-        ]
-      },
-      {
-        "unit": 0,
-        "category": "",
-        "title": "SEC Astro Space Physics SC23SECPHY406",
-        "courseType": "Major",
-        "materials": [
-          {
-            "title": "ES Solar Cosmic Rays 08 16 16",
-            "file": "pdfs/Sem_4/Physics/Major/SEC/Notes/Astro_Space_Physics_SC23SECPHY406/ES_Solar_Cosmic_Rays_08_16_16.pdf",
-            "description": ""
-          }
-        ]
-      },
-      {
-        "unit": 0,
-        "category": "",
-        "title": "VAC VAC PHY405",
-        "courseType": "Major",
-        "materials": [
-          {
-            "title": "New Doc 03-05-2026 12.17-compressed",
-            "file": "pdfs/Sem_4/Physics/Major/VAC/Notes/VAC_PHY405/New_Doc_03-05-2026_12.17-compressed.pdf",
-            "description": ""
-          }
-        ]
       }
     ]
   },
@@ -288,25 +262,12 @@
       {
         "unit": 0,
         "category": "",
-        "title": "SEC Notes",
+        "title": "Botany • SEC Notes",
         "courseType": "Botany",
         "materials": [
           {
             "title": "sec",
             "file": "pdfs/Sem_4/Sec/Botany/Notes/sec.pdf",
-            "description": ""
-          }
-        ]
-      },
-      {
-        "unit": 0,
-        "category": "",
-        "title": "Unit 1 2",
-        "courseType": "Botany",
-        "materials": [
-          {
-            "title": "sec",
-            "file": "pdfs/Sem_4/Sec/Botany/Notes/Unit_1_2/sec.pdf",
             "description": ""
           }
         ]

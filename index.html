@@ -130,7 +130,8 @@
 
             searchResults.innerHTML = filtered.map(item => {
                 const filePath = encodeURI(String(item.file || '').replace(/^\/+/, ''));
-                const viewerLink = `viewer.html?file=${encodeURIComponent(filePath)}&title=${encodeURIComponent(item.title)}`;
+                const semNum = item.semester.match(/\d+/)?.[0] || '1';
+                const viewerLink = `viewer.html?file=${encodeURIComponent(filePath)}&title=${encodeURIComponent(item.title)}&subject=${encodeURIComponent(item.subject)}&sem=${encodeURIComponent(semNum)}`;
                 return `
                     <a href="${viewerLink}" class="dropdown-item">
                         <div class="di-title">${item.title}</div>

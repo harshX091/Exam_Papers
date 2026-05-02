@@ -246,7 +246,7 @@
         const d = document.createElement('div');
         d.className = 'paper-card';
         const filePath = encodeURI(String(p.file || '').replace(/^\/+/, ''));
-        const viewerLink = `viewer.html?file=${encodeURIComponent(filePath)}&title=${encodeURIComponent(p.title)}`;
+        const viewerLink = `viewer.html?file=${encodeURIComponent(filePath)}&title=${encodeURIComponent(p.title)}&subject=${encodeURIComponent(p.subject)}&coursetype=${encodeURIComponent(p.courseType || '')}&sem=${encodeURIComponent(semNum)}`;
         d.innerHTML = `
           <div class="paper-info">
             <div class="paper-title">${p.title}</div>
@@ -304,7 +304,7 @@
             const d = document.createElement('div');
             d.className = 'paper-card'; // Reuse card style
             const filePath = encodeURI(String(m.file || '').replace(/^\/+/, ''));
-            const viewerLink = `viewer.html?file=${encodeURIComponent(filePath)}&title=${encodeURIComponent(m.title)}`;
+            const viewerLink = `viewer.html?file=${encodeURIComponent(filePath)}&title=${encodeURIComponent(m.title)}&subject=${encodeURIComponent(subject)}&coursetype=${encodeURIComponent(u.courseType || '')}&sem=${encodeURIComponent(semNum)}`;
             d.innerHTML = `
                <div class="paper-info">
                  <div class="paper-title">${m.title}</div>

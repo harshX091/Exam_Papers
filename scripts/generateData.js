@@ -190,8 +190,11 @@ function generateSyllabus() {
           return a.title.localeCompare(b.title);
         });
 
-        // Construct a clean, readable Title (e.g., "Major Unit 1" or "SEC Passive Circuit Elements")
-        const typeStr = uData.unitType || uData.courseType || "";
+        // Construct a clean, readable Title (e.g., "SEC • Botany Unit 1" or "Major Unit 1")
+        let typeStr = uData.unitType || uData.courseType || "";
+        if (uData.unitType && uData.courseType && ['SEC', 'IKS', 'VAC'].includes(uData.unitType.toUpperCase())) {
+            typeStr = `${uData.courseType} • ${uData.unitType}`;
+        }
         let displayTitle = "";
 
         if (uData.category.toLowerCase() === 'syllabus') {
@@ -199,9 +202,12 @@ function generateSyllabus() {
         } else if (uData.category.toLowerCase() === 'notes') {
             if (uData.unitName) {
                 const cleanUnitName = uData.unitName.replace(/_/g, ' ');
-                // If it's a designated unit (Major 1/2) or already starts with "Unit", use it directly
-                // This prevents "Major Unit 1" and favors just "Unit 1" for regular units.
-                if (cleanUnitName.toLowerCase().includes("major") || cleanUnitName.toLowerCase().startsWith("unit")) {
+                // For general subjects, always prepend the typeStr (Associated Subject • SEC)
+                if (uData.unitType && ['SEC', 'IKS', 'VAC'].includes(uData.unitType.toUpperCase())) {
+                    displayTitle = `${typeStr} — ${cleanUnitName}`;
+                } else if (cleanUnitName.toLowerCase().includes("major") || cleanUnitName.toLowerCase().startsWith("unit")) {
+                    // If it's a designated unit (Major 1/2) or already starts with "Unit", use it directly
+                    // This prevents "Major Unit 1" and favors just "Unit 1" for regular units.
                     displayTitle = cleanUnitName;
                 } else {
                     displayTitle = typeStr ? `${typeStr} ${cleanUnitName}` : cleanUnitName;
@@ -230,8 +236,14 @@ function generateSyllabus() {
         const cB = b.courseType || '';
         if (cA !== cB) return cA.localeCompare(cB);
 
-        // Then naturally by our generated title (which includes SEC/IKS and Unit Name)
-        return a.title.localeCompare(b.title);
+        // Prioritize Syllabus at the top within the same CourseType
+        const aIsSyllabus = a.title.toLowerCase().includes('syllabus');
+        const bIsSyllabus = b.title.toLowerCase().includes('syllabus');
+        if (aIsSyllabus && !bIsSyllabus) return -1;
+        if (bIsSyllabus && !aIsSyllabus) return 1;
+
+        // Then naturally by our generated title
+        return a.title.localeCompare(b.title, undefined, { numeric: true, sensitivity: 'base' });
       });
 
       return {
@@ -312,8 +324,12 @@ function generatePapers() {
     const titleGuess = cleanTitle(filename);
     const side = readSidecar(full);
     
-    // Construct a clean, readable Title (e.g., "Major — Physics 201")
-    const typeStr = unitType || courseType || "";
+    // Construct a clean, readable Title (e.g., "Major — Physics 201" or "Physics • SEC — ...")
+    let typeStr = unitType || courseType || "";
+    // If it's a general subject (SEC/IKS/VAC), prepend the core subject (courseType) if unitType is present
+    if (unitType && courseType && ['SEC', 'IKS', 'VAC'].includes(unitType.toUpperCase())) {
+      typeStr = `${courseType} • ${unitType}`;
+    }
     const cleanFileName = titleGuess || filename;
     const displayTitle = typeStr ? `${typeStr} — ${cleanFileName}` : cleanFileName;
 
@@ -363,7 +379,7 @@ function generatePapers() {
           // If the existing title doesn't start with the course type but the new one does, 
           // we favor the new one to fix visibility issues.
           title: (e.title.toLowerCase().startsWith(e.courseType.toLowerCase()) && !ex.title.toLowerCase().startsWith(e.courseType.toLowerCase())) 
-                 ? e.title : (ex.title || e.title),
+                 ? e.title : (['SEC', 'IKS', 'VAC'].includes(e.unitType?.toUpperCase()) ? e.title : (ex.title || e.title)),
           description: ex.description || e.description,
           year: ex.year || e.year,
           subject: ex.subject || e.subject
