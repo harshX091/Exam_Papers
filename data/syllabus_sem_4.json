@@ -46,6 +46,19 @@
       {
         "unit": 0,
         "category": "",
+        "title": "Major 2 - Unit 4",
+        "courseType": "Major",
+        "materials": [
+          {
+            "title": "SC23MJDSCCHE401 Unit-4 ionic equilibrium 202526",
+            "file": "pdfs/Sem_4/Chemistry/Major/Notes/Major_2_-_Unit_4/SC23MJDSCCHE401 Unit-4 ionic equilibrium 202526.pdf",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "unit": 0,
+        "category": "",
         "title": "Minor Syllabus",
         "courseType": "Minor",
         "materials": [
