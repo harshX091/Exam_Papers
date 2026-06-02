@@ -28,6 +28,19 @@
       {
         "unit": 0,
         "category": "",
+        "title": "Major Syllabus",
+        "courseType": "Major",
+        "materials": [
+          {
+            "title": "Chemistry 401 Syllabus",
+            "file": "pdfs/Sem_4/Chemistry/Major/Syllabus/Chemistry_401_Syllabus.pdf",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "unit": 0,
+        "category": "",
         "title": "Minor Syllabus",
         "courseType": "Minor",
         "materials": [
