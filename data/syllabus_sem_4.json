@@ -46,6 +46,19 @@
       {
         "unit": 0,
         "category": "",
+        "title": "Major 2 - Unit 3",
+        "courseType": "Major",
+        "materials": [
+          {
+            "title": "B Sc sem - 4 Phase rule pdf by r t p",
+            "file": "pdfs/Sem_4/Chemistry/Major/Notes/Major_2_-_Unit_3/B. Sc sem - 4 Phase rule.pdf by r.t.p.pdf",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "unit": 0,
+        "category": "",
         "title": "Major 2 - Unit 4",
         "courseType": "Major",
         "materials": [
