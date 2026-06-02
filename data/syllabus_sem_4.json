@@ -296,5 +296,23 @@
         ]
       }
     ]
+  },
+  {
+    "subject": "Vac",
+    "units": [
+      {
+        "unit": 0,
+        "category": "",
+        "title": "Chemistry • VAC Syllabus",
+        "courseType": "Chemistry",
+        "materials": [
+          {
+            "title": "VAC Chemistry 405 Syllabus",
+            "file": "pdfs/Sem_4/Vac/Chemistry/Syllabus/VAC_Chemistry_405_Syllabus.pdf",
+            "description": ""
+          }
+        ]
+      }
+    ]
   }
 ]
