@@ -46,6 +46,19 @@
       {
         "unit": 0,
         "category": "",
+        "title": "Major 2 - Unit 2",
+        "courseType": "Major",
+        "materials": [
+          {
+            "title": "MAJ-401AUnit-1 f - Block Element",
+            "file": "pdfs/Sem_4/Chemistry/Major/Notes/Major_2_-_Unit_2/MAJ-401AUnit-1 f - Block Element.pdf",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "unit": 0,
+        "category": "",
         "title": "Major 2 - Unit 3",
         "courseType": "Major",
         "materials": [
