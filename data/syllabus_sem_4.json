@@ -46,6 +46,19 @@
       {
         "unit": 0,
         "category": "",
+        "title": "Major 1 - Unit 1",
+        "courseType": "Major",
+        "materials": [
+          {
+            "title": "SEM-4 Major-1 Assignment",
+            "file": "pdfs/Sem_4/Chemistry/Major/Notes/Major_1_-_Unit_1/SEM-4 Major-1 Assignment.pdf",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "unit": 0,
+        "category": "",
         "title": "Major 2 - Unit 1",
         "courseType": "Major",
         "materials": [
