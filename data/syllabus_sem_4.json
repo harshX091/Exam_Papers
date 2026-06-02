@@ -46,6 +46,19 @@
       {
         "unit": 0,
         "category": "",
+        "title": "Major 2 - Unit 1",
+        "courseType": "Major",
+        "materials": [
+          {
+            "title": "major 2 assignment",
+            "file": "pdfs/Sem_4/Chemistry/Major/Notes/Major_2_-_Unit_1/major 2 assignment.pdf",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "unit": 0,
+        "category": "",
         "title": "Major 2 - Unit 2",
         "courseType": "Major",
         "materials": [
