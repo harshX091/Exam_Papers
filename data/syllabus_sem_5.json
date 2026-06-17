@@ -1,0 +1,20 @@
+[
+  {
+    "subject": "Physics",
+    "units": [
+      {
+        "unit": 0,
+        "category": "",
+        "title": "Major Syllabus",
+        "courseType": "Major",
+        "materials": [
+          {
+            "title": "Physics 501 Syllabus",
+            "file": "pdfs/Sem_5/Physics/Major/Syllabus/Physics_501_Syllabus.pdf",
+            "description": ""
+          }
+        ]
+      }
+    ]
+  }
+]
