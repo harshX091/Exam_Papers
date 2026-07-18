@@ -63,19 +63,6 @@
             "description": ""
           }
         ]
-      },
-      {
-        "unit": 0,
-        "category": "",
-        "title": "Unit 2",
-        "courseType": "Major",
-        "materials": [
-          {
-            "title": "Solid State Physics-Free Electron Theory of Metals",
-            "file": "pdfs/Sem_5/Physics/Major/Notes/Unit_2/Solid State Physics-Free Electron Theory of Metals.pdf",
-            "description": ""
-          }
-        ]
       }
     ]
   }
