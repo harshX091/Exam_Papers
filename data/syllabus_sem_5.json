@@ -36,6 +36,19 @@
       {
         "unit": 0,
         "category": "",
+        "title": "Major 1 - Unit 2",
+        "courseType": "Major",
+        "materials": [
+          {
+            "title": "BSc-Sem5-Quantum Mechanics-General formalism of Wave Mechanics",
+            "file": "pdfs/Sem_5/Physics/Major/Notes/Major_1_-_Unit_2/BSc-Sem5-Quantum Mechanics-General formalism of Wave Mechanics.pdf",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "unit": 0,
+        "category": "",
         "title": "Unit 2",
         "courseType": "Major",
         "materials": [
