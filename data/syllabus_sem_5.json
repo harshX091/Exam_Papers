@@ -18,19 +18,6 @@
       {
         "unit": 0,
         "category": "",
-        "title": "Unit 1",
-        "courseType": "Major",
-        "materials": [
-          {
-            "title": "Classical Mechanics-Lagrangian Formulation",
-            "file": "pdfs/Sem_5/Physics/Major/Notes/Unit_1/Classical Mechanics-Lagrangian Formulation.pdf",
-            "description": ""
-          }
-        ]
-      },
-      {
-        "unit": 0,
-        "category": "",
         "title": "Unit 2",
         "courseType": "Major",
         "materials": [
