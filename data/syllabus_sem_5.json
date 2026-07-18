@@ -1,5 +1,23 @@
 [
   {
+    "subject": "Iks",
+    "units": [
+      {
+        "unit": 0,
+        "category": "",
+        "title": "Physics • IKS — Unit 1",
+        "courseType": "Physics",
+        "materials": [
+          {
+            "title": "Astronomy Unit 1 C D",
+            "file": "pdfs/Sem_5/Iks/Physics/Notes/Unit_1/Astronomy Unit 1 C D.pdf",
+            "description": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
     "subject": "Physics",
     "units": [
       {
