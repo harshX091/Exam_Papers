@@ -1,0 +1,7 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/Harsh/Exam_Papers/media/videos/sound_wave/480p15/partial_movie_files/SoundWaveRoom/1584795214_1277663361_223132457.mp4'
+file 'file:C:/Users/Harsh/Exam_Papers/media/videos/sound_wave/480p15/partial_movie_files/SoundWaveRoom/4072820271_2393358667_3409323119.mp4'
+file 'file:C:/Users/Harsh/Exam_Papers/media/videos/sound_wave/480p15/partial_movie_files/SoundWaveRoom/4072820271_3394500337_430530513.mp4'
+file 'file:C:/Users/Harsh/Exam_Papers/media/videos/sound_wave/480p15/partial_movie_files/SoundWaveRoom/4072820271_465843929_2958500727.mp4'
+file 'file:C:/Users/Harsh/Exam_Papers/media/videos/sound_wave/480p15/partial_movie_files/SoundWaveRoom/4072820271_1274372543_3815822394.mp4'
+file 'file:C:/Users/Harsh/Exam_Papers/media/videos/sound_wave/480p15/partial_movie_files/SoundWaveRoom/4072820271_4217992463_2109340395.mp4'

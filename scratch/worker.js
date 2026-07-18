@@ -53,12 +53,16 @@ export default {
         "User-Agent": "Cloudflare-Worker-Upload-Proxy",
       };
 
-      // 3. Convert File to Base64 (using a loop to avoid "Maximum call stack size exceeded" on large files)
+      // 3. Convert File to Base64 (using chunked conversion to avoid stack overflow and CPU timeout)
       const arrayBuffer = await file.arrayBuffer();
       const uint8Array = new Uint8Array(arrayBuffer);
       let binaryString = "";
-      for (let i = 0; i < uint8Array.byteLength; i++) {
-        binaryString += String.fromCharCode(uint8Array[i]);
+      const chunkSize = 65536;
+      for (let i = 0; i < uint8Array.length; i += chunkSize) {
+        binaryString += String.fromCharCode.apply(
+          null,
+          uint8Array.subarray(i, i + chunkSize)
+        );
       }
       const base64Content = btoa(binaryString);
 
