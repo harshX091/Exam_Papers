@@ -73,6 +73,19 @@
             "description": ""
           }
         ]
+      },
+      {
+        "unit": 0,
+        "category": "",
+        "title": "Major 1 - Unit 3",
+        "courseType": "Major",
+        "materials": [
+          {
+            "title": "Statistical Mechanics a Microscopic Macroscopic States",
+            "file": "pdfs/Sem_5/Physics/Major/Notes/Major_1_-_Unit_3/Statistical Mechanics a Microscopic Macroscopic States.pdf",
+            "description": ""
+          }
+        ]
       }
     ]
   }
