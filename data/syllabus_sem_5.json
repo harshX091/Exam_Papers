@@ -81,6 +81,11 @@
         "courseType": "Major",
         "materials": [
           {
+            "title": "sem 5 Unit-3b plasma",
+            "file": "pdfs/Sem_5/Physics/Major/Notes/Major_1_-_Unit_3/sem 5 Unit-3b plasma.pdf",
+            "description": ""
+          },
+          {
             "title": "Statistical Mechanics a Microscopic Macroscopic States",
             "file": "pdfs/Sem_5/Physics/Major/Notes/Major_1_-_Unit_3/Statistical Mechanics a Microscopic Macroscopic States.pdf",
             "description": ""
