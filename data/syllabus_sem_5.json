@@ -1,5 +1,23 @@
 [
   {
+    "subject": "Chemistry",
+    "units": [
+      {
+        "unit": 0,
+        "category": "",
+        "title": "Major 1 - Unit 1",
+        "courseType": "Major",
+        "materials": [
+          {
+            "title": "B Sc Sem - 5 EMFCHN503 Theory",
+            "file": "pdfs/Sem_5/Chemistry/Major/Notes/Major_1_-_Unit_1/B.Sc. Sem - 5 EMFCHN503 Theory.pdf",
+            "description": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
     "subject": "Iks",
     "units": [
       {
