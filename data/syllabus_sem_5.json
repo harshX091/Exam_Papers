@@ -27,6 +27,19 @@
             "description": ""
           }
         ]
+      },
+      {
+        "unit": 0,
+        "category": "",
+        "title": "Minor Syllabus",
+        "courseType": "Minor",
+        "materials": [
+          {
+            "title": "Chemistry 502 Syllabus",
+            "file": "pdfs/Sem_5/Chemistry/Minor/Syllabus/Chemistry_502_Syllabus.pdf",
+            "description": ""
+          }
+        ]
       }
     ]
   },
