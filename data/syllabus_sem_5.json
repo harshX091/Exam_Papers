@@ -44,6 +44,19 @@
       {
         "unit": 0,
         "category": "",
+        "title": "Unit 1",
+        "courseType": "Minor",
+        "materials": [
+          {
+            "title": "Unit-1 Water Technology",
+            "file": "pdfs/Sem_5/Chemistry/Minor/Notes/Unit_1/Unit-1 Water Technology.pdf",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "unit": 0,
+        "category": "",
         "title": "Unit 3",
         "courseType": "Minor",
         "materials": [
