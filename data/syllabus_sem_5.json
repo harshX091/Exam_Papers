@@ -40,6 +40,19 @@
             "description": ""
           }
         ]
+      },
+      {
+        "unit": 0,
+        "category": "",
+        "title": "Unit 3",
+        "courseType": "Minor",
+        "materials": [
+          {
+            "title": "Adsorption Press copy",
+            "file": "pdfs/Sem_5/Chemistry/Minor/Notes/Unit_3/Adsorption Press copy.pdf",
+            "description": ""
+          }
+        ]
       }
     ]
   },
