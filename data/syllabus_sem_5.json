@@ -71,6 +71,19 @@
             "description": ""
           }
         ]
+      },
+      {
+        "unit": 0,
+        "category": "",
+        "title": "Unit 4",
+        "courseType": "Minor",
+        "materials": [
+          {
+            "title": "unit 4 Aug 29 2026",
+            "file": "pdfs/Sem_5/Chemistry/Minor/Notes/Unit_4/unit 4 Aug 29 2026.pdf",
+            "description": ""
+          }
+        ]
       }
     ]
   },
