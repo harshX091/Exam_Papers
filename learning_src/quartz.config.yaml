@@ -220,8 +220,7 @@ plugins:
     enabled: true
     options:
       links:
-        GitHub: https://github.com/jackyzha0/quartz
-        Discord Community: https://discord.gg/cRFFHYye7t
+        "⬅ Back to Exam Papers": "https://harshx091.github.io/Exam_Papers/"
     layout:
       position: footer
       priority: 50
