@@ -1,0 +1,3668 @@
+{
+  "generatedAt": "2026-09-10T06:48:59.086Z",
+  "siteBase": "https://harshx091.github.io/Exam_Papers",
+  "dataFiles": [
+    {
+      "path": "data/search_index.json",
+      "url": "https://harshx091.github.io/Exam_Papers/data/search_index.json",
+      "sem": null,
+      "type": "papers"
+    },
+    {
+      "path": "data/sem_1.json",
+      "url": "https://harshx091.github.io/Exam_Papers/data/sem_1.json",
+      "sem": "1",
+      "type": "papers"
+    },
+    {
+      "path": "data/sem_2.json",
+      "url": "https://harshx091.github.io/Exam_Papers/data/sem_2.json",
+      "sem": "2",
+      "type": "papers"
+    },
+    {
+      "path": "data/sem_3.json",
+      "url": "https://harshx091.github.io/Exam_Papers/data/sem_3.json",
+      "sem": "3",
+      "type": "papers"
+    },
+    {
+      "path": "data/sem_4.json",
+      "url": "https://harshx091.github.io/Exam_Papers/data/sem_4.json",
+      "sem": "4",
+      "type": "papers"
+    },
+    {
+      "path": "data/syllabus_sem_1.json",
+      "url": "https://harshx091.github.io/Exam_Papers/data/syllabus_sem_1.json",
+      "sem": "1",
+      "type": "syllabus"
+    },
+    {
+      "path": "data/syllabus_sem_2.json",
+      "url": "https://harshx091.github.io/Exam_Papers/data/syllabus_sem_2.json",
+      "sem": "2",
+      "type": "syllabus"
+    },
+    {
+      "path": "data/syllabus_sem_3.json",
+      "url": "https://harshx091.github.io/Exam_Papers/data/syllabus_sem_3.json",
+      "sem": "3",
+      "type": "syllabus"
+    },
+    {
+      "path": "data/syllabus_sem_4.json",
+      "url": "https://harshx091.github.io/Exam_Papers/data/syllabus_sem_4.json",
+      "sem": "4",
+      "type": "syllabus"
+    },
+    {
+      "path": "data/syllabus_sem_5.json",
+      "url": "https://harshx091.github.io/Exam_Papers/data/syllabus_sem_5.json",
+      "sem": "5",
+      "type": "syllabus"
+    }
+  ],
+  "syllabus": [
+    {
+      "sem": "1",
+      "subject": "Physics",
+      "unit": 0,
+      "unitTitle": "Major Syllabus",
+      "courseType": "Major",
+      "materialTitle": "BSC SEMESTER-1 NEP2020 PhyMJ",
+      "file": "pdfs/Sem_1/Physics/Major/Syllabus/BSC_SEMESTER-1_NEP2020_PhyMJ_.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_1/Physics/Major/Syllabus/BSC_SEMESTER-1_NEP2020_PhyMJ_.pdf",
+      "description": null
+    },
+    {
+      "sem": "1",
+      "subject": "Physics",
+      "unit": 0,
+      "unitTitle": "Major 1 - Unit 1",
+      "courseType": "Major",
+      "materialTitle": "MathematicalPhysics101U1",
+      "file": "pdfs/Sem_1/Physics/Major/Notes/Major_1_-_Unit_1/MathematicalPhysics101U1.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_1/Physics/Major/Notes/Major_1_-_Unit_1/MathematicalPhysics101U1.pdf",
+      "description": null
+    },
+    {
+      "sem": "1",
+      "subject": "Physics",
+      "unit": 0,
+      "unitTitle": "Major 1 - Unit 2",
+      "courseType": "Major",
+      "materialTitle": "Thermodynamics fy B Sc",
+      "file": "pdfs/Sem_1/Physics/Major/Notes/Major_1_-_Unit_2/Thermodynamics_fy_B.Sc..pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_1/Physics/Major/Notes/Major_1_-_Unit_2/Thermodynamics_fy_B.Sc..pdf",
+      "description": null
+    },
+    {
+      "sem": "1",
+      "subject": "Physics",
+      "unit": 0,
+      "unitTitle": "Major 1 - Unit 3",
+      "courseType": "Major",
+      "materialTitle": "SEM-1",
+      "file": "pdfs/Sem_1/Physics/Major/Notes/Major_1_-_Unit_3/SEM-1.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_1/Physics/Major/Notes/Major_1_-_Unit_3/SEM-1.pdf",
+      "description": null
+    },
+    {
+      "sem": "1",
+      "subject": "Physics",
+      "unit": 0,
+      "unitTitle": "Major 1 - Unit 4",
+      "courseType": "Major",
+      "materialTitle": "1st part Half wave Rectifier",
+      "file": "pdfs/Sem_1/Physics/Major/Notes/Major_1_-_Unit_4/1st_part_Half_wave_Rectifier.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_1/Physics/Major/Notes/Major_1_-_Unit_4/1st_part_Half_wave_Rectifier.pdf",
+      "description": null
+    },
+    {
+      "sem": "2",
+      "subject": "Physics",
+      "unit": 0,
+      "unitTitle": "Major Syllabus",
+      "courseType": "Major",
+      "materialTitle": "BSC SEMESTER-2 NEP2020 PhyMJ-Syllabus",
+      "file": "pdfs/Sem_2/Physics/Major/Syllabus/BSC_SEMESTER-2_NEP2020_PhyMJ-Syllabus_.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_2/Physics/Major/Syllabus/BSC_SEMESTER-2_NEP2020_PhyMJ-Syllabus_.pdf",
+      "description": null
+    },
+    {
+      "sem": "2",
+      "subject": "Physics",
+      "unit": 0,
+      "unitTitle": "Unit 1",
+      "courseType": "Major",
+      "materialTitle": "B Sc-Sem-2 Electrostatic-Unit-1",
+      "file": "pdfs/Sem_2/Physics/Major/Notes/Unit_1/B.Sc-Sem-2_Electrostatic-Unit-1.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_2/Physics/Major/Notes/Unit_1/B.Sc-Sem-2_Electrostatic-Unit-1.pdf",
+      "description": null
+    },
+    {
+      "sem": "2",
+      "subject": "Physics",
+      "unit": 0,
+      "unitTitle": "Unit 2",
+      "courseType": "Major",
+      "materialTitle": "BSc2 NEP Major Minor U2 S H M",
+      "file": "pdfs/Sem_2/Physics/Major/Notes/Unit_2/BSc2_NEP_Major_Minor_U2_S.H.M..pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_2/Physics/Major/Notes/Unit_2/BSc2_NEP_Major_Minor_U2_S.H.M..pdf",
+      "description": null
+    },
+    {
+      "sem": "2",
+      "subject": "Physics",
+      "unit": 0,
+      "unitTitle": "Unit 3",
+      "courseType": "Major",
+      "materialTitle": "AC Bridges MJ201U3c MD203U1c",
+      "file": "pdfs/Sem_2/Physics/Major/Notes/Unit_3/AC_Bridges_MJ201U3c_MD203U1c.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_2/Physics/Major/Notes/Unit_3/AC_Bridges_MJ201U3c_MD203U1c.pdf",
+      "description": null
+    },
+    {
+      "sem": "2",
+      "subject": "Physics",
+      "unit": 0,
+      "unitTitle": "Unit 3",
+      "courseType": "Major",
+      "materialTitle": "DC Circuits MJ201U3a MD203U1a",
+      "file": "pdfs/Sem_2/Physics/Major/Notes/Unit_3/DC_Circuits_MJ201U3a_MD203U1a.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_2/Physics/Major/Notes/Unit_3/DC_Circuits_MJ201U3a_MD203U1a.pdf",
+      "description": null
+    },
+    {
+      "sem": "2",
+      "subject": "Physics",
+      "unit": 0,
+      "unitTitle": "Unit 3",
+      "courseType": "Major",
+      "materialTitle": "Network Theorems MJ201U3b MD203U1b",
+      "file": "pdfs/Sem_2/Physics/Major/Notes/Unit_3/Network_Theorems_MJ201U3b_MD203U1b.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_2/Physics/Major/Notes/Unit_3/Network_Theorems_MJ201U3b_MD203U1b.pdf",
+      "description": null
+    },
+    {
+      "sem": "2",
+      "subject": "Physics",
+      "unit": 0,
+      "unitTitle": "Unit 4",
+      "courseType": "Major",
+      "materialTitle": "FY MJ Multi Optics - interference Jatin Sir",
+      "file": "pdfs/Sem_2/Physics/Major/Notes/Unit_4/FY_MJ_Multi_Optics_-_interference_Jatin_Sir.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_2/Physics/Major/Notes/Unit_4/FY_MJ_Multi_Optics_-_interference_Jatin_Sir.pdf",
+      "description": null
+    },
+    {
+      "sem": "2",
+      "subject": "Physics",
+      "unit": 0,
+      "unitTitle": "Unit 4",
+      "courseType": "Major",
+      "materialTitle": "Lens - Interference Refraction F Y B Sc",
+      "file": "pdfs/Sem_2/Physics/Major/Notes/Unit_4/Lens_-_Interference_Refraction_F.Y._B.Sc..pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_2/Physics/Major/Notes/Unit_4/Lens_-_Interference_Refraction_F.Y._B.Sc..pdf",
+      "description": null
+    },
+    {
+      "sem": "2",
+      "subject": "Sec",
+      "unit": 0,
+      "unitTitle": "Physics • SEC — Passive Circuit Elements",
+      "courseType": "Physics",
+      "materialTitle": "BSc Sem2 SEC Physics Unit12",
+      "file": "pdfs/Sem_2/Sec/Physics/Notes/Passive_Circuit_Elements/BSc_Sem2_SEC_Physics_Unit12.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_2/Sec/Physics/Notes/Passive_Circuit_Elements/BSc_Sem2_SEC_Physics_Unit12.pdf",
+      "description": null
+    },
+    {
+      "sem": "3",
+      "subject": "Physics",
+      "unit": 0,
+      "unitTitle": "Major 1 - Unit 1 Thermodynamics",
+      "courseType": "Major",
+      "materialTitle": "thermodynamics sem 3",
+      "file": "pdfs/Sem_3/Physics/Major/Notes/Major_1_-_Unit_1_Thermodynamics/thermodynamics_sem_3.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_3/Physics/Major/Notes/Major_1_-_Unit_1_Thermodynamics/thermodynamics_sem_3.pdf",
+      "description": null
+    },
+    {
+      "sem": "3",
+      "subject": "Physics",
+      "unit": 0,
+      "unitTitle": "Major 1 - Unit 1 Thermodynamics",
+      "courseType": "Major",
+      "materialTitle": "Thermodynamics Unit1 Revision",
+      "file": "pdfs/Sem_3/Physics/Major/Notes/Major_1_-_Unit_1_Thermodynamics/Thermodynamics_Unit1_Revision.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_3/Physics/Major/Notes/Major_1_-_Unit_1_Thermodynamics/Thermodynamics_Unit1_Revision.pdf",
+      "description": null
+    },
+    {
+      "sem": "3",
+      "subject": "Physics",
+      "unit": 0,
+      "unitTitle": "Major 1 - Unit 2 Modern Physics",
+      "courseType": "Major",
+      "materialTitle": "Modern Physics",
+      "file": "pdfs/Sem_3/Physics/Major/Notes/Major_1_-_Unit_2_Modern_Physics/Modern_Physics.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_3/Physics/Major/Notes/Major_1_-_Unit_2_Modern_Physics/Modern_Physics.pdf",
+      "description": null
+    },
+    {
+      "sem": "3",
+      "subject": "Physics",
+      "unit": 0,
+      "unitTitle": "Major 1 - Unit 2 Modern Physics",
+      "courseType": "Major",
+      "materialTitle": "Modern Physics 1D schrodinger equation",
+      "file": "pdfs/Sem_3/Physics/Major/Notes/Major_1_-_Unit_2_Modern_Physics/Modern_Physics_1D_schrodinger_equation.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_3/Physics/Major/Notes/Major_1_-_Unit_2_Modern_Physics/Modern_Physics_1D_schrodinger_equation.pdf",
+      "description": null
+    },
+    {
+      "sem": "3",
+      "subject": "Physics",
+      "unit": 0,
+      "unitTitle": "Major 1 - Unit 2 Modern Physics",
+      "courseType": "Major",
+      "materialTitle": "Modern Physics Franck-Herts-Experiment",
+      "file": "pdfs/Sem_3/Physics/Major/Notes/Major_1_-_Unit_2_Modern_Physics/Modern_Physics_Franck-Herts-Experiment.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_3/Physics/Major/Notes/Major_1_-_Unit_2_Modern_Physics/Modern_Physics_Franck-Herts-Experiment.pdf",
+      "description": null
+    },
+    {
+      "sem": "3",
+      "subject": "Physics",
+      "unit": 0,
+      "unitTitle": "Major 1 - Unit 4 Solid State Physics",
+      "courseType": "Major",
+      "materialTitle": "Crystal Structure - SRS",
+      "file": "pdfs/Sem_3/Physics/Major/Notes/Major_1_-_Unit_4_Solid_State_Physics/Crystal_Structure_-_SRS.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_3/Physics/Major/Notes/Major_1_-_Unit_4_Solid_State_Physics/Crystal_Structure_-_SRS.pdf",
+      "description": null
+    },
+    {
+      "sem": "3",
+      "subject": "Physics",
+      "unit": 0,
+      "unitTitle": "Major 1 - Unit 4 Solid State Physics",
+      "courseType": "Major",
+      "materialTitle": "Crystal Structure 2",
+      "file": "pdfs/Sem_3/Physics/Major/Notes/Major_1_-_Unit_4_Solid_State_Physics/Crystal_Structure_2.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_3/Physics/Major/Notes/Major_1_-_Unit_4_Solid_State_Physics/Crystal_Structure_2.pdf",
+      "description": null
+    },
+    {
+      "sem": "3",
+      "subject": "Physics",
+      "unit": 0,
+      "unitTitle": "Major 1 - Unit 4 Solid State Physics",
+      "courseType": "Major",
+      "materialTitle": "Crystal Structure-JJP",
+      "file": "pdfs/Sem_3/Physics/Major/Notes/Major_1_-_Unit_4_Solid_State_Physics/Crystal_Structure-JJP.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_3/Physics/Major/Notes/Major_1_-_Unit_4_Solid_State_Physics/Crystal_Structure-JJP.pdf",
+      "description": null
+    },
+    {
+      "sem": "3",
+      "subject": "Physics",
+      "unit": 0,
+      "unitTitle": "Major 2 - Unit 1 Electrostatics Magnetostatics",
+      "courseType": "Major",
+      "materialTitle": "Dielectric",
+      "file": "pdfs/Sem_3/Physics/Major/Notes/Major_2_-_Unit_1_Electrostatics_Magnetostatics/Dielectric.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_3/Physics/Major/Notes/Major_2_-_Unit_1_Electrostatics_Magnetostatics/Dielectric.pdf",
+      "description": null
+    },
+    {
+      "sem": "3",
+      "subject": "Physics",
+      "unit": 0,
+      "unitTitle": "Major 2 - Unit 1 Electrostatics Magnetostatics",
+      "courseType": "Major",
+      "materialTitle": "Magnetostatics",
+      "file": "pdfs/Sem_3/Physics/Major/Notes/Major_2_-_Unit_1_Electrostatics_Magnetostatics/Magnetostatics.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_3/Physics/Major/Notes/Major_2_-_Unit_1_Electrostatics_Magnetostatics/Magnetostatics.pdf",
+      "description": null
+    },
+    {
+      "sem": "3",
+      "subject": "Physics",
+      "unit": 0,
+      "unitTitle": "Major 2 - Unit 2 Optics Fraunhoffer Diffraction",
+      "courseType": "Major",
+      "materialTitle": "optics-huma",
+      "file": "pdfs/Sem_3/Physics/Major/Notes/Major_2_-_Unit_2_Optics_Fraunhoffer_Diffraction/optics-huma.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_3/Physics/Major/Notes/Major_2_-_Unit_2_Optics_Fraunhoffer_Diffraction/optics-huma.pdf",
+      "description": null
+    },
+    {
+      "sem": "3",
+      "subject": "Physics",
+      "unit": 0,
+      "unitTitle": "Major 2 - Unit 3 Farmat Principle",
+      "courseType": "Major",
+      "materialTitle": "Sem3 Major Physics 301A Unit3 Fermat Polarization",
+      "file": "pdfs/Sem_3/Physics/Major/Notes/Major_2_-_Unit_3_Farmat_Principle/Sem3_Major_Physics_301A_Unit3_Fermat_Polarization.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_3/Physics/Major/Notes/Major_2_-_Unit_3_Farmat_Principle/Sem3_Major_Physics_301A_Unit3_Fermat_Polarization.pdf",
+      "description": null
+    },
+    {
+      "sem": "3",
+      "subject": "Physics",
+      "unit": 0,
+      "unitTitle": "Major 2 - Unit 4 Electronics",
+      "courseType": "Major",
+      "materialTitle": "part 1 electronics",
+      "file": "pdfs/Sem_3/Physics/Major/Notes/Major_2_-_Unit_4_Electronics/part_1_electronics.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_3/Physics/Major/Notes/Major_2_-_Unit_4_Electronics/part_1_electronics.pdf",
+      "description": null
+    },
+    {
+      "sem": "3",
+      "subject": "Physics",
+      "unit": 0,
+      "unitTitle": "Major 2 - Unit 4 Electronics",
+      "courseType": "Major",
+      "materialTitle": "Transistor Biasing and Stabilization",
+      "file": "pdfs/Sem_3/Physics/Major/Notes/Major_2_-_Unit_4_Electronics/Transistor_Biasing_and_Stabilization.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_3/Physics/Major/Notes/Major_2_-_Unit_4_Electronics/Transistor_Biasing_and_Stabilization.pdf",
+      "description": null
+    },
+    {
+      "sem": "4",
+      "subject": "Botany",
+      "unit": 0,
+      "unitTitle": "Major Syllabus",
+      "courseType": "Major",
+      "materialTitle": "Botany 401 Syllabus",
+      "file": "pdfs/Sem_4/Botany/Major/Syllabus/Botany_401_Syllabus.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Botany/Major/Syllabus/Botany_401_Syllabus.pdf",
+      "description": null
+    },
+    {
+      "sem": "4",
+      "subject": "Botany",
+      "unit": 0,
+      "unitTitle": "Major Syllabus",
+      "courseType": "Major",
+      "materialTitle": "Botany 401A Syllabus",
+      "file": "pdfs/Sem_4/Botany/Major/Syllabus/Botany_401A_Syllabus.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Botany/Major/Syllabus/Botany_401A_Syllabus.pdf",
+      "description": null
+    },
+    {
+      "sem": "4",
+      "subject": "Chemistry",
+      "unit": 0,
+      "unitTitle": "Major Syllabus",
+      "courseType": "Major",
+      "materialTitle": "Chemistry 401 Syllabus",
+      "file": "pdfs/Sem_4/Chemistry/Major/Syllabus/Chemistry_401_Syllabus.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Chemistry/Major/Syllabus/Chemistry_401_Syllabus.pdf",
+      "description": null
+    },
+    {
+      "sem": "4",
+      "subject": "Chemistry",
+      "unit": 0,
+      "unitTitle": "Major Syllabus",
+      "courseType": "Major",
+      "materialTitle": "Chemistry 401A Syllabus",
+      "file": "pdfs/Sem_4/Chemistry/Major/Syllabus/Chemistry_401A_Syllabus.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Chemistry/Major/Syllabus/Chemistry_401A_Syllabus.pdf",
+      "description": null
+    },
+    {
+      "sem": "4",
+      "subject": "Chemistry",
+      "unit": 0,
+      "unitTitle": "Major 1 - Unit 1",
+      "courseType": "Major",
+      "materialTitle": "SEM-4 Major-1 Assignment",
+      "file": "pdfs/Sem_4/Chemistry/Major/Notes/Major_1_-_Unit_1/SEM-4_Major-1_Assignment.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Chemistry/Major/Notes/Major_1_-_Unit_1/SEM-4_Major-1_Assignment.pdf",
+      "description": null
+    },
+    {
+      "sem": "4",
+      "subject": "Chemistry",
+      "unit": 0,
+      "unitTitle": "Major 2 - Unit 1",
+      "courseType": "Major",
+      "materialTitle": "major 2 assignment",
+      "file": "pdfs/Sem_4/Chemistry/Major/Notes/Major_2_-_Unit_1/major_2_assignment.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Chemistry/Major/Notes/Major_2_-_Unit_1/major_2_assignment.pdf",
+      "description": null
+    },
+    {
+      "sem": "4",
+      "subject": "Chemistry",
+      "unit": 0,
+      "unitTitle": "Major 2 - Unit 2",
+      "courseType": "Major",
+      "materialTitle": "MAJ-401AUnit-1 f - Block Element",
+      "file": "pdfs/Sem_4/Chemistry/Major/Notes/Major_2_-_Unit_2/MAJ-401AUnit-1_f_-_Block_Element.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Chemistry/Major/Notes/Major_2_-_Unit_2/MAJ-401AUnit-1_f_-_Block_Element.pdf",
+      "description": null
+    },
+    {
+      "sem": "4",
+      "subject": "Chemistry",
+      "unit": 0,
+      "unitTitle": "Major 2 - Unit 3",
+      "courseType": "Major",
+      "materialTitle": "B Sc sem - 4 Phase rule pdf by r t p",
+      "file": "pdfs/Sem_4/Chemistry/Major/Notes/Major_2_-_Unit_3/B._Sc_sem_-_4_Phase_rule.pdf_by_r.t.p.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Chemistry/Major/Notes/Major_2_-_Unit_3/B._Sc_sem_-_4_Phase_rule.pdf_by_r.t.p.pdf",
+      "description": null
+    },
+    {
+      "sem": "4",
+      "subject": "Chemistry",
+      "unit": 0,
+      "unitTitle": "Major 2 - Unit 4",
+      "courseType": "Major",
+      "materialTitle": "SC23MJDSCCHE401 Unit-4 ionic equilibrium 202526",
+      "file": "pdfs/Sem_4/Chemistry/Major/Notes/Major_2_-_Unit_4/SC23MJDSCCHE401_Unit-4_ionic_equilibrium_202526.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Chemistry/Major/Notes/Major_2_-_Unit_4/SC23MJDSCCHE401_Unit-4_ionic_equilibrium_202526.pdf",
+      "description": null
+    },
+    {
+      "sem": "4",
+      "subject": "Chemistry",
+      "unit": 0,
+      "unitTitle": "Minor Syllabus",
+      "courseType": "Minor",
+      "materialTitle": "Chemistry-minor-sem4",
+      "file": "pdfs/Sem_4/Chemistry/Minor/Syllabus/Chemistry-minor-sem4.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Chemistry/Minor/Syllabus/Chemistry-minor-sem4.pdf",
+      "description": null
+    },
+    {
+      "sem": "4",
+      "subject": "Chemistry",
+      "unit": 0,
+      "unitTitle": "Unit 1",
+      "courseType": "Minor",
+      "materialTitle": "B Sc Sem 4 Electro chemistry",
+      "file": "pdfs/Sem_4/Chemistry/Minor/Notes/Unit_1/B.Sc._Sem_4_..Electro_chemistry.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Chemistry/Minor/Notes/Unit_1/B.Sc._Sem_4_..Electro_chemistry.pdf",
+      "description": null
+    },
+    {
+      "sem": "4",
+      "subject": "Chemistry",
+      "unit": 0,
+      "unitTitle": "Unit 2",
+      "courseType": "Minor",
+      "materialTitle": "INORGANIC POLYMER B SC SEM 4",
+      "file": "pdfs/Sem_4/Chemistry/Minor/Notes/Unit_2/INORGANIC_POLYMER_B.SC_SEM_4.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Chemistry/Minor/Notes/Unit_2/INORGANIC_POLYMER_B.SC_SEM_4.pdf",
+      "description": null
+    },
+    {
+      "sem": "4",
+      "subject": "Mathematics",
+      "unit": 0,
+      "unitTitle": "Unit 1",
+      "courseType": "Minor",
+      "materialTitle": "Numerical Analysis Unit-1 -compressed",
+      "file": "pdfs/Sem_4/Mathematics/Minor/Notes/Unit_1/Numerical_Analysis_Unit-1_-compressed.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Mathematics/Minor/Notes/Unit_1/Numerical_Analysis_Unit-1_-compressed.pdf",
+      "description": null
+    },
+    {
+      "sem": "4",
+      "subject": "Mathematics",
+      "unit": 0,
+      "unitTitle": "Unit 2",
+      "courseType": "Minor",
+      "materialTitle": "Numerical Analysis whole unit-2",
+      "file": "pdfs/Sem_4/Mathematics/Minor/Notes/Unit_2/Numerical_Analysis_whole_unit-2.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Mathematics/Minor/Notes/Unit_2/Numerical_Analysis_whole_unit-2.pdf",
+      "description": null
+    },
+    {
+      "sem": "4",
+      "subject": "Physics",
+      "unit": 0,
+      "unitTitle": "Major Syllabus",
+      "courseType": "Major",
+      "materialTitle": "BSC SEMESTER-4 PHY MAJOR",
+      "file": "pdfs/Sem_4/Physics/Major/Syllabus/BSC_SEMESTER-4_PHY_MAJOR.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Physics/Major/Syllabus/BSC_SEMESTER-4_PHY_MAJOR.pdf",
+      "description": null
+    },
+    {
+      "sem": "4",
+      "subject": "Physics",
+      "unit": 0,
+      "unitTitle": "Major 1 - Unit 1",
+      "courseType": "Major",
+      "materialTitle": "Document from Aesha Pandya",
+      "file": "pdfs/Sem_4/Physics/Major/Notes/Major_1_-_Unit_1/Document_from_Aesha_Pandya.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Physics/Major/Notes/Major_1_-_Unit_1/Document_from_Aesha_Pandya.pdf",
+      "description": null
+    },
+    {
+      "sem": "4",
+      "subject": "Physics",
+      "unit": 0,
+      "unitTitle": "Major 1 - Unit 1",
+      "courseType": "Major",
+      "materialTitle": "Mechanics of a Single Particle and System of Particles 3.3 to 3.6",
+      "file": "pdfs/Sem_4/Physics/Major/Notes/Major_1_-_Unit_1/Mechanics_of_a_Single_Particle_and_System_of_Particles_3.3_to_3.6_.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Physics/Major/Notes/Major_1_-_Unit_1/Mechanics_of_a_Single_Particle_and_System_of_Particles_3.3_to_3.6_.pdf",
+      "description": null
+    },
+    {
+      "sem": "4",
+      "subject": "Physics",
+      "unit": 0,
+      "unitTitle": "Major 1 - Unit 2",
+      "courseType": "Major",
+      "materialTitle": "CC-401-UNIT-2-NUCLEAR PHYSICS 1",
+      "file": "pdfs/Sem_4/Physics/Major/Notes/Major_1_-_Unit_2/CC-401-UNIT-2-NUCLEAR_PHYSICS_1_.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Physics/Major/Notes/Major_1_-_Unit_2/CC-401-UNIT-2-NUCLEAR_PHYSICS_1_.pdf",
+      "description": null
+    },
+    {
+      "sem": "4",
+      "subject": "Physics",
+      "unit": 0,
+      "unitTitle": "Major 1 - Unit 2",
+      "courseType": "Major",
+      "materialTitle": "Detectors and Accelerators 1.1.1 to 1.1.4",
+      "file": "pdfs/Sem_4/Physics/Major/Notes/Major_1_-_Unit_2/Detectors_and_Accelerators_1.1.1_to_1.1.4_.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Physics/Major/Notes/Major_1_-_Unit_2/Detectors_and_Accelerators_1.1.1_to_1.1.4_.pdf",
+      "description": null
+    },
+    {
+      "sem": "4",
+      "subject": "Physics",
+      "unit": 0,
+      "unitTitle": "Major 1 - Unit 2",
+      "courseType": "Major",
+      "materialTitle": "The Q-Equation 3.1 to 3.5",
+      "file": "pdfs/Sem_4/Physics/Major/Notes/Major_1_-_Unit_2/The_Q-Equation_3.1_to_3.5_.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Physics/Major/Notes/Major_1_-_Unit_2/The_Q-Equation_3.1_to_3.5_.pdf",
+      "description": null
+    },
+    {
+      "sem": "4",
+      "subject": "Physics",
+      "unit": 0,
+      "unitTitle": "Major 1 - Unit 3",
+      "courseType": "Major",
+      "materialTitle": "Radioactivity 2.1 to 2.13",
+      "file": "pdfs/Sem_4/Physics/Major/Notes/Major_1_-_Unit_3/Radioactivity_2.1_to_2.13_.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Physics/Major/Notes/Major_1_-_Unit_3/Radioactivity_2.1_to_2.13_.pdf",
+      "description": null
+    },
+    {
+      "sem": "4",
+      "subject": "Physics",
+      "unit": 0,
+      "unitTitle": "Major 1 - Unit 3",
+      "courseType": "Major",
+      "materialTitle": "SY Radioactivity",
+      "file": "pdfs/Sem_4/Physics/Major/Notes/Major_1_-_Unit_3/SY_Radioactivity.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Physics/Major/Notes/Major_1_-_Unit_3/SY_Radioactivity.pdf",
+      "description": null
+    },
+    {
+      "sem": "4",
+      "subject": "Physics",
+      "unit": 0,
+      "unitTitle": "Major 1 - Unit 3",
+      "courseType": "Major",
+      "materialTitle": "Theory 2 Radioactivity",
+      "file": "pdfs/Sem_4/Physics/Major/Notes/Major_1_-_Unit_3/Theory_2_Radioactivity.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Physics/Major/Notes/Major_1_-_Unit_3/Theory_2_Radioactivity.pdf",
+      "description": null
+    },
+    {
+      "sem": "4",
+      "subject": "Physics",
+      "unit": 0,
+      "unitTitle": "Major 1 - Unit 4",
+      "courseType": "Major",
+      "materialTitle": "PLASMA Physics MJ401U4 MI402U2",
+      "file": "pdfs/Sem_4/Physics/Major/Notes/Major_1_-_Unit_4/PLASMA_Physics_MJ401U4_MI402U2.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Physics/Major/Notes/Major_1_-_Unit_4/PLASMA_Physics_MJ401U4_MI402U2.pdf",
+      "description": null
+    },
+    {
+      "sem": "4",
+      "subject": "Physics",
+      "unit": 0,
+      "unitTitle": "Major 2 - Unit 1",
+      "courseType": "Major",
+      "materialTitle": "Curvilinear Co-ordinates 10.6 to 10.9",
+      "file": "pdfs/Sem_4/Physics/Major/Notes/Major_2_-_Unit_1/Curvilinear_Co-ordinates_10.6_to_10.9_.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Physics/Major/Notes/Major_2_-_Unit_1/Curvilinear_Co-ordinates_10.6_to_10.9_.pdf",
+      "description": null
+    },
+    {
+      "sem": "4",
+      "subject": "Physics",
+      "unit": 0,
+      "unitTitle": "Major 2 - Unit 1",
+      "courseType": "Major",
+      "materialTitle": "Curvilinear Coordinates MJ401A U1b",
+      "file": "pdfs/Sem_4/Physics/Major/Notes/Major_2_-_Unit_1/Curvilinear_Coordinates_MJ401A_U1b.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Physics/Major/Notes/Major_2_-_Unit_1/Curvilinear_Coordinates_MJ401A_U1b.pdf",
+      "description": null
+    },
+    {
+      "sem": "4",
+      "subject": "Physics",
+      "unit": 0,
+      "unitTitle": "Major 2 - Unit 1",
+      "courseType": "Major",
+      "materialTitle": "Fourier series",
+      "file": "pdfs/Sem_4/Physics/Major/Notes/Major_2_-_Unit_1/Fourier_series.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Physics/Major/Notes/Major_2_-_Unit_1/Fourier_series.pdf",
+      "description": null
+    },
+    {
+      "sem": "4",
+      "subject": "Physics",
+      "unit": 0,
+      "unitTitle": "Major 2 - Unit 1",
+      "courseType": "Major",
+      "materialTitle": "Fourier series 7.1 to 7.11",
+      "file": "pdfs/Sem_4/Physics/Major/Notes/Major_2_-_Unit_1/Fourier_series_7.1_to_7.11_.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Physics/Major/Notes/Major_2_-_Unit_1/Fourier_series_7.1_to_7.11_.pdf",
+      "description": null
+    },
+    {
+      "sem": "4",
+      "subject": "Physics",
+      "unit": 0,
+      "unitTitle": "Major 2 - Unit 1",
+      "courseType": "Major",
+      "materialTitle": "Fourier series Gujarati",
+      "file": "pdfs/Sem_4/Physics/Major/Notes/Major_2_-_Unit_1/Fourier_series_Gujarati.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Physics/Major/Notes/Major_2_-_Unit_1/Fourier_series_Gujarati.pdf",
+      "description": null
+    },
+    {
+      "sem": "4",
+      "subject": "Physics",
+      "unit": 0,
+      "unitTitle": "Major 2 - Unit 2",
+      "courseType": "Major",
+      "materialTitle": "Quntum Machanics 2.4 to 2.11",
+      "file": "pdfs/Sem_4/Physics/Major/Notes/Major_2_-_Unit_2/Quntum_Machanics_2.4_to_2.11_.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Physics/Major/Notes/Major_2_-_Unit_2/Quntum_Machanics_2.4_to_2.11_.pdf",
+      "description": null
+    },
+    {
+      "sem": "4",
+      "subject": "Physics",
+      "unit": 0,
+      "unitTitle": "Major 2 - Unit 2",
+      "courseType": "Major",
+      "materialTitle": "Quntum Mechanics sem 4",
+      "file": "pdfs/Sem_4/Physics/Major/Notes/Major_2_-_Unit_2/Quntum_Mechanics_sem_4.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Physics/Major/Notes/Major_2_-_Unit_2/Quntum_Mechanics_sem_4.pdf",
+      "description": null
+    },
+    {
+      "sem": "4",
+      "subject": "Physics",
+      "unit": 0,
+      "unitTitle": "Major 2 - Unit 3",
+      "courseType": "Major",
+      "materialTitle": "FET",
+      "file": "pdfs/Sem_4/Physics/Major/Notes/Major_2_-_Unit_3/FET.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Physics/Major/Notes/Major_2_-_Unit_3/FET.pdf",
+      "description": null
+    },
+    {
+      "sem": "4",
+      "subject": "Physics",
+      "unit": 0,
+      "unitTitle": "Major 2 - Unit 3",
+      "courseType": "Major",
+      "materialTitle": "h-Parameters sem 4 Electronbics",
+      "file": "pdfs/Sem_4/Physics/Major/Notes/Major_2_-_Unit_3/h-Parameters_sem_4_Electronbics.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Physics/Major/Notes/Major_2_-_Unit_3/h-Parameters_sem_4_Electronbics.pdf",
+      "description": null
+    },
+    {
+      "sem": "4",
+      "subject": "Physics",
+      "unit": 0,
+      "unitTitle": "Major 2 - Unit 3",
+      "courseType": "Major",
+      "materialTitle": "SY Solidstate Devices- UJT SCR",
+      "file": "pdfs/Sem_4/Physics/Major/Notes/Major_2_-_Unit_3/SY_Solidstate_Devices-_UJT_SCR...pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Physics/Major/Notes/Major_2_-_Unit_3/SY_Solidstate_Devices-_UJT_SCR...pdf",
+      "description": null
+    },
+    {
+      "sem": "4",
+      "subject": "Physics",
+      "unit": 0,
+      "unitTitle": "Major 2 - Unit 4",
+      "courseType": "Major",
+      "materialTitle": "Digital Electronics MJ401A U4",
+      "file": "pdfs/Sem_4/Physics/Major/Notes/Major_2_-_Unit_4/Digital_Electronics_MJ401A_U4.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Physics/Major/Notes/Major_2_-_Unit_4/Digital_Electronics_MJ401A_U4.pdf",
+      "description": null
+    },
+    {
+      "sem": "4",
+      "subject": "Sec",
+      "unit": 0,
+      "unitTitle": "Botany • SEC Notes",
+      "courseType": "Botany",
+      "materialTitle": "sec",
+      "file": "pdfs/Sem_4/Sec/Botany/Notes/sec.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Sec/Botany/Notes/sec.pdf",
+      "description": null
+    },
+    {
+      "sem": "4",
+      "subject": "Vac",
+      "unit": 0,
+      "unitTitle": "Chemistry • VAC Syllabus",
+      "courseType": "Chemistry",
+      "materialTitle": "VAC Chemistry 405 Syllabus",
+      "file": "pdfs/Sem_4/Vac/Chemistry/Syllabus/VAC_Chemistry_405_Syllabus.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Vac/Chemistry/Syllabus/VAC_Chemistry_405_Syllabus.pdf",
+      "description": null
+    },
+    {
+      "sem": "5",
+      "subject": "Chemistry",
+      "unit": 0,
+      "unitTitle": "Major 1 - Unit 1",
+      "courseType": "Major",
+      "materialTitle": "B Sc Sem - 5 EMFCHN503 Theory",
+      "file": "pdfs/Sem_5/Chemistry/Major/Notes/Major_1_-_Unit_1/B.Sc._Sem_-_5_EMFCHN503_Theory.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Chemistry/Major/Notes/Major_1_-_Unit_1/B.Sc._Sem_-_5_EMFCHN503_Theory.pdf",
+      "description": null
+    },
+    {
+      "sem": "5",
+      "subject": "Chemistry",
+      "unit": 0,
+      "unitTitle": "Major 2 - Unit 1",
+      "courseType": "Major",
+      "materialTitle": "sem v chemistry symmetry compressed",
+      "file": "pdfs/Sem_5/Chemistry/Major/Notes/Major_2_-_Unit_1/sem_v_chemistry_symmetry_compressed.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Chemistry/Major/Notes/Major_2_-_Unit_1/sem_v_chemistry_symmetry_compressed.pdf",
+      "description": null
+    },
+    {
+      "sem": "5",
+      "subject": "Chemistry",
+      "unit": 0,
+      "unitTitle": "Minor Syllabus",
+      "courseType": "Minor",
+      "materialTitle": "Chemistry 502 Syllabus",
+      "file": "pdfs/Sem_5/Chemistry/Minor/Syllabus/Chemistry_502_Syllabus.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Chemistry/Minor/Syllabus/Chemistry_502_Syllabus.pdf",
+      "description": null
+    },
+    {
+      "sem": "5",
+      "subject": "Chemistry",
+      "unit": 0,
+      "unitTitle": "Unit 1",
+      "courseType": "Minor",
+      "materialTitle": "Unit-1 Water Technology",
+      "file": "pdfs/Sem_5/Chemistry/Minor/Notes/Unit_1/Unit-1_Water_Technology.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Chemistry/Minor/Notes/Unit_1/Unit-1_Water_Technology.pdf",
+      "description": null
+    },
+    {
+      "sem": "5",
+      "subject": "Chemistry",
+      "unit": 0,
+      "unitTitle": "Unit 3",
+      "courseType": "Minor",
+      "materialTitle": "Adsorption Press copy",
+      "file": "pdfs/Sem_5/Chemistry/Minor/Notes/Unit_3/Adsorption_Press_copy.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Chemistry/Minor/Notes/Unit_3/Adsorption_Press_copy.pdf",
+      "description": null
+    },
+    {
+      "sem": "5",
+      "subject": "Chemistry",
+      "unit": 0,
+      "unitTitle": "Unit 3",
+      "courseType": "Minor",
+      "materialTitle": "The nernst distribution law Press copy",
+      "file": "pdfs/Sem_5/Chemistry/Minor/Notes/Unit_3/The_nernst_distribution_law_Press_copy.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Chemistry/Minor/Notes/Unit_3/The_nernst_distribution_law_Press_copy.pdf",
+      "description": null
+    },
+    {
+      "sem": "5",
+      "subject": "Chemistry",
+      "unit": 0,
+      "unitTitle": "Unit 4",
+      "courseType": "Minor",
+      "materialTitle": "unit 4 Aug 29 2026",
+      "file": "pdfs/Sem_5/Chemistry/Minor/Notes/Unit_4/unit_4_Aug_29_2026.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Chemistry/Minor/Notes/Unit_4/unit_4_Aug_29_2026.pdf",
+      "description": null
+    },
+    {
+      "sem": "5",
+      "subject": "Iks",
+      "unit": 0,
+      "unitTitle": "Physics • IKS — Unit 1",
+      "courseType": "Physics",
+      "materialTitle": "Astronomy Unit 1 C D",
+      "file": "pdfs/Sem_5/Iks/Physics/Notes/Unit_1/Astronomy_Unit_1_C_D.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Iks/Physics/Notes/Unit_1/Astronomy_Unit_1_C_D.pdf",
+      "description": null
+    },
+    {
+      "sem": "5",
+      "subject": "Physics",
+      "unit": 0,
+      "unitTitle": "Major Syllabus",
+      "courseType": "Major",
+      "materialTitle": "Physics 501 Syllabus",
+      "file": "pdfs/Sem_5/Physics/Major/Syllabus/Physics_501_Syllabus.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Physics/Major/Syllabus/Physics_501_Syllabus.pdf",
+      "description": null
+    },
+    {
+      "sem": "5",
+      "subject": "Physics",
+      "unit": 0,
+      "unitTitle": "Major 1 - Unit 1",
+      "courseType": "Major",
+      "materialTitle": "BSc5-Major501-Unit1AB-Mathematical-Phy",
+      "file": "pdfs/Sem_5/Physics/Major/Notes/Major_1_-_Unit_1/BSc5-Major501-Unit1AB-Mathematical-Phy.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Physics/Major/Notes/Major_1_-_Unit_1/BSc5-Major501-Unit1AB-Mathematical-Phy.pdf",
+      "description": null
+    },
+    {
+      "sem": "5",
+      "subject": "Physics",
+      "unit": 0,
+      "unitTitle": "Major 1 - Unit 1",
+      "courseType": "Major",
+      "materialTitle": "Sem5 Major 501 Unit 1B Classical Mech",
+      "file": "pdfs/Sem_5/Physics/Major/Notes/Major_1_-_Unit_1/Sem5 Major 501 Unit 1B Classical Mech.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Physics/Major/Notes/Major_1_-_Unit_1/Sem5%20Major%20501%20Unit%201B%20Classical%20Mech.pdf",
+      "description": null
+    },
+    {
+      "sem": "5",
+      "subject": "Physics",
+      "unit": 0,
+      "unitTitle": "Major 1 - Unit 1",
+      "courseType": "Major",
+      "materialTitle": "Sem5-Unit-1C-Classical Mechanics-Lagrangian Formulation",
+      "file": "pdfs/Sem_5/Physics/Major/Notes/Major_1_-_Unit_1/Sem5-Unit-1C-Classical_Mechanics-Lagrangian_Formulation.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Physics/Major/Notes/Major_1_-_Unit_1/Sem5-Unit-1C-Classical_Mechanics-Lagrangian_Formulation.pdf",
+      "description": null
+    },
+    {
+      "sem": "5",
+      "subject": "Physics",
+      "unit": 0,
+      "unitTitle": "Major 1 - Unit 2",
+      "courseType": "Major",
+      "materialTitle": "BSc-Sem5-Quantum Mechanics-General formalism of Wave Mechanics",
+      "file": "pdfs/Sem_5/Physics/Major/Notes/Major_1_-_Unit_2/BSc-Sem5-Quantum_Mechanics-General_formalism_of_Wave_Mechanics.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Physics/Major/Notes/Major_1_-_Unit_2/BSc-Sem5-Quantum_Mechanics-General_formalism_of_Wave_Mechanics.pdf",
+      "description": null
+    },
+    {
+      "sem": "5",
+      "subject": "Physics",
+      "unit": 0,
+      "unitTitle": "Major 1 - Unit 2",
+      "courseType": "Major",
+      "materialTitle": "BSc-Sem5-Solid State Physics-Free Electron Theory of Metals",
+      "file": "pdfs/Sem_5/Physics/Major/Notes/Major_1_-_Unit_2/BSc-Sem5-Solid_State_Physics-Free_Electron_Theory_of_Metals.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Physics/Major/Notes/Major_1_-_Unit_2/BSc-Sem5-Solid_State_Physics-Free_Electron_Theory_of_Metals.pdf",
+      "description": null
+    },
+    {
+      "sem": "5",
+      "subject": "Physics",
+      "unit": 0,
+      "unitTitle": "Major 1 - Unit 2",
+      "courseType": "Major",
+      "materialTitle": "Phy 501 unit 2 part 2",
+      "file": "pdfs/Sem_5/Physics/Major/Notes/Major_1_-_Unit_2/Phy_501_unit_2_part_2.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Physics/Major/Notes/Major_1_-_Unit_2/Phy_501_unit_2_part_2.pdf",
+      "description": null
+    },
+    {
+      "sem": "5",
+      "subject": "Physics",
+      "unit": 0,
+      "unitTitle": "Major 1 - Unit 2",
+      "courseType": "Major",
+      "materialTitle": "Text-Book-of-Quantum-Mechanics-M-Mathews-Venkatesan-U3-General formalism of Wave Mechanics",
+      "file": "pdfs/Sem_5/Physics/Major/Notes/Major_1_-_Unit_2/Text-Book-of-Quantum-Mechanics-M-Mathews-Venkatesan-U3-General_formalism_of_Wave_Mechanics.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Physics/Major/Notes/Major_1_-_Unit_2/Text-Book-of-Quantum-Mechanics-M-Mathews-Venkatesan-U3-General_formalism_of_Wave_Mechanics.pdf",
+      "description": null
+    },
+    {
+      "sem": "5",
+      "subject": "Physics",
+      "unit": 0,
+      "unitTitle": "Major 1 - Unit 3",
+      "courseType": "Major",
+      "materialTitle": "sem 5 Unit-3b plasma",
+      "file": "pdfs/Sem_5/Physics/Major/Notes/Major_1_-_Unit_3/sem_5_Unit-3b_plasma.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Physics/Major/Notes/Major_1_-_Unit_3/sem_5_Unit-3b_plasma.pdf",
+      "description": null
+    },
+    {
+      "sem": "5",
+      "subject": "Physics",
+      "unit": 0,
+      "unitTitle": "Major 1 - Unit 3",
+      "courseType": "Major",
+      "materialTitle": "Statistical Mechanics a Microscopic Macroscopic States",
+      "file": "pdfs/Sem_5/Physics/Major/Notes/Major_1_-_Unit_3/Statistical_Mechanics_a_Microscopic_Macroscopic_States.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Physics/Major/Notes/Major_1_-_Unit_3/Statistical_Mechanics_a_Microscopic_Macroscopic_States.pdf",
+      "description": null
+    },
+    {
+      "sem": "5",
+      "subject": "Physics",
+      "unit": 0,
+      "unitTitle": "Major 1 - Unit 3",
+      "courseType": "Major",
+      "materialTitle": "Statistical Mechanics b Statistical Ensemble",
+      "file": "pdfs/Sem_5/Physics/Major/Notes/Major_1_-_Unit_3/Statistical_Mechanics_b_Statistical_Ensemble.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Physics/Major/Notes/Major_1_-_Unit_3/Statistical_Mechanics_b_Statistical_Ensemble.pdf",
+      "description": null
+    },
+    {
+      "sem": "5",
+      "subject": "Physics",
+      "unit": 0,
+      "unitTitle": "Major 1 - Unit 4",
+      "courseType": "Major",
+      "materialTitle": "Basic Transistor Amplifiers Multistages",
+      "file": "pdfs/Sem_5/Physics/Major/Notes/Major_1_-_Unit_4/Basic_Transistor_Amplifiers_Multistages.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Physics/Major/Notes/Major_1_-_Unit_4/Basic_Transistor_Amplifiers_Multistages.pdf",
+      "description": null
+    }
+  ],
+  "papers": [
+    {
+      "sem": null,
+      "subject": "Physics",
+      "year": null,
+      "title": "Major 1 - Unit 1 — MathematicalPhysics101U1",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_1/Physics/Major/Notes/Major_1_-_Unit_1/MathematicalPhysics101U1.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_1/Physics/Major/Notes/Major_1_-_Unit_1/MathematicalPhysics101U1.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Physics",
+      "year": null,
+      "title": "Major 1 - Unit 2 — Thermodynamics fy B Sc",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_1/Physics/Major/Notes/Major_1_-_Unit_2/Thermodynamics_fy_B.Sc..pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_1/Physics/Major/Notes/Major_1_-_Unit_2/Thermodynamics_fy_B.Sc..pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Physics",
+      "year": null,
+      "title": "Major 1 - Unit 3 — SEM-1",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_1/Physics/Major/Notes/Major_1_-_Unit_3/SEM-1.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_1/Physics/Major/Notes/Major_1_-_Unit_3/SEM-1.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Physics",
+      "year": null,
+      "title": "Major 1 - Unit 4 — 1st part Half wave Rectifier",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_1/Physics/Major/Notes/Major_1_-_Unit_4/1st_part_Half_wave_Rectifier.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_1/Physics/Major/Notes/Major_1_-_Unit_4/1st_part_Half_wave_Rectifier.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Physics",
+      "year": null,
+      "title": "Major — BSC SEMESTER-1 NEP2020 PhyMJ",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_1/Physics/Major/Syllabus/BSC_SEMESTER-1_NEP2020_PhyMJ_.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_1/Physics/Major/Syllabus/BSC_SEMESTER-1_NEP2020_PhyMJ_.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Physics",
+      "year": null,
+      "title": "Major • Unit 1 — B Sc-Sem-2 Electrostatic-Unit-1",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_2/Physics/Major/Notes/Unit_1/B.Sc-Sem-2_Electrostatic-Unit-1.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_2/Physics/Major/Notes/Unit_1/B.Sc-Sem-2_Electrostatic-Unit-1.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Physics",
+      "year": null,
+      "title": "Major • Unit 2 — BSc2 NEP Major Minor U2 S H M",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_2/Physics/Major/Notes/Unit_2/BSc2_NEP_Major_Minor_U2_S.H.M..pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_2/Physics/Major/Notes/Unit_2/BSc2_NEP_Major_Minor_U2_S.H.M..pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Physics",
+      "year": null,
+      "title": "Major • Unit 3 — AC Bridges MJ201U3c MD203U1c",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_2/Physics/Major/Notes/Unit_3/AC_Bridges_MJ201U3c_MD203U1c.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_2/Physics/Major/Notes/Unit_3/AC_Bridges_MJ201U3c_MD203U1c.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Physics",
+      "year": null,
+      "title": "Major • Unit 3 — DC Circuits MJ201U3a MD203U1a",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_2/Physics/Major/Notes/Unit_3/DC_Circuits_MJ201U3a_MD203U1a.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_2/Physics/Major/Notes/Unit_3/DC_Circuits_MJ201U3a_MD203U1a.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Physics",
+      "year": null,
+      "title": "Major • Unit 3 — Network Theorems MJ201U3b MD203U1b",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_2/Physics/Major/Notes/Unit_3/Network_Theorems_MJ201U3b_MD203U1b.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_2/Physics/Major/Notes/Unit_3/Network_Theorems_MJ201U3b_MD203U1b.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Physics",
+      "year": null,
+      "title": "Major • Unit 4 — FY MJ Multi Optics - interference Jatin Sir",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_2/Physics/Major/Notes/Unit_4/FY_MJ_Multi_Optics_-_interference_Jatin_Sir.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_2/Physics/Major/Notes/Unit_4/FY_MJ_Multi_Optics_-_interference_Jatin_Sir.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Physics",
+      "year": null,
+      "title": "Major • Unit 4 — Lens - Interference Refraction F Y B Sc",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_2/Physics/Major/Notes/Unit_4/Lens_-_Interference_Refraction_F.Y._B.Sc..pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_2/Physics/Major/Notes/Unit_4/Lens_-_Interference_Refraction_F.Y._B.Sc..pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Physics",
+      "year": null,
+      "title": "Major — BSC SEMESTER-2 NEP2020 PhyMJ-Syllabus",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_2/Physics/Major/Syllabus/BSC_SEMESTER-2_NEP2020_PhyMJ-Syllabus_.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_2/Physics/Major/Syllabus/BSC_SEMESTER-2_NEP2020_PhyMJ-Syllabus_.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Sec",
+      "year": null,
+      "title": "Physics • SEC • Unit Passive Circuit Elements — BSc Sem2 SEC Physics Unit12",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_2/Sec/Physics/Notes/Passive_Circuit_Elements/BSc_Sem2_SEC_Physics_Unit12.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_2/Sec/Physics/Notes/Passive_Circuit_Elements/BSc_Sem2_SEC_Physics_Unit12.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Physics",
+      "year": null,
+      "title": "Major 1 - Unit 1 Thermodynamics — Thermodynamics Unit1 Revision",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_3/Physics/Major/Notes/Major_1_-_Unit_1_Thermodynamics/Thermodynamics_Unit1_Revision.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_3/Physics/Major/Notes/Major_1_-_Unit_1_Thermodynamics/Thermodynamics_Unit1_Revision.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Physics",
+      "year": null,
+      "title": "Major 1 - Unit 1 Thermodynamics — thermodynamics sem 3",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_3/Physics/Major/Notes/Major_1_-_Unit_1_Thermodynamics/thermodynamics_sem_3.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_3/Physics/Major/Notes/Major_1_-_Unit_1_Thermodynamics/thermodynamics_sem_3.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Physics",
+      "year": null,
+      "title": "Major 1 - Unit 2 Modern Physics — Modern Physics",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_3/Physics/Major/Notes/Major_1_-_Unit_2_Modern_Physics/Modern_Physics.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_3/Physics/Major/Notes/Major_1_-_Unit_2_Modern_Physics/Modern_Physics.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Physics",
+      "year": null,
+      "title": "Major 1 - Unit 2 Modern Physics — Modern Physics 1D schrodinger equation",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_3/Physics/Major/Notes/Major_1_-_Unit_2_Modern_Physics/Modern_Physics_1D_schrodinger_equation.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_3/Physics/Major/Notes/Major_1_-_Unit_2_Modern_Physics/Modern_Physics_1D_schrodinger_equation.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Physics",
+      "year": null,
+      "title": "Major 1 - Unit 2 Modern Physics — Modern Physics Franck-Herts-Experiment",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_3/Physics/Major/Notes/Major_1_-_Unit_2_Modern_Physics/Modern_Physics_Franck-Herts-Experiment.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_3/Physics/Major/Notes/Major_1_-_Unit_2_Modern_Physics/Modern_Physics_Franck-Herts-Experiment.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Physics",
+      "year": null,
+      "title": "Major 1 - Unit 4 Solid State Physics — Crystal Structure-JJP",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_3/Physics/Major/Notes/Major_1_-_Unit_4_Solid_State_Physics/Crystal_Structure-JJP.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_3/Physics/Major/Notes/Major_1_-_Unit_4_Solid_State_Physics/Crystal_Structure-JJP.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Physics",
+      "year": null,
+      "title": "Major 1 - Unit 4 Solid State Physics — Crystal Structure - SRS",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_3/Physics/Major/Notes/Major_1_-_Unit_4_Solid_State_Physics/Crystal_Structure_-_SRS.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_3/Physics/Major/Notes/Major_1_-_Unit_4_Solid_State_Physics/Crystal_Structure_-_SRS.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Physics",
+      "year": null,
+      "title": "Major 1 - Unit 4 Solid State Physics — Crystal Structure 2",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_3/Physics/Major/Notes/Major_1_-_Unit_4_Solid_State_Physics/Crystal_Structure_2.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_3/Physics/Major/Notes/Major_1_-_Unit_4_Solid_State_Physics/Crystal_Structure_2.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Physics",
+      "year": null,
+      "title": "Major 2 - Unit 1 Electrostatics Magnetostatics — Dielectric",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_3/Physics/Major/Notes/Major_2_-_Unit_1_Electrostatics_Magnetostatics/Dielectric.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_3/Physics/Major/Notes/Major_2_-_Unit_1_Electrostatics_Magnetostatics/Dielectric.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Physics",
+      "year": null,
+      "title": "Major 2 - Unit 1 Electrostatics Magnetostatics — Magnetostatics",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_3/Physics/Major/Notes/Major_2_-_Unit_1_Electrostatics_Magnetostatics/Magnetostatics.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_3/Physics/Major/Notes/Major_2_-_Unit_1_Electrostatics_Magnetostatics/Magnetostatics.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Physics",
+      "year": null,
+      "title": "Major 2 - Unit 2 Optics Fraunhoffer Diffraction — optics-huma",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_3/Physics/Major/Notes/Major_2_-_Unit_2_Optics_Fraunhoffer_Diffraction/optics-huma.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_3/Physics/Major/Notes/Major_2_-_Unit_2_Optics_Fraunhoffer_Diffraction/optics-huma.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Physics",
+      "year": null,
+      "title": "Major 2 - Unit 3 Farmat Principle — Sem3 Major Physics 301A Unit3 Fermat Polarization",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_3/Physics/Major/Notes/Major_2_-_Unit_3_Farmat_Principle/Sem3_Major_Physics_301A_Unit3_Fermat_Polarization.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_3/Physics/Major/Notes/Major_2_-_Unit_3_Farmat_Principle/Sem3_Major_Physics_301A_Unit3_Fermat_Polarization.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Physics",
+      "year": null,
+      "title": "Major 2 - Unit 4 Electronics — Transistor Biasing and Stabilization",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_3/Physics/Major/Notes/Major_2_-_Unit_4_Electronics/Transistor_Biasing_and_Stabilization.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_3/Physics/Major/Notes/Major_2_-_Unit_4_Electronics/Transistor_Biasing_and_Stabilization.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Physics",
+      "year": null,
+      "title": "Major 2 - Unit 4 Electronics — part 1 electronics",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_3/Physics/Major/Notes/Major_2_-_Unit_4_Electronics/part_1_electronics.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_3/Physics/Major/Notes/Major_2_-_Unit_4_Electronics/part_1_electronics.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Botany",
+      "year": null,
+      "title": "Major — Botany 401A Syllabus",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_4/Botany/Major/Syllabus/Botany_401A_Syllabus.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Botany/Major/Syllabus/Botany_401A_Syllabus.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Botany",
+      "year": null,
+      "title": "Major — Botany 401 Syllabus",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_4/Botany/Major/Syllabus/Botany_401_Syllabus.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Botany/Major/Syllabus/Botany_401_Syllabus.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Chemistry",
+      "year": null,
+      "title": "Major 1 - Unit 1 — SEM-4 Major-1 Assignment",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_4/Chemistry/Major/Notes/Major_1_-_Unit_1/SEM-4_Major-1_Assignment.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Chemistry/Major/Notes/Major_1_-_Unit_1/SEM-4_Major-1_Assignment.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Chemistry",
+      "year": null,
+      "title": "Major 2 - Unit 1 — major 2 assignment",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_4/Chemistry/Major/Notes/Major_2_-_Unit_1/major_2_assignment.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Chemistry/Major/Notes/Major_2_-_Unit_1/major_2_assignment.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Chemistry",
+      "year": null,
+      "title": "Major 2 - Unit 2 — MAJ-401AUnit-1 f - Block Element",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_4/Chemistry/Major/Notes/Major_2_-_Unit_2/MAJ-401AUnit-1_f_-_Block_Element.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Chemistry/Major/Notes/Major_2_-_Unit_2/MAJ-401AUnit-1_f_-_Block_Element.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Chemistry",
+      "year": null,
+      "title": "Major 2 - Unit 3 — B Sc sem - 4 Phase rule pdf by r t p",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_4/Chemistry/Major/Notes/Major_2_-_Unit_3/B._Sc_sem_-_4_Phase_rule.pdf_by_r.t.p.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Chemistry/Major/Notes/Major_2_-_Unit_3/B._Sc_sem_-_4_Phase_rule.pdf_by_r.t.p.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Chemistry",
+      "year": null,
+      "title": "Major 2 - Unit 4 — SC23MJDSCCHE401 Unit-4 ionic equilibrium 202526",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_4/Chemistry/Major/Notes/Major_2_-_Unit_4/SC23MJDSCCHE401_Unit-4_ionic_equilibrium_202526.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Chemistry/Major/Notes/Major_2_-_Unit_4/SC23MJDSCCHE401_Unit-4_ionic_equilibrium_202526.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Chemistry",
+      "year": null,
+      "title": "Major — Chemistry 401A Syllabus",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_4/Chemistry/Major/Syllabus/Chemistry_401A_Syllabus.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Chemistry/Major/Syllabus/Chemistry_401A_Syllabus.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Chemistry",
+      "year": null,
+      "title": "Major — Chemistry 401 Syllabus",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_4/Chemistry/Major/Syllabus/Chemistry_401_Syllabus.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Chemistry/Major/Syllabus/Chemistry_401_Syllabus.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Chemistry",
+      "year": null,
+      "title": "Minor • Unit 1 — B Sc Sem 4 Electro chemistry",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_4/Chemistry/Minor/Notes/Unit_1/B.Sc._Sem_4_..Electro_chemistry.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Chemistry/Minor/Notes/Unit_1/B.Sc._Sem_4_..Electro_chemistry.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Chemistry",
+      "year": null,
+      "title": "Minor • Unit 2 — INORGANIC POLYMER B SC SEM 4",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_4/Chemistry/Minor/Notes/Unit_2/INORGANIC_POLYMER_B.SC_SEM_4.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Chemistry/Minor/Notes/Unit_2/INORGANIC_POLYMER_B.SC_SEM_4.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Chemistry",
+      "year": null,
+      "title": "Minor — Chemistry-minor-sem4",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_4/Chemistry/Minor/Syllabus/Chemistry-minor-sem4.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Chemistry/Minor/Syllabus/Chemistry-minor-sem4.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Mathematics",
+      "year": null,
+      "title": "Minor • Unit 1 — Numerical Analysis Unit-1 -compressed",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_4/Mathematics/Minor/Notes/Unit_1/Numerical_Analysis_Unit-1_-compressed.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Mathematics/Minor/Notes/Unit_1/Numerical_Analysis_Unit-1_-compressed.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Mathematics",
+      "year": null,
+      "title": "Minor • Unit 2 — Numerical Analysis whole unit-2",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_4/Mathematics/Minor/Notes/Unit_2/Numerical_Analysis_whole_unit-2.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Mathematics/Minor/Notes/Unit_2/Numerical_Analysis_whole_unit-2.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Physics",
+      "year": null,
+      "title": "Major 1 - Unit 1 — Document from Aesha Pandya",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_4/Physics/Major/Notes/Major_1_-_Unit_1/Document_from_Aesha_Pandya.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Physics/Major/Notes/Major_1_-_Unit_1/Document_from_Aesha_Pandya.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Physics",
+      "year": null,
+      "title": "Major 1 - Unit 1 — Mechanics of a Single Particle and System of Particles 3.3 to 3.6",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_4/Physics/Major/Notes/Major_1_-_Unit_1/Mechanics_of_a_Single_Particle_and_System_of_Particles_3.3_to_3.6_.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Physics/Major/Notes/Major_1_-_Unit_1/Mechanics_of_a_Single_Particle_and_System_of_Particles_3.3_to_3.6_.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Physics",
+      "year": null,
+      "title": "Major 1 - Unit 2 — CC-401-UNIT-2-NUCLEAR PHYSICS 1",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_4/Physics/Major/Notes/Major_1_-_Unit_2/CC-401-UNIT-2-NUCLEAR_PHYSICS_1_.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Physics/Major/Notes/Major_1_-_Unit_2/CC-401-UNIT-2-NUCLEAR_PHYSICS_1_.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Physics",
+      "year": null,
+      "title": "Major 1 - Unit 2 — Detectors and Accelerators 1.1.1 to 1.1.4",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_4/Physics/Major/Notes/Major_1_-_Unit_2/Detectors_and_Accelerators_1.1.1_to_1.1.4_.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Physics/Major/Notes/Major_1_-_Unit_2/Detectors_and_Accelerators_1.1.1_to_1.1.4_.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Physics",
+      "year": null,
+      "title": "Major 1 - Unit 2 — The Q-Equation 3.1 to 3.5",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_4/Physics/Major/Notes/Major_1_-_Unit_2/The_Q-Equation_3.1_to_3.5_.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Physics/Major/Notes/Major_1_-_Unit_2/The_Q-Equation_3.1_to_3.5_.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Physics",
+      "year": null,
+      "title": "Major 1 - Unit 3 — Radioactivity 2.1 to 2.13",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_4/Physics/Major/Notes/Major_1_-_Unit_3/Radioactivity_2.1_to_2.13_.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Physics/Major/Notes/Major_1_-_Unit_3/Radioactivity_2.1_to_2.13_.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Physics",
+      "year": null,
+      "title": "Major 1 - Unit 3 — SY Radioactivity",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_4/Physics/Major/Notes/Major_1_-_Unit_3/SY_Radioactivity.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Physics/Major/Notes/Major_1_-_Unit_3/SY_Radioactivity.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Physics",
+      "year": null,
+      "title": "Major 1 - Unit 3 — Theory 2 Radioactivity",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_4/Physics/Major/Notes/Major_1_-_Unit_3/Theory_2_Radioactivity.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Physics/Major/Notes/Major_1_-_Unit_3/Theory_2_Radioactivity.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Physics",
+      "year": null,
+      "title": "Major 1 - Unit 4 — PLASMA Physics MJ401U4 MI402U2",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_4/Physics/Major/Notes/Major_1_-_Unit_4/PLASMA_Physics_MJ401U4_MI402U2.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Physics/Major/Notes/Major_1_-_Unit_4/PLASMA_Physics_MJ401U4_MI402U2.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Physics",
+      "year": null,
+      "title": "Major 2 - Unit 1 — Curvilinear Co-ordinates 10.6 to 10.9",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_4/Physics/Major/Notes/Major_2_-_Unit_1/Curvilinear_Co-ordinates_10.6_to_10.9_.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Physics/Major/Notes/Major_2_-_Unit_1/Curvilinear_Co-ordinates_10.6_to_10.9_.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Physics",
+      "year": null,
+      "title": "Major 2 - Unit 1 — Curvilinear Coordinates MJ401A U1b",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_4/Physics/Major/Notes/Major_2_-_Unit_1/Curvilinear_Coordinates_MJ401A_U1b.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Physics/Major/Notes/Major_2_-_Unit_1/Curvilinear_Coordinates_MJ401A_U1b.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Physics",
+      "year": null,
+      "title": "Major 2 - Unit 1 — Fourier series",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_4/Physics/Major/Notes/Major_2_-_Unit_1/Fourier_series.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Physics/Major/Notes/Major_2_-_Unit_1/Fourier_series.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Physics",
+      "year": null,
+      "title": "Major 2 - Unit 1 — Fourier series 7.1 to 7.11",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_4/Physics/Major/Notes/Major_2_-_Unit_1/Fourier_series_7.1_to_7.11_.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Physics/Major/Notes/Major_2_-_Unit_1/Fourier_series_7.1_to_7.11_.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Physics",
+      "year": null,
+      "title": "Major 2 - Unit 1 — Fourier series Gujarati",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_4/Physics/Major/Notes/Major_2_-_Unit_1/Fourier_series_Gujarati.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Physics/Major/Notes/Major_2_-_Unit_1/Fourier_series_Gujarati.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Physics",
+      "year": null,
+      "title": "Major 2 - Unit 2 — Quntum Machanics 2.4 to 2.11",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_4/Physics/Major/Notes/Major_2_-_Unit_2/Quntum_Machanics_2.4_to_2.11_.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Physics/Major/Notes/Major_2_-_Unit_2/Quntum_Machanics_2.4_to_2.11_.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Physics",
+      "year": null,
+      "title": "Major 2 - Unit 2 — Quntum Mechanics sem 4",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_4/Physics/Major/Notes/Major_2_-_Unit_2/Quntum_Mechanics_sem_4.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Physics/Major/Notes/Major_2_-_Unit_2/Quntum_Mechanics_sem_4.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Physics",
+      "year": null,
+      "title": "Major 2 - Unit 3 — FET",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_4/Physics/Major/Notes/Major_2_-_Unit_3/FET.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Physics/Major/Notes/Major_2_-_Unit_3/FET.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Physics",
+      "year": null,
+      "title": "Major 2 - Unit 3 — SY Solidstate Devices- UJT SCR",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_4/Physics/Major/Notes/Major_2_-_Unit_3/SY_Solidstate_Devices-_UJT_SCR...pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Physics/Major/Notes/Major_2_-_Unit_3/SY_Solidstate_Devices-_UJT_SCR...pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Physics",
+      "year": null,
+      "title": "Major 2 - Unit 3 — h-Parameters sem 4 Electronbics",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_4/Physics/Major/Notes/Major_2_-_Unit_3/h-Parameters_sem_4_Electronbics.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Physics/Major/Notes/Major_2_-_Unit_3/h-Parameters_sem_4_Electronbics.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Physics",
+      "year": null,
+      "title": "Major 2 - Unit 4 — Digital Electronics MJ401A U4",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_4/Physics/Major/Notes/Major_2_-_Unit_4/Digital_Electronics_MJ401A_U4.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Physics/Major/Notes/Major_2_-_Unit_4/Digital_Electronics_MJ401A_U4.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Physics",
+      "year": null,
+      "title": "Major — BSC SEMESTER-4 PHY MAJOR",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_4/Physics/Major/Syllabus/BSC_SEMESTER-4_PHY_MAJOR.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Physics/Major/Syllabus/BSC_SEMESTER-4_PHY_MAJOR.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Sec",
+      "year": null,
+      "title": "Botany • SEC — sec",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_4/Sec/Botany/Notes/sec.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Sec/Botany/Notes/sec.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Vac",
+      "year": null,
+      "title": "Chemistry • VAC — VAC Chemistry 405 Syllabus",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_4/Vac/Chemistry/Syllabus/VAC_Chemistry_405_Syllabus.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Vac/Chemistry/Syllabus/VAC_Chemistry_405_Syllabus.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Chemistry",
+      "year": null,
+      "title": "Major 1 - Unit 1 — B Sc Sem - 5 EMFCHN503 Theory",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_5/Chemistry/Major/Notes/Major_1_-_Unit_1/B.Sc._Sem_-_5_EMFCHN503_Theory.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Chemistry/Major/Notes/Major_1_-_Unit_1/B.Sc._Sem_-_5_EMFCHN503_Theory.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Chemistry",
+      "year": null,
+      "title": "Major 2 - Unit 1 — sem v chemistry symmetry compressed",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_5/Chemistry/Major/Notes/Major_2_-_Unit_1/sem_v_chemistry_symmetry_compressed.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Chemistry/Major/Notes/Major_2_-_Unit_1/sem_v_chemistry_symmetry_compressed.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Chemistry",
+      "year": null,
+      "title": "Minor • Unit 1 — Unit-1 Water Technology",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_5/Chemistry/Minor/Notes/Unit_1/Unit-1_Water_Technology.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Chemistry/Minor/Notes/Unit_1/Unit-1_Water_Technology.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Chemistry",
+      "year": null,
+      "title": "Minor • Unit 3 — Adsorption Press copy",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_5/Chemistry/Minor/Notes/Unit_3/Adsorption_Press_copy.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Chemistry/Minor/Notes/Unit_3/Adsorption_Press_copy.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Chemistry",
+      "year": null,
+      "title": "Minor • Unit 3 — The nernst distribution law Press copy",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_5/Chemistry/Minor/Notes/Unit_3/The_nernst_distribution_law_Press_copy.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Chemistry/Minor/Notes/Unit_3/The_nernst_distribution_law_Press_copy.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Chemistry",
+      "year": null,
+      "title": "Minor • Unit 4 — unit 4 Aug 29 2026",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_5/Chemistry/Minor/Notes/Unit_4/unit_4_Aug_29_2026.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Chemistry/Minor/Notes/Unit_4/unit_4_Aug_29_2026.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Chemistry",
+      "year": null,
+      "title": "Minor — Chemistry 502 Syllabus",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_5/Chemistry/Minor/Syllabus/Chemistry_502_Syllabus.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Chemistry/Minor/Syllabus/Chemistry_502_Syllabus.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Iks",
+      "year": null,
+      "title": "Physics • IKS • Unit 1 — Astronomy Unit 1 C D",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_5/Iks/Physics/Notes/Unit_1/Astronomy_Unit_1_C_D.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Iks/Physics/Notes/Unit_1/Astronomy_Unit_1_C_D.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Physics",
+      "year": null,
+      "title": "Major 1 - Unit 1 — BSc5-Major501-Unit1AB-Mathematical-Phy",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_5/Physics/Major/Notes/Major_1_-_Unit_1/BSc5-Major501-Unit1AB-Mathematical-Phy.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Physics/Major/Notes/Major_1_-_Unit_1/BSc5-Major501-Unit1AB-Mathematical-Phy.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Physics",
+      "year": null,
+      "title": "Major 1 - Unit 1 — Sem5 Major 501 Unit 1B Classical Mech",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_5/Physics/Major/Notes/Major_1_-_Unit_1/Sem5 Major 501 Unit 1B Classical Mech.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Physics/Major/Notes/Major_1_-_Unit_1/Sem5%20Major%20501%20Unit%201B%20Classical%20Mech.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Physics",
+      "year": null,
+      "title": "Major 1 - Unit 1 — Sem5-Unit-1C-Classical Mechanics-Lagrangian Formulation",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_5/Physics/Major/Notes/Major_1_-_Unit_1/Sem5-Unit-1C-Classical_Mechanics-Lagrangian_Formulation.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Physics/Major/Notes/Major_1_-_Unit_1/Sem5-Unit-1C-Classical_Mechanics-Lagrangian_Formulation.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Physics",
+      "year": null,
+      "title": "Major 1 - Unit 2 — BSc-Sem5-Quantum Mechanics-General formalism of Wave Mechanics",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_5/Physics/Major/Notes/Major_1_-_Unit_2/BSc-Sem5-Quantum_Mechanics-General_formalism_of_Wave_Mechanics.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Physics/Major/Notes/Major_1_-_Unit_2/BSc-Sem5-Quantum_Mechanics-General_formalism_of_Wave_Mechanics.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Physics",
+      "year": null,
+      "title": "Major 1 - Unit 2 — BSc-Sem5-Solid State Physics-Free Electron Theory of Metals",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_5/Physics/Major/Notes/Major_1_-_Unit_2/BSc-Sem5-Solid_State_Physics-Free_Electron_Theory_of_Metals.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Physics/Major/Notes/Major_1_-_Unit_2/BSc-Sem5-Solid_State_Physics-Free_Electron_Theory_of_Metals.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Physics",
+      "year": null,
+      "title": "Major 1 - Unit 2 — Phy 501 unit 2 part 2",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_5/Physics/Major/Notes/Major_1_-_Unit_2/Phy_501_unit_2_part_2.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Physics/Major/Notes/Major_1_-_Unit_2/Phy_501_unit_2_part_2.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Physics",
+      "year": null,
+      "title": "Major 1 - Unit 2 — Text-Book-of-Quantum-Mechanics-M-Mathews-Venkatesan-U3-General formalism of Wave Mechanics",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_5/Physics/Major/Notes/Major_1_-_Unit_2/Text-Book-of-Quantum-Mechanics-M-Mathews-Venkatesan-U3-General_formalism_of_Wave_Mechanics.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Physics/Major/Notes/Major_1_-_Unit_2/Text-Book-of-Quantum-Mechanics-M-Mathews-Venkatesan-U3-General_formalism_of_Wave_Mechanics.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Physics",
+      "year": null,
+      "title": "Major 1 - Unit 3 — Statistical Mechanics a Microscopic Macroscopic States",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_5/Physics/Major/Notes/Major_1_-_Unit_3/Statistical_Mechanics_a_Microscopic_Macroscopic_States.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Physics/Major/Notes/Major_1_-_Unit_3/Statistical_Mechanics_a_Microscopic_Macroscopic_States.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Physics",
+      "year": null,
+      "title": "Major 1 - Unit 3 — Statistical Mechanics b Statistical Ensemble",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_5/Physics/Major/Notes/Major_1_-_Unit_3/Statistical_Mechanics_b_Statistical_Ensemble.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Physics/Major/Notes/Major_1_-_Unit_3/Statistical_Mechanics_b_Statistical_Ensemble.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Physics",
+      "year": null,
+      "title": "Major 1 - Unit 3 — sem 5 Unit-3b plasma",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_5/Physics/Major/Notes/Major_1_-_Unit_3/sem_5_Unit-3b_plasma.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Physics/Major/Notes/Major_1_-_Unit_3/sem_5_Unit-3b_plasma.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Physics",
+      "year": null,
+      "title": "Major 1 - Unit 4 — Basic Transistor Amplifiers Multistages",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_5/Physics/Major/Notes/Major_1_-_Unit_4/Basic_Transistor_Amplifiers_Multistages.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Physics/Major/Notes/Major_1_-_Unit_4/Basic_Transistor_Amplifiers_Multistages.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Physics",
+      "year": null,
+      "title": "Major — Physics 501 Syllabus",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_5/Physics/Major/Syllabus/Physics_501_Syllabus.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Physics/Major/Syllabus/Physics_501_Syllabus.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Chemistry",
+      "year": null,
+      "title": "Minor — Chemistry 102 External 2024",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_1/Chemistry/Minor/Papers/External/Chemistry_102_External_2024.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_1/Chemistry/Minor/Papers/External/Chemistry_102_External_2024.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Chemistry",
+      "year": null,
+      "title": "Minor — Chemistry 102 Internal 2024",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_1/Chemistry/Minor/Papers/Internal/Chemistry_102_Internal_2024.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_1/Chemistry/Minor/Papers/Internal/Chemistry_102_Internal_2024.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Computer Science",
+      "year": null,
+      "title": "Major — ComputerScience 101 External",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_1/Computer_Science/Major/Papers/External/ComputerScience_101_External.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_1/Computer_Science/Major/Papers/External/ComputerScience_101_External.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Computer Science",
+      "year": null,
+      "title": "Minor — ComputerScience 102 External",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_1/Computer_Science/Minor/Papers/External/ComputerScience_102_External.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_1/Computer_Science/Minor/Papers/External/ComputerScience_102_External.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Computer Science",
+      "year": null,
+      "title": "Multi — ComputerScience 101 External 3004",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_1/Computer_Science/Multi/Papers/External/ComputerScience_101_External_3004.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_1/Computer_Science/Multi/Papers/External/ComputerScience_101_External_3004.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "English Aec",
+      "year": null,
+      "title": "General — English AEC 104 External 2024",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_1/English_Aec/General/Papers/External/English_AEC_104_External_2024.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_1/English_Aec/General/Papers/External/English_AEC_104_External_2024.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "English Aec",
+      "year": null,
+      "title": "General — English AEC 104 Internal 2024",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_1/English_Aec/General/Papers/Internal/English_AEC_104_Internal_2024.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_1/English_Aec/General/Papers/Internal/English_AEC_104_Internal_2024.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Iks",
+      "year": null,
+      "title": "Physics • IKS — IKS Physics 105 External 2024",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_1/Iks/Physics/Papers/External/IKS_Physics_105_External_2024.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_1/Iks/Physics/Papers/External/IKS_Physics_105_External_2024.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Iks",
+      "year": null,
+      "title": "Physics • IKS — IKS Physics 105 Internal 2024",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_1/Iks/Physics/Papers/Internal/IKS_Physics_105_Internal_2024.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_1/Iks/Physics/Papers/Internal/IKS_Physics_105_Internal_2024.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Physics",
+      "year": null,
+      "title": "Major — Physics 101 External 2024",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_1/Physics/Major/Papers/External/Physics_101_External_2024.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_1/Physics/Major/Papers/External/Physics_101_External_2024.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Physics",
+      "year": null,
+      "title": "Major — Physics 101 Internal 2024",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_1/Physics/Major/Papers/Internal/Physics_101_Internal_2024.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_1/Physics/Major/Papers/Internal/Physics_101_Internal_2024.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Sec",
+      "year": null,
+      "title": "Physics • SEC — SEC Physics 106 External 2024",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_1/Sec/Physics/Papers/External/SEC_Physics_106_External_2024.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_1/Sec/Physics/Papers/External/SEC_Physics_106_External_2024.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Sec",
+      "year": null,
+      "title": "Physics • SEC — SEC Physics 106 Internal 2024",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_1/Sec/Physics/Papers/Internal/SEC_Physics_106_Internal_2024.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_1/Sec/Physics/Papers/Internal/SEC_Physics_106_Internal_2024.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Zoology",
+      "year": null,
+      "title": "Multi — Zoology 103 Internal 2024",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_1/Zoology/Multi/Papers/Internal/Zoology_103_Internal_2024.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_1/Zoology/Multi/Papers/Internal/Zoology_103_Internal_2024.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Chemistry",
+      "year": null,
+      "title": "Minor — Chemistry 202 External 2025",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_2/Chemistry/Minor/Papers/External/Chemistry_202_External_2025.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_2/Chemistry/Minor/Papers/External/Chemistry_202_External_2025.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Chemistry",
+      "year": null,
+      "title": "Minor — Chemistry 202 Internal 2025",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_2/Chemistry/Minor/Papers/Internal/Chemistry_202_Internal_2025.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_2/Chemistry/Minor/Papers/Internal/Chemistry_202_Internal_2025.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "English Aec",
+      "year": null,
+      "title": "General — English AEC 204 External 2025",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_2/English_Aec/General/Papers/External/English_AEC_204_External_2025.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_2/English_Aec/General/Papers/External/English_AEC_204_External_2025.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "English Aec",
+      "year": null,
+      "title": "General — English AEC 204 Internal 2025",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_2/English_Aec/General/Papers/Internal/English_AEC_204_Internal_2025.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_2/English_Aec/General/Papers/Internal/English_AEC_204_Internal_2025.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Iks",
+      "year": null,
+      "title": "Physics • IKS — IKS Physics 205 Internal 2025",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_2/Iks/Physics/Papers/Internal/IKS_Physics_205_Internal_2025.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_2/Iks/Physics/Papers/Internal/IKS_Physics_205_Internal_2025.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Physics",
+      "year": null,
+      "title": "Major — Physics 201 External 2025",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_2/Physics/Major/Papers/External/Physics_201_External_2025.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_2/Physics/Major/Papers/External/Physics_201_External_2025.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Physics",
+      "year": null,
+      "title": "Major — Physics 201 External 2026",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_2/Physics/Major/Papers/External/Physics_201_External_2026.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_2/Physics/Major/Papers/External/Physics_201_External_2026.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Physics",
+      "year": null,
+      "title": "Major — Physics 201 Internal 2025",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_2/Physics/Major/Papers/Internal/Physics_201_Internal_2025.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_2/Physics/Major/Papers/Internal/Physics_201_Internal_2025.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Sec",
+      "year": null,
+      "title": "Physics • SEC — SEC Physics 206 External 2025",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_2/Sec/Physics/Papers/External/SEC_Physics_206_External_2025.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_2/Sec/Physics/Papers/External/SEC_Physics_206_External_2025.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Sec",
+      "year": null,
+      "title": "Physics • SEC — SEC Physics 206 Internal 2025",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_2/Sec/Physics/Papers/Internal/SEC_Physics_206_Internal_2025.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_2/Sec/Physics/Papers/Internal/SEC_Physics_206_Internal_2025.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Vac",
+      "year": null,
+      "title": "Physics • VAC — VAC Physics 205 Internal 2025",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_2/Vac/Physics/Papers/Internal/VAC_Physics_205_Internal_2025.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_2/Vac/Physics/Papers/Internal/VAC_Physics_205_Internal_2025.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Zoology",
+      "year": null,
+      "title": "Multi — Zoology 203 External 2025",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_2/Zoology/Multi/Papers/External/Zoology_203_External_2025.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_2/Zoology/Multi/Papers/External/Zoology_203_External_2025.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Zoology",
+      "year": null,
+      "title": "Multi — Zoology 203 Internal 2025",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_2/Zoology/Multi/Papers/Internal/Zoology_203_Internal_2025.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_2/Zoology/Multi/Papers/Internal/Zoology_203_Internal_2025.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "English Aec",
+      "year": null,
+      "title": "General — EnglishAEC 304 External 2025",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_3/English_Aec/General/Papers/External/EnglishAEC_304_External_2025.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_3/English_Aec/General/Papers/External/EnglishAEC_304_External_2025.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "English Aec",
+      "year": null,
+      "title": "General — English AEC 304 External 2025",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_3/English_Aec/General/Papers/External/English_AEC_304_External_2025.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_3/English_Aec/General/Papers/External/English_AEC_304_External_2025.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "English Aec",
+      "year": null,
+      "title": "General — English AEC 304 Internal 2025",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_3/English_Aec/General/Papers/Internal/English_AEC_304_Internal_2025.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_3/English_Aec/General/Papers/Internal/English_AEC_304_Internal_2025.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Iks",
+      "year": null,
+      "title": "Physics • IKS — IKS Physics 305 External 2025",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_3/Iks/Physics/Papers/External/IKS_Physics_305_External_2025.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_3/Iks/Physics/Papers/External/IKS_Physics_305_External_2025.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Iks",
+      "year": null,
+      "title": "Physics • IKS — IKS Physics 305 Internal 2025",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_3/Iks/Physics/Papers/Internal/IKS_Physics_305_Internal_2025.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_3/Iks/Physics/Papers/Internal/IKS_Physics_305_Internal_2025.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Physics",
+      "year": null,
+      "title": "Major — Physics 301A External 2025",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_3/Physics/Major/Papers/External/Physics_301A_External_2025.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_3/Physics/Major/Papers/External/Physics_301A_External_2025.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Physics",
+      "year": null,
+      "title": "Major — Physics 301 External 2025",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_3/Physics/Major/Papers/External/Physics_301_External_2025.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_3/Physics/Major/Papers/External/Physics_301_External_2025.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Physics",
+      "year": null,
+      "title": "Major — Physics 301A Internal 2025",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_3/Physics/Major/Papers/Internal/Physics_301A_Internal_2025.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_3/Physics/Major/Papers/Internal/Physics_301A_Internal_2025.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Physics",
+      "year": null,
+      "title": "Major — Physics 301 Internal 2025",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_3/Physics/Major/Papers/Internal/Physics_301_Internal_2025.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_3/Physics/Major/Papers/Internal/Physics_301_Internal_2025.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Sec",
+      "year": null,
+      "title": "Physics • SEC — SEC Physics 306A External 2025",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_3/Sec/Physics/Papers/External/SEC_Physics_306A_External_2025.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_3/Sec/Physics/Papers/External/SEC_Physics_306A_External_2025.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Sec",
+      "year": null,
+      "title": "Physics • SEC — SEC Physics 306A Internal 2025",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_3/Sec/Physics/Papers/Internal/SEC_Physics_306A_Internal_2025.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_3/Sec/Physics/Papers/Internal/SEC_Physics_306A_Internal_2025.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Zoology",
+      "year": null,
+      "title": "Multi — Zoology 303 External 2025",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_3/Zoology/Multi/Papers/External/Zoology_303_External_2025.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_3/Zoology/Multi/Papers/External/Zoology_303_External_2025.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Zoology",
+      "year": null,
+      "title": "Multi — Zoology 303 Internal 2025",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_3/Zoology/Multi/Papers/Internal/Zoology_303_Internal_2025.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_3/Zoology/Multi/Papers/Internal/Zoology_303_Internal_2025.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Chemistry",
+      "year": null,
+      "title": "Minor — Chemistry 402 External 2026",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_4/Chemistry/Minor/Papers/External/Chemistry_402_External_2026.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Chemistry/Minor/Papers/External/Chemistry_402_External_2026.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Chemistry",
+      "year": null,
+      "title": "Minor — Chemistry 402 Internal 2026",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_4/Chemistry/Minor/Papers/Internal/Chemistry_402_Internal_2026.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Chemistry/Minor/Papers/Internal/Chemistry_402_Internal_2026.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "English Aec",
+      "year": null,
+      "title": "General — English AEC 404 External 2025",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_4/English_Aec/General/Papers/External/English_AEC_404_External_2025.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/English_Aec/General/Papers/External/English_AEC_404_External_2025.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "English Aec",
+      "year": null,
+      "title": "General — English AEC 404 External 2026",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_4/English_Aec/General/Papers/External/English_AEC_404_External_2026.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/English_Aec/General/Papers/External/English_AEC_404_External_2026.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "English Aec",
+      "year": null,
+      "title": "General — English AEC 404 Internal 2026",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_4/English_Aec/General/Papers/Internal/English_AEC_404_Internal_2026.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/English_Aec/General/Papers/Internal/English_AEC_404_Internal_2026.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Physics",
+      "year": null,
+      "title": "Major — Physics 401A External 2025",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_4/Physics/Major/Papers/External/Physics_401A_External_2025.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Physics/Major/Papers/External/Physics_401A_External_2025.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Physics",
+      "year": null,
+      "title": "Major — Physics 401 External 2026",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_4/Physics/Major/Papers/External/Physics_401_External_2026.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Physics/Major/Papers/External/Physics_401_External_2026.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Physics",
+      "year": null,
+      "title": "Major — Physics 401A Internal 2026",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_4/Physics/Major/Papers/Internal/Physics_401A_Internal_2026.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Physics/Major/Papers/Internal/Physics_401A_Internal_2026.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Physics",
+      "year": null,
+      "title": "Major — Physics 401 Internal 2026",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_4/Physics/Major/Papers/Internal/Physics_401_Internal_2026.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Physics/Major/Papers/Internal/Physics_401_Internal_2026.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Sec",
+      "year": null,
+      "title": "Physics • SEC — SEC Physics 406 External 2026",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_4/Sec/Physics/Papers/External/SEC_Physics_406_External_2026.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Sec/Physics/Papers/External/SEC_Physics_406_External_2026.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Sec",
+      "year": null,
+      "title": "Physics • SEC — SEC Physics 406 Internal 2026",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_4/Sec/Physics/Papers/Internal/SEC_Physics_406_Internal_2026.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Sec/Physics/Papers/Internal/SEC_Physics_406_Internal_2026.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Vac",
+      "year": null,
+      "title": "Physics • VAC — VAC Physics 405 External 2026",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_4/Vac/Physics/Papers/External/VAC_Physics_405_External_2026.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Vac/Physics/Papers/External/VAC_Physics_405_External_2026.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Vac",
+      "year": null,
+      "title": "Physics • VAC — VAC Physics 405 Internal 2026",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_4/Vac/Physics/Papers/Internal/VAC_Physics_405_Internal_2026.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Vac/Physics/Papers/Internal/VAC_Physics_405_Internal_2026.pdf",
+      "description": null
+    },
+    {
+      "sem": "1",
+      "subject": "English Aec",
+      "year": null,
+      "title": "General — English AEC 104 External 2024",
+      "courseType": "General",
+      "unitType": null,
+      "file": "pdfs/Sem_1/English_Aec/General/Papers/External/English_AEC_104_External_2024.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_1/English_Aec/General/Papers/External/English_AEC_104_External_2024.pdf",
+      "description": "External"
+    },
+    {
+      "sem": "1",
+      "subject": "English Aec",
+      "year": null,
+      "title": "General — English AEC 104 Internal 2024",
+      "courseType": "General",
+      "unitType": null,
+      "file": "pdfs/Sem_1/English_Aec/General/Papers/Internal/English_AEC_104_Internal_2024.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_1/English_Aec/General/Papers/Internal/English_AEC_104_Internal_2024.pdf",
+      "description": "Internal"
+    },
+    {
+      "sem": "1",
+      "subject": "Computer Science",
+      "year": null,
+      "title": "Major — ComputerScience 101 External",
+      "courseType": "Major",
+      "unitType": null,
+      "file": "pdfs/Sem_1/Computer_Science/Major/Papers/External/ComputerScience_101_External.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_1/Computer_Science/Major/Papers/External/ComputerScience_101_External.pdf",
+      "description": "External"
+    },
+    {
+      "sem": "1",
+      "subject": "Physics",
+      "year": null,
+      "title": "Major — Physics 101 External 2024",
+      "courseType": "Major",
+      "unitType": null,
+      "file": "pdfs/Sem_1/Physics/Major/Papers/External/Physics_101_External_2024.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_1/Physics/Major/Papers/External/Physics_101_External_2024.pdf",
+      "description": "External"
+    },
+    {
+      "sem": "1",
+      "subject": "Physics",
+      "year": null,
+      "title": "Major — Physics 101 Internal 2024",
+      "courseType": "Major",
+      "unitType": null,
+      "file": "pdfs/Sem_1/Physics/Major/Papers/Internal/Physics_101_Internal_2024.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_1/Physics/Major/Papers/Internal/Physics_101_Internal_2024.pdf",
+      "description": "Internal"
+    },
+    {
+      "sem": "1",
+      "subject": "Chemistry",
+      "year": null,
+      "title": "Minor — Chemistry 102 External 2024",
+      "courseType": "Minor",
+      "unitType": null,
+      "file": "pdfs/Sem_1/Chemistry/Minor/Papers/External/Chemistry_102_External_2024.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_1/Chemistry/Minor/Papers/External/Chemistry_102_External_2024.pdf",
+      "description": "External"
+    },
+    {
+      "sem": "1",
+      "subject": "Chemistry",
+      "year": null,
+      "title": "Minor — Chemistry 102 Internal 2024",
+      "courseType": "Minor",
+      "unitType": null,
+      "file": "pdfs/Sem_1/Chemistry/Minor/Papers/Internal/Chemistry_102_Internal_2024.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_1/Chemistry/Minor/Papers/Internal/Chemistry_102_Internal_2024.pdf",
+      "description": "Internal"
+    },
+    {
+      "sem": "1",
+      "subject": "Computer Science",
+      "year": null,
+      "title": "Minor — ComputerScience 102 External",
+      "courseType": "Minor",
+      "unitType": null,
+      "file": "pdfs/Sem_1/Computer_Science/Minor/Papers/External/ComputerScience_102_External.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_1/Computer_Science/Minor/Papers/External/ComputerScience_102_External.pdf",
+      "description": "External"
+    },
+    {
+      "sem": "1",
+      "subject": "Computer Science",
+      "year": null,
+      "title": "Multi — ComputerScience 101 External 3004",
+      "courseType": "Multi",
+      "unitType": null,
+      "file": "pdfs/Sem_1/Computer_Science/Multi/Papers/External/ComputerScience_101_External_3004.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_1/Computer_Science/Multi/Papers/External/ComputerScience_101_External_3004.pdf",
+      "description": "External"
+    },
+    {
+      "sem": "1",
+      "subject": "Zoology",
+      "year": null,
+      "title": "Multi — Zoology 103 Internal 2024",
+      "courseType": "Multi",
+      "unitType": null,
+      "file": "pdfs/Sem_1/Zoology/Multi/Papers/Internal/Zoology_103_Internal_2024.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_1/Zoology/Multi/Papers/Internal/Zoology_103_Internal_2024.pdf",
+      "description": "Internal"
+    },
+    {
+      "sem": "1",
+      "subject": "Iks",
+      "year": null,
+      "title": "Physics • IKS — IKS Physics 105 External 2024",
+      "courseType": "Physics",
+      "unitType": "IKS",
+      "file": "pdfs/Sem_1/Iks/Physics/Papers/External/IKS_Physics_105_External_2024.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_1/Iks/Physics/Papers/External/IKS_Physics_105_External_2024.pdf",
+      "description": "External"
+    },
+    {
+      "sem": "1",
+      "subject": "Iks",
+      "year": null,
+      "title": "Physics • IKS — IKS Physics 105 Internal 2024",
+      "courseType": "Physics",
+      "unitType": "IKS",
+      "file": "pdfs/Sem_1/Iks/Physics/Papers/Internal/IKS_Physics_105_Internal_2024.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_1/Iks/Physics/Papers/Internal/IKS_Physics_105_Internal_2024.pdf",
+      "description": "Internal"
+    },
+    {
+      "sem": "1",
+      "subject": "Sec",
+      "year": null,
+      "title": "Physics • SEC — SEC Physics 106 External 2024",
+      "courseType": "Physics",
+      "unitType": "SEC",
+      "file": "pdfs/Sem_1/Sec/Physics/Papers/External/SEC_Physics_106_External_2024.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_1/Sec/Physics/Papers/External/SEC_Physics_106_External_2024.pdf",
+      "description": "External"
+    },
+    {
+      "sem": "1",
+      "subject": "Sec",
+      "year": null,
+      "title": "Physics • SEC — SEC Physics 106 Internal 2024",
+      "courseType": "Physics",
+      "unitType": "SEC",
+      "file": "pdfs/Sem_1/Sec/Physics/Papers/Internal/SEC_Physics_106_Internal_2024.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_1/Sec/Physics/Papers/Internal/SEC_Physics_106_Internal_2024.pdf",
+      "description": "Internal"
+    },
+    {
+      "sem": "2",
+      "subject": "English Aec",
+      "year": null,
+      "title": "General — English AEC 204 External 2025",
+      "courseType": "General",
+      "unitType": null,
+      "file": "pdfs/Sem_2/English_Aec/General/Papers/External/English_AEC_204_External_2025.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_2/English_Aec/General/Papers/External/English_AEC_204_External_2025.pdf",
+      "description": "External"
+    },
+    {
+      "sem": "2",
+      "subject": "English Aec",
+      "year": null,
+      "title": "General — English AEC 204 Internal 2025",
+      "courseType": "General",
+      "unitType": null,
+      "file": "pdfs/Sem_2/English_Aec/General/Papers/Internal/English_AEC_204_Internal_2025.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_2/English_Aec/General/Papers/Internal/English_AEC_204_Internal_2025.pdf",
+      "description": "Internal"
+    },
+    {
+      "sem": "2",
+      "subject": "Physics",
+      "year": null,
+      "title": "Major — Physics 201 External 2025",
+      "courseType": "Major",
+      "unitType": null,
+      "file": "pdfs/Sem_2/Physics/Major/Papers/External/Physics_201_External_2025.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_2/Physics/Major/Papers/External/Physics_201_External_2025.pdf",
+      "description": "External"
+    },
+    {
+      "sem": "2",
+      "subject": "Physics",
+      "year": null,
+      "title": "Major — Physics 201 External 2026",
+      "courseType": "Major",
+      "unitType": null,
+      "file": "pdfs/Sem_2/Physics/Major/Papers/External/Physics_201_External_2026.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_2/Physics/Major/Papers/External/Physics_201_External_2026.pdf",
+      "description": "External"
+    },
+    {
+      "sem": "2",
+      "subject": "Physics",
+      "year": null,
+      "title": "Major — Physics 201 Internal 2025",
+      "courseType": "Major",
+      "unitType": null,
+      "file": "pdfs/Sem_2/Physics/Major/Papers/Internal/Physics_201_Internal_2025.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_2/Physics/Major/Papers/Internal/Physics_201_Internal_2025.pdf",
+      "description": "Internal"
+    },
+    {
+      "sem": "2",
+      "subject": "Chemistry",
+      "year": null,
+      "title": "Minor — Chemistry 202 External 2025",
+      "courseType": "Minor",
+      "unitType": null,
+      "file": "pdfs/Sem_2/Chemistry/Minor/Papers/External/Chemistry_202_External_2025.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_2/Chemistry/Minor/Papers/External/Chemistry_202_External_2025.pdf",
+      "description": "External"
+    },
+    {
+      "sem": "2",
+      "subject": "Chemistry",
+      "year": null,
+      "title": "Minor — Chemistry 202 Internal 2025",
+      "courseType": "Minor",
+      "unitType": null,
+      "file": "pdfs/Sem_2/Chemistry/Minor/Papers/Internal/Chemistry_202_Internal_2025.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_2/Chemistry/Minor/Papers/Internal/Chemistry_202_Internal_2025.pdf",
+      "description": "Internal"
+    },
+    {
+      "sem": "2",
+      "subject": "Zoology",
+      "year": null,
+      "title": "Multi — Zoology 203 External 2025",
+      "courseType": "Multi",
+      "unitType": null,
+      "file": "pdfs/Sem_2/Zoology/Multi/Papers/External/Zoology_203_External_2025.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_2/Zoology/Multi/Papers/External/Zoology_203_External_2025.pdf",
+      "description": "External"
+    },
+    {
+      "sem": "2",
+      "subject": "Zoology",
+      "year": null,
+      "title": "Multi — Zoology 203 Internal 2025",
+      "courseType": "Multi",
+      "unitType": null,
+      "file": "pdfs/Sem_2/Zoology/Multi/Papers/Internal/Zoology_203_Internal_2025.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_2/Zoology/Multi/Papers/Internal/Zoology_203_Internal_2025.pdf",
+      "description": "Internal"
+    },
+    {
+      "sem": "2",
+      "subject": "Iks",
+      "year": null,
+      "title": "Physics • IKS — IKS Physics 205 Internal 2025",
+      "courseType": "Physics",
+      "unitType": "IKS",
+      "file": "pdfs/Sem_2/Iks/Physics/Papers/Internal/IKS_Physics_205_Internal_2025.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_2/Iks/Physics/Papers/Internal/IKS_Physics_205_Internal_2025.pdf",
+      "description": "Internal"
+    },
+    {
+      "sem": "2",
+      "subject": "Sec",
+      "year": null,
+      "title": "Physics • SEC — SEC Physics 206 External 2025",
+      "courseType": "Physics",
+      "unitType": "SEC",
+      "file": "pdfs/Sem_2/Sec/Physics/Papers/External/SEC_Physics_206_External_2025.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_2/Sec/Physics/Papers/External/SEC_Physics_206_External_2025.pdf",
+      "description": "External"
+    },
+    {
+      "sem": "2",
+      "subject": "Sec",
+      "year": null,
+      "title": "Physics • SEC — SEC Physics 206 Internal 2025",
+      "courseType": "Physics",
+      "unitType": "SEC",
+      "file": "pdfs/Sem_2/Sec/Physics/Papers/Internal/SEC_Physics_206_Internal_2025.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_2/Sec/Physics/Papers/Internal/SEC_Physics_206_Internal_2025.pdf",
+      "description": "Internal"
+    },
+    {
+      "sem": "2",
+      "subject": "Vac",
+      "year": null,
+      "title": "Physics • VAC — VAC Physics 205 Internal 2025",
+      "courseType": "Physics",
+      "unitType": "VAC",
+      "file": "pdfs/Sem_2/Vac/Physics/Papers/Internal/VAC_Physics_205_Internal_2025.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_2/Vac/Physics/Papers/Internal/VAC_Physics_205_Internal_2025.pdf",
+      "description": "Internal"
+    },
+    {
+      "sem": "3",
+      "subject": "English Aec",
+      "year": null,
+      "title": "General — English AEC 304 External 2025",
+      "courseType": "General",
+      "unitType": null,
+      "file": "pdfs/Sem_3/English_Aec/General/Papers/External/English_AEC_304_External_2025.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_3/English_Aec/General/Papers/External/English_AEC_304_External_2025.pdf",
+      "description": "External"
+    },
+    {
+      "sem": "3",
+      "subject": "English Aec",
+      "year": null,
+      "title": "General — English AEC 304 Internal 2025",
+      "courseType": "General",
+      "unitType": null,
+      "file": "pdfs/Sem_3/English_Aec/General/Papers/Internal/English_AEC_304_Internal_2025.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_3/English_Aec/General/Papers/Internal/English_AEC_304_Internal_2025.pdf",
+      "description": "Internal"
+    },
+    {
+      "sem": "3",
+      "subject": "English Aec",
+      "year": null,
+      "title": "General — EnglishAEC 304 External 2025",
+      "courseType": "General",
+      "unitType": null,
+      "file": "pdfs/Sem_3/English_Aec/General/Papers/External/EnglishAEC_304_External_2025.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_3/English_Aec/General/Papers/External/EnglishAEC_304_External_2025.pdf",
+      "description": "External"
+    },
+    {
+      "sem": "3",
+      "subject": "Physics",
+      "year": null,
+      "title": "Major — Physics 301 External 2025",
+      "courseType": "Major",
+      "unitType": null,
+      "file": "pdfs/Sem_3/Physics/Major/Papers/External/Physics_301_External_2025.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_3/Physics/Major/Papers/External/Physics_301_External_2025.pdf",
+      "description": "External"
+    },
+    {
+      "sem": "3",
+      "subject": "Physics",
+      "year": null,
+      "title": "Major — Physics 301 Internal 2025",
+      "courseType": "Major",
+      "unitType": null,
+      "file": "pdfs/Sem_3/Physics/Major/Papers/Internal/Physics_301_Internal_2025.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_3/Physics/Major/Papers/Internal/Physics_301_Internal_2025.pdf",
+      "description": "Internal"
+    },
+    {
+      "sem": "3",
+      "subject": "Physics",
+      "year": null,
+      "title": "Major — Physics 301A External 2025",
+      "courseType": "Major",
+      "unitType": null,
+      "file": "pdfs/Sem_3/Physics/Major/Papers/External/Physics_301A_External_2025.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_3/Physics/Major/Papers/External/Physics_301A_External_2025.pdf",
+      "description": "External"
+    },
+    {
+      "sem": "3",
+      "subject": "Physics",
+      "year": null,
+      "title": "Major — Physics 301A Internal 2025",
+      "courseType": "Major",
+      "unitType": null,
+      "file": "pdfs/Sem_3/Physics/Major/Papers/Internal/Physics_301A_Internal_2025.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_3/Physics/Major/Papers/Internal/Physics_301A_Internal_2025.pdf",
+      "description": "Internal"
+    },
+    {
+      "sem": "3",
+      "subject": "Zoology",
+      "year": null,
+      "title": "Multi — Zoology 303 External 2025",
+      "courseType": "Multi",
+      "unitType": null,
+      "file": "pdfs/Sem_3/Zoology/Multi/Papers/External/Zoology_303_External_2025.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_3/Zoology/Multi/Papers/External/Zoology_303_External_2025.pdf",
+      "description": "External"
+    },
+    {
+      "sem": "3",
+      "subject": "Zoology",
+      "year": null,
+      "title": "Multi — Zoology 303 Internal 2025",
+      "courseType": "Multi",
+      "unitType": null,
+      "file": "pdfs/Sem_3/Zoology/Multi/Papers/Internal/Zoology_303_Internal_2025.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_3/Zoology/Multi/Papers/Internal/Zoology_303_Internal_2025.pdf",
+      "description": "Internal"
+    },
+    {
+      "sem": "3",
+      "subject": "Iks",
+      "year": null,
+      "title": "Physics • IKS — IKS Physics 305 External 2025",
+      "courseType": "Physics",
+      "unitType": "IKS",
+      "file": "pdfs/Sem_3/Iks/Physics/Papers/External/IKS_Physics_305_External_2025.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_3/Iks/Physics/Papers/External/IKS_Physics_305_External_2025.pdf",
+      "description": "External"
+    },
+    {
+      "sem": "3",
+      "subject": "Iks",
+      "year": null,
+      "title": "Physics • IKS — IKS Physics 305 Internal 2025",
+      "courseType": "Physics",
+      "unitType": "IKS",
+      "file": "pdfs/Sem_3/Iks/Physics/Papers/Internal/IKS_Physics_305_Internal_2025.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_3/Iks/Physics/Papers/Internal/IKS_Physics_305_Internal_2025.pdf",
+      "description": "Internal"
+    },
+    {
+      "sem": "3",
+      "subject": "Sec",
+      "year": null,
+      "title": "Physics • SEC — SEC Physics 306A External 2025",
+      "courseType": "Physics",
+      "unitType": "SEC",
+      "file": "pdfs/Sem_3/Sec/Physics/Papers/External/SEC_Physics_306A_External_2025.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_3/Sec/Physics/Papers/External/SEC_Physics_306A_External_2025.pdf",
+      "description": "External"
+    },
+    {
+      "sem": "3",
+      "subject": "Sec",
+      "year": null,
+      "title": "Physics • SEC — SEC Physics 306A Internal 2025",
+      "courseType": "Physics",
+      "unitType": "SEC",
+      "file": "pdfs/Sem_3/Sec/Physics/Papers/Internal/SEC_Physics_306A_Internal_2025.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_3/Sec/Physics/Papers/Internal/SEC_Physics_306A_Internal_2025.pdf",
+      "description": "Internal"
+    },
+    {
+      "sem": "4",
+      "subject": "English Aec",
+      "year": null,
+      "title": "General — English AEC 404 External 2025",
+      "courseType": "General",
+      "unitType": null,
+      "file": "pdfs/Sem_4/English_Aec/General/Papers/External/English_AEC_404_External_2025.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/English_Aec/General/Papers/External/English_AEC_404_External_2025.pdf",
+      "description": "External"
+    },
+    {
+      "sem": "4",
+      "subject": "English Aec",
+      "year": null,
+      "title": "General — English AEC 404 External 2026",
+      "courseType": "General",
+      "unitType": null,
+      "file": "pdfs/Sem_4/English_Aec/General/Papers/External/English_AEC_404_External_2026.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/English_Aec/General/Papers/External/English_AEC_404_External_2026.pdf",
+      "description": "External"
+    },
+    {
+      "sem": "4",
+      "subject": "English Aec",
+      "year": null,
+      "title": "General — English AEC 404 Internal 2026",
+      "courseType": "General",
+      "unitType": null,
+      "file": "pdfs/Sem_4/English_Aec/General/Papers/Internal/English_AEC_404_Internal_2026.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/English_Aec/General/Papers/Internal/English_AEC_404_Internal_2026.pdf",
+      "description": "Internal"
+    },
+    {
+      "sem": "4",
+      "subject": "Physics",
+      "year": null,
+      "title": "Major — Physics 401 External 2026",
+      "courseType": "Major",
+      "unitType": null,
+      "file": "pdfs/Sem_4/Physics/Major/Papers/External/Physics_401_External_2026.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Physics/Major/Papers/External/Physics_401_External_2026.pdf",
+      "description": "External"
+    },
+    {
+      "sem": "4",
+      "subject": "Physics",
+      "year": null,
+      "title": "Major — Physics 401 Internal 2026",
+      "courseType": "Major",
+      "unitType": null,
+      "file": "pdfs/Sem_4/Physics/Major/Papers/Internal/Physics_401_Internal_2026.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Physics/Major/Papers/Internal/Physics_401_Internal_2026.pdf",
+      "description": "Internal"
+    },
+    {
+      "sem": "4",
+      "subject": "Physics",
+      "year": null,
+      "title": "Major — Physics 401A External 2025",
+      "courseType": "Major",
+      "unitType": null,
+      "file": "pdfs/Sem_4/Physics/Major/Papers/External/Physics_401A_External_2025.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Physics/Major/Papers/External/Physics_401A_External_2025.pdf",
+      "description": "External"
+    },
+    {
+      "sem": "4",
+      "subject": "Physics",
+      "year": null,
+      "title": "Major — Physics 401A Internal 2026",
+      "courseType": "Major",
+      "unitType": null,
+      "file": "pdfs/Sem_4/Physics/Major/Papers/Internal/Physics_401A_Internal_2026.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Physics/Major/Papers/Internal/Physics_401A_Internal_2026.pdf",
+      "description": "Internal"
+    },
+    {
+      "sem": "4",
+      "subject": "Chemistry",
+      "year": null,
+      "title": "Minor — Chemistry 402 External 2026",
+      "courseType": "Minor",
+      "unitType": null,
+      "file": "pdfs/Sem_4/Chemistry/Minor/Papers/External/Chemistry_402_External_2026.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Chemistry/Minor/Papers/External/Chemistry_402_External_2026.pdf",
+      "description": "External"
+    },
+    {
+      "sem": "4",
+      "subject": "Chemistry",
+      "year": null,
+      "title": "Minor — Chemistry 402 Internal 2026",
+      "courseType": "Minor",
+      "unitType": null,
+      "file": "pdfs/Sem_4/Chemistry/Minor/Papers/Internal/Chemistry_402_Internal_2026.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Chemistry/Minor/Papers/Internal/Chemistry_402_Internal_2026.pdf",
+      "description": "Internal"
+    },
+    {
+      "sem": "4",
+      "subject": "Sec",
+      "year": null,
+      "title": "Physics • SEC — SEC Physics 406 External 2026",
+      "courseType": "Physics",
+      "unitType": "SEC",
+      "file": "pdfs/Sem_4/Sec/Physics/Papers/External/SEC_Physics_406_External_2026.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Sec/Physics/Papers/External/SEC_Physics_406_External_2026.pdf",
+      "description": "External"
+    },
+    {
+      "sem": "4",
+      "subject": "Sec",
+      "year": null,
+      "title": "Physics • SEC — SEC Physics 406 Internal 2026",
+      "courseType": "Physics",
+      "unitType": "SEC",
+      "file": "pdfs/Sem_4/Sec/Physics/Papers/Internal/SEC_Physics_406_Internal_2026.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Sec/Physics/Papers/Internal/SEC_Physics_406_Internal_2026.pdf",
+      "description": "Internal"
+    },
+    {
+      "sem": "4",
+      "subject": "Vac",
+      "year": null,
+      "title": "Physics • VAC — VAC Physics 405 External 2026",
+      "courseType": "Physics",
+      "unitType": "VAC",
+      "file": "pdfs/Sem_4/Vac/Physics/Papers/External/VAC_Physics_405_External_2026.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Vac/Physics/Papers/External/VAC_Physics_405_External_2026.pdf",
+      "description": "External"
+    },
+    {
+      "sem": "4",
+      "subject": "Vac",
+      "year": null,
+      "title": "Physics • VAC — VAC Physics 405 Internal 2026",
+      "courseType": "Physics",
+      "unitType": "VAC",
+      "file": "pdfs/Sem_4/Vac/Physics/Papers/Internal/VAC_Physics_405_Internal_2026.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Vac/Physics/Papers/Internal/VAC_Physics_405_Internal_2026.pdf",
+      "description": "Internal"
+    }
+  ],
+  "pdfs": [
+    {
+      "path": "pdfs/Sem_1/.gitkeep",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_1/.gitkeep"
+    },
+    {
+      "path": "pdfs/Sem_1/Chemistry/Minor/Papers/External/Chemistry_102_External_2024.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_1/Chemistry/Minor/Papers/External/Chemistry_102_External_2024.pdf"
+    },
+    {
+      "path": "pdfs/Sem_1/Chemistry/Minor/Papers/Internal/Chemistry_102_Internal_2024.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_1/Chemistry/Minor/Papers/Internal/Chemistry_102_Internal_2024.pdf"
+    },
+    {
+      "path": "pdfs/Sem_1/Computer_Science/Major/Papers/External/ComputerScience_101_External.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_1/Computer_Science/Major/Papers/External/ComputerScience_101_External.pdf"
+    },
+    {
+      "path": "pdfs/Sem_1/Computer_Science/Minor/Papers/External/ComputerScience_102_External.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_1/Computer_Science/Minor/Papers/External/ComputerScience_102_External.pdf"
+    },
+    {
+      "path": "pdfs/Sem_1/Computer_Science/Multi/Papers/External/ComputerScience_101_External_3004.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_1/Computer_Science/Multi/Papers/External/ComputerScience_101_External_3004.pdf"
+    },
+    {
+      "path": "pdfs/Sem_1/English_Aec/General/Papers/External/English_AEC_104_External_2024.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_1/English_Aec/General/Papers/External/English_AEC_104_External_2024.pdf"
+    },
+    {
+      "path": "pdfs/Sem_1/English_Aec/General/Papers/Internal/English_AEC_104_Internal_2024.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_1/English_Aec/General/Papers/Internal/English_AEC_104_Internal_2024.pdf"
+    },
+    {
+      "path": "pdfs/Sem_1/Iks/Physics/Papers/External/IKS_Physics_105_External_2024.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_1/Iks/Physics/Papers/External/IKS_Physics_105_External_2024.pdf"
+    },
+    {
+      "path": "pdfs/Sem_1/Iks/Physics/Papers/Internal/IKS_Physics_105_Internal_2024.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_1/Iks/Physics/Papers/Internal/IKS_Physics_105_Internal_2024.pdf"
+    },
+    {
+      "path": "pdfs/Sem_1/Physics/Major/Notes/Major_1_-_Unit_1/MathematicalPhysics101U1.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_1/Physics/Major/Notes/Major_1_-_Unit_1/MathematicalPhysics101U1.pdf"
+    },
+    {
+      "path": "pdfs/Sem_1/Physics/Major/Notes/Major_1_-_Unit_2/Thermodynamics_fy_B.Sc..pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_1/Physics/Major/Notes/Major_1_-_Unit_2/Thermodynamics_fy_B.Sc..pdf"
+    },
+    {
+      "path": "pdfs/Sem_1/Physics/Major/Notes/Major_1_-_Unit_3/SEM-1.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_1/Physics/Major/Notes/Major_1_-_Unit_3/SEM-1.pdf"
+    },
+    {
+      "path": "pdfs/Sem_1/Physics/Major/Notes/Major_1_-_Unit_4/1st_part_Half_wave_Rectifier.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_1/Physics/Major/Notes/Major_1_-_Unit_4/1st_part_Half_wave_Rectifier.pdf"
+    },
+    {
+      "path": "pdfs/Sem_1/Physics/Major/Papers/External/Physics_101_External_2024.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_1/Physics/Major/Papers/External/Physics_101_External_2024.pdf"
+    },
+    {
+      "path": "pdfs/Sem_1/Physics/Major/Papers/Internal/Physics_101_Internal_2024.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_1/Physics/Major/Papers/Internal/Physics_101_Internal_2024.pdf"
+    },
+    {
+      "path": "pdfs/Sem_1/Physics/Major/Syllabus/BSC_SEMESTER-1_NEP2020_PhyMJ_.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_1/Physics/Major/Syllabus/BSC_SEMESTER-1_NEP2020_PhyMJ_.pdf"
+    },
+    {
+      "path": "pdfs/Sem_1/Sec/Physics/Papers/External/SEC_Physics_106_External_2024.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_1/Sec/Physics/Papers/External/SEC_Physics_106_External_2024.pdf"
+    },
+    {
+      "path": "pdfs/Sem_1/Sec/Physics/Papers/Internal/SEC_Physics_106_Internal_2024.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_1/Sec/Physics/Papers/Internal/SEC_Physics_106_Internal_2024.pdf"
+    },
+    {
+      "path": "pdfs/Sem_1/Zoology/Multi/Papers/Internal/Zoology_103_Internal_2024.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_1/Zoology/Multi/Papers/Internal/Zoology_103_Internal_2024.pdf"
+    },
+    {
+      "path": "pdfs/Sem_2/Chemistry/Minor/Papers/External/Chemistry_202_External_2025.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_2/Chemistry/Minor/Papers/External/Chemistry_202_External_2025.pdf"
+    },
+    {
+      "path": "pdfs/Sem_2/Chemistry/Minor/Papers/Internal/Chemistry_202_Internal_2025.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_2/Chemistry/Minor/Papers/Internal/Chemistry_202_Internal_2025.pdf"
+    },
+    {
+      "path": "pdfs/Sem_2/English_Aec/General/Papers/External/English_AEC_204_External_2025.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_2/English_Aec/General/Papers/External/English_AEC_204_External_2025.pdf"
+    },
+    {
+      "path": "pdfs/Sem_2/English_Aec/General/Papers/Internal/English_AEC_204_Internal_2025.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_2/English_Aec/General/Papers/Internal/English_AEC_204_Internal_2025.pdf"
+    },
+    {
+      "path": "pdfs/Sem_2/Iks/Physics/Papers/Internal/IKS_Physics_205_Internal_2025.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_2/Iks/Physics/Papers/Internal/IKS_Physics_205_Internal_2025.pdf"
+    },
+    {
+      "path": "pdfs/Sem_2/Physics/Major/Notes/Unit_1/B.Sc-Sem-2_Electrostatic-Unit-1.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_2/Physics/Major/Notes/Unit_1/B.Sc-Sem-2_Electrostatic-Unit-1.pdf"
+    },
+    {
+      "path": "pdfs/Sem_2/Physics/Major/Notes/Unit_2/BSc2_NEP_Major_Minor_U2_S.H.M..pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_2/Physics/Major/Notes/Unit_2/BSc2_NEP_Major_Minor_U2_S.H.M..pdf"
+    },
+    {
+      "path": "pdfs/Sem_2/Physics/Major/Notes/Unit_3/AC_Bridges_MJ201U3c_MD203U1c.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_2/Physics/Major/Notes/Unit_3/AC_Bridges_MJ201U3c_MD203U1c.pdf"
+    },
+    {
+      "path": "pdfs/Sem_2/Physics/Major/Notes/Unit_3/DC_Circuits_MJ201U3a_MD203U1a.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_2/Physics/Major/Notes/Unit_3/DC_Circuits_MJ201U3a_MD203U1a.pdf"
+    },
+    {
+      "path": "pdfs/Sem_2/Physics/Major/Notes/Unit_3/Network_Theorems_MJ201U3b_MD203U1b.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_2/Physics/Major/Notes/Unit_3/Network_Theorems_MJ201U3b_MD203U1b.pdf"
+    },
+    {
+      "path": "pdfs/Sem_2/Physics/Major/Notes/Unit_4/FY_MJ_Multi_Optics_-_interference_Jatin_Sir.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_2/Physics/Major/Notes/Unit_4/FY_MJ_Multi_Optics_-_interference_Jatin_Sir.pdf"
+    },
+    {
+      "path": "pdfs/Sem_2/Physics/Major/Notes/Unit_4/Lens_-_Interference_Refraction_F.Y._B.Sc..pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_2/Physics/Major/Notes/Unit_4/Lens_-_Interference_Refraction_F.Y._B.Sc..pdf"
+    },
+    {
+      "path": "pdfs/Sem_2/Physics/Major/Papers/External/Physics_201_External_2025.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_2/Physics/Major/Papers/External/Physics_201_External_2025.pdf"
+    },
+    {
+      "path": "pdfs/Sem_2/Physics/Major/Papers/External/Physics_201_External_2026.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_2/Physics/Major/Papers/External/Physics_201_External_2026.pdf"
+    },
+    {
+      "path": "pdfs/Sem_2/Physics/Major/Papers/Internal/Physics_201_Internal_2025.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_2/Physics/Major/Papers/Internal/Physics_201_Internal_2025.pdf"
+    },
+    {
+      "path": "pdfs/Sem_2/Physics/Major/Syllabus/BSC_SEMESTER-2_NEP2020_PhyMJ-Syllabus_.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_2/Physics/Major/Syllabus/BSC_SEMESTER-2_NEP2020_PhyMJ-Syllabus_.pdf"
+    },
+    {
+      "path": "pdfs/Sem_2/Sec/Physics/Notes/Passive_Circuit_Elements/BSc_Sem2_SEC_Physics_Unit12.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_2/Sec/Physics/Notes/Passive_Circuit_Elements/BSc_Sem2_SEC_Physics_Unit12.pdf"
+    },
+    {
+      "path": "pdfs/Sem_2/Sec/Physics/Papers/External/SEC_Physics_206_External_2025.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_2/Sec/Physics/Papers/External/SEC_Physics_206_External_2025.pdf"
+    },
+    {
+      "path": "pdfs/Sem_2/Sec/Physics/Papers/Internal/SEC_Physics_206_Internal_2025.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_2/Sec/Physics/Papers/Internal/SEC_Physics_206_Internal_2025.pdf"
+    },
+    {
+      "path": "pdfs/Sem_2/Vac/Physics/Papers/Internal/VAC_Physics_205_Internal_2025.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_2/Vac/Physics/Papers/Internal/VAC_Physics_205_Internal_2025.pdf"
+    },
+    {
+      "path": "pdfs/Sem_2/Zoology/Multi/Papers/External/Zoology_203_External_2025.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_2/Zoology/Multi/Papers/External/Zoology_203_External_2025.pdf"
+    },
+    {
+      "path": "pdfs/Sem_2/Zoology/Multi/Papers/Internal/Zoology_203_Internal_2025.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_2/Zoology/Multi/Papers/Internal/Zoology_203_Internal_2025.pdf"
+    },
+    {
+      "path": "pdfs/Sem_3/English_Aec/General/Papers/External/EnglishAEC_304_External_2025.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_3/English_Aec/General/Papers/External/EnglishAEC_304_External_2025.pdf"
+    },
+    {
+      "path": "pdfs/Sem_3/English_Aec/General/Papers/External/English_AEC_304_External_2025.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_3/English_Aec/General/Papers/External/English_AEC_304_External_2025.pdf"
+    },
+    {
+      "path": "pdfs/Sem_3/English_Aec/General/Papers/Internal/English_AEC_304_Internal_2025.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_3/English_Aec/General/Papers/Internal/English_AEC_304_Internal_2025.pdf"
+    },
+    {
+      "path": "pdfs/Sem_3/Iks/Physics/Papers/External/IKS_Physics_305_External_2025.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_3/Iks/Physics/Papers/External/IKS_Physics_305_External_2025.pdf"
+    },
+    {
+      "path": "pdfs/Sem_3/Iks/Physics/Papers/Internal/IKS_Physics_305_Internal_2025.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_3/Iks/Physics/Papers/Internal/IKS_Physics_305_Internal_2025.pdf"
+    },
+    {
+      "path": "pdfs/Sem_3/Physics/Major/Notes/Major_1_-_Unit_1_Thermodynamics/thermodynamics_sem_3.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_3/Physics/Major/Notes/Major_1_-_Unit_1_Thermodynamics/thermodynamics_sem_3.pdf"
+    },
+    {
+      "path": "pdfs/Sem_3/Physics/Major/Notes/Major_1_-_Unit_1_Thermodynamics/Thermodynamics_Unit1_Revision.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_3/Physics/Major/Notes/Major_1_-_Unit_1_Thermodynamics/Thermodynamics_Unit1_Revision.pdf"
+    },
+    {
+      "path": "pdfs/Sem_3/Physics/Major/Notes/Major_1_-_Unit_2_Modern_Physics/Modern_Physics.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_3/Physics/Major/Notes/Major_1_-_Unit_2_Modern_Physics/Modern_Physics.pdf"
+    },
+    {
+      "path": "pdfs/Sem_3/Physics/Major/Notes/Major_1_-_Unit_2_Modern_Physics/Modern_Physics_1D_schrodinger_equation.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_3/Physics/Major/Notes/Major_1_-_Unit_2_Modern_Physics/Modern_Physics_1D_schrodinger_equation.pdf"
+    },
+    {
+      "path": "pdfs/Sem_3/Physics/Major/Notes/Major_1_-_Unit_2_Modern_Physics/Modern_Physics_Franck-Herts-Experiment.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_3/Physics/Major/Notes/Major_1_-_Unit_2_Modern_Physics/Modern_Physics_Franck-Herts-Experiment.pdf"
+    },
+    {
+      "path": "pdfs/Sem_3/Physics/Major/Notes/Major_1_-_Unit_4_Solid_State_Physics/Crystal_Structure-JJP.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_3/Physics/Major/Notes/Major_1_-_Unit_4_Solid_State_Physics/Crystal_Structure-JJP.pdf"
+    },
+    {
+      "path": "pdfs/Sem_3/Physics/Major/Notes/Major_1_-_Unit_4_Solid_State_Physics/Crystal_Structure_-_SRS.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_3/Physics/Major/Notes/Major_1_-_Unit_4_Solid_State_Physics/Crystal_Structure_-_SRS.pdf"
+    },
+    {
+      "path": "pdfs/Sem_3/Physics/Major/Notes/Major_1_-_Unit_4_Solid_State_Physics/Crystal_Structure_2.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_3/Physics/Major/Notes/Major_1_-_Unit_4_Solid_State_Physics/Crystal_Structure_2.pdf"
+    },
+    {
+      "path": "pdfs/Sem_3/Physics/Major/Notes/Major_2_-_Unit_1_Electrostatics_Magnetostatics/Dielectric.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_3/Physics/Major/Notes/Major_2_-_Unit_1_Electrostatics_Magnetostatics/Dielectric.pdf"
+    },
+    {
+      "path": "pdfs/Sem_3/Physics/Major/Notes/Major_2_-_Unit_1_Electrostatics_Magnetostatics/Magnetostatics.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_3/Physics/Major/Notes/Major_2_-_Unit_1_Electrostatics_Magnetostatics/Magnetostatics.pdf"
+    },
+    {
+      "path": "pdfs/Sem_3/Physics/Major/Notes/Major_2_-_Unit_2_Optics_Fraunhoffer_Diffraction/Code_Generated_Image.png",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_3/Physics/Major/Notes/Major_2_-_Unit_2_Optics_Fraunhoffer_Diffraction/Code_Generated_Image.png"
+    },
+    {
+      "path": "pdfs/Sem_3/Physics/Major/Notes/Major_2_-_Unit_2_Optics_Fraunhoffer_Diffraction/optics-huma.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_3/Physics/Major/Notes/Major_2_-_Unit_2_Optics_Fraunhoffer_Diffraction/optics-huma.pdf"
+    },
+    {
+      "path": "pdfs/Sem_3/Physics/Major/Notes/Major_2_-_Unit_3_Farmat_Principle/Sem3_Major_Physics_301A_Unit3_Fermat_Polarization.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_3/Physics/Major/Notes/Major_2_-_Unit_3_Farmat_Principle/Sem3_Major_Physics_301A_Unit3_Fermat_Polarization.pdf"
+    },
+    {
+      "path": "pdfs/Sem_3/Physics/Major/Notes/Major_2_-_Unit_4_Electronics/part_1_electronics.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_3/Physics/Major/Notes/Major_2_-_Unit_4_Electronics/part_1_electronics.pdf"
+    },
+    {
+      "path": "pdfs/Sem_3/Physics/Major/Notes/Major_2_-_Unit_4_Electronics/Transistor_Biasing_and_Stabilization.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_3/Physics/Major/Notes/Major_2_-_Unit_4_Electronics/Transistor_Biasing_and_Stabilization.pdf"
+    },
+    {
+      "path": "pdfs/Sem_3/Physics/Major/Papers/External/Physics_301A_External_2025.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_3/Physics/Major/Papers/External/Physics_301A_External_2025.pdf"
+    },
+    {
+      "path": "pdfs/Sem_3/Physics/Major/Papers/External/Physics_301_External_2025.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_3/Physics/Major/Papers/External/Physics_301_External_2025.pdf"
+    },
+    {
+      "path": "pdfs/Sem_3/Physics/Major/Papers/Internal/Physics_301A_Internal_2025.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_3/Physics/Major/Papers/Internal/Physics_301A_Internal_2025.pdf"
+    },
+    {
+      "path": "pdfs/Sem_3/Physics/Major/Papers/Internal/Physics_301_Internal_2025.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_3/Physics/Major/Papers/Internal/Physics_301_Internal_2025.pdf"
+    },
+    {
+      "path": "pdfs/Sem_3/Sec/Physics/Papers/External/SEC_Physics_306A_External_2025.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_3/Sec/Physics/Papers/External/SEC_Physics_306A_External_2025.pdf"
+    },
+    {
+      "path": "pdfs/Sem_3/Sec/Physics/Papers/Internal/SEC_Physics_306A_Internal_2025.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_3/Sec/Physics/Papers/Internal/SEC_Physics_306A_Internal_2025.pdf"
+    },
+    {
+      "path": "pdfs/Sem_3/Zoology/Multi/Papers/External/Zoology_303_External_2025.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_3/Zoology/Multi/Papers/External/Zoology_303_External_2025.pdf"
+    },
+    {
+      "path": "pdfs/Sem_3/Zoology/Multi/Papers/Internal/Zoology_303_Internal_2025.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_3/Zoology/Multi/Papers/Internal/Zoology_303_Internal_2025.pdf"
+    },
+    {
+      "path": "pdfs/Sem_4/Botany/Major/Syllabus/Botany_401A_Syllabus.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Botany/Major/Syllabus/Botany_401A_Syllabus.pdf"
+    },
+    {
+      "path": "pdfs/Sem_4/Botany/Major/Syllabus/Botany_401_Syllabus.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Botany/Major/Syllabus/Botany_401_Syllabus.pdf"
+    },
+    {
+      "path": "pdfs/Sem_4/Chemistry/Major/Notes/Major_1_-_Unit_1/SEM-4_Major-1_Assignment.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Chemistry/Major/Notes/Major_1_-_Unit_1/SEM-4_Major-1_Assignment.pdf"
+    },
+    {
+      "path": "pdfs/Sem_4/Chemistry/Major/Notes/Major_2_-_Unit_1/major_2_assignment.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Chemistry/Major/Notes/Major_2_-_Unit_1/major_2_assignment.pdf"
+    },
+    {
+      "path": "pdfs/Sem_4/Chemistry/Major/Notes/Major_2_-_Unit_2/MAJ-401AUnit-1_f_-_Block_Element.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Chemistry/Major/Notes/Major_2_-_Unit_2/MAJ-401AUnit-1_f_-_Block_Element.pdf"
+    },
+    {
+      "path": "pdfs/Sem_4/Chemistry/Major/Notes/Major_2_-_Unit_3/B._Sc_sem_-_4_Phase_rule.pdf_by_r.t.p.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Chemistry/Major/Notes/Major_2_-_Unit_3/B._Sc_sem_-_4_Phase_rule.pdf_by_r.t.p.pdf"
+    },
+    {
+      "path": "pdfs/Sem_4/Chemistry/Major/Notes/Major_2_-_Unit_4/SC23MJDSCCHE401_Unit-4_ionic_equilibrium_202526.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Chemistry/Major/Notes/Major_2_-_Unit_4/SC23MJDSCCHE401_Unit-4_ionic_equilibrium_202526.pdf"
+    },
+    {
+      "path": "pdfs/Sem_4/Chemistry/Major/Syllabus/Chemistry_401A_Syllabus.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Chemistry/Major/Syllabus/Chemistry_401A_Syllabus.pdf"
+    },
+    {
+      "path": "pdfs/Sem_4/Chemistry/Major/Syllabus/Chemistry_401_Syllabus.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Chemistry/Major/Syllabus/Chemistry_401_Syllabus.pdf"
+    },
+    {
+      "path": "pdfs/Sem_4/Chemistry/Minor/Notes/Unit_1/B.Sc._Sem_4_..Electro_chemistry.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Chemistry/Minor/Notes/Unit_1/B.Sc._Sem_4_..Electro_chemistry.pdf"
+    },
+    {
+      "path": "pdfs/Sem_4/Chemistry/Minor/Notes/Unit_2/INORGANIC_POLYMER_B.SC_SEM_4.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Chemistry/Minor/Notes/Unit_2/INORGANIC_POLYMER_B.SC_SEM_4.pdf"
+    },
+    {
+      "path": "pdfs/Sem_4/Chemistry/Minor/Papers/External/Chemistry_402_External_2026.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Chemistry/Minor/Papers/External/Chemistry_402_External_2026.pdf"
+    },
+    {
+      "path": "pdfs/Sem_4/Chemistry/Minor/Papers/Internal/Chemistry_402_Internal_2026.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Chemistry/Minor/Papers/Internal/Chemistry_402_Internal_2026.pdf"
+    },
+    {
+      "path": "pdfs/Sem_4/Chemistry/Minor/Syllabus/Chemistry-minor-sem4.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Chemistry/Minor/Syllabus/Chemistry-minor-sem4.pdf"
+    },
+    {
+      "path": "pdfs/Sem_4/English_Aec/General/Papers/External/English_AEC_404_External_2025.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/English_Aec/General/Papers/External/English_AEC_404_External_2025.pdf"
+    },
+    {
+      "path": "pdfs/Sem_4/English_Aec/General/Papers/External/English_AEC_404_External_2026.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/English_Aec/General/Papers/External/English_AEC_404_External_2026.pdf"
+    },
+    {
+      "path": "pdfs/Sem_4/English_Aec/General/Papers/Internal/English_AEC_404_Internal_2026.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/English_Aec/General/Papers/Internal/English_AEC_404_Internal_2026.pdf"
+    },
+    {
+      "path": "pdfs/Sem_4/Mathematics/Minor/Notes/Unit_1/Numerical_Analysis_Unit-1_-compressed.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Mathematics/Minor/Notes/Unit_1/Numerical_Analysis_Unit-1_-compressed.pdf"
+    },
+    {
+      "path": "pdfs/Sem_4/Mathematics/Minor/Notes/Unit_2/Numerical_Analysis_whole_unit-2.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Mathematics/Minor/Notes/Unit_2/Numerical_Analysis_whole_unit-2.pdf"
+    },
+    {
+      "path": "pdfs/Sem_4/Physics/Major/Notes/Major_1_-_Unit_1/Document_from_Aesha_Pandya.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Physics/Major/Notes/Major_1_-_Unit_1/Document_from_Aesha_Pandya.pdf"
+    },
+    {
+      "path": "pdfs/Sem_4/Physics/Major/Notes/Major_1_-_Unit_1/Mechanics_of_a_Single_Particle_and_System_of_Particles_3.3_to_3.6_.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Physics/Major/Notes/Major_1_-_Unit_1/Mechanics_of_a_Single_Particle_and_System_of_Particles_3.3_to_3.6_.pdf"
+    },
+    {
+      "path": "pdfs/Sem_4/Physics/Major/Notes/Major_1_-_Unit_2/CC-401-UNIT-2-NUCLEAR_PHYSICS_1_.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Physics/Major/Notes/Major_1_-_Unit_2/CC-401-UNIT-2-NUCLEAR_PHYSICS_1_.pdf"
+    },
+    {
+      "path": "pdfs/Sem_4/Physics/Major/Notes/Major_1_-_Unit_2/Detectors_and_Accelerators_1.1.1_to_1.1.4_.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Physics/Major/Notes/Major_1_-_Unit_2/Detectors_and_Accelerators_1.1.1_to_1.1.4_.pdf"
+    },
+    {
+      "path": "pdfs/Sem_4/Physics/Major/Notes/Major_1_-_Unit_2/The_Q-Equation_3.1_to_3.5_.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Physics/Major/Notes/Major_1_-_Unit_2/The_Q-Equation_3.1_to_3.5_.pdf"
+    },
+    {
+      "path": "pdfs/Sem_4/Physics/Major/Notes/Major_1_-_Unit_3/Radioactivity_2.1_to_2.13_.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Physics/Major/Notes/Major_1_-_Unit_3/Radioactivity_2.1_to_2.13_.pdf"
+    },
+    {
+      "path": "pdfs/Sem_4/Physics/Major/Notes/Major_1_-_Unit_3/SY_Radioactivity.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Physics/Major/Notes/Major_1_-_Unit_3/SY_Radioactivity.pdf"
+    },
+    {
+      "path": "pdfs/Sem_4/Physics/Major/Notes/Major_1_-_Unit_3/Theory_2_Radioactivity.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Physics/Major/Notes/Major_1_-_Unit_3/Theory_2_Radioactivity.pdf"
+    },
+    {
+      "path": "pdfs/Sem_4/Physics/Major/Notes/Major_1_-_Unit_4/PLASMA_Physics_MJ401U4_MI402U2.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Physics/Major/Notes/Major_1_-_Unit_4/PLASMA_Physics_MJ401U4_MI402U2.pdf"
+    },
+    {
+      "path": "pdfs/Sem_4/Physics/Major/Notes/Major_2_-_Unit_1/Curvilinear_Co-ordinates_10.6_to_10.9_.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Physics/Major/Notes/Major_2_-_Unit_1/Curvilinear_Co-ordinates_10.6_to_10.9_.pdf"
+    },
+    {
+      "path": "pdfs/Sem_4/Physics/Major/Notes/Major_2_-_Unit_1/Curvilinear_Coordinates_MJ401A_U1b.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Physics/Major/Notes/Major_2_-_Unit_1/Curvilinear_Coordinates_MJ401A_U1b.pdf"
+    },
+    {
+      "path": "pdfs/Sem_4/Physics/Major/Notes/Major_2_-_Unit_1/Fourier_series.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Physics/Major/Notes/Major_2_-_Unit_1/Fourier_series.pdf"
+    },
+    {
+      "path": "pdfs/Sem_4/Physics/Major/Notes/Major_2_-_Unit_1/Fourier_series_7.1_to_7.11_.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Physics/Major/Notes/Major_2_-_Unit_1/Fourier_series_7.1_to_7.11_.pdf"
+    },
+    {
+      "path": "pdfs/Sem_4/Physics/Major/Notes/Major_2_-_Unit_1/Fourier_series_Gujarati.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Physics/Major/Notes/Major_2_-_Unit_1/Fourier_series_Gujarati.pdf"
+    },
+    {
+      "path": "pdfs/Sem_4/Physics/Major/Notes/Major_2_-_Unit_2/Quntum_Machanics_2.4_to_2.11_.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Physics/Major/Notes/Major_2_-_Unit_2/Quntum_Machanics_2.4_to_2.11_.pdf"
+    },
+    {
+      "path": "pdfs/Sem_4/Physics/Major/Notes/Major_2_-_Unit_2/Quntum_Mechanics_sem_4.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Physics/Major/Notes/Major_2_-_Unit_2/Quntum_Mechanics_sem_4.pdf"
+    },
+    {
+      "path": "pdfs/Sem_4/Physics/Major/Notes/Major_2_-_Unit_3/FET.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Physics/Major/Notes/Major_2_-_Unit_3/FET.pdf"
+    },
+    {
+      "path": "pdfs/Sem_4/Physics/Major/Notes/Major_2_-_Unit_3/h-Parameters_sem_4_Electronbics.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Physics/Major/Notes/Major_2_-_Unit_3/h-Parameters_sem_4_Electronbics.pdf"
+    },
+    {
+      "path": "pdfs/Sem_4/Physics/Major/Notes/Major_2_-_Unit_3/SY_Solidstate_Devices-_UJT_SCR...pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Physics/Major/Notes/Major_2_-_Unit_3/SY_Solidstate_Devices-_UJT_SCR...pdf"
+    },
+    {
+      "path": "pdfs/Sem_4/Physics/Major/Notes/Major_2_-_Unit_4/Digital_Electronics_MJ401A_U4.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Physics/Major/Notes/Major_2_-_Unit_4/Digital_Electronics_MJ401A_U4.pdf"
+    },
+    {
+      "path": "pdfs/Sem_4/Physics/Major/Papers/External/Physics_401A_External_2025.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Physics/Major/Papers/External/Physics_401A_External_2025.pdf"
+    },
+    {
+      "path": "pdfs/Sem_4/Physics/Major/Papers/External/Physics_401_External_2026.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Physics/Major/Papers/External/Physics_401_External_2026.pdf"
+    },
+    {
+      "path": "pdfs/Sem_4/Physics/Major/Papers/Internal/Physics_401A_Internal_2026.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Physics/Major/Papers/Internal/Physics_401A_Internal_2026.pdf"
+    },
+    {
+      "path": "pdfs/Sem_4/Physics/Major/Papers/Internal/Physics_401_Internal_2026.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Physics/Major/Papers/Internal/Physics_401_Internal_2026.pdf"
+    },
+    {
+      "path": "pdfs/Sem_4/Physics/Major/Syllabus/BSC_SEMESTER-4_PHY_MAJOR.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Physics/Major/Syllabus/BSC_SEMESTER-4_PHY_MAJOR.pdf"
+    },
+    {
+      "path": "pdfs/Sem_4/Sec/Botany/Notes/sec.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Sec/Botany/Notes/sec.pdf"
+    },
+    {
+      "path": "pdfs/Sem_4/Sec/Physics/Papers/External/SEC_Physics_406_External_2026.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Sec/Physics/Papers/External/SEC_Physics_406_External_2026.pdf"
+    },
+    {
+      "path": "pdfs/Sem_4/Sec/Physics/Papers/Internal/SEC_Physics_406_Internal_2026.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Sec/Physics/Papers/Internal/SEC_Physics_406_Internal_2026.pdf"
+    },
+    {
+      "path": "pdfs/Sem_4/Vac/Chemistry/Syllabus/VAC_Chemistry_405_Syllabus.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Vac/Chemistry/Syllabus/VAC_Chemistry_405_Syllabus.pdf"
+    },
+    {
+      "path": "pdfs/Sem_4/Vac/Physics/Papers/External/VAC_Physics_405_External_2026.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Vac/Physics/Papers/External/VAC_Physics_405_External_2026.pdf"
+    },
+    {
+      "path": "pdfs/Sem_4/Vac/Physics/Papers/Internal/VAC_Physics_405_Internal_2026.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Vac/Physics/Papers/Internal/VAC_Physics_405_Internal_2026.pdf"
+    },
+    {
+      "path": "pdfs/Sem_5/Chemistry/Major/Notes/Major_1_-_Unit_1/B.Sc._Sem_-_5_EMFCHN503_Theory.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Chemistry/Major/Notes/Major_1_-_Unit_1/B.Sc._Sem_-_5_EMFCHN503_Theory.pdf"
+    },
+    {
+      "path": "pdfs/Sem_5/Chemistry/Major/Notes/Major_2_-_Unit_1/sem_v_chemistry_symmetry_compressed.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Chemistry/Major/Notes/Major_2_-_Unit_1/sem_v_chemistry_symmetry_compressed.pdf"
+    },
+    {
+      "path": "pdfs/Sem_5/Chemistry/Minor/Notes/Unit_1/Unit-1_Water_Technology.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Chemistry/Minor/Notes/Unit_1/Unit-1_Water_Technology.pdf"
+    },
+    {
+      "path": "pdfs/Sem_5/Chemistry/Minor/Notes/Unit_3/Adsorption_Press_copy.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Chemistry/Minor/Notes/Unit_3/Adsorption_Press_copy.pdf"
+    },
+    {
+      "path": "pdfs/Sem_5/Chemistry/Minor/Notes/Unit_3/The_nernst_distribution_law_Press_copy.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Chemistry/Minor/Notes/Unit_3/The_nernst_distribution_law_Press_copy.pdf"
+    },
+    {
+      "path": "pdfs/Sem_5/Chemistry/Minor/Notes/Unit_4/unit_4_Aug_29_2026.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Chemistry/Minor/Notes/Unit_4/unit_4_Aug_29_2026.pdf"
+    },
+    {
+      "path": "pdfs/Sem_5/Chemistry/Minor/Syllabus/Chemistry_502_Syllabus.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Chemistry/Minor/Syllabus/Chemistry_502_Syllabus.pdf"
+    },
+    {
+      "path": "pdfs/Sem_5/Iks/Physics/Notes/Unit_1/Astronomy_Unit_1_C_D.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Iks/Physics/Notes/Unit_1/Astronomy_Unit_1_C_D.pdf"
+    },
+    {
+      "path": "pdfs/Sem_5/Physics/Major/Notes/Major_1_-_Unit_1/BSc5-Major501-Unit1AB-Mathematical-Phy.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Physics/Major/Notes/Major_1_-_Unit_1/BSc5-Major501-Unit1AB-Mathematical-Phy.pdf"
+    },
+    {
+      "path": "pdfs/Sem_5/Physics/Major/Notes/Major_1_-_Unit_1/Sem5 Major 501 Unit 1B Classical Mech.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Physics/Major/Notes/Major_1_-_Unit_1/Sem5%20Major%20501%20Unit%201B%20Classical%20Mech.pdf"
+    },
+    {
+      "path": "pdfs/Sem_5/Physics/Major/Notes/Major_1_-_Unit_1/Sem5-Unit-1C-Classical_Mechanics-Lagrangian_Formulation.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Physics/Major/Notes/Major_1_-_Unit_1/Sem5-Unit-1C-Classical_Mechanics-Lagrangian_Formulation.pdf"
+    },
+    {
+      "path": "pdfs/Sem_5/Physics/Major/Notes/Major_1_-_Unit_2/BSc-Sem5-Quantum_Mechanics-General_formalism_of_Wave_Mechanics.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Physics/Major/Notes/Major_1_-_Unit_2/BSc-Sem5-Quantum_Mechanics-General_formalism_of_Wave_Mechanics.pdf"
+    },
+    {
+      "path": "pdfs/Sem_5/Physics/Major/Notes/Major_1_-_Unit_2/BSc-Sem5-Solid_State_Physics-Free_Electron_Theory_of_Metals.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Physics/Major/Notes/Major_1_-_Unit_2/BSc-Sem5-Solid_State_Physics-Free_Electron_Theory_of_Metals.pdf"
+    },
+    {
+      "path": "pdfs/Sem_5/Physics/Major/Notes/Major_1_-_Unit_2/Phy_501_unit_2_part_2.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Physics/Major/Notes/Major_1_-_Unit_2/Phy_501_unit_2_part_2.pdf"
+    },
+    {
+      "path": "pdfs/Sem_5/Physics/Major/Notes/Major_1_-_Unit_2/Text-Book-of-Quantum-Mechanics-M-Mathews-Venkatesan-U3-General_formalism_of_Wave_Mechanics.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Physics/Major/Notes/Major_1_-_Unit_2/Text-Book-of-Quantum-Mechanics-M-Mathews-Venkatesan-U3-General_formalism_of_Wave_Mechanics.pdf"
+    },
+    {
+      "path": "pdfs/Sem_5/Physics/Major/Notes/Major_1_-_Unit_3/sem_5_Unit-3b_plasma.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Physics/Major/Notes/Major_1_-_Unit_3/sem_5_Unit-3b_plasma.pdf"
+    },
+    {
+      "path": "pdfs/Sem_5/Physics/Major/Notes/Major_1_-_Unit_3/Statistical_Mechanics_a_Microscopic_Macroscopic_States.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Physics/Major/Notes/Major_1_-_Unit_3/Statistical_Mechanics_a_Microscopic_Macroscopic_States.pdf"
+    },
+    {
+      "path": "pdfs/Sem_5/Physics/Major/Notes/Major_1_-_Unit_3/Statistical_Mechanics_b_Statistical_Ensemble.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Physics/Major/Notes/Major_1_-_Unit_3/Statistical_Mechanics_b_Statistical_Ensemble.pdf"
+    },
+    {
+      "path": "pdfs/Sem_5/Physics/Major/Notes/Major_1_-_Unit_4/Basic_Transistor_Amplifiers_Multistages.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Physics/Major/Notes/Major_1_-_Unit_4/Basic_Transistor_Amplifiers_Multistages.pdf"
+    },
+    {
+      "path": "pdfs/Sem_5/Physics/Major/Syllabus/Physics_501_Syllabus.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Physics/Major/Syllabus/Physics_501_Syllabus.pdf"
+    }
+  ]
+}

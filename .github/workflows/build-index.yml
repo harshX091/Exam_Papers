@@ -1,0 +1,40 @@
+# Re-generate data/index.json + sitemap.xml any time syllabus/paper JSON
+# or PDFs change, so the site stays crawlable without any manual step.
+on:
+  push:
+    branches: [main]
+    paths:
+      - "data/**"
+      - "pdfs/**"
+      - "scripts/generate-index.js"
+  workflow_dispatch: {} # lets you trigger it manually from the Actions tab
+
+permissions:
+  contents: write # needed so the workflow can commit the regenerated files
+
+jobs:
+  build-index:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Generate index.json and sitemap.xml
+        run: node scripts/generate-index.js
+
+      - name: Commit changes if any
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/index.json sitemap.xml
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "chore: auto-update content index [skip ci]"
+            git push
+          fi
