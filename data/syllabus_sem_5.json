@@ -124,12 +124,30 @@
       {
         "unit": 0,
         "category": "",
+        "title": "Major 1",
+        "courseType": "Major",
+        "materials": [
+          {
+            "title": "Sem5 Major 501 Unit 1B Classical Mech",
+            "file": "pdfs/Sem_5/Physics/Major/Notes/Major_1/Sem5 Major 501 Unit 1B Classical Mech.pdf",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "unit": 0,
+        "category": "",
         "title": "Major 1 - Unit 1",
         "courseType": "Major",
         "materials": [
           {
             "title": "BSc5-Major501-Unit1AB-Mathematical-Phy",
             "file": "pdfs/Sem_5/Physics/Major/Notes/Major_1_-_Unit_1/BSc5-Major501-Unit1AB-Mathematical-Phy.pdf",
+            "description": ""
+          },
+          {
+            "title": "Sem5 Major 501 Unit 1B Classical Mech",
+            "file": "pdfs/Sem_5/Physics/Major/Notes/Major_1_-_Unit_1/Sem5 Major 501 Unit 1B Classical Mech.pdf",
             "description": ""
           },
           {
