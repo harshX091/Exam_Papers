@@ -21,6 +21,7 @@
       <div class="nav-links">
         <a href="index.html" class="nav-link">Home</a>
         <a href="upload.html" class="nav-link">Contribute</a>
+        <a href="#" id="adminLoginBtn" class="nav-link">Admin Login</a>
       </div>
     </div>
   </nav>
@@ -117,6 +118,42 @@
     // Initial UI set
     updateViewUI();
     filterInput.value = ''; // Force clear on reload
+
+    const adminLoginBtn = document.getElementById('adminLoginBtn');
+    
+    function isAdmin() {
+      return !!localStorage.getItem('gh_pat');
+    }
+
+    function updateAdminUI() {
+      if (isAdmin()) {
+        adminLoginBtn.innerText = "Admin Logout";
+      } else {
+        adminLoginBtn.innerText = "Admin Login";
+      }
+    }
+
+    adminLoginBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      if (isAdmin()) {
+        if(confirm("Are you sure you want to logout?")) {
+          localStorage.removeItem('gh_pat');
+          updateAdminUI();
+          if (currentView === 'syllabus') renderSyllabus(syllabusData);
+          else renderPapers(papersData);
+        }
+      } else {
+        const token = prompt("Admin Login: Enter GitHub Personal Access Token (repo scope required):");
+        if (token) {
+          localStorage.setItem('gh_pat', token);
+          updateAdminUI();
+          if (currentView === 'syllabus') renderSyllabus(syllabusData);
+          else renderPapers(papersData);
+        }
+      }
+    });
+
+    updateAdminUI();
 
     let papersData = [];
     let syllabusData = [];
@@ -265,10 +302,10 @@
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" x2="12" y1="2" y2="15"/></svg>
               Share
             </button>
-            <button class="share-btn" style="color: #dc3545;" onclick="handleDelete('${filePath}', false, '${p.title.replace(/'/g, "\\'")}')">
+            ${isAdmin() ? `<button class="share-btn" style="color: #dc3545;" onclick="handleDelete('${filePath}', false, '${p.title.replace(/'/g, "\\'")}')">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>
               Delete
-            </button>
+            </button>` : ''}
           </div>
         `;
         area.appendChild(d);
@@ -327,10 +364,10 @@
                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" x2="12" y1="2" y2="15"/></svg>
                    Share
                  </button>
-                 <button class="share-btn" style="color: #dc3545;" onclick="handleDelete('${filePath}', true, '${m.title.replace(/'/g, "\\'")}')">
+                 ${isAdmin() ? `<button class="share-btn" style="color: #dc3545;" onclick="handleDelete('${filePath}', true, '${m.title.replace(/'/g, "\\'")}')">
                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>
                    Delete
-                 </button>
+                 </button>` : ''}
                </div>
              `;
             uDiv.appendChild(d);
