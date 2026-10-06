@@ -424,6 +424,23 @@
           localStorage.setItem('gh_pat', token);
       }
       
+      // 1. Backup current data for potential rollback
+      const originalSyllabus = isSyllabus ? JSON.parse(JSON.stringify(syllabusData)) : null;
+      const originalPapers = !isSyllabus ? [...papersData] : null;
+
+      // 2. Optimistically remove the item from the screen IMMEDIATELY
+      if (isSyllabus) {
+          syllabusData.forEach(u => {
+              if (u.materials) {
+                  u.materials = u.materials.filter(m => m.title !== title);
+              }
+          });
+          renderSyllabus(syllabusData);
+      } else {
+          papersData = papersData.filter(p => p.title !== title);
+          renderPapers(papersData);
+      }
+      
       const repo = 'harshX091/Exam_Papers';
       const apiUrl = `https://api.github.com/repos/${repo}/contents`;
 
@@ -489,12 +506,23 @@
           });
 
           if (!putRes.ok) throw new Error("Failed to update JSON");
-          alert("Deleted successfully! The page will now reload.");
-          location.reload();
+          
+          alert("Deleted successfully! The item has been removed from this view.\\n\\nNote: It takes 1-2 minutes for GitHub to fully update the live website in the background.");
           
       } catch (err) {
           console.error(err);
-          alert("Error deleting: " + err.message + "\\nIf the token is invalid, it has been cleared.");
+          
+          // 3. ROLLBACK: If anything failed, restore the UI to its original state
+          if (isSyllabus) {
+              syllabusData = originalSyllabus;
+              renderSyllabus(syllabusData);
+          } else {
+              papersData = originalPapers;
+              renderPapers(papersData);
+          }
+
+          alert("Error deleting: " + err.message + "\\n\\nThe PDF could not be deleted and has been restored to your screen.\\nIf the token is invalid, it has been cleared.");
+          
           if(err.message.includes('401') || err.message.includes('Bad credentials') || err.message.includes('Failed to get JSON info')) {
               localStorage.removeItem('gh_pat');
           }
