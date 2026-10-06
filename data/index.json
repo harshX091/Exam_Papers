@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-10T06:50:13.019Z",
+  "generatedAt": "2026-10-06T12:27:34.955Z",
   "siteBase": "https://harshx091.github.io/Exam_Papers",
   "dataFiles": [
     {
@@ -30,6 +30,12 @@
       "path": "data/sem_4.json",
       "url": "https://harshx091.github.io/Exam_Papers/data/sem_4.json",
       "sem": "4",
+      "type": "papers"
+    },
+    {
+      "path": "data/sem_5.json",
+      "url": "https://harshx091.github.io/Exam_Papers/data/sem_5.json",
+      "sem": "5",
       "type": "papers"
     },
     {
@@ -998,6 +1004,17 @@
       "file": "pdfs/Sem_5/Physics/Major/Notes/Major_1_-_Unit_4/Basic_Transistor_Amplifiers_Multistages.pdf",
       "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Physics/Major/Notes/Major_1_-_Unit_4/Basic_Transistor_Amplifiers_Multistages.pdf",
       "description": null
+    },
+    {
+      "sem": "5",
+      "subject": "Sec",
+      "unit": 0,
+      "unitTitle": "Physics • SEC Syllabus",
+      "courseType": "Physics",
+      "materialTitle": "SEC Physics 506 Syllabus",
+      "file": "pdfs/Sem_5/Sec/Physics/Syllabus/SEC_Physics_506_Syllabus.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Sec/Physics/Syllabus/SEC_Physics_506_Syllabus.pdf",
+      "description": null
     }
   ],
   "papers": [
@@ -1938,6 +1955,17 @@
     },
     {
       "sem": null,
+      "subject": "Sec",
+      "year": null,
+      "title": "Physics • SEC — SEC Physics 506 Syllabus",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_5/Sec/Physics/Syllabus/SEC_Physics_506_Syllabus.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Sec/Physics/Syllabus/SEC_Physics_506_Syllabus.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
       "subject": "Chemistry",
       "year": null,
       "title": "Minor — Chemistry 102 External 2024",
@@ -2520,6 +2548,50 @@
       "description": null
     },
     {
+      "sem": null,
+      "subject": "Chemistry",
+      "year": null,
+      "title": "Minor — Chemistry 502 Internal 2026",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_5/Chemistry/Minor/Papers/Internal/Chemistry_502_Internal_2026.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Chemistry/Minor/Papers/Internal/Chemistry_502_Internal_2026.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Physics",
+      "year": null,
+      "title": "Major — Physics 501 Internal 2026",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_5/Physics/Major/Papers/Internal/Physics_501_Internal_2026.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Physics/Major/Papers/Internal/Physics_501_Internal_2026.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Sec",
+      "year": null,
+      "title": "Physics • SEC — SEC Physics 506 Internal 2025",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_5/Sec/Physics/Papers/Internal/SEC_Physics_506_Internal_2025.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Sec/Physics/Papers/Internal/SEC_Physics_506_Internal_2025.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Sec",
+      "year": null,
+      "title": "Physics • SEC — SEC Physics 506 Internal 2026",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_5/Sec/Physics/Papers/Internal/SEC_Physics_506_Internal_2026.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Sec/Physics/Papers/Internal/SEC_Physics_506_Internal_2026.pdf",
+      "description": null
+    },
+    {
       "sem": "1",
       "subject": "English Aec",
       "year": null,
@@ -3100,6 +3172,39 @@
       "unitType": "VAC",
       "file": "pdfs/Sem_4/Vac/Physics/Papers/Internal/VAC_Physics_405_Internal_2026.pdf",
       "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_4/Vac/Physics/Papers/Internal/VAC_Physics_405_Internal_2026.pdf",
+      "description": "Internal"
+    },
+    {
+      "sem": "5",
+      "subject": "Physics",
+      "year": null,
+      "title": "Major — Physics 501 Internal 2026",
+      "courseType": "Major",
+      "unitType": null,
+      "file": "pdfs/Sem_5/Physics/Major/Papers/Internal/Physics_501_Internal_2026.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Physics/Major/Papers/Internal/Physics_501_Internal_2026.pdf",
+      "description": "Internal"
+    },
+    {
+      "sem": "5",
+      "subject": "Chemistry",
+      "year": null,
+      "title": "Minor — Chemistry 502 Internal 2026",
+      "courseType": "Minor",
+      "unitType": null,
+      "file": "pdfs/Sem_5/Chemistry/Minor/Papers/Internal/Chemistry_502_Internal_2026.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Chemistry/Minor/Papers/Internal/Chemistry_502_Internal_2026.pdf",
+      "description": "Internal"
+    },
+    {
+      "sem": "5",
+      "subject": "Sec",
+      "year": null,
+      "title": "Physics • SEC — SEC Physics 506 Internal 2025",
+      "courseType": "Physics",
+      "unitType": "SEC",
+      "file": "pdfs/Sem_5/Sec/Physics/Papers/Internal/SEC_Physics_506_Internal_2025.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Sec/Physics/Papers/Internal/SEC_Physics_506_Internal_2025.pdf",
       "description": "Internal"
     }
   ],
@@ -3609,6 +3714,10 @@
       "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Chemistry/Minor/Notes/Unit_4/unit_4_Aug_29_2026.pdf"
     },
     {
+      "path": "pdfs/Sem_5/Chemistry/Minor/Papers/Internal/Chemistry_502_Internal_2026.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Chemistry/Minor/Papers/Internal/Chemistry_502_Internal_2026.pdf"
+    },
+    {
       "path": "pdfs/Sem_5/Chemistry/Minor/Syllabus/Chemistry_502_Syllabus.pdf",
       "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Chemistry/Minor/Syllabus/Chemistry_502_Syllabus.pdf"
     },
@@ -3661,8 +3770,20 @@
       "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Physics/Major/Notes/Major_1_-_Unit_4/Basic_Transistor_Amplifiers_Multistages.pdf"
     },
     {
+      "path": "pdfs/Sem_5/Physics/Major/Papers/Internal/Physics_501_Internal_2026.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Physics/Major/Papers/Internal/Physics_501_Internal_2026.pdf"
+    },
+    {
       "path": "pdfs/Sem_5/Physics/Major/Syllabus/Physics_501_Syllabus.pdf",
       "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Physics/Major/Syllabus/Physics_501_Syllabus.pdf"
+    },
+    {
+      "path": "pdfs/Sem_5/Sec/Physics/Papers/Internal/SEC_Physics_506_Internal_2025.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Sec/Physics/Papers/Internal/SEC_Physics_506_Internal_2025.pdf"
+    },
+    {
+      "path": "pdfs/Sem_5/Sec/Physics/Syllabus/SEC_Physics_506_Syllabus.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Sec/Physics/Syllabus/SEC_Physics_506_Syllabus.pdf"
     }
   ]
 }

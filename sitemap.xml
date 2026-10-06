@@ -6,6 +6,7 @@
   <url><loc>https://harshx091.github.io/Exam_Papers/data/sem_2.json</loc></url>
   <url><loc>https://harshx091.github.io/Exam_Papers/data/sem_3.json</loc></url>
   <url><loc>https://harshx091.github.io/Exam_Papers/data/sem_4.json</loc></url>
+  <url><loc>https://harshx091.github.io/Exam_Papers/data/sem_5.json</loc></url>
   <url><loc>https://harshx091.github.io/Exam_Papers/data/syllabus_sem_1.json</loc></url>
   <url><loc>https://harshx091.github.io/Exam_Papers/data/syllabus_sem_2.json</loc></url>
   <url><loc>https://harshx091.github.io/Exam_Papers/data/syllabus_sem_3.json</loc></url>
@@ -46,9 +47,13 @@
   <url><loc>https://harshx091.github.io/Exam_Papers/pdfs.html?sem=4&amp;subject=Sec&amp;view=syllabus</loc></url>
   <url><loc>https://harshx091.github.io/Exam_Papers/pdfs.html?sem=4&amp;subject=Vac&amp;view=papers</loc></url>
   <url><loc>https://harshx091.github.io/Exam_Papers/pdfs.html?sem=4&amp;subject=Vac&amp;view=syllabus</loc></url>
+  <url><loc>https://harshx091.github.io/Exam_Papers/pdfs.html?sem=5&amp;subject=Chemistry&amp;view=papers</loc></url>
   <url><loc>https://harshx091.github.io/Exam_Papers/pdfs.html?sem=5&amp;subject=Chemistry&amp;view=syllabus</loc></url>
   <url><loc>https://harshx091.github.io/Exam_Papers/pdfs.html?sem=5&amp;subject=Iks&amp;view=syllabus</loc></url>
+  <url><loc>https://harshx091.github.io/Exam_Papers/pdfs.html?sem=5&amp;subject=Physics&amp;view=papers</loc></url>
   <url><loc>https://harshx091.github.io/Exam_Papers/pdfs.html?sem=5&amp;subject=Physics&amp;view=syllabus</loc></url>
+  <url><loc>https://harshx091.github.io/Exam_Papers/pdfs.html?sem=5&amp;subject=Sec&amp;view=papers</loc></url>
+  <url><loc>https://harshx091.github.io/Exam_Papers/pdfs.html?sem=5&amp;subject=Sec&amp;view=syllabus</loc></url>
   <url><loc>https://harshx091.github.io/Exam_Papers/pdfs/Sem_1/.gitkeep</loc></url>
   <url><loc>https://harshx091.github.io/Exam_Papers/pdfs/Sem_1/Chemistry/Minor/Papers/External/Chemistry_102_External_2024.pdf</loc></url>
   <url><loc>https://harshx091.github.io/Exam_Papers/pdfs/Sem_1/Chemistry/Minor/Papers/Internal/Chemistry_102_Internal_2024.pdf</loc></url>
@@ -175,6 +180,7 @@
   <url><loc>https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Chemistry/Minor/Notes/Unit_3/Adsorption_Press_copy.pdf</loc></url>
   <url><loc>https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Chemistry/Minor/Notes/Unit_3/The_nernst_distribution_law_Press_copy.pdf</loc></url>
   <url><loc>https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Chemistry/Minor/Notes/Unit_4/unit_4_Aug_29_2026.pdf</loc></url>
+  <url><loc>https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Chemistry/Minor/Papers/Internal/Chemistry_502_Internal_2026.pdf</loc></url>
   <url><loc>https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Chemistry/Minor/Syllabus/Chemistry_502_Syllabus.pdf</loc></url>
   <url><loc>https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Iks/Physics/Notes/Unit_1/Astronomy_Unit_1_C_D.pdf</loc></url>
   <url><loc>https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Physics/Major/Notes/Major_1_-_Unit_1/BSc5-Major501-Unit1AB-Mathematical-Phy.pdf</loc></url>
@@ -188,7 +194,10 @@
   <url><loc>https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Physics/Major/Notes/Major_1_-_Unit_3/Statistical_Mechanics_b_Statistical_Ensemble.pdf</loc></url>
   <url><loc>https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Physics/Major/Notes/Major_1_-_Unit_3/sem_5_Unit-3b_plasma.pdf</loc></url>
   <url><loc>https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Physics/Major/Notes/Major_1_-_Unit_4/Basic_Transistor_Amplifiers_Multistages.pdf</loc></url>
+  <url><loc>https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Physics/Major/Papers/Internal/Physics_501_Internal_2026.pdf</loc></url>
   <url><loc>https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Physics/Major/Syllabus/Physics_501_Syllabus.pdf</loc></url>
+  <url><loc>https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Sec/Physics/Papers/Internal/SEC_Physics_506_Internal_2025.pdf</loc></url>
+  <url><loc>https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Sec/Physics/Syllabus/SEC_Physics_506_Syllabus.pdf</loc></url>
   <url><loc>https://harshx091.github.io/Exam_Papers/subjects.html?sem=1</loc></url>
   <url><loc>https://harshx091.github.io/Exam_Papers/subjects.html?sem=2</loc></url>
   <url><loc>https://harshx091.github.io/Exam_Papers/subjects.html?sem=3</loc></url>
