@@ -44,4 +44,5 @@ jobs:
           git add data/
           # Only commit if there are actual changes (avoids empty commits)
           git diff --cached --quiet || git commit -m "chore: regenerate data JSONs [skip ci]"
+          git pull --rebase origin main
           git push
