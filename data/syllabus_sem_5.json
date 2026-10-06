@@ -209,5 +209,23 @@
         ]
       }
     ]
+  },
+  {
+    "subject": "Sec",
+    "units": [
+      {
+        "unit": 0,
+        "category": "",
+        "title": "Physics • SEC Syllabus",
+        "courseType": "Physics",
+        "materials": [
+          {
+            "title": "SEC Physics 506 Syllabus",
+            "file": "pdfs/Sem_5/Sec/Physics/Syllabus/SEC_Physics_506_Syllabus.pdf",
+            "description": ""
+          }
+        ]
+      }
+    ]
   }
 ]
