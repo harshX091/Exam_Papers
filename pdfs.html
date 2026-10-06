@@ -265,6 +265,10 @@
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" x2="12" y1="2" y2="15"/></svg>
               Share
             </button>
+            <button class="share-btn" style="color: #dc3545;" onclick="handleDelete('${filePath}', false, '${p.title.replace(/'/g, "\\'")}')">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>
+              Delete
+            </button>
           </div>
         `;
         area.appendChild(d);
@@ -322,6 +326,10 @@
                  <button class="share-btn" onclick="handleShare('${m.title.replace(/'/g, "\\'")}', '${filePath}')">
                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" x2="12" y1="2" y2="15"/></svg>
                    Share
+                 </button>
+                 <button class="share-btn" style="color: #dc3545;" onclick="handleDelete('${filePath}', true, '${m.title.replace(/'/g, "\\'")}')">
+                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>
+                   Delete
                  </button>
                </div>
              `;
@@ -405,6 +413,93 @@
 
     // initial load
     loadData();
+
+    async function handleDelete(filePath, isSyllabus, title) {
+      if(!confirm(`Are you sure you want to delete "${title}"? This cannot be undone.`)) return;
+      
+      let token = localStorage.getItem('gh_pat');
+      if (!token) {
+          token = prompt("Admin Action: Enter GitHub Personal Access Token (repo scope required):");
+          if (!token) return;
+          localStorage.setItem('gh_pat', token);
+      }
+      
+      const repo = 'harshX091/Exam_Papers';
+      const apiUrl = `https://api.github.com/repos/${repo}/contents`;
+
+      try {
+          if(filePath) {
+              const safePath = filePath.split('/').map(p => encodeURIComponent(decodeURIComponent(p))).join('/');
+              const getPdfRes = await fetch(`${apiUrl}/${safePath}`, {
+                  headers: { 'Authorization': `Bearer ${token}`, 'Accept': 'application/vnd.github.v3+json' }
+              });
+              if (getPdfRes.ok) {
+                  const pdfData = await getPdfRes.json();
+                  const delRes = await fetch(`${apiUrl}/${safePath}`, {
+                      method: 'DELETE',
+                      headers: { 'Authorization': `Bearer ${token}`, 'Content-Type': 'application/json', 'Accept': 'application/vnd.github.v3+json' },
+                      body: JSON.stringify({
+                          message: `Delete ${title} PDF via website`,
+                          sha: pdfData.sha
+                      })
+                  });
+                  if (!delRes.ok) {
+                      const errInfo = await delRes.json();
+                      throw new Error(`Failed to delete PDF file: ${errInfo.message}`);
+                  }
+              } else if (getPdfRes.status !== 404) {
+                  const errInfo = await getPdfRes.json();
+                  throw new Error(`Failed to access PDF file: ${errInfo.message}`);
+              }
+          }
+
+          const jsonFileName = isSyllabus ? `data/syllabus_${sem.toLowerCase()}.json` : `data/${sem.toLowerCase()}.json`;
+          const getJsonRes = await fetch(`${apiUrl}/${jsonFileName}`, {
+              headers: { 'Authorization': `token ${token}` }
+          });
+          if (!getJsonRes.ok) throw new Error("Failed to get JSON info");
+          const jsonApiData = await getJsonRes.json();
+          const jsonContent = JSON.parse(decodeURIComponent(escape(atob(jsonApiData.content))));
+
+          if (isSyllabus) {
+              const subjObj = jsonContent.find(s => s.subject.toLowerCase() === subject.toLowerCase());
+              if (subjObj) {
+                  subjObj.units.forEach(u => {
+                      if (u.materials) {
+                          u.materials = u.materials.filter(m => m.title !== title);
+                      }
+                  });
+              }
+          } else {
+              const idx = jsonContent.findIndex(p => p.subject.toLowerCase() === subject.toLowerCase() && p.title === title);
+              if (idx > -1) {
+                  jsonContent.splice(idx, 1);
+              }
+          }
+
+          const updatedContent = btoa(unescape(encodeURIComponent(JSON.stringify(jsonContent, null, 2))));
+          const putRes = await fetch(`${apiUrl}/${jsonFileName}`, {
+              method: 'PUT',
+              headers: { 'Authorization': `token ${token}`, 'Content-Type': 'application/json' },
+              body: JSON.stringify({
+                  message: `Remove ${title} from JSON via website`,
+                  content: updatedContent,
+                  sha: jsonApiData.sha
+              })
+          });
+
+          if (!putRes.ok) throw new Error("Failed to update JSON");
+          alert("Deleted successfully! The page will now reload.");
+          location.reload();
+          
+      } catch (err) {
+          console.error(err);
+          alert("Error deleting: " + err.message + "\\nIf the token is invalid, it has been cleared.");
+          if(err.message.includes('401') || err.message.includes('Bad credentials') || err.message.includes('Failed to get JSON info')) {
+              localStorage.removeItem('gh_pat');
+          }
+      }
+    }
   </script>
 </body>
 
