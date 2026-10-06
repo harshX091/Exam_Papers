@@ -12,6 +12,10 @@ on:
 permissions:
   contents: write # needed so the workflow can commit the regenerated files
 
+concurrency:
+  group: "build-index"
+  cancel-in-progress: true
+
 jobs:
   build-index:
     runs-on: ubuntu-latest
@@ -36,5 +40,6 @@ jobs:
             echo "No changes to commit."
           else
             git commit -m "chore: auto-update content index [skip ci]"
+            git pull --rebase origin main
             git push
           fi
