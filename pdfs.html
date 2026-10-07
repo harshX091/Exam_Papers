@@ -51,6 +51,34 @@
   </main>
 
   <script>
+    // Utility for tracking deleted files to prevent them from reappearing on refresh
+    function getDeletedTitles() {
+      const deletedStr = localStorage.getItem('recentlyDeletedTitles') || '[]';
+      try {
+        const deleted = JSON.parse(deletedStr);
+        const now = Date.now();
+        // Keep deleted items cached for 5 minutes (300000 ms) while GitHub builds
+        const valid = deleted.filter(item => now - item.timestamp < 300000);
+        if (valid.length !== deleted.length) {
+          localStorage.setItem('recentlyDeletedTitles', JSON.stringify(valid));
+        }
+        return valid.map(item => item.title);
+      } catch (e) {
+        return [];
+      }
+    }
+
+    function addDeletedTitle(title) {
+      if (!title) return;
+      const deletedStr = localStorage.getItem('recentlyDeletedTitles') || '[]';
+      let deleted = [];
+      try {
+        deleted = JSON.parse(deletedStr);
+      } catch (e) {}
+      deleted.push({ title: title, timestamp: Date.now() });
+      localStorage.setItem('recentlyDeletedTitles', JSON.stringify(deleted));
+    }
+
     // get params and normalize
     const params = new URLSearchParams(location.search);
     const semRaw = params.get('sem') || '1';
@@ -219,7 +247,15 @@
           const data = await res.json();
           const subjData = data.find(s => s.subject.toLowerCase() === subject.toLowerCase());
 
+          const deletedTitles = getDeletedTitles();
+
           if (subjData) {
+            subjData.units.forEach(u => {
+              if (u.materials) {
+                u.materials = u.materials.filter(m => !deletedTitles.includes(m.title));
+              }
+            });
+
             if (courseType) {
               syllabusData = subjData.units.filter(u => u.courseType && u.courseType.toLowerCase() === courseTypeRaw.toLowerCase());
             } else {
@@ -237,7 +273,9 @@
           const res = await fetch(file, { cache: 'no-cache' });
           if (!res.ok) throw new Error(`Failed to load ${file}: ${res.statusText}`);
           const data = await res.json();
-          let rawPapers = data.filter(p => p.subject.toLowerCase() === subject.toLowerCase());
+          
+          const deletedTitles = getDeletedTitles();
+          let rawPapers = data.filter(p => p.subject.toLowerCase() === subject.toLowerCase() && !deletedTitles.includes(p.title));
 
           if (courseType) {
             papersData = rawPapers.filter(p => {
@@ -543,6 +581,9 @@
               card.style.transform = 'scale(0.95)';
               await new Promise(r => setTimeout(r, 300));
           }
+
+          // Cache the deleted title so it doesn't reappear on reload
+          addDeletedTitle(title);
 
           // Finally remove from data and re-render
           if (isSyllabus) {
