@@ -386,6 +386,23 @@ footer,
 }
 
 @media (max-width: 600px) {
+  .nav-container {
+    padding: 0 0.5rem;
+  }
+
+  .nav-links {
+    gap: 0.5rem;
+  }
+
+  .nav-link {
+    font-size: 0.75rem;
+    white-space: nowrap;
+  }
+
+  .nav-logo {
+    font-size: 1rem;
+    white-space: nowrap;
+  }
 
   header h1,
   .header h1 {
@@ -416,6 +433,12 @@ footer,
 
   .toggle-btn {
     flex: 1;
+  }
+}
+
+@media (max-width: 380px) {
+  .hide-mobile {
+    display: none;
   }
 }
 

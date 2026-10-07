@@ -21,7 +21,7 @@
       <div class="nav-links">
         <a href="index.html" class="nav-link">Home</a>
         <a href="upload.html" class="nav-link">Contribute</a>
-        <a href="#" id="adminLoginBtn" class="nav-link">Admin Login</a>
+        <a href="#" id="adminLoginBtn" class="nav-link"><span class="hide-mobile">Admin </span>Login</a>
       </div>
     </div>
   </nav>
@@ -127,9 +127,9 @@
 
     function updateAdminUI() {
       if (isAdmin()) {
-        adminLoginBtn.innerText = "Admin Logout";
+        adminLoginBtn.innerHTML = "<span class='hide-mobile'>Admin </span>Logout";
       } else {
-        adminLoginBtn.innerText = "Admin Login";
+        adminLoginBtn.innerHTML = "<span class='hide-mobile'>Admin </span>Login";
       }
     }
 
