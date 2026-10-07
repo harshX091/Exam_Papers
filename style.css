@@ -47,7 +47,9 @@ body {
 
 /* --- 3. Navigation Bar & Header --- */
 .navbar {
-  background: var(--card-bg);
+  background: rgba(255, 255, 255, 0.50);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   position: sticky;
   top: 0;
@@ -75,7 +77,8 @@ body {
 
 .nav-links {
   display: flex;
-  gap: 1.5rem;
+  gap: 1.75rem;
+  align-items: center;
 }
 
 .nav-link {
@@ -287,7 +290,8 @@ footer,
   gap: 8px;
 }
 
-.actions a, .actions button {
+.actions a,
+.actions button {
   text-decoration: none;
   font-size: 0.85rem;
   font-weight: 600;
@@ -387,20 +391,20 @@ footer,
 
 @media (max-width: 600px) {
   .nav-container {
-    padding: 0 0.5rem;
+    padding: 0 1rem;
   }
 
   .nav-links {
-    gap: 0.5rem;
+    gap: 1rem;
   }
 
   .nav-link {
-    font-size: 0.75rem;
+    font-size: 0.85rem;
     white-space: nowrap;
   }
 
   .nav-logo {
-    font-size: 1rem;
+    font-size: 1.1rem;
     white-space: nowrap;
   }
 
@@ -420,7 +424,8 @@ footer,
     flex-wrap: wrap;
   }
 
-  .actions a, .actions button {
+  .actions a,
+  .actions button {
     flex: 1;
     text-align: center;
     justify-content: center;
@@ -444,7 +449,8 @@ footer,
 
 /* --- 8. Global Search Component --- */
 .global-search-container {
-  max-width: calc(800px - 2rem); /* Matches container width minus padding */
+  max-width: calc(800px - 2rem);
+  /* Matches container width minus padding */
   margin: 1rem auto 0;
   position: relative;
   z-index: 50;
