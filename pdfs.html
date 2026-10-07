@@ -21,7 +21,7 @@
       <div class="nav-links">
         <a href="index.html" class="nav-link">Home</a>
         <a href="upload.html" class="nav-link">Contribute</a>
-        <a href="#" id="adminLoginBtn" class="nav-link"><span class="hide-mobile">Admin </span>Login</a>
+        <a href="#" id="adminLoginBtn" class="nav-link" style="display: flex; align-items: center;" aria-label="Admin Login"></a>
       </div>
     </div>
   </nav>
@@ -155,9 +155,13 @@
 
     function updateAdminUI() {
       if (isAdmin()) {
-        adminLoginBtn.innerHTML = "<span class='hide-mobile'>Admin </span>Logout";
+        // User icon with a green "online" status dot
+        adminLoginBtn.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/><circle cx="19" cy="19" r="4" fill="#10b981" stroke="#fff" stroke-width="1.5"/></svg>';
+        adminLoginBtn.title = "Admin Logged In (Click to Logout)";
       } else {
-        adminLoginBtn.innerHTML = "<span class='hide-mobile'>Admin </span>Login";
+        // Standard user icon
+        adminLoginBtn.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>';
+        adminLoginBtn.title = "Admin Login";
       }
     }
 
