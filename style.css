@@ -282,6 +282,7 @@ footer,
   margin-bottom: 4px;
   word-break: break-word;
   overflow-wrap: break-word;
+  text-transform: capitalize;
 }
 
 .paper-sub {
