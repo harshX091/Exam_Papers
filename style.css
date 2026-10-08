@@ -421,12 +421,12 @@ footer,
 
   .actions {
     width: 100%;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
   .actions a,
   .actions button {
-    flex: 1;
     text-align: center;
     justify-content: center;
   }
