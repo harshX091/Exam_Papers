@@ -423,6 +423,7 @@ footer,
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    gap: 6px;
   }
 
   .actions a,
@@ -431,6 +432,9 @@ footer,
     flex: 1 1 30%;
     text-align: center;
     justify-content: center;
+    padding: 8px 4px;
+    font-size: 0.8rem;
+    gap: 4px;
   }
 
   /* If there are exactly 4 items, size them so only 2 fit per row */
