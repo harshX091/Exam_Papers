@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Papers</title>
   <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Access curated exam papers, syllabus, and study materials for every semester. Simplify your studies with our free portal.">
   <!-- Open Graph / Social Media Meta Tags -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Semester Notes | Exam Papers & Study Materials">
@@ -366,20 +367,20 @@
         uDiv.className = 'unit-block';
         uDiv.style.marginBottom = '20px';
 
-        const h3 = document.createElement('h3');
+        const h2 = document.createElement('h2');
         if (u.title) {
-          h3.innerText = u.title;
+          h2.innerText = u.title;
         } else if (u.unit === 0) {
-          h3.innerText = 'Syllabus';
+          h2.innerText = 'Syllabus';
         } else if (u.category) {
-          h3.innerText = `${u.category} — Unit ${u.unit}`;
+          h2.innerText = `${u.category} — Unit ${u.unit}`;
         } else {
-          h3.innerText = `Unit ${u.unit}`;
+          h2.innerText = `Unit ${u.unit}`;
         }
-        h3.style.margin = '0 0 10px 0';
-        h3.style.fontSize = '1.1em';
-        h3.style.color = '#333';
-        uDiv.appendChild(h3);
+        h2.style.margin = '0 0 10px 0';
+        h2.style.fontSize = '1.1em';
+        h2.style.color = '#333';
+        uDiv.appendChild(h2);
 
         if (u.materials && u.materials.length > 0) {
           u.materials.forEach(m => {
