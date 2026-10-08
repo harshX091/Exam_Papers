@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-07T16:43:31.232Z",
+  "generatedAt": "2026-10-08T10:59:35.655Z",
   "siteBase": "https://harshx091.github.io/Exam_Papers",
   "dataFiles": [
     {
@@ -1011,9 +1011,9 @@
       "unit": 0,
       "unitTitle": "Physics • SEC Syllabus",
       "courseType": "Physics",
-      "materialTitle": null,
-      "file": null,
-      "fileUrl": null,
+      "materialTitle": "SEC Physics 506 Syllabus",
+      "file": "pdfs/Sem_5/Sec/Physics/Syllabus/SEC_Physics_506_Syllabus.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Sec/Physics/Syllabus/SEC_Physics_506_Syllabus.pdf",
       "description": null
     }
   ],
@@ -2581,6 +2581,17 @@
       "description": null
     },
     {
+      "sem": null,
+      "subject": "Sec",
+      "year": null,
+      "title": "Physics • SEC — SEC Physics 506 Internal 2026",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_5/Sec/Physics/Papers/Internal/SEC_Physics_506_Internal_2026.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Sec/Physics/Papers/Internal/SEC_Physics_506_Internal_2026.pdf",
+      "description": null
+    },
+    {
       "sem": "1",
       "subject": "English Aec",
       "year": null,
@@ -3195,6 +3206,17 @@
       "file": "pdfs/Sem_5/Chemistry/Minor/Papers/Internal/Chemistry_502_Internal_2026.pdf",
       "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Chemistry/Minor/Papers/Internal/Chemistry_502_Internal_2026.pdf",
       "description": "Internal"
+    },
+    {
+      "sem": "5",
+      "subject": "Sec",
+      "year": null,
+      "title": "Physics • SEC — SEC Physics 506 Internal 2026",
+      "courseType": "Physics",
+      "unitType": "SEC",
+      "file": "pdfs/Sem_5/Sec/Physics/Papers/Internal/SEC_Physics_506_Internal_2026.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Sec/Physics/Papers/Internal/SEC_Physics_506_Internal_2026.pdf",
+      "description": "Internal"
     }
   ],
   "pdfs": [
@@ -3769,6 +3791,10 @@
     {
       "path": "pdfs/Sem_5/Physics/Major/Syllabus/Physics_501_Syllabus.pdf",
       "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Physics/Major/Syllabus/Physics_501_Syllabus.pdf"
+    },
+    {
+      "path": "pdfs/Sem_5/Sec/Physics/Syllabus/SEC_Physics_506_Syllabus.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Sec/Physics/Syllabus/SEC_Physics_506_Syllabus.pdf"
     }
   ]
 }
