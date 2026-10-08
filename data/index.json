@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-08T10:59:35.655Z",
+  "generatedAt": "2026-10-08T15:46:56.490Z",
   "siteBase": "https://harshx091.github.io/Exam_Papers",
   "dataFiles": [
     {
@@ -2551,6 +2551,28 @@
       "sem": null,
       "subject": "Chemistry",
       "year": null,
+      "title": "Minor — Chemistry 505 External 2025",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_5/Chemistry/Minor/Papers/External/Chemistry_505_External_2025.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Chemistry/Minor/Papers/External/Chemistry_505_External_2025.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Chemistry",
+      "year": null,
+      "title": "Minor — Chemistry 502 Internal 2025",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_5/Chemistry/Minor/Papers/Internal/Chemistry_502_Internal_2025.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Chemistry/Minor/Papers/Internal/Chemistry_502_Internal_2025.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Chemistry",
+      "year": null,
       "title": "Minor — Chemistry 502 Internal 2026",
       "courseType": null,
       "unitType": null,
@@ -2578,6 +2600,17 @@
       "unitType": null,
       "file": "pdfs/Sem_5/Physics/Major/Papers/Internal/Physics_501_Internal_2026.pdf",
       "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Physics/Major/Papers/Internal/Physics_501_Internal_2026.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Sec",
+      "year": null,
+      "title": "Physics • SEC — SEC Physics 506 Internal 2025",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_5/Sec/Physics/Papers/Internal/SEC_Physics_506_Internal_2025.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Sec/Physics/Papers/Internal/SEC_Physics_506_Internal_2025.pdf",
       "description": null
     },
     {
@@ -3200,11 +3233,33 @@
       "sem": "5",
       "subject": "Chemistry",
       "year": null,
+      "title": "Minor — Chemistry 502 Internal 2025",
+      "courseType": "Minor",
+      "unitType": null,
+      "file": "pdfs/Sem_5/Chemistry/Minor/Papers/Internal/Chemistry_502_Internal_2025.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Chemistry/Minor/Papers/Internal/Chemistry_502_Internal_2025.pdf",
+      "description": "Internal"
+    },
+    {
+      "sem": "5",
+      "subject": "Chemistry",
+      "year": null,
       "title": "Minor — Chemistry 502 Internal 2026",
       "courseType": "Minor",
       "unitType": null,
       "file": "pdfs/Sem_5/Chemistry/Minor/Papers/Internal/Chemistry_502_Internal_2026.pdf",
       "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Chemistry/Minor/Papers/Internal/Chemistry_502_Internal_2026.pdf",
+      "description": "Internal"
+    },
+    {
+      "sem": "5",
+      "subject": "Sec",
+      "year": null,
+      "title": "Physics • SEC — SEC Physics 506 Internal 2025",
+      "courseType": "Physics",
+      "unitType": "SEC",
+      "file": "pdfs/Sem_5/Sec/Physics/Papers/Internal/SEC_Physics_506_Internal_2025.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Sec/Physics/Papers/Internal/SEC_Physics_506_Internal_2025.pdf",
       "description": "Internal"
     },
     {
@@ -3725,6 +3780,10 @@
       "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Chemistry/Minor/Notes/Unit_4/unit_4_Aug_29_2026.pdf"
     },
     {
+      "path": "pdfs/Sem_5/Chemistry/Minor/Papers/Internal/Chemistry_502_Internal_2025.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Chemistry/Minor/Papers/Internal/Chemistry_502_Internal_2025.pdf"
+    },
+    {
       "path": "pdfs/Sem_5/Chemistry/Minor/Papers/Internal/Chemistry_502_Internal_2026.pdf",
       "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Chemistry/Minor/Papers/Internal/Chemistry_502_Internal_2026.pdf"
     },
@@ -3791,6 +3850,14 @@
     {
       "path": "pdfs/Sem_5/Physics/Major/Syllabus/Physics_501_Syllabus.pdf",
       "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Physics/Major/Syllabus/Physics_501_Syllabus.pdf"
+    },
+    {
+      "path": "pdfs/Sem_5/Sec/Physics/Papers/Internal/SEC_Physics_506_Internal_2025.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Sec/Physics/Papers/Internal/SEC_Physics_506_Internal_2025.pdf"
+    },
+    {
+      "path": "pdfs/Sem_5/Sec/Physics/Papers/Internal/SEC_Physics_506_Internal_2026.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Sec/Physics/Papers/Internal/SEC_Physics_506_Internal_2026.pdf"
     },
     {
       "path": "pdfs/Sem_5/Sec/Physics/Syllabus/SEC_Physics_506_Syllabus.pdf",
