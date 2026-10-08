@@ -272,12 +272,16 @@ footer,
 
 .paper-info {
   padding-right: 1rem;
+  flex: 1;
+  min-width: 0;
 }
 
 .paper-title {
   font-weight: 600;
   color: var(--text-main);
   margin-bottom: 4px;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 .paper-sub {

@@ -143,6 +143,9 @@
       loadData();
     });
 
+    let papersData = [];
+    let syllabusData = [];
+
     // Initial UI set
     updateViewUI();
     filterInput.value = ''; // Force clear on reload
@@ -186,10 +189,6 @@
     });
 
     updateAdminUI();
-
-    let papersData = [];
-    let syllabusData = [];
-
     // Global Error Handler
     window.onerror = function (msg, url, lineNo, columnNo, error) {
       const area = document.getElementById('listArea');
