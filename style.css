@@ -421,14 +421,22 @@ footer,
 
   .actions {
     width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .actions a,
   .actions button {
+    /* By default, size them so 3 fit on a single row */
+    flex: 1 1 30%;
     text-align: center;
     justify-content: center;
+  }
+
+  /* If there are exactly 4 items, size them so only 2 fit per row */
+  .actions > :first-child:nth-last-child(4),
+  .actions > :first-child:nth-last-child(4) ~ * {
+    flex: 1 1 45%;
   }
 
   .toggle-group {
