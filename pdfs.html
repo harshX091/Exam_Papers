@@ -327,7 +327,7 @@
         const viewerLink = `viewer.html?file=${encodeURIComponent(filePath)}&title=${encodeURIComponent(p.title)}&subject=${encodeURIComponent(p.subject)}&coursetype=${encodeURIComponent(p.courseType || '')}&sem=${encodeURIComponent(semNum)}`;
         d.innerHTML = `
           <div class="paper-info">
-            <div class="paper-title">${p.title}</div>
+            <div class="paper-title">${p.title.replace(/%20/g, ' ')}</div>
             <div class="paper-sub">${p.subject} • ${p.year} • ${p.description || ''}</div>
           </div>
           <div class="actions">
@@ -389,7 +389,7 @@
             const viewerLink = `viewer.html?file=${encodeURIComponent(filePath)}&title=${encodeURIComponent(m.title)}&subject=${encodeURIComponent(subject)}&coursetype=${encodeURIComponent(u.courseType || '')}&sem=${encodeURIComponent(semNum)}`;
             d.innerHTML = `
                <div class="paper-info">
-                 <div class="paper-title">${m.title}</div>
+                 <div class="paper-title">${m.title.replace(/%20/g, ' ')}</div>
                  <div class="paper-sub">${m.description || 'Syllabus/Notes'}</div>
                </div>
                <div class="actions">
