@@ -1,6 +1,15 @@
 [
   {
     "subject": "Physics",
+    "title": "Major — Physics 501 External 2025",
+    "courseType": "Major",
+    "unitType": null,
+    "year": null,
+    "file": "pdfs/Sem_5/Physics/Major/Papers/External/Physics_501_External_2025.pdf",
+    "description": "External"
+  },
+  {
+    "subject": "Physics",
     "title": "Major — Physics 501 Internal 2026",
     "courseType": "Major",
     "unitType": null,
