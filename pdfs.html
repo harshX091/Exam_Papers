@@ -38,7 +38,7 @@
     <div id="controls">
       <div class="toggle-group">
         <button id="viewSyllabus" class="toggle-btn active">Syllabus</button>
-        <button id="viewLearning" class="toggle-btn" onclick="window.location.href='learning/index.html'">Learning</button>
+        <button id="viewLearning" class="toggle-btn">Learning</button>
         <button id="viewPapers" class="toggle-btn">Papers</button>
       </div>
       <div class="search-wrapper">
@@ -102,6 +102,7 @@
 
     const btnPapers = document.getElementById('viewPapers');
     const btnSyllabus = document.getElementById('viewSyllabus');
+    const btnLearning = document.getElementById('viewLearning');
     const filterInput = document.getElementById('filterYear');
 
     function updateViewUI() {
@@ -142,6 +143,19 @@
       updateUrlParams('view', 'syllabus');
       updateViewUI();
       loadData();
+    });
+    btnLearning.addEventListener('click', () => {
+      // Create a slug like sem_5_physics_sec
+      let slug = (sem + '_' + subjectRaw + (courseTypeRaw ? '_' + courseTypeRaw : ''))
+        .toLowerCase()
+        .replace(/\s+/g, '_')
+        .replace(/[^a-z0-9_]/g, '_')
+        .replace(/_+/g, '_')
+        .replace(/_$/g, '');
+      
+      // If hosted on gh-pages, adding .html ensures it routes directly to the built file
+      // If we are locally testing, it might need .html or not, but .html is safer for basic servers.
+      window.location.href = `learning/${slug}.html`;
     });
 
     let papersData = [];
