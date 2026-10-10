@@ -37,7 +37,7 @@ jobs:
         run: npm ci
       - name: Build Learning Hub
         working-directory: learning_src
-        run: npm run quartz -- build -d ../learning
+        run: npm run quartz -- build -o ../learning
       - name: Commit generated Learning Hub
         run: |
           git config user.name "github-actions[bot]"
