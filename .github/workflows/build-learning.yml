@@ -1,0 +1,52 @@
+name: Build Learning Hub
+on:
+  push:
+    branches: [main]
+    paths:
+      - "learning_src/content/**"
+      - "learning_src/quartz.config.yaml"
+      - "learning_src/quartz/**"
+      - "learning_src/package.json"
+      - "learning_src/package-lock.json"
+      - ".github/workflows/build-learning.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-learning
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: learning_src/package-lock.json
+      - name: Install Quartz dependencies
+        working-directory: learning_src
+        run: npm ci
+      - name: Build Learning Hub
+        working-directory: learning_src
+        run: npm run quartz -- build -d ../learning
+      - name: Commit generated Learning Hub
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add learning
+          if git diff --cached --quiet; then
+            echo "Learning Hub output is already up to date."
+          else
+            git commit -m "build: refresh Learning Hub"
+            git pull --rebase origin main
+            git push
+          fi
