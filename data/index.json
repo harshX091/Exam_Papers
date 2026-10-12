@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-08T15:46:56.490Z",
+  "generatedAt": "2026-10-12T15:09:43.663Z",
   "siteBase": "https://harshx091.github.io/Exam_Papers",
   "dataFiles": [
     {
@@ -2551,11 +2551,11 @@
       "sem": null,
       "subject": "Chemistry",
       "year": null,
-      "title": "Minor — Chemistry 505 External 2025",
+      "title": "Minor — Chemistry 502 External 2025",
       "courseType": null,
       "unitType": null,
-      "file": "pdfs/Sem_5/Chemistry/Minor/Papers/External/Chemistry_505_External_2025.pdf",
-      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Chemistry/Minor/Papers/External/Chemistry_505_External_2025.pdf",
+      "file": "pdfs/Sem_5/Chemistry/Minor/Papers/External/Chemistry_502_External_2025.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Chemistry/Minor/Papers/External/Chemistry_502_External_2025.pdf",
       "description": null
     },
     {
@@ -2578,6 +2578,17 @@
       "unitType": null,
       "file": "pdfs/Sem_5/Chemistry/Minor/Papers/Internal/Chemistry_502_Internal_2026.pdf",
       "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Chemistry/Minor/Papers/Internal/Chemistry_502_Internal_2026.pdf",
+      "description": null
+    },
+    {
+      "sem": null,
+      "subject": "Physics",
+      "year": null,
+      "title": "Major — Physics 501 External 2025",
+      "courseType": null,
+      "unitType": null,
+      "file": "pdfs/Sem_5/Physics/Major/Papers/External/Physics_501_External_2025.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Physics/Major/Papers/External/Physics_501_External_2025.pdf",
       "description": null
     },
     {
@@ -3211,6 +3222,17 @@
       "sem": "5",
       "subject": "Physics",
       "year": null,
+      "title": "Major — Physics 501 External 2025",
+      "courseType": "Major",
+      "unitType": null,
+      "file": "pdfs/Sem_5/Physics/Major/Papers/External/Physics_501_External_2025.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Physics/Major/Papers/External/Physics_501_External_2025.pdf",
+      "description": "External"
+    },
+    {
+      "sem": "5",
+      "subject": "Physics",
+      "year": null,
       "title": "Major — Physics 501 Internal 2026",
       "courseType": "Major",
       "unitType": null,
@@ -3228,6 +3250,17 @@
       "file": "pdfs/Sem_5/Physics/Major/Papers/Internal/Physics_501A_Internal_2026.pdf",
       "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Physics/Major/Papers/Internal/Physics_501A_Internal_2026.pdf",
       "description": "Internal"
+    },
+    {
+      "sem": "5",
+      "subject": "Chemistry",
+      "year": null,
+      "title": "Minor — Chemistry 502 External 2025",
+      "courseType": "Minor",
+      "unitType": null,
+      "file": "pdfs/Sem_5/Chemistry/Minor/Papers/External/Chemistry_502_External_2025.pdf",
+      "fileUrl": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Chemistry/Minor/Papers/External/Chemistry_502_External_2025.pdf",
+      "description": "External"
     },
     {
       "sem": "5",
@@ -3776,8 +3809,8 @@
       "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Chemistry/Minor/Notes/Unit_3/The_nernst_distribution_law_Press_copy.pdf"
     },
     {
-      "path": "pdfs/Sem_5/Chemistry/Minor/Notes/Unit_4/unit_4_Aug_29_2026.pdf",
-      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Chemistry/Minor/Notes/Unit_4/unit_4_Aug_29_2026.pdf"
+      "path": "pdfs/Sem_5/Chemistry/Minor/Papers/External/Chemistry_502_External_2025.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Chemistry/Minor/Papers/External/Chemistry_502_External_2025.pdf"
     },
     {
       "path": "pdfs/Sem_5/Chemistry/Minor/Papers/Internal/Chemistry_502_Internal_2025.pdf",
@@ -3838,6 +3871,10 @@
     {
       "path": "pdfs/Sem_5/Physics/Major/Notes/Major_1_-_Unit_4/Basic_Transistor_Amplifiers_Multistages.pdf",
       "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Physics/Major/Notes/Major_1_-_Unit_4/Basic_Transistor_Amplifiers_Multistages.pdf"
+    },
+    {
+      "path": "pdfs/Sem_5/Physics/Major/Papers/External/Physics_501_External_2025.pdf",
+      "url": "https://harshx091.github.io/Exam_Papers/pdfs/Sem_5/Physics/Major/Papers/External/Physics_501_External_2025.pdf"
     },
     {
       "path": "pdfs/Sem_5/Physics/Major/Papers/Internal/Physics_501A_Internal_2026.pdf",
