@@ -1,3 +1,80 @@
 @use "./variables.scss" as *;
 
-// put your custom CSS here!
+// Semester Cards Grid for Learning Hub
+.sem-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.sem-card {
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 12px;
+  padding: 1.25rem;
+  text-decoration: none !important;
+  color: var(--dark) !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.04);
+
+  &:hover {
+    transform: translateY(-3px);
+    border-color: var(--secondary);
+    box-shadow: 0 8px 16px -4px rgba(0, 0, 0, 0.1);
+  }
+
+  &.disabled {
+    opacity: 0.75;
+    cursor: default;
+    &:hover {
+      transform: none;
+      border-color: var(--lightgray);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.04);
+    }
+  }
+
+  .sem-card-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--secondary);
+    margin-bottom: 0.35rem;
+  }
+
+  .sem-card-desc {
+    font-size: 0.9rem;
+    color: var(--darkgray);
+    line-height: 1.4;
+    margin: 0;
+  }
+
+  .sem-card-badge {
+    margin-top: 0.75rem;
+    align-self: flex-start;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 999px;
+    background: rgba(40, 75, 99, 0.12);
+    color: var(--secondary);
+  }
+}
+
+.btn-add-note {
+  display: inline-block;
+  padding: 0.65rem 1.25rem;
+  background-color: var(--secondary);
+  color: var(--light) !important;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none !important;
+  transition: opacity 0.2s, transform 0.15s;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+  }
+}
