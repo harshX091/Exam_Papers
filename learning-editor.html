@@ -163,4 +163,35 @@ el('publish').addEventListener('click',async()=>{
 });
 
 render();loadList();
+
+// Pre-fill from URL parameters if present
+try {
+  const urlParams = new URLSearchParams(window.location.search);
+  const paramSem = urlParams.get('sem');
+  const paramSub = urlParams.get('subject');
+  const paramCt = urlParams.get('coursetype') || urlParams.get('course_type');
+  const paramUnit = urlParams.get('unit');
+
+  if (paramSem) {
+    const semClean = paramSem.replace(/[^0-9]/g, '');
+    if (semClean) semSelect.value = semClean;
+  }
+  if (paramSub) {
+    const matchedSub = subjects.find(s => s.toLowerCase() === paramSub.toLowerCase() || s.toLowerCase() === paramSub.replace(/\s+/g, '_').toLowerCase());
+    if (matchedSub) {
+      subSelect.value = matchedSub;
+      updateSubjectTypeVisibility();
+    }
+  }
+  if (paramCt) {
+    const matchedCt = ["Major", "Minor", "Multi"].find(c => c.toLowerCase() === paramCt.toLowerCase());
+    if (matchedCt) ctSelect.value = matchedCt;
+  }
+  if (paramUnit) {
+    const uClean = paramUnit.replace(/[^0-9]/g, '');
+    if (uClean) unitSelect.value = uClean;
+  }
+} catch (e) {
+  console.warn("Failed to parse editor URL params:", e);
+}
 </script></body></html>

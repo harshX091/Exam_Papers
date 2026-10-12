@@ -145,8 +145,10 @@
       loadData();
     });
     btnLearning.addEventListener('click', () => {
-      // Create a slug like sem_5_physics_sec
-      let slug = (sem + '_' + subjectRaw + (courseTypeRaw ? '_' + courseTypeRaw : ''))
+      // Create a slug matching the learning hub hierarchy: semester_5_physics_major
+      const cleanSem = sem.replace(/[^0-9]/g, '');
+      const semSlug = `semester_${cleanSem || sem}`;
+      let slug = (semSlug + '_' + subjectRaw + (courseTypeRaw ? '_' + courseTypeRaw : ''))
         .toLowerCase()
         .replace(/\s+/g, '_')
         .replace(/[^a-z0-9_]/g, '_')
@@ -154,7 +156,6 @@
         .replace(/_$/g, '');
       
       // If hosted on gh-pages, adding .html ensures it routes directly to the built file
-      // If we are locally testing, it might need .html or not, but .html is safer for basic servers.
       window.location.href = `learning/${slug}.html`;
     });
 
