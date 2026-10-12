@@ -3,7 +3,7 @@
 // Semester Cards Grid for Learning Hub
 .sem-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.25rem;
   margin: 1.5rem 0 2rem;
 }
@@ -27,7 +27,7 @@
   }
 
   &.disabled {
-    opacity: 0.75;
+    opacity: 0.85;
     cursor: default;
     &:hover {
       transform: none;
@@ -40,13 +40,13 @@
     font-size: 1.2rem;
     font-weight: 700;
     color: var(--secondary);
-    margin-bottom: 0.35rem;
+    margin-bottom: 0.25rem;
   }
 
   .sem-card-desc {
-    font-size: 0.9rem;
+    font-size: 0.88rem;
     color: var(--darkgray);
-    line-height: 1.4;
+    line-height: 1.35;
     margin: 0;
   }
 
@@ -61,12 +61,33 @@
     color: var(--secondary);
   }
 
+  // Course Types (Major, Minor, Multi) & Unit Sections
+  .course-type-section,
+  .unit-section {
+    margin-top: 0.75rem;
+    padding-top: 0.6rem;
+    border-top: 1px dashed var(--lightgray);
+
+    .course-type-header,
+    .unit-header {
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--secondary);
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      margin-bottom: 0.25rem;
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+  }
+
   ul {
-    margin: 0.6rem 0 0 1.2rem;
+    margin: 0.25rem 0 0 1.1rem;
     padding: 0;
-    font-size: 0.88rem;
+    font-size: 0.85rem;
     li {
-      margin-bottom: 0.35rem;
+      margin-bottom: 0.25rem;
       line-height: 1.4;
     }
   }
