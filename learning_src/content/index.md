@@ -5,7 +5,7 @@ title: "Learning Hub"
 Access curated learning notes, formula sheets, and concept breakdowns for every semester.
 
 <div style="margin: 1.25rem 0 2rem;">
-  <a href="../learning-editor.html" class="btn-add-note">＋ Add Learning Note</a>
+  <a href="https://harshx091.github.io/Exam_Papers/learning-editor.html" class="btn-add-note">＋ Add Learning Note</a>
 </div>
 
 <div class="sem-grid">
