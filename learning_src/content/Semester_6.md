@@ -11,39 +11,64 @@ Choose a subject to explore learning notes and concept breakdowns for Semester 6
 <div class="sem-grid">
   <div class="sem-card disabled">
     <div class="sem-card-title">⚛️ Physics</div>
-    <p class="sem-card-desc">Quantum Mechanics & Solid State Physics</p>
+    <p class="sem-card-desc">Core Physics, Mechanics, Optics & Quantum</p>
     <span class="sem-card-badge">No notes yet</span>
   </div>
 
   <div class="sem-card disabled">
     <div class="sem-card-title">🧪 Chemistry</div>
-    <p class="sem-card-desc">Polymer Chemistry, Spectroscopy & Organic Synthesis</p>
+    <p class="sem-card-desc">Organic, Inorganic & Physical Chemistry</p>
     <span class="sem-card-badge">No notes yet</span>
   </div>
 
   <div class="sem-card disabled">
     <div class="sem-card-title">📐 Mathematics</div>
-    <p class="sem-card-desc">Discrete Mathematics & Linear Programming</p>
+    <p class="sem-card-desc">Calculus, Algebra, Analysis & Geometry</p>
+    <span class="sem-card-badge">No notes yet</span>
+  </div>
+
+  <div class="sem-card disabled">
+    <div class="sem-card-title">🦁 Zoology</div>
+    <p class="sem-card-desc">Animal Diversity, Physiology & Genetics</p>
+    <span class="sem-card-badge">No notes yet</span>
+  </div>
+
+  <div class="sem-card disabled">
+    <div class="sem-card-title">🌿 Botany</div>
+    <p class="sem-card-desc">Plant Biology, Physiology & Ecology</p>
     <span class="sem-card-badge">No notes yet</span>
   </div>
 
   <div class="sem-card disabled">
     <div class="sem-card-title">💻 Computer Science</div>
-    <p class="sem-card-desc">Web Technologies & Cloud Computing</p>
+    <p class="sem-card-desc">Programming, Data Structures & DBMS</p>
     <span class="sem-card-badge">No notes yet</span>
   </div>
 
   <div class="sem-card disabled">
-    <div class="sem-card-title">🌿 Botany & Zoology</div>
-    <p class="sem-card-desc">Economic Botany, Immunology & Evolution</p>
+    <div class="sem-card-title">📖 English AEC</div>
+    <p class="sem-card-desc">Ability Enhancement & Communication</p>
     <span class="sem-card-badge">No notes yet</span>
   </div>
 
   <div class="sem-card disabled">
     <div class="sem-card-title">🛠️ SEC</div>
-    <p class="sem-card-desc">Skill Enhancement Course</p>
+    <p class="sem-card-desc">Skill Enhancement Courses</p>
     <span class="sem-card-badge">No notes yet</span>
   </div>
+
+  <div class="sem-card disabled">
+    <div class="sem-card-title">🏛️ IKS</div>
+    <p class="sem-card-desc">Indian Knowledge Systems</p>
+    <span class="sem-card-badge">No notes yet</span>
+  </div>
+
+  <div class="sem-card disabled">
+    <div class="sem-card-title">🌱 VAC</div>
+    <p class="sem-card-desc">Value Added Courses</p>
+    <span class="sem-card-badge">No notes yet</span>
+  </div>
+
 </div>
 
 ---

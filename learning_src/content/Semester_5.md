@@ -11,57 +11,73 @@ Choose a subject to explore learning notes and concept breakdowns for Semester 5
 <div class="sem-grid">
   <div class="sem-card">
     <div class="sem-card-title">⚛️ Physics</div>
-    <p class="sem-card-desc">Major & Core Topics</p>
+    <p class="sem-card-desc">Core Physics, Mechanics, Optics & Quantum</p>
     <ul>
+      <li>[[Bipolar_Junction_Transistor|Bipolar Junction Transistor]]</li>
       <li>[[michelson-interferometer|Michelson Interferometer]]</li>
-      <li>[[sem_5_physics_major|Physics Major Overview]]</li>
+      <li>[[Sem_5_Electronics|Semester 5: Electronics]]</li>
+      <li>[[sem_5_physics_major|Sem 5 Physics Major]]</li>
     </ul>
-    <span class="sem-card-badge" style="background: rgba(16, 185, 129, 0.15); color: #059669;">2 Notes Available</span>
-  </div>
-
-  <div class="sem-card">
-    <div class="sem-card-title">⚡ Electronics</div>
-    <p class="sem-card-desc">Minor & Solid State Circuits</p>
-    <ul>
-      <li>[[Bipolar_Junction_Transistor|Bipolar Junction Transistor (BJT)]]</li>
-      <li>[[PN_Junction|P-N Junction Diode]]</li>
-      <li>[[Sem_5_Electronics|Electronics Unit Overview]]</li>
-    </ul>
-    <span class="sem-card-badge" style="background: rgba(16, 185, 129, 0.15); color: #059669;">3 Notes Available</span>
-  </div>
-
-  <div class="sem-card">
-    <div class="sem-card-title">🛠️ SEC</div>
-    <p class="sem-card-desc">Skill Enhancement Course</p>
-    <ul>
-      <li>[[sem_5_sec|SEC Course Overview]]</li>
-    </ul>
-    <span class="sem-card-badge" style="background: rgba(16, 185, 129, 0.15); color: #059669;">1 Note Available</span>
+    <span class="sem-card-badge" style="background: rgba(16, 185, 129, 0.15); color: #059669;">4 Notes Available</span>
   </div>
 
   <div class="sem-card disabled">
     <div class="sem-card-title">🧪 Chemistry</div>
-    <p class="sem-card-desc">Organic, Inorganic & Physical</p>
+    <p class="sem-card-desc">Organic, Inorganic & Physical Chemistry</p>
     <span class="sem-card-badge">No notes yet</span>
   </div>
 
   <div class="sem-card disabled">
     <div class="sem-card-title">📐 Mathematics</div>
-    <p class="sem-card-desc">Calculus, Algebra & Analysis</p>
+    <p class="sem-card-desc">Calculus, Algebra, Analysis & Geometry</p>
+    <span class="sem-card-badge">No notes yet</span>
+  </div>
+
+  <div class="sem-card disabled">
+    <div class="sem-card-title">🦁 Zoology</div>
+    <p class="sem-card-desc">Animal Diversity, Physiology & Genetics</p>
+    <span class="sem-card-badge">No notes yet</span>
+  </div>
+
+  <div class="sem-card disabled">
+    <div class="sem-card-title">🌿 Botany</div>
+    <p class="sem-card-desc">Plant Biology, Physiology & Ecology</p>
     <span class="sem-card-badge">No notes yet</span>
   </div>
 
   <div class="sem-card disabled">
     <div class="sem-card-title">💻 Computer Science</div>
-    <p class="sem-card-desc">Programming & Algorithms</p>
+    <p class="sem-card-desc">Programming, Data Structures & DBMS</p>
     <span class="sem-card-badge">No notes yet</span>
   </div>
 
   <div class="sem-card disabled">
-    <div class="sem-card-title">🌿 Botany & Zoology</div>
-    <p class="sem-card-desc">Life Sciences</p>
+    <div class="sem-card-title">📖 English AEC</div>
+    <p class="sem-card-desc">Ability Enhancement & Communication</p>
     <span class="sem-card-badge">No notes yet</span>
   </div>
+
+  <div class="sem-card">
+    <div class="sem-card-title">🛠️ SEC</div>
+    <p class="sem-card-desc">Skill Enhancement Courses</p>
+    <ul>
+      <li>[[sem_5_sec|Sem 5 SEC]]</li>
+    </ul>
+    <span class="sem-card-badge" style="background: rgba(16, 185, 129, 0.15); color: #059669;">1 Note Available</span>
+  </div>
+
+  <div class="sem-card disabled">
+    <div class="sem-card-title">🏛️ IKS</div>
+    <p class="sem-card-desc">Indian Knowledge Systems</p>
+    <span class="sem-card-badge">No notes yet</span>
+  </div>
+
+  <div class="sem-card disabled">
+    <div class="sem-card-title">🌱 VAC</div>
+    <p class="sem-card-desc">Value Added Courses</p>
+    <span class="sem-card-badge">No notes yet</span>
+  </div>
+
 </div>
 
 ---

@@ -35,6 +35,8 @@ jobs:
       - name: Install Quartz dependencies
         working-directory: learning_src
         run: npm ci
+      - name: Generate Semester Pages from Central Subjects
+        run: node scripts/generate-learning-semesters.mjs
       - name: Build Learning Hub
         working-directory: learning_src
         run: npm run quartz -- build -o ../learning
