@@ -77,7 +77,13 @@
         "category": "",
         "title": "Unit 4",
         "courseType": "Minor",
-        "materials": []
+        "materials": [
+          {
+            "title": "Che 502 U4",
+            "file": "pdfs/Sem_5/Chemistry/Minor/Notes/Unit_4/Che 502 U4.pdf",
+            "description": ""
+          }
+        ]
       }
     ]
   },
