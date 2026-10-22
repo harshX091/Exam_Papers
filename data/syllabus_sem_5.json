@@ -230,6 +230,19 @@
             "description": ""
           }
         ]
+      },
+      {
+        "unit": 0,
+        "category": "",
+        "title": "Physics • SEC — Unit 1",
+        "courseType": "Physics",
+        "materials": [
+          {
+            "title": "SEC PHY 506 Michelson Babinet",
+            "file": "pdfs/Sem_5/Sec/Physics/Notes/Unit_1/SEC PHY 506 Michelson... Babinet....pdf",
+            "description": ""
+          }
+        ]
       }
     ]
   }
