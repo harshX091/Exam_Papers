@@ -1,0 +1,20 @@
+[
+  {
+    "subject": "Physics",
+    "units": [
+      {
+        "unit": 0,
+        "category": "",
+        "title": "Major Syllabus",
+        "courseType": "Major",
+        "materials": [
+          {
+            "title": "Physics 601 Syllabus",
+            "file": "pdfs/Sem_6/Physics/Major/Syllabus/Physics_601_Syllabus.pdf",
+            "description": ""
+          }
+        ]
+      }
+    ]
+  }
+]
