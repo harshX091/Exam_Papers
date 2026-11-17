@@ -19,6 +19,19 @@
             "description": ""
           }
         ]
+      },
+      {
+        "unit": 0,
+        "category": "",
+        "title": "Major 1 - Unit 2",
+        "courseType": "Major",
+        "materials": [
+          {
+            "title": "unit 2 compressed",
+            "file": "pdfs/Sem_5/Botany/Major/Notes/Major_1_-_Unit_2/unit 2 _compressed.pdf",
+            "description": ""
+          }
+        ]
       }
     ]
   },
