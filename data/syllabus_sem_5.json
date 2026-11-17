@@ -1,5 +1,23 @@
 [
   {
+    "subject": "Botany",
+    "units": [
+      {
+        "unit": 0,
+        "category": "",
+        "title": "Major 1",
+        "courseType": "Major",
+        "materials": [
+          {
+            "title": "practical botany",
+            "file": "pdfs/Sem_5/Botany/Major/Notes/Major_1/practical botany .pdf",
+            "description": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
     "subject": "Chemistry",
     "units": [
       {
