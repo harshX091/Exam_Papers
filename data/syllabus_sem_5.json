@@ -93,6 +93,19 @@
       {
         "unit": 0,
         "category": "",
+        "title": "Botany • IKS — Major 2",
+        "courseType": "Botany",
+        "materials": [
+          {
+            "title": "Assignment IKS 3",
+            "file": "pdfs/Sem_5/Iks/Botany/Notes/Major_2/Assignment IKS 3.pdf",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "unit": 0,
+        "category": "",
         "title": "Physics • IKS — Unit 1",
         "courseType": "Physics",
         "materials": [
