@@ -9,6 +9,11 @@
         "courseType": "Major",
         "materials": [
           {
+            "title": "501 assignment compressed",
+            "file": "pdfs/Sem_5/Botany/Major/Notes/Major_1/501 assignment _compressed.pdf",
+            "description": ""
+          },
+          {
             "title": "practical botany",
             "file": "pdfs/Sem_5/Botany/Major/Notes/Major_1/practical botany .pdf",
             "description": ""
